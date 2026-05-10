@@ -1,4 +1,5 @@
 # gitignore runs line-by-line
+export-decompiled-report.md
 # Ignore Assets folder when it's at depth 1: */Assets/
 */Assets/
 
