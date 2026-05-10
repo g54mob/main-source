@@ -1,0 +1,25 @@
+public enum EStats
+{
+	Speed = 0,
+	MaxGems = 1,
+	ResourceConsumptionProbability = 50,
+	Health = 100,
+	HealthMax = 101,
+	Armor = 102,
+	ArmorMax = 103,
+	Shield = 104,
+	ShieldMax = 105,
+	BaseDamage = 110,
+	AttackSpeed = 111,
+	Range = 112,
+	MovementSpeed = 130,
+	MaxUnlockedTier = 500,
+	LightTowerFOWRadius = 501,
+	EnemyEssenceMultiplier = 1000,
+	ClickFarmingSpeed = 1001,
+	MaxTowersAmount = 1002,
+	MaxTowersTaxes = 1003,
+	BleedStacksConsumedPerTick = 1004,
+	BurnStacksConsumedPerTick = 1005,
+	PoisonStacksConsumedPerTick = 1006
+}

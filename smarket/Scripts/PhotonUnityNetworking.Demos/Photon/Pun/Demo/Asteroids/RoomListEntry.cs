@@ -1,0 +1,24 @@
+using UnityEngine;
+using UnityEngine.UI;
+
+namespace Photon.Pun.Demo.Asteroids
+{
+	public class RoomListEntry : MonoBehaviour
+	{
+		public Text RoomNameText;
+
+		public Text RoomPlayersText;
+
+		public Button JoinRoomButton;
+
+		private string roomName;
+
+		public void Start()
+		{
+		}
+
+		public void Initialize(string name, byte currentPlayers, byte maxPlayers)
+		{
+		}
+	}
+}

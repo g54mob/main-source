@@ -1,0 +1,1250 @@
+using System;
+using System.Diagnostics;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+using System.Threading;
+using System.Threading.Tasks.Sources;
+using Cysharp.Threading.Tasks.CompilerServices;
+using Unity.Jobs;
+using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.Networking;
+using UnityEngine.Rendering;
+using UnityEngine.UI;
+
+namespace Cysharp.Threading.Tasks
+{
+	public static class UnityAsyncExtensions
+	{
+		public struct AssetBundleRequestAllAssetsAwaiter : ICriticalNotifyCompletion, INotifyCompletion
+		{
+			private AssetBundleRequest asyncOperation;
+
+			private Action<AsyncOperation> continuationAction;
+
+			public bool IsCompleted => false;
+
+			public AssetBundleRequestAllAssetsAwaiter(AssetBundleRequest asyncOperation)
+			{
+				this.asyncOperation = null;
+				continuationAction = null;
+			}
+
+			public AssetBundleRequestAllAssetsAwaiter GetAwaiter()
+			{
+				return default(AssetBundleRequestAllAssetsAwaiter);
+			}
+
+			public UnityEngine.Object[] GetResult()
+			{
+				return null;
+			}
+
+			public void OnCompleted(Action continuation)
+			{
+			}
+
+			public void UnsafeOnCompleted(Action continuation)
+			{
+			}
+		}
+
+		private sealed class AssetBundleRequestAllAssetsConfiguredSource : IUniTaskSource<UnityEngine.Object[]>, IUniTaskSource, IValueTaskSource, IValueTaskSource<UnityEngine.Object[]>, IPlayerLoopItem, ITaskPoolNode<AssetBundleRequestAllAssetsConfiguredSource>
+		{
+			private static TaskPool<AssetBundleRequestAllAssetsConfiguredSource> pool;
+
+			private AssetBundleRequestAllAssetsConfiguredSource nextNode;
+
+			private AssetBundleRequest asyncOperation;
+
+			private IProgress<float> progress;
+
+			private CancellationToken cancellationToken;
+
+			private CancellationTokenRegistration cancellationTokenRegistration;
+
+			private bool cancelImmediately;
+
+			private bool completed;
+
+			private UniTaskCompletionSourceCore<UnityEngine.Object[]> core;
+
+			private Action<AsyncOperation> continuationAction;
+
+			public ref AssetBundleRequestAllAssetsConfiguredSource NextNode
+			{
+				get
+				{
+					throw null;
+				}
+			}
+
+			static AssetBundleRequestAllAssetsConfiguredSource()
+			{
+			}
+
+			private AssetBundleRequestAllAssetsConfiguredSource()
+			{
+			}
+
+			public static IUniTaskSource<UnityEngine.Object[]> Create(AssetBundleRequest asyncOperation, PlayerLoopTiming timing, IProgress<float> progress, CancellationToken cancellationToken, bool cancelImmediately, out short token)
+			{
+				token = default(short);
+				return null;
+			}
+
+			public UnityEngine.Object[] GetResult(short token)
+			{
+				return null;
+			}
+
+			void IUniTaskSource.GetResult(short token)
+			{
+			}
+
+			public UniTaskStatus GetStatus(short token)
+			{
+				return default(UniTaskStatus);
+			}
+
+			public UniTaskStatus UnsafeGetStatus()
+			{
+				return default(UniTaskStatus);
+			}
+
+			public void OnCompleted(Action<object> continuation, object state, short token)
+			{
+			}
+
+			public bool MoveNext()
+			{
+				return false;
+			}
+
+			private bool TryReturn()
+			{
+				return false;
+			}
+
+			private void Continuation(AsyncOperation _)
+			{
+			}
+		}
+
+		private sealed class AsyncGPUReadbackRequestAwaiterConfiguredSource : IUniTaskSource<AsyncGPUReadbackRequest>, IUniTaskSource, IValueTaskSource, IValueTaskSource<AsyncGPUReadbackRequest>, IPlayerLoopItem, ITaskPoolNode<AsyncGPUReadbackRequestAwaiterConfiguredSource>
+		{
+			private static TaskPool<AsyncGPUReadbackRequestAwaiterConfiguredSource> pool;
+
+			private AsyncGPUReadbackRequestAwaiterConfiguredSource nextNode;
+
+			private AsyncGPUReadbackRequest asyncOperation;
+
+			private CancellationToken cancellationToken;
+
+			private CancellationTokenRegistration cancellationTokenRegistration;
+
+			private bool cancelImmediately;
+
+			private UniTaskCompletionSourceCore<AsyncGPUReadbackRequest> core;
+
+			public ref AsyncGPUReadbackRequestAwaiterConfiguredSource NextNode
+			{
+				get
+				{
+					throw null;
+				}
+			}
+
+			static AsyncGPUReadbackRequestAwaiterConfiguredSource()
+			{
+			}
+
+			private AsyncGPUReadbackRequestAwaiterConfiguredSource()
+			{
+			}
+
+			public static IUniTaskSource<AsyncGPUReadbackRequest> Create(AsyncGPUReadbackRequest asyncOperation, PlayerLoopTiming timing, CancellationToken cancellationToken, bool cancelImmediately, out short token)
+			{
+				token = default(short);
+				return null;
+			}
+
+			public AsyncGPUReadbackRequest GetResult(short token)
+			{
+				return default(AsyncGPUReadbackRequest);
+			}
+
+			void IUniTaskSource.GetResult(short token)
+			{
+			}
+
+			public UniTaskStatus GetStatus(short token)
+			{
+				return default(UniTaskStatus);
+			}
+
+			public UniTaskStatus UnsafeGetStatus()
+			{
+				return default(UniTaskStatus);
+			}
+
+			public void OnCompleted(Action<object> continuation, object state, short token)
+			{
+			}
+
+			public bool MoveNext()
+			{
+				return false;
+			}
+
+			private bool TryReturn()
+			{
+				return false;
+			}
+		}
+
+		public struct AsyncOperationAwaiter : ICriticalNotifyCompletion, INotifyCompletion
+		{
+			private AsyncOperation asyncOperation;
+
+			private Action<AsyncOperation> continuationAction;
+
+			public bool IsCompleted => false;
+
+			public AsyncOperationAwaiter(AsyncOperation asyncOperation)
+			{
+				this.asyncOperation = null;
+				continuationAction = null;
+			}
+
+			public void GetResult()
+			{
+			}
+
+			public void OnCompleted(Action continuation)
+			{
+			}
+
+			public void UnsafeOnCompleted(Action continuation)
+			{
+			}
+		}
+
+		private sealed class AsyncOperationConfiguredSource : IUniTaskSource, IValueTaskSource, IPlayerLoopItem, ITaskPoolNode<AsyncOperationConfiguredSource>
+		{
+			private static TaskPool<AsyncOperationConfiguredSource> pool;
+
+			private AsyncOperationConfiguredSource nextNode;
+
+			private AsyncOperation asyncOperation;
+
+			private IProgress<float> progress;
+
+			private CancellationToken cancellationToken;
+
+			private CancellationTokenRegistration cancellationTokenRegistration;
+
+			private bool cancelImmediately;
+
+			private bool completed;
+
+			private UniTaskCompletionSourceCore<AsyncUnit> core;
+
+			private Action<AsyncOperation> continuationAction;
+
+			public ref AsyncOperationConfiguredSource NextNode
+			{
+				get
+				{
+					throw null;
+				}
+			}
+
+			static AsyncOperationConfiguredSource()
+			{
+			}
+
+			private AsyncOperationConfiguredSource()
+			{
+			}
+
+			public static IUniTaskSource Create(AsyncOperation asyncOperation, PlayerLoopTiming timing, IProgress<float> progress, CancellationToken cancellationToken, bool cancelImmediately, out short token)
+			{
+				token = default(short);
+				return null;
+			}
+
+			public void GetResult(short token)
+			{
+			}
+
+			public UniTaskStatus GetStatus(short token)
+			{
+				return default(UniTaskStatus);
+			}
+
+			public UniTaskStatus UnsafeGetStatus()
+			{
+				return default(UniTaskStatus);
+			}
+
+			public void OnCompleted(Action<object> continuation, object state, short token)
+			{
+			}
+
+			public bool MoveNext()
+			{
+				return false;
+			}
+
+			private bool TryReturn()
+			{
+				return false;
+			}
+
+			private void Continuation(AsyncOperation _)
+			{
+			}
+		}
+
+		public struct ResourceRequestAwaiter : ICriticalNotifyCompletion, INotifyCompletion
+		{
+			private ResourceRequest asyncOperation;
+
+			private Action<AsyncOperation> continuationAction;
+
+			public bool IsCompleted => false;
+
+			public ResourceRequestAwaiter(ResourceRequest asyncOperation)
+			{
+				this.asyncOperation = null;
+				continuationAction = null;
+			}
+
+			public UnityEngine.Object GetResult()
+			{
+				return null;
+			}
+
+			public void OnCompleted(Action continuation)
+			{
+			}
+
+			public void UnsafeOnCompleted(Action continuation)
+			{
+			}
+		}
+
+		private sealed class ResourceRequestConfiguredSource : IUniTaskSource<UnityEngine.Object>, IUniTaskSource, IValueTaskSource, IValueTaskSource<UnityEngine.Object>, IPlayerLoopItem, ITaskPoolNode<ResourceRequestConfiguredSource>
+		{
+			private static TaskPool<ResourceRequestConfiguredSource> pool;
+
+			private ResourceRequestConfiguredSource nextNode;
+
+			private ResourceRequest asyncOperation;
+
+			private IProgress<float> progress;
+
+			private CancellationToken cancellationToken;
+
+			private CancellationTokenRegistration cancellationTokenRegistration;
+
+			private bool cancelImmediately;
+
+			private bool completed;
+
+			private UniTaskCompletionSourceCore<UnityEngine.Object> core;
+
+			private Action<AsyncOperation> continuationAction;
+
+			public ref ResourceRequestConfiguredSource NextNode
+			{
+				get
+				{
+					throw null;
+				}
+			}
+
+			static ResourceRequestConfiguredSource()
+			{
+			}
+
+			private ResourceRequestConfiguredSource()
+			{
+			}
+
+			public static IUniTaskSource<UnityEngine.Object> Create(ResourceRequest asyncOperation, PlayerLoopTiming timing, IProgress<float> progress, CancellationToken cancellationToken, bool cancelImmediately, out short token)
+			{
+				token = default(short);
+				return null;
+			}
+
+			public UnityEngine.Object GetResult(short token)
+			{
+				return null;
+			}
+
+			void IUniTaskSource.GetResult(short token)
+			{
+			}
+
+			public UniTaskStatus GetStatus(short token)
+			{
+				return default(UniTaskStatus);
+			}
+
+			public UniTaskStatus UnsafeGetStatus()
+			{
+				return default(UniTaskStatus);
+			}
+
+			public void OnCompleted(Action<object> continuation, object state, short token)
+			{
+			}
+
+			public bool MoveNext()
+			{
+				return false;
+			}
+
+			private bool TryReturn()
+			{
+				return false;
+			}
+
+			private void Continuation(AsyncOperation _)
+			{
+			}
+		}
+
+		public struct AssetBundleRequestAwaiter : ICriticalNotifyCompletion, INotifyCompletion
+		{
+			private AssetBundleRequest asyncOperation;
+
+			private Action<AsyncOperation> continuationAction;
+
+			public bool IsCompleted => false;
+
+			public AssetBundleRequestAwaiter(AssetBundleRequest asyncOperation)
+			{
+				this.asyncOperation = null;
+				continuationAction = null;
+			}
+
+			public UnityEngine.Object GetResult()
+			{
+				return null;
+			}
+
+			public void OnCompleted(Action continuation)
+			{
+			}
+
+			public void UnsafeOnCompleted(Action continuation)
+			{
+			}
+		}
+
+		private sealed class AssetBundleRequestConfiguredSource : IUniTaskSource<UnityEngine.Object>, IUniTaskSource, IValueTaskSource, IValueTaskSource<UnityEngine.Object>, IPlayerLoopItem, ITaskPoolNode<AssetBundleRequestConfiguredSource>
+		{
+			private static TaskPool<AssetBundleRequestConfiguredSource> pool;
+
+			private AssetBundleRequestConfiguredSource nextNode;
+
+			private AssetBundleRequest asyncOperation;
+
+			private IProgress<float> progress;
+
+			private CancellationToken cancellationToken;
+
+			private CancellationTokenRegistration cancellationTokenRegistration;
+
+			private bool cancelImmediately;
+
+			private bool completed;
+
+			private UniTaskCompletionSourceCore<UnityEngine.Object> core;
+
+			private Action<AsyncOperation> continuationAction;
+
+			public ref AssetBundleRequestConfiguredSource NextNode
+			{
+				get
+				{
+					throw null;
+				}
+			}
+
+			static AssetBundleRequestConfiguredSource()
+			{
+			}
+
+			private AssetBundleRequestConfiguredSource()
+			{
+			}
+
+			public static IUniTaskSource<UnityEngine.Object> Create(AssetBundleRequest asyncOperation, PlayerLoopTiming timing, IProgress<float> progress, CancellationToken cancellationToken, bool cancelImmediately, out short token)
+			{
+				token = default(short);
+				return null;
+			}
+
+			public UnityEngine.Object GetResult(short token)
+			{
+				return null;
+			}
+
+			void IUniTaskSource.GetResult(short token)
+			{
+			}
+
+			public UniTaskStatus GetStatus(short token)
+			{
+				return default(UniTaskStatus);
+			}
+
+			public UniTaskStatus UnsafeGetStatus()
+			{
+				return default(UniTaskStatus);
+			}
+
+			public void OnCompleted(Action<object> continuation, object state, short token)
+			{
+			}
+
+			public bool MoveNext()
+			{
+				return false;
+			}
+
+			private bool TryReturn()
+			{
+				return false;
+			}
+
+			private void Continuation(AsyncOperation _)
+			{
+			}
+		}
+
+		public struct AssetBundleCreateRequestAwaiter : ICriticalNotifyCompletion, INotifyCompletion
+		{
+			private AssetBundleCreateRequest asyncOperation;
+
+			private Action<AsyncOperation> continuationAction;
+
+			public bool IsCompleted => false;
+
+			public AssetBundleCreateRequestAwaiter(AssetBundleCreateRequest asyncOperation)
+			{
+				this.asyncOperation = null;
+				continuationAction = null;
+			}
+
+			public AssetBundle GetResult()
+			{
+				return null;
+			}
+
+			public void OnCompleted(Action continuation)
+			{
+			}
+
+			public void UnsafeOnCompleted(Action continuation)
+			{
+			}
+		}
+
+		private sealed class AssetBundleCreateRequestConfiguredSource : IUniTaskSource<AssetBundle>, IUniTaskSource, IValueTaskSource, IValueTaskSource<AssetBundle>, IPlayerLoopItem, ITaskPoolNode<AssetBundleCreateRequestConfiguredSource>
+		{
+			private static TaskPool<AssetBundleCreateRequestConfiguredSource> pool;
+
+			private AssetBundleCreateRequestConfiguredSource nextNode;
+
+			private AssetBundleCreateRequest asyncOperation;
+
+			private IProgress<float> progress;
+
+			private CancellationToken cancellationToken;
+
+			private CancellationTokenRegistration cancellationTokenRegistration;
+
+			private bool cancelImmediately;
+
+			private bool completed;
+
+			private UniTaskCompletionSourceCore<AssetBundle> core;
+
+			private Action<AsyncOperation> continuationAction;
+
+			public ref AssetBundleCreateRequestConfiguredSource NextNode
+			{
+				get
+				{
+					throw null;
+				}
+			}
+
+			static AssetBundleCreateRequestConfiguredSource()
+			{
+			}
+
+			private AssetBundleCreateRequestConfiguredSource()
+			{
+			}
+
+			public static IUniTaskSource<AssetBundle> Create(AssetBundleCreateRequest asyncOperation, PlayerLoopTiming timing, IProgress<float> progress, CancellationToken cancellationToken, bool cancelImmediately, out short token)
+			{
+				token = default(short);
+				return null;
+			}
+
+			public AssetBundle GetResult(short token)
+			{
+				return null;
+			}
+
+			void IUniTaskSource.GetResult(short token)
+			{
+			}
+
+			public UniTaskStatus GetStatus(short token)
+			{
+				return default(UniTaskStatus);
+			}
+
+			public UniTaskStatus UnsafeGetStatus()
+			{
+				return default(UniTaskStatus);
+			}
+
+			public void OnCompleted(Action<object> continuation, object state, short token)
+			{
+			}
+
+			public bool MoveNext()
+			{
+				return false;
+			}
+
+			private bool TryReturn()
+			{
+				return false;
+			}
+
+			private void Continuation(AsyncOperation _)
+			{
+			}
+		}
+
+		public struct UnityWebRequestAsyncOperationAwaiter : ICriticalNotifyCompletion, INotifyCompletion
+		{
+			private UnityWebRequestAsyncOperation asyncOperation;
+
+			private Action<AsyncOperation> continuationAction;
+
+			public bool IsCompleted => false;
+
+			public UnityWebRequestAsyncOperationAwaiter(UnityWebRequestAsyncOperation asyncOperation)
+			{
+				this.asyncOperation = null;
+				continuationAction = null;
+			}
+
+			public UnityWebRequest GetResult()
+			{
+				return null;
+			}
+
+			public void OnCompleted(Action continuation)
+			{
+			}
+
+			public void UnsafeOnCompleted(Action continuation)
+			{
+			}
+		}
+
+		private sealed class UnityWebRequestAsyncOperationConfiguredSource : IUniTaskSource<UnityWebRequest>, IUniTaskSource, IValueTaskSource, IValueTaskSource<UnityWebRequest>, IPlayerLoopItem, ITaskPoolNode<UnityWebRequestAsyncOperationConfiguredSource>
+		{
+			private static TaskPool<UnityWebRequestAsyncOperationConfiguredSource> pool;
+
+			private UnityWebRequestAsyncOperationConfiguredSource nextNode;
+
+			private UnityWebRequestAsyncOperation asyncOperation;
+
+			private IProgress<float> progress;
+
+			private CancellationToken cancellationToken;
+
+			private CancellationTokenRegistration cancellationTokenRegistration;
+
+			private bool cancelImmediately;
+
+			private bool completed;
+
+			private UniTaskCompletionSourceCore<UnityWebRequest> core;
+
+			private Action<AsyncOperation> continuationAction;
+
+			public ref UnityWebRequestAsyncOperationConfiguredSource NextNode
+			{
+				get
+				{
+					throw null;
+				}
+			}
+
+			static UnityWebRequestAsyncOperationConfiguredSource()
+			{
+			}
+
+			private UnityWebRequestAsyncOperationConfiguredSource()
+			{
+			}
+
+			public static IUniTaskSource<UnityWebRequest> Create(UnityWebRequestAsyncOperation asyncOperation, PlayerLoopTiming timing, IProgress<float> progress, CancellationToken cancellationToken, bool cancelImmediately, out short token)
+			{
+				token = default(short);
+				return null;
+			}
+
+			public UnityWebRequest GetResult(short token)
+			{
+				return null;
+			}
+
+			void IUniTaskSource.GetResult(short token)
+			{
+			}
+
+			public UniTaskStatus GetStatus(short token)
+			{
+				return default(UniTaskStatus);
+			}
+
+			public UniTaskStatus UnsafeGetStatus()
+			{
+				return default(UniTaskStatus);
+			}
+
+			public void OnCompleted(Action<object> continuation, object state, short token)
+			{
+			}
+
+			public bool MoveNext()
+			{
+				return false;
+			}
+
+			private bool TryReturn()
+			{
+				return false;
+			}
+
+			private void Continuation(AsyncOperation _)
+			{
+			}
+		}
+
+		private sealed class JobHandlePromise : IUniTaskSource, IValueTaskSource, IPlayerLoopItem
+		{
+			private JobHandle jobHandle;
+
+			private UniTaskCompletionSourceCore<AsyncUnit> core;
+
+			public static JobHandlePromise Create(JobHandle jobHandle, out short token)
+			{
+				token = default(short);
+				return null;
+			}
+
+			public void GetResult(short token)
+			{
+			}
+
+			public UniTaskStatus GetStatus(short token)
+			{
+				return default(UniTaskStatus);
+			}
+
+			public UniTaskStatus UnsafeGetStatus()
+			{
+				return default(UniTaskStatus);
+			}
+
+			public void OnCompleted(Action<object> continuation, object state, short token)
+			{
+			}
+
+			public bool MoveNext()
+			{
+				return false;
+			}
+		}
+
+		[StructLayout((LayoutKind)3)]
+		[CompilerGenerated]
+		private struct _003CWaitAsync_003Ed__40 : IAsyncStateMachine
+		{
+			public int _003C_003E1__state;
+
+			public AsyncUniTaskMethodBuilder _003C_003Et__builder;
+
+			public PlayerLoopTiming waitTiming;
+
+			public JobHandle jobHandle;
+
+			public CancellationToken cancellationToken;
+
+			private YieldAwaitable.Awaiter _003C_003Eu__1;
+
+			private void MoveNext()
+			{
+			}
+
+			void IAsyncStateMachine.MoveNext()
+			{
+				//ILSpy generated this explicit interface implementation from .override directive in MoveNext
+				this.MoveNext();
+			}
+
+			[DebuggerHidden]
+			private void SetStateMachine(IAsyncStateMachine stateMachine)
+			{
+			}
+
+			void IAsyncStateMachine.SetStateMachine(IAsyncStateMachine stateMachine)
+			{
+				//ILSpy generated this explicit interface implementation from .override directive in SetStateMachine
+				this.SetStateMachine(stateMachine);
+			}
+		}
+
+		public static AssetBundleRequestAllAssetsAwaiter AwaitForAllAssets(this AssetBundleRequest asyncOperation)
+		{
+			return default(AssetBundleRequestAllAssetsAwaiter);
+		}
+
+		public static UniTask<UnityEngine.Object[]> AwaitForAllAssets(this AssetBundleRequest asyncOperation, CancellationToken cancellationToken)
+		{
+			return default(UniTask<UnityEngine.Object[]>);
+		}
+
+		public static UniTask<UnityEngine.Object[]> AwaitForAllAssets(this AssetBundleRequest asyncOperation, CancellationToken cancellationToken, bool cancelImmediately)
+		{
+			return default(UniTask<UnityEngine.Object[]>);
+		}
+
+		public static UniTask<UnityEngine.Object[]> AwaitForAllAssets(this AssetBundleRequest asyncOperation, IProgress<float> progress = null, PlayerLoopTiming timing = PlayerLoopTiming.Update, CancellationToken cancellationToken = default(CancellationToken), bool cancelImmediately = false)
+		{
+			return default(UniTask<UnityEngine.Object[]>);
+		}
+
+		public static UniTask<AsyncGPUReadbackRequest>.Awaiter GetAwaiter(this AsyncGPUReadbackRequest asyncOperation)
+		{
+			return default(UniTask<AsyncGPUReadbackRequest>.Awaiter);
+		}
+
+		public static UniTask<AsyncGPUReadbackRequest> WithCancellation(this AsyncGPUReadbackRequest asyncOperation, CancellationToken cancellationToken)
+		{
+			return default(UniTask<AsyncGPUReadbackRequest>);
+		}
+
+		public static UniTask<AsyncGPUReadbackRequest> WithCancellation(this AsyncGPUReadbackRequest asyncOperation, CancellationToken cancellationToken, bool cancelImmediately)
+		{
+			return default(UniTask<AsyncGPUReadbackRequest>);
+		}
+
+		public static UniTask<AsyncGPUReadbackRequest> ToUniTask(this AsyncGPUReadbackRequest asyncOperation, PlayerLoopTiming timing = PlayerLoopTiming.Update, CancellationToken cancellationToken = default(CancellationToken), bool cancelImmediately = false)
+		{
+			return default(UniTask<AsyncGPUReadbackRequest>);
+		}
+
+		public static UniTask WithCancellation(this AsyncOperation asyncOperation, CancellationToken cancellationToken)
+		{
+			return default(UniTask);
+		}
+
+		public static UniTask WithCancellation(this AsyncOperation asyncOperation, CancellationToken cancellationToken, bool cancelImmediately)
+		{
+			return default(UniTask);
+		}
+
+		public static UniTask ToUniTask(this AsyncOperation asyncOperation, IProgress<float> progress = null, PlayerLoopTiming timing = PlayerLoopTiming.Update, CancellationToken cancellationToken = default(CancellationToken), bool cancelImmediately = false)
+		{
+			return default(UniTask);
+		}
+
+		public static ResourceRequestAwaiter GetAwaiter(this ResourceRequest asyncOperation)
+		{
+			return default(ResourceRequestAwaiter);
+		}
+
+		public static UniTask<UnityEngine.Object> WithCancellation(this ResourceRequest asyncOperation, CancellationToken cancellationToken)
+		{
+			return default(UniTask<UnityEngine.Object>);
+		}
+
+		public static UniTask<UnityEngine.Object> WithCancellation(this ResourceRequest asyncOperation, CancellationToken cancellationToken, bool cancelImmediately)
+		{
+			return default(UniTask<UnityEngine.Object>);
+		}
+
+		public static UniTask<UnityEngine.Object> ToUniTask(this ResourceRequest asyncOperation, IProgress<float> progress = null, PlayerLoopTiming timing = PlayerLoopTiming.Update, CancellationToken cancellationToken = default(CancellationToken), bool cancelImmediately = false)
+		{
+			return default(UniTask<UnityEngine.Object>);
+		}
+
+		public static AssetBundleRequestAwaiter GetAwaiter(this AssetBundleRequest asyncOperation)
+		{
+			return default(AssetBundleRequestAwaiter);
+		}
+
+		public static UniTask<UnityEngine.Object> WithCancellation(this AssetBundleRequest asyncOperation, CancellationToken cancellationToken)
+		{
+			return default(UniTask<UnityEngine.Object>);
+		}
+
+		public static UniTask<UnityEngine.Object> WithCancellation(this AssetBundleRequest asyncOperation, CancellationToken cancellationToken, bool cancelImmediately)
+		{
+			return default(UniTask<UnityEngine.Object>);
+		}
+
+		public static UniTask<UnityEngine.Object> ToUniTask(this AssetBundleRequest asyncOperation, IProgress<float> progress = null, PlayerLoopTiming timing = PlayerLoopTiming.Update, CancellationToken cancellationToken = default(CancellationToken), bool cancelImmediately = false)
+		{
+			return default(UniTask<UnityEngine.Object>);
+		}
+
+		public static AssetBundleCreateRequestAwaiter GetAwaiter(this AssetBundleCreateRequest asyncOperation)
+		{
+			return default(AssetBundleCreateRequestAwaiter);
+		}
+
+		public static UniTask<AssetBundle> WithCancellation(this AssetBundleCreateRequest asyncOperation, CancellationToken cancellationToken)
+		{
+			return default(UniTask<AssetBundle>);
+		}
+
+		public static UniTask<AssetBundle> WithCancellation(this AssetBundleCreateRequest asyncOperation, CancellationToken cancellationToken, bool cancelImmediately)
+		{
+			return default(UniTask<AssetBundle>);
+		}
+
+		public static UniTask<AssetBundle> ToUniTask(this AssetBundleCreateRequest asyncOperation, IProgress<float> progress = null, PlayerLoopTiming timing = PlayerLoopTiming.Update, CancellationToken cancellationToken = default(CancellationToken), bool cancelImmediately = false)
+		{
+			return default(UniTask<AssetBundle>);
+		}
+
+		public static UnityWebRequestAsyncOperationAwaiter GetAwaiter(this UnityWebRequestAsyncOperation asyncOperation)
+		{
+			return default(UnityWebRequestAsyncOperationAwaiter);
+		}
+
+		public static UniTask<UnityWebRequest> WithCancellation(this UnityWebRequestAsyncOperation asyncOperation, CancellationToken cancellationToken)
+		{
+			return default(UniTask<UnityWebRequest>);
+		}
+
+		public static UniTask<UnityWebRequest> WithCancellation(this UnityWebRequestAsyncOperation asyncOperation, CancellationToken cancellationToken, bool cancelImmediately)
+		{
+			return default(UniTask<UnityWebRequest>);
+		}
+
+		public static UniTask<UnityWebRequest> ToUniTask(this UnityWebRequestAsyncOperation asyncOperation, IProgress<float> progress = null, PlayerLoopTiming timing = PlayerLoopTiming.Update, CancellationToken cancellationToken = default(CancellationToken), bool cancelImmediately = false)
+		{
+			return default(UniTask<UnityWebRequest>);
+		}
+
+		[AsyncStateMachine(typeof(_003CWaitAsync_003Ed__40))]
+		public static UniTask WaitAsync(this JobHandle jobHandle, PlayerLoopTiming waitTiming, CancellationToken cancellationToken = default(CancellationToken))
+		{
+			return default(UniTask);
+		}
+
+		public static UniTask.Awaiter GetAwaiter(this JobHandle jobHandle)
+		{
+			return default(UniTask.Awaiter);
+		}
+
+		public static UniTask ToUniTask(this JobHandle jobHandle, PlayerLoopTiming waitTiming)
+		{
+			return default(UniTask);
+		}
+
+		public static UniTask StartAsyncCoroutine(this MonoBehaviour monoBehaviour, Func<CancellationToken, UniTask> asyncCoroutine)
+		{
+			return default(UniTask);
+		}
+
+		public static AsyncUnityEventHandler GetAsyncEventHandler(this UnityEvent unityEvent, CancellationToken cancellationToken)
+		{
+			return null;
+		}
+
+		public static UniTask OnInvokeAsync(this UnityEvent unityEvent, CancellationToken cancellationToken)
+		{
+			return default(UniTask);
+		}
+
+		public static IUniTaskAsyncEnumerable<AsyncUnit> OnInvokeAsAsyncEnumerable(this UnityEvent unityEvent, CancellationToken cancellationToken)
+		{
+			return null;
+		}
+
+		public static AsyncUnityEventHandler<T> GetAsyncEventHandler<T>(this UnityEvent<T> unityEvent, CancellationToken cancellationToken)
+		{
+			return null;
+		}
+
+		public static UniTask<T> OnInvokeAsync<T>(this UnityEvent<T> unityEvent, CancellationToken cancellationToken)
+		{
+			return default(UniTask<T>);
+		}
+
+		public static IUniTaskAsyncEnumerable<T> OnInvokeAsAsyncEnumerable<T>(this UnityEvent<T> unityEvent, CancellationToken cancellationToken)
+		{
+			return null;
+		}
+
+		public static IAsyncClickEventHandler GetAsyncClickEventHandler(this Button button)
+		{
+			return null;
+		}
+
+		public static IAsyncClickEventHandler GetAsyncClickEventHandler(this Button button, CancellationToken cancellationToken)
+		{
+			return null;
+		}
+
+		public static UniTask OnClickAsync(this Button button)
+		{
+			return default(UniTask);
+		}
+
+		public static UniTask OnClickAsync(this Button button, CancellationToken cancellationToken)
+		{
+			return default(UniTask);
+		}
+
+		public static IUniTaskAsyncEnumerable<AsyncUnit> OnClickAsAsyncEnumerable(this Button button)
+		{
+			return null;
+		}
+
+		public static IUniTaskAsyncEnumerable<AsyncUnit> OnClickAsAsyncEnumerable(this Button button, CancellationToken cancellationToken)
+		{
+			return null;
+		}
+
+		public static IAsyncValueChangedEventHandler<bool> GetAsyncValueChangedEventHandler(this Toggle toggle)
+		{
+			return null;
+		}
+
+		public static IAsyncValueChangedEventHandler<bool> GetAsyncValueChangedEventHandler(this Toggle toggle, CancellationToken cancellationToken)
+		{
+			return null;
+		}
+
+		public static UniTask<bool> OnValueChangedAsync(this Toggle toggle)
+		{
+			return default(UniTask<bool>);
+		}
+
+		public static UniTask<bool> OnValueChangedAsync(this Toggle toggle, CancellationToken cancellationToken)
+		{
+			return default(UniTask<bool>);
+		}
+
+		public static IUniTaskAsyncEnumerable<bool> OnValueChangedAsAsyncEnumerable(this Toggle toggle)
+		{
+			return null;
+		}
+
+		public static IUniTaskAsyncEnumerable<bool> OnValueChangedAsAsyncEnumerable(this Toggle toggle, CancellationToken cancellationToken)
+		{
+			return null;
+		}
+
+		public static IAsyncValueChangedEventHandler<float> GetAsyncValueChangedEventHandler(this Scrollbar scrollbar)
+		{
+			return null;
+		}
+
+		public static IAsyncValueChangedEventHandler<float> GetAsyncValueChangedEventHandler(this Scrollbar scrollbar, CancellationToken cancellationToken)
+		{
+			return null;
+		}
+
+		public static UniTask<float> OnValueChangedAsync(this Scrollbar scrollbar)
+		{
+			return default(UniTask<float>);
+		}
+
+		public static UniTask<float> OnValueChangedAsync(this Scrollbar scrollbar, CancellationToken cancellationToken)
+		{
+			return default(UniTask<float>);
+		}
+
+		public static IUniTaskAsyncEnumerable<float> OnValueChangedAsAsyncEnumerable(this Scrollbar scrollbar)
+		{
+			return null;
+		}
+
+		public static IUniTaskAsyncEnumerable<float> OnValueChangedAsAsyncEnumerable(this Scrollbar scrollbar, CancellationToken cancellationToken)
+		{
+			return null;
+		}
+
+		public static IAsyncValueChangedEventHandler<Vector2> GetAsyncValueChangedEventHandler(this ScrollRect scrollRect)
+		{
+			return null;
+		}
+
+		public static IAsyncValueChangedEventHandler<Vector2> GetAsyncValueChangedEventHandler(this ScrollRect scrollRect, CancellationToken cancellationToken)
+		{
+			return null;
+		}
+
+		public static UniTask<Vector2> OnValueChangedAsync(this ScrollRect scrollRect)
+		{
+			return default(UniTask<Vector2>);
+		}
+
+		public static UniTask<Vector2> OnValueChangedAsync(this ScrollRect scrollRect, CancellationToken cancellationToken)
+		{
+			return default(UniTask<Vector2>);
+		}
+
+		public static IUniTaskAsyncEnumerable<Vector2> OnValueChangedAsAsyncEnumerable(this ScrollRect scrollRect)
+		{
+			return null;
+		}
+
+		public static IUniTaskAsyncEnumerable<Vector2> OnValueChangedAsAsyncEnumerable(this ScrollRect scrollRect, CancellationToken cancellationToken)
+		{
+			return null;
+		}
+
+		public static IAsyncValueChangedEventHandler<float> GetAsyncValueChangedEventHandler(this Slider slider)
+		{
+			return null;
+		}
+
+		public static IAsyncValueChangedEventHandler<float> GetAsyncValueChangedEventHandler(this Slider slider, CancellationToken cancellationToken)
+		{
+			return null;
+		}
+
+		public static UniTask<float> OnValueChangedAsync(this Slider slider)
+		{
+			return default(UniTask<float>);
+		}
+
+		public static UniTask<float> OnValueChangedAsync(this Slider slider, CancellationToken cancellationToken)
+		{
+			return default(UniTask<float>);
+		}
+
+		public static IUniTaskAsyncEnumerable<float> OnValueChangedAsAsyncEnumerable(this Slider slider)
+		{
+			return null;
+		}
+
+		public static IUniTaskAsyncEnumerable<float> OnValueChangedAsAsyncEnumerable(this Slider slider, CancellationToken cancellationToken)
+		{
+			return null;
+		}
+
+		public static IAsyncEndEditEventHandler<string> GetAsyncEndEditEventHandler(this InputField inputField)
+		{
+			return null;
+		}
+
+		public static IAsyncEndEditEventHandler<string> GetAsyncEndEditEventHandler(this InputField inputField, CancellationToken cancellationToken)
+		{
+			return null;
+		}
+
+		public static UniTask<string> OnEndEditAsync(this InputField inputField)
+		{
+			return default(UniTask<string>);
+		}
+
+		public static UniTask<string> OnEndEditAsync(this InputField inputField, CancellationToken cancellationToken)
+		{
+			return default(UniTask<string>);
+		}
+
+		public static IUniTaskAsyncEnumerable<string> OnEndEditAsAsyncEnumerable(this InputField inputField)
+		{
+			return null;
+		}
+
+		public static IUniTaskAsyncEnumerable<string> OnEndEditAsAsyncEnumerable(this InputField inputField, CancellationToken cancellationToken)
+		{
+			return null;
+		}
+
+		public static IAsyncValueChangedEventHandler<string> GetAsyncValueChangedEventHandler(this InputField inputField)
+		{
+			return null;
+		}
+
+		public static IAsyncValueChangedEventHandler<string> GetAsyncValueChangedEventHandler(this InputField inputField, CancellationToken cancellationToken)
+		{
+			return null;
+		}
+
+		public static UniTask<string> OnValueChangedAsync(this InputField inputField)
+		{
+			return default(UniTask<string>);
+		}
+
+		public static UniTask<string> OnValueChangedAsync(this InputField inputField, CancellationToken cancellationToken)
+		{
+			return default(UniTask<string>);
+		}
+
+		public static IUniTaskAsyncEnumerable<string> OnValueChangedAsAsyncEnumerable(this InputField inputField)
+		{
+			return null;
+		}
+
+		public static IUniTaskAsyncEnumerable<string> OnValueChangedAsAsyncEnumerable(this InputField inputField, CancellationToken cancellationToken)
+		{
+			return null;
+		}
+
+		public static IAsyncValueChangedEventHandler<int> GetAsyncValueChangedEventHandler(this Dropdown dropdown)
+		{
+			return null;
+		}
+
+		public static IAsyncValueChangedEventHandler<int> GetAsyncValueChangedEventHandler(this Dropdown dropdown, CancellationToken cancellationToken)
+		{
+			return null;
+		}
+
+		public static UniTask<int> OnValueChangedAsync(this Dropdown dropdown)
+		{
+			return default(UniTask<int>);
+		}
+
+		public static UniTask<int> OnValueChangedAsync(this Dropdown dropdown, CancellationToken cancellationToken)
+		{
+			return default(UniTask<int>);
+		}
+
+		public static IUniTaskAsyncEnumerable<int> OnValueChangedAsAsyncEnumerable(this Dropdown dropdown)
+		{
+			return null;
+		}
+
+		public static IUniTaskAsyncEnumerable<int> OnValueChangedAsAsyncEnumerable(this Dropdown dropdown, CancellationToken cancellationToken)
+		{
+			return null;
+		}
+	}
+}

@@ -1,0 +1,54 @@
+{
+    "name": "playerInputActions",
+    "maps": [
+        {
+            "name": "character",
+            "id": "a33c3800-c995-411b-a7e5-ae3be52f7b72",
+            "actions": [
+                {
+                    "name": "interact",
+                    "type": "Button",
+                    "id": "08f8a08e-15b2-4c9d-865e-84f3a6d66191",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "toggleLock",
+                    "type": "Button",
+                    "id": "ba73f02e-69e3-48af-a960-a01b27653b11",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "66f94348-4b89-4025-938c-0511bc7583c4",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bbddb09f-bd86-45aa-a8f0-773f820bd09b",
+                    "path": "<Keyboard>/l",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "toggleLock",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

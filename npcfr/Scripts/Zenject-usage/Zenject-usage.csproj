@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{79007F63-F730-4653-BBF4-1671A35E034F}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Exe</OutputType>
+    <LangVersion>9.0</LangVersion>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <AssemblyName>Zenject-usage</AssemblyName>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Compile Include="JetBrains\Annotations\AspChildControlTypeAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\AspDataFieldAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\AspDataFieldsAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\AspMethodPropertyAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\AspMvcActionAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\AspMvcActionSelectorAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\AspMvcAreaAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\AspMvcAreaMasterLocationFormatAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\AspMvcAreaPartialViewLocationFormatAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\AspMvcAreaViewLocationFormatAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\AspMvcControllerAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\AspMvcDisplayTemplateAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\AspMvcEditorTemplateAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\AspMvcMasterAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\AspMvcMasterLocationFormatAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\AspMvcModelTypeAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\AspMvcPartialViewAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\AspMvcPartialViewLocationFormatAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\AspMvcSuppressViewErrorAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\AspMvcTemplateAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\AspMvcViewAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\AspMvcViewComponentAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\AspMvcViewComponentViewAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\AspMvcViewLocationFormatAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\AspRequiredAttributeAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\AspTypePropertyAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\AssertionConditionAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\AssertionConditionType.cs" />
+    <Compile Include="JetBrains\Annotations\AssertionMethodAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\BaseTypeRequiredAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\CanBeNullAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\CannotApplyEqualityOperatorAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\CollectionAccessAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\CollectionAccessType.cs" />
+    <Compile Include="JetBrains\Annotations\ContractAnnotationAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\HtmlAttributeValueAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\HtmlElementAttributesAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\ImplicitUseKindFlags.cs" />
+    <Compile Include="JetBrains\Annotations\ImplicitUseTargetFlags.cs" />
+    <Compile Include="JetBrains\Annotations\InstantHandleAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\InvokerParameterNameAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\ItemCanBeNullAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\ItemNotNullAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\LinqTunnelAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\LocalizationRequiredAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\MacroAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\MeansImplicitUseAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\MustUseReturnValueAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\NoEnumerationAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\NoReorderAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\NotifyPropertyChangedInvocatorAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\NotNullAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\PathReferenceAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\ProvidesContextAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\PublicAPIAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\PureAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\RazorDirectiveAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\RazorHelperCommonAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\RazorImportNamespaceAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\RazorInjectionAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\RazorLayoutAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\RazorPageBaseTypeAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\RazorSectionAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\RazorWriteLiteralMethodAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\RazorWriteMethodAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\RazorWriteMethodParameterAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\RegexPatternAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\SourceTemplateAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\StringFormatMethodAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\TerminatesProgramAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\UsedImplicitlyAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\ValueProviderAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\XamlItemBindingOfItemsControlAttribute.cs" />
+    <Compile Include="JetBrains\Annotations\XamlItemsControlAttribute.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Zenject\IFixedTickable.cs" />
+    <Compile Include="Zenject\IGuiRenderable.cs" />
+    <Compile Include="Zenject\IInitializable.cs" />
+    <Compile Include="Zenject\ILateDisposable.cs" />
+    <Compile Include="Zenject\ILateTickable.cs" />
+    <Compile Include="Zenject\InjectableInfo.cs" />
+    <Compile Include="Zenject\InjectAttribute.cs" />
+    <Compile Include="Zenject\InjectAttributeBase.cs" />
+    <Compile Include="Zenject\InjectLocalAttribute.cs" />
+    <Compile Include="Zenject\InjectOptionalAttribute.cs" />
+    <Compile Include="Zenject\InjectSources.cs" />
+    <Compile Include="Zenject\InjectTypeInfo.cs" />
+    <Compile Include="Zenject\Internal\PreserveAttribute.cs" />
+    <Compile Include="Zenject\IPoolable.cs" />
+    <Compile Include="Zenject\ITickable.cs" />
+    <Compile Include="Zenject\NoReflectionBakingAttribute.cs" />
+    <Compile Include="Zenject\ZenFactoryMethod.cs" />
+    <Compile Include="Zenject\ZenInjectMethod.cs" />
+    <Compile Include="Zenject\ZenjectAllowDuringValidationAttribute.cs" />
+    <Compile Include="Zenject\ZenMemberSetterMethod.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

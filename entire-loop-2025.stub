@@ -1,0 +1,265 @@
+─────────────────────────────────────────────────────────────────
+Folder : loop-2025/
+Files  : 259
+Total  : 20.23 MB
+─────────────────────────────────────────────────────────────────
+
+loop-2025/.git/config                                                                       304 B
+loop-2025/.git/description                                                                  73 B
+loop-2025/.git/HEAD                                                                         21 B
+loop-2025/.git/hooks/applypatch-msg.sample                                                  478 B
+loop-2025/.git/hooks/commit-msg.sample                                                      896 B
+loop-2025/.git/hooks/fsmonitor-watchman.sample                                              4.6 KB
+loop-2025/.git/hooks/post-update.sample                                                     189 B
+loop-2025/.git/hooks/pre-applypatch.sample                                                  424 B
+loop-2025/.git/hooks/pre-commit.sample                                                      1.6 KB
+loop-2025/.git/hooks/pre-merge-commit.sample                                                416 B
+loop-2025/.git/hooks/pre-push.sample                                                        1.3 KB
+loop-2025/.git/hooks/pre-rebase.sample                                                      4.8 KB
+loop-2025/.git/hooks/pre-receive.sample                                                     544 B
+loop-2025/.git/hooks/prepare-commit-msg.sample                                              1.5 KB
+loop-2025/.git/hooks/push-to-checkout.sample                                                2.7 KB
+loop-2025/.git/hooks/sendemail-validate.sample                                              2.3 KB
+loop-2025/.git/hooks/update.sample                                                          3.6 KB
+loop-2025/.git/index                                                                        58.3 KB
+loop-2025/.git/info/exclude                                                                 240 B
+loop-2025/.git/logs/HEAD                                                                    191 B
+loop-2025/.git/logs/refs/heads/main                                                         191 B
+loop-2025/.git/logs/refs/remotes/origin/HEAD                                                191 B
+loop-2025/.git/objects/pack/pack-cb0085b66b1744b7e70e737f8eb509321bd8dacf.idx               28.5 KB
+loop-2025/.git/objects/pack/pack-cb0085b66b1744b7e70e737f8eb509321bd8dacf.pack              3.56 MB
+loop-2025/.git/objects/pack/pack-cb0085b66b1744b7e70e737f8eb509321bd8dacf.rev               4.0 KB
+loop-2025/.git/packed-refs                                                                  112 B
+loop-2025/.git/refs/heads/main                                                              41 B
+loop-2025/.git/refs/remotes/origin/HEAD                                                     30 B
+loop-2025/.gitignore                                                                        70 B
+loop-2025/Anims/Button correct.controller                                                   65.9 KB
+loop-2025/Anims/README minimize Button .controller                                          38.5 KB
+loop-2025/Ink/CHANGELOG.md                                                                  4.3 KB
+loop-2025/Ink/Demos/Basic Demo/Basic Demo.unity                                             20.4 KB
+loop-2025/Ink/Demos/Basic Demo/Ink/story.ink                                                898 B
+loop-2025/Ink/Demos/Basic Demo/Ink/story.json                                               3.6 KB
+loop-2025/Ink/Demos/Basic Demo/Prefabs/Button.prefab                                        7.6 KB
+loop-2025/Ink/Demos/Basic Demo/Prefabs/Text.prefab                                          3.2 KB
+loop-2025/Ink/Demos/Basic Demo/Scripts/BasicInkExample.cs                                   3.4 KB
+loop-2025/Ink/Demos/Basic Demo/Scripts/Editor/BasicInkExampleEditor.cs                      934 B
+loop-2025/Ink/Demos/Basic Demo/Scripts/QuitGameOnKeypress.cs                                194 B
+loop-2025/Ink/Documentation/API Documentation.pdf                                           82.7 KB
+loop-2025/Ink/Documentation/Ink for Unity Package Documentation.pdf                         41.0 KB
+loop-2025/Ink/Editor/Core/Compiler/Auto Compiler/InkPostProcessor.cs                        9.3 KB
+loop-2025/Ink/Editor/Core/Compiler/InkCompiler.cs                                           34.6 KB
+loop-2025/Ink/Editor/Core/Compiler/UnityInkFileHandler.cs                                   733 B
+loop-2025/Ink/Editor/Core/Ink Library/InkCompilerLog.cs                                     2.3 KB
+loop-2025/Ink/Editor/Core/Ink Library/InkFile.cs                                            11.3 KB
+loop-2025/Ink/Editor/Core/Ink Library/InkLibrary.cs                                         23.7 KB
+loop-2025/Ink/Editor/Core/Ink Settings/InkSettings.cs                                       5.6 KB
+loop-2025/Ink/Editor/Core/Ink Settings/InkSettingsEditor.cs                                 9.6 KB
+loop-2025/Ink/Editor/Core/InkEditorUtils.cs                                                 15.2 KB
+loop-2025/Ink/Editor/InkEditor.asmdef                                                       359 B
+loop-2025/Ink/Editor/Tools/Build Validation/InkPreBuildValidationCheck.cs                   2.0 KB
+loop-2025/Ink/Editor/Tools/File Icons/InkBrowserIcons.cs                                    5.6 KB
+loop-2025/Ink/Editor/Tools/File Icons/Resources/InkChildIcon-Large.psd                      29.1 KB
+loop-2025/Ink/Editor/Tools/File Icons/Resources/InkChildIcon.psd                            23.5 KB
+loop-2025/Ink/Editor/Tools/File Icons/Resources/InkCompileManualIcon.psd                    93.4 KB
+loop-2025/Ink/Editor/Tools/File Icons/Resources/InkDefaultTemplate.txt                      53 B
+loop-2025/Ink/Editor/Tools/File Icons/Resources/InkErrorIcon.psd                            79.2 KB
+loop-2025/Ink/Editor/Tools/File Icons/Resources/InkFileIcon-Large.psd                       863.9 KB
+loop-2025/Ink/Editor/Tools/File Icons/Resources/InkFileIcon-retina.psd                      28.7 KB
+loop-2025/Ink/Editor/Tools/File Icons/Resources/InkFileIcon.psd                             81.2 KB
+loop-2025/Ink/Editor/Tools/File Icons/Resources/InkTodoIcon.psd                             74.3 KB
+loop-2025/Ink/Editor/Tools/File Icons/Resources/InkUnknownFileIcon.psd                      24.1 KB
+loop-2025/Ink/Editor/Tools/File Icons/Resources/InkWarningIcon.psd                          65.0 KB
+loop-2025/Ink/Editor/Tools/Ink Inspector/DefaultAssetEditor.cs                              1.5 KB
+loop-2025/Ink/Editor/Tools/Ink Inspector/DefaultAssetInspector.cs                           561 B
+loop-2025/Ink/Editor/Tools/Ink Inspector/InkInspector.cs                                    19.0 KB
+loop-2025/Ink/Editor/Tools/Player Window/InkHistoryContentItem.cs                           4.1 KB
+loop-2025/Ink/Editor/Tools/Player Window/InkPlayerWindow.cs                                 120.5 KB
+loop-2025/Ink/Editor/Tools/Startup Window/InkUnityIntegrationStartupWindow.cs               4.2 KB
+loop-2025/Ink/Editor/Tools/Startup Window/Resources/InkLogoIcon.png                         6.1 KB
+loop-2025/Ink/Extras/Sublime3Syntax.zip                                                     11.5 KB
+loop-2025/Ink/InkLibs/Ink-Libraries.asmdef                                                  114 B
+loop-2025/Ink/InkLibs/InkCompiler/CharacterRange.cs                                         1.8 KB
+loop-2025/Ink/InkLibs/InkCompiler/CharacterSet.cs                                           957 B
+loop-2025/Ink/InkLibs/InkCompiler/CommandLineInput.cs                                       288 B
+loop-2025/Ink/InkLibs/InkCompiler/Compiler.cs                                               7.3 KB
+loop-2025/Ink/InkLibs/InkCompiler/FileHandler.cs                                            676 B
+loop-2025/Ink/InkLibs/InkCompiler/InkParser/CommentEliminator.cs                            2.9 KB
+loop-2025/Ink/InkLibs/InkCompiler/InkParser/InkParser.cs                                    6.5 KB
+loop-2025/Ink/InkLibs/InkCompiler/InkParser/InkParser_AuthorWarning.cs                      573 B
+loop-2025/Ink/InkLibs/InkCompiler/InkParser/InkParser_CharacterRanges.cs                    2.8 KB
+loop-2025/Ink/InkLibs/InkCompiler/InkParser/InkParser_Choices.cs                            7.5 KB
+loop-2025/Ink/InkLibs/InkCompiler/InkParser/InkParser_CommandLineInput.cs                   3.6 KB
+loop-2025/Ink/InkLibs/InkCompiler/InkParser/InkParser_Conditional.cs                        11.1 KB
+loop-2025/Ink/InkLibs/InkCompiler/InkParser/InkParser_Content.cs                            7.6 KB
+loop-2025/Ink/InkLibs/InkCompiler/InkParser/InkParser_Divert.cs                             6.7 KB
+loop-2025/Ink/InkLibs/InkCompiler/InkParser/InkParser_Expressions.cs                        16.3 KB
+loop-2025/Ink/InkLibs/InkCompiler/InkParser/InkParser_Include.cs                            2.5 KB
+loop-2025/Ink/InkLibs/InkCompiler/InkParser/InkParser_Knot.cs                               7.7 KB
+loop-2025/Ink/InkLibs/InkCompiler/InkParser/InkParser_Logic.cs                              15.3 KB
+loop-2025/Ink/InkLibs/InkCompiler/InkParser/InkParser_Sequences.cs                          7.4 KB
+loop-2025/Ink/InkLibs/InkCompiler/InkParser/InkParser_Statements.cs                         5.6 KB
+loop-2025/Ink/InkLibs/InkCompiler/InkParser/InkParser_Tags.cs                               1.9 KB
+loop-2025/Ink/InkLibs/InkCompiler/InkParser/InkParser_Whitespace.cs                         2.6 KB
+loop-2025/Ink/InkLibs/InkCompiler/InkStringConversionExtensions.cs                          439 B
+loop-2025/Ink/InkLibs/InkCompiler/ParsedHierarchy/AuthorWarning.cs                          399 B
+loop-2025/Ink/InkLibs/InkCompiler/ParsedHierarchy/Choice.cs                                 11.1 KB
+loop-2025/Ink/InkLibs/InkCompiler/ParsedHierarchy/Conditional.cs                            2.4 KB
+loop-2025/Ink/InkLibs/InkCompiler/ParsedHierarchy/ConditionalSingleBranch.cs                5.7 KB
+loop-2025/Ink/InkLibs/InkCompiler/ParsedHierarchy/ConstantDeclaration.cs                    1.4 KB
+loop-2025/Ink/InkLibs/InkCompiler/ParsedHierarchy/ContentList.cs                            2.2 KB
+loop-2025/Ink/InkLibs/InkCompiler/ParsedHierarchy/Divert.cs                                 16.7 KB
+loop-2025/Ink/InkLibs/InkCompiler/ParsedHierarchy/DivertTarget.cs                           7.1 KB
+loop-2025/Ink/InkLibs/InkCompiler/ParsedHierarchy/Expression.cs                             10.1 KB
+loop-2025/Ink/InkLibs/InkCompiler/ParsedHierarchy/ExternalDeclaration.cs                    807 B
+loop-2025/Ink/InkLibs/InkCompiler/ParsedHierarchy/FlowBase.cs                               17.3 KB
+loop-2025/Ink/InkLibs/InkCompiler/ParsedHierarchy/FlowLevel.cs                              191 B
+loop-2025/Ink/InkLibs/InkCompiler/ParsedHierarchy/FunctionCall.cs                           10.3 KB
+loop-2025/Ink/InkLibs/InkCompiler/ParsedHierarchy/Gather.cs                                 1.5 KB
+loop-2025/Ink/InkLibs/InkCompiler/ParsedHierarchy/Identifier.cs                             339 B
+loop-2025/Ink/InkLibs/InkCompiler/ParsedHierarchy/INamedContent.cs                          115 B
+loop-2025/Ink/InkLibs/InkCompiler/ParsedHierarchy/IncludedFile.cs                           457 B
+loop-2025/Ink/InkLibs/InkCompiler/ParsedHierarchy/IWeavePoint.cs                            328 B
+loop-2025/Ink/InkLibs/InkCompiler/ParsedHierarchy/Knot.cs                                   1.2 KB
+loop-2025/Ink/InkLibs/InkCompiler/ParsedHierarchy/List.cs                                   2.0 KB
+loop-2025/Ink/InkLibs/InkCompiler/ParsedHierarchy/ListDefinition.cs                         4.3 KB
+loop-2025/Ink/InkLibs/InkCompiler/ParsedHierarchy/Number.cs                                 1.5 KB
+loop-2025/Ink/InkLibs/InkCompiler/ParsedHierarchy/Object.cs                                 10.8 KB
+loop-2025/Ink/InkLibs/InkCompiler/ParsedHierarchy/Path.cs                                   6.9 KB
+loop-2025/Ink/InkLibs/InkCompiler/ParsedHierarchy/Return.cs                                 1.3 KB
+loop-2025/Ink/InkLibs/InkCompiler/ParsedHierarchy/Sequence.cs                               8.4 KB
+loop-2025/Ink/InkLibs/InkCompiler/ParsedHierarchy/Stitch.cs                                 379 B
+loop-2025/Ink/InkLibs/InkCompiler/ParsedHierarchy/Story.cs                                  21.0 KB
+loop-2025/Ink/InkLibs/InkCompiler/ParsedHierarchy/StringExpression.cs                       2.0 KB
+loop-2025/Ink/InkLibs/InkCompiler/ParsedHierarchy/Tag.cs                                    590 B
+loop-2025/Ink/InkLibs/InkCompiler/ParsedHierarchy/Text.cs                                   388 B
+loop-2025/Ink/InkLibs/InkCompiler/ParsedHierarchy/TunnelOnwards.cs                          3.7 KB
+loop-2025/Ink/InkLibs/InkCompiler/ParsedHierarchy/VariableAssignment.cs                     4.9 KB
+loop-2025/Ink/InkLibs/InkCompiler/ParsedHierarchy/VariableReference.cs                      6.3 KB
+loop-2025/Ink/InkLibs/InkCompiler/ParsedHierarchy/Weave.cs                                  28.7 KB
+loop-2025/Ink/InkLibs/InkCompiler/ParsedHierarchy/Wrap.cs                                   677 B
+loop-2025/Ink/InkLibs/InkCompiler/Plugins/Plugin.cs                                         825 B
+loop-2025/Ink/InkLibs/InkCompiler/Plugins/PluginManager.cs                                  2.0 KB
+loop-2025/Ink/InkLibs/InkCompiler/Stats.cs                                                  2.3 KB
+loop-2025/Ink/InkLibs/InkCompiler/StringParser/StringParser.cs                              18.9 KB
+loop-2025/Ink/InkLibs/InkCompiler/StringParser/StringParserState.cs                         5.2 KB
+loop-2025/Ink/InkLibs/InkRuntime/CallStack.cs                                               15.0 KB
+loop-2025/Ink/InkLibs/InkRuntime/Choice.cs                                                  1.6 KB
+loop-2025/Ink/InkLibs/InkRuntime/ChoicePoint.cs                                             2.8 KB
+loop-2025/Ink/InkLibs/InkRuntime/Container.cs                                               11.2 KB
+loop-2025/Ink/InkLibs/InkRuntime/ControlCommand.cs                                          5.2 KB
+loop-2025/Ink/InkLibs/InkRuntime/DebugMetadata.cs                                           2.5 KB
+loop-2025/Ink/InkLibs/InkRuntime/Divert.cs                                                  4.6 KB
+loop-2025/Ink/InkLibs/InkRuntime/Error.cs                                                   816 B
+loop-2025/Ink/InkLibs/InkRuntime/Flow.cs                                                    3.5 KB
+loop-2025/Ink/InkLibs/InkRuntime/Glue.cs                                                    211 B
+loop-2025/Ink/InkLibs/InkRuntime/INamedContent.cs                                           131 B
+loop-2025/Ink/InkLibs/InkRuntime/InkList.cs                                                 22.9 KB
+loop-2025/Ink/InkLibs/InkRuntime/JsonSerialisation.cs                                       27.4 KB
+loop-2025/Ink/InkLibs/InkRuntime/ListDefinition.cs                                          2.3 KB
+loop-2025/Ink/InkLibs/InkRuntime/ListDefinitionsOrigin.cs                                   1.7 KB
+loop-2025/Ink/InkLibs/InkRuntime/NativeFunctionCall.cs                                      20.2 KB
+loop-2025/Ink/InkLibs/InkRuntime/Object.cs                                                  8.0 KB
+loop-2025/Ink/InkLibs/InkRuntime/Path.cs                                                    7.0 KB
+loop-2025/Ink/InkLibs/InkRuntime/Pointer.cs                                                 2.1 KB
+loop-2025/Ink/InkLibs/InkRuntime/Profiler.cs                                                11.0 KB
+loop-2025/Ink/InkLibs/InkRuntime/PushPop.cs                                                 199 B
+loop-2025/Ink/InkLibs/InkRuntime/SearchResult.cs                                            840 B
+loop-2025/Ink/InkLibs/InkRuntime/SimpleJson.cs                                              19.9 KB
+loop-2025/Ink/InkLibs/InkRuntime/StatePatch.cs                                              2.4 KB
+loop-2025/Ink/InkLibs/InkRuntime/Story.cs                                                   126.8 KB
+loop-2025/Ink/InkLibs/InkRuntime/StoryException.cs                                          813 B
+loop-2025/Ink/InkLibs/InkRuntime/StoryState.cs                                              49.4 KB
+loop-2025/Ink/InkLibs/InkRuntime/StringJoinExtension.cs                                     583 B
+loop-2025/Ink/InkLibs/InkRuntime/Tag.cs                                                     845 B
+loop-2025/Ink/InkLibs/InkRuntime/Value.cs                                                   12.3 KB
+loop-2025/Ink/InkLibs/InkRuntime/VariableAssignment.cs                                      842 B
+loop-2025/Ink/InkLibs/InkRuntime/VariableReference.cs                                       1.4 KB
+loop-2025/Ink/InkLibs/InkRuntime/VariablesState.cs                                          15.9 KB
+loop-2025/Ink/InkLibs/InkRuntime/Void.cs                                                    134 B
+loop-2025/Ink/LICENCE.md                                                                    1.3 KB
+loop-2025/Ink/README.md                                                                     8.4 KB
+loop-2025/LOG/GameData.txt                                                                  163 B
+loop-2025/LOG/LOG.txt                                                                       385.5 KB
+loop-2025/Scenes/main_scene.unity                                                           366.2 KB
+loop-2025/Scenes/PerScene_1.cs                                                              18.6 KB
+loop-2025/Scenes/PerScene_2.cs                                                              18.6 KB
+loop-2025/Scenes/PerScene_3.cs                                                              362 B
+loop-2025/Scenes/sampleScene.unity                                                          5.6 KB
+loop-2025/Scenes/scene_ (0).unity                                                           686.5 KB
+loop-2025/Scenes/scene_ (1).unity                                                           696.3 KB
+loop-2025/Scenes/scene_ (2) with SEEK window system.unity                                   697.2 KB
+loop-2025/Scenes/scene_ (2).unity                                                           697.2 KB
+loop-2025/Scenes/scene_ (3).unity                                                           697.2 KB
+loop-2025/Scenes/scene_ (4).unity                                                           728.7 KB
+loop-2025/Scenes/scene_ (5) credit.unity                                                    528.7 KB
+loop-2025/Scenes/scene_ (with no rebuild gui error).unity                                   686.4 KB
+loop-2025/Scenes/scene_ drag.unity                                                          603.6 KB
+loop-2025/Scripts/Check/DEBUG_Check.cs                                                      1.2 KB
+loop-2025/Scripts/Check/DEBUG_DragableItem.cs                                               10.2 KB
+loop-2025/Scripts/Check/SEEK/DraggableWindow.cs                                             8.5 KB
+loop-2025/Scripts/Check/SEEK/ResizeHandle.cs                                                8.6 KB
+loop-2025/Scripts/Check/SEEK/SetForegroundLayer.cs                                          7.9 KB
+loop-2025/Scripts/Check/SEEK/SimpleCharacterReplacer.cs                                     5.8 KB
+loop-2025/Scripts/Check/SEEK/TMP_InputFieldNoWrap.cs                                        1.5 KB
+loop-2025/Scripts/GameControllerBase.cs                                                     11.3 KB
+loop-2025/Scripts/Managers/SceneManager.cs                                                  1.3 KB
+loop-2025/Scripts/ProgramExec/CheckInterpreter/TestDocstrings.cs                            1.9 KB
+loop-2025/Scripts/ProgramExec/ConsoleManager.cs                                             6.1 KB
+loop-2025/Scripts/ProgramExec/CoroutineRunner.cs                                            2.5 KB
+loop-2025/Scripts/ProgramExec/GameBuiltinMethods.cs                                         8.3 KB
+loop-2025/Scripts/ProgramExec/GlobalScriptManager.cs                                        4.2 KB
+loop-2025/Scripts/ProgramExec/PythonAST.cs                                                  6.7 KB
+loop-2025/Scripts/ProgramExec/PythonInterpreter.cs                                          54.2 KB
+loop-2025/Scripts/ProgramExec/PythonLexer.cs                                                14.0 KB
+loop-2025/Scripts/ProgramExec/PythonParser.cs                                               20.4 KB
+loop-2025/Scripts/ProgramExec/PythonToken.cs                                                1.7 KB
+loop-2025/Scripts/ProgramExec/ScriptRunner.cs                                               20.4 KB
+loop-2025/Scripts/ProgramExec/SEEK New/BuiltinFunctionValue.cs                              1.3 KB
+loop-2025/Scripts/ProgramExec/SEEK New/ClassValue.cs                                        2.4 KB
+loop-2025/Scripts/ProgramExec/SEEK New/DictValue.cs                                         2.9 KB
+loop-2025/Scripts/ProgramExec/SEEK New/implementation_summary.md                            3.3 KB
+loop-2025/Scripts/ProgramExec/SEEK New/V2Value.cs                                           5.4 KB
+loop-2025/Scripts/TextEditor/InputFieldLineNumbers.cs                                       9.9 KB
+loop-2025/Scripts/TextEditor/old-approach/DragableItem.cs                                   10.4 KB
+loop-2025/Scripts/TextEditor/PythonCodeEditorSyntaxHighlight.cs                             27.9 KB
+loop-2025/Scripts/UTIL/TextDebugUtility.cs                                                  6.2 KB
+loop-2025/TM/FONTS 1/CONSOLA SDF.asset                                                      567.6 KB
+loop-2025/TM/FONTS 1/CONSOLA.TTF                                                            448.4 KB
+loop-2025/TM/FONTS 1/CONSOLAI SDF.asset                                                     567.6 KB
+loop-2025/TM/FONTS 1/CONSOLAI.TTF                                                           456.6 KB
+loop-2025/TM/FONTS 1/CONSOLAZ SDF.asset                                                     567.5 KB
+loop-2025/TM/FONTS 1/CONSOLAZ.TTF                                                           398.4 KB
+loop-2025/TM/FONTS 1/pixelplay SDF.asset                                                    563.0 KB
+loop-2025/TM/FONTS 1/pixelplay.ttf                                                          168.1 KB
+loop-2025/TM/TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf                    678.1 KB
+loop-2025/TM/TextMesh Pro/Fonts/LiberationSans - OFL.txt                                    4.4 KB
+loop-2025/TM/TextMesh Pro/Fonts/LiberationSans.ttf                                          342.0 KB
+loop-2025/TM/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat  3.0 KB
+loop-2025/TM/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset   9.4 KB
+loop-2025/TM/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat      2.9 KB
+loop-2025/TM/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset              2.16 MB
+loop-2025/TM/TextMesh Pro/Resources/LineBreaking Following Characters.txt                   269 B
+loop-2025/TM/TextMesh Pro/Resources/LineBreaking Leading Characters.txt                     95 B
+loop-2025/TM/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset                            13.8 KB
+loop-2025/TM/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset                  4.9 KB
+loop-2025/TM/TextMesh Pro/Resources/TMP Settings.asset                                      1.7 KB
+loop-2025/TM/TextMesh Pro/Shaders/TMPro.cginc                                               2.3 KB
+loop-2025/TM/TextMesh Pro/Shaders/TMPro_Mobile.cginc                                        5.3 KB
+loop-2025/TM/TextMesh Pro/Shaders/TMPro_Properties.cginc                                    2.9 KB
+loop-2025/TM/TextMesh Pro/Shaders/TMPro_Surface.cginc                                       3.6 KB
+loop-2025/TM/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader                            3.6 KB
+loop-2025/TM/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader                                  3.6 KB
+loop-2025/TM/TextMesh Pro/Shaders/TMP_Bitmap.shader                                         3.6 KB
+loop-2025/TM/TextMesh Pro/Shaders/TMP_SDF Overlay.shader                                    10.6 KB
+loop-2025/TM/TextMesh Pro/Shaders/TMP_SDF SSD.shader                                        12.0 KB
+loop-2025/TM/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader                             7.9 KB
+loop-2025/TM/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader                             7.7 KB
+loop-2025/TM/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader                                 3.1 KB
+loop-2025/TM/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader                                     7.7 KB
+loop-2025/TM/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader                             3.6 KB
+loop-2025/TM/TextMesh Pro/Shaders/TMP_SDF-Surface.shader                                    4.4 KB
+loop-2025/TM/TextMesh Pro/Shaders/TMP_SDF.shader                                            10.7 KB
+loop-2025/TM/TextMesh Pro/Shaders/TMP_Sprite.shader                                         2.7 KB
+loop-2025/TM/TextMesh Pro/Sprites/EmojiOne Attribution.txt                                  187 B
+loop-2025/TM/TextMesh Pro/Sprites/EmojiOne.json                                             4.0 KB
+loop-2025/TM/TextMesh Pro/Sprites/EmojiOne.png                                              109.7 KB
