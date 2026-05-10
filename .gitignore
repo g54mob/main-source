@@ -7,6 +7,7 @@
 !loop-2025/Assets/
 !drone/Assets/
 !npcfr/Assets/
+*.glb
 
 # Un-ignore noimnot/Assets/ but re-ignore audioClips inside it
 # !noimnot/Assets/
