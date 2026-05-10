@@ -1,0 +1,73 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="PixelCrushers">
+      <HintPath>..\..\Assemblies\PixelCrushers.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Localization">
+      <HintPath>..\..\Assemblies\Unity.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="EasySave3">
+      <HintPath>..\..\Assemblies\EasySave3.dll</HintPath>
+    </Reference>
+    <Reference Include="CTS.BBT">
+      <HintPath>..\..\Assemblies\CTS.BBT.dll</HintPath>
+    </Reference>
+    <Reference Include="spine-unity">
+      <HintPath>..\..\Assemblies\spine-unity.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\..\Assemblies\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="CTS.Core">
+      <HintPath>..\..\Assemblies\CTS.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="CTS.Utilities">
+      <HintPath>..\..\Assemblies\CTS.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="spine-csharp">
+      <HintPath>..\..\Assemblies\spine-csharp.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\Assemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\..\Assemblies\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\Assemblies\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="CTS.StockInventory">
+      <HintPath>..\..\Assemblies\CTS.StockInventory.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>..\..\Assemblies\DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="XCharts.Runtime">
+      <HintPath>..\..\Assemblies\XCharts.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="CTS.TechTree">
+      <HintPath>..\..\Assemblies\CTS.TechTree.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>..\..\Assemblies\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ResourceManager">
+      <HintPath>..\..\Assemblies\Unity.ResourceManager.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

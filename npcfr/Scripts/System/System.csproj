@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{23E0D2FC-EACB-4B14-A555-E4A10C30644E}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Exe</OutputType>
+    <LangVersion>9.0</LangVersion>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <AssemblyName>System</AssemblyName>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Xml">
+      <HintPath>D:\ad\need\export-new-decompile\AssetRipper_export_20260510_123922\Assemblies\System.Xml.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Internal\Cryptography\OidLookup.cs" />
+    <Compile Include="Microsoft\Win32\NativeMethods.cs" />
+    <Compile Include="Microsoft\Win32\SafeHandles\SafeProcessHandle.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\CodeDom\Compiler\GeneratedCodeAttribute.cs" />
+    <Compile Include="System\Collections\Generic\DictionaryKeyCollectionDebugView.cs" />
+    <Compile Include="System\Collections\Generic\DictionaryValueCollectionDebugView.cs" />
+    <Compile Include="System\Collections\Generic\ICollectionDebugView.cs" />
+    <Compile Include="System\Collections\Generic\IDictionaryDebugView.cs" />
+    <Compile Include="System\Collections\Generic\ISet.cs" />
+    <Compile Include="System\Collections\Generic\LinkedList.cs" />
+    <Compile Include="System\Collections\Generic\LinkedListNode.cs" />
+    <Compile Include="System\Collections\Generic\SortedList.cs" />
+    <Compile Include="System\Collections\Generic\ValueListBuilder.cs" />
+    <Compile Include="System\Collections\HashtableExtensions.cs" />
+    <Compile Include="System\Collections\Specialized\CaseSensitiveStringDictionary.cs" />
+    <Compile Include="System\Collections\Specialized\OrderedDictionary.cs" />
+    <Compile Include="System\Collections\Specialized\StringDictionary.cs" />
+    <Compile Include="System\ComponentModel\ArrayConverter.cs" />
+    <Compile Include="System\ComponentModel\BaseNumberConverter.cs" />
+    <Compile Include="System\ComponentModel\BooleanConverter.cs" />
+    <Compile Include="System\ComponentModel\BrowsableAttribute.cs" />
+    <Compile Include="System\ComponentModel\CategoryAttribute.cs" />
+    <Compile Include="System\ComponentModel\CollectionConverter.cs" />
+    <Compile Include="System\ComponentModel\Component.cs" />
+    <Compile Include="System\ComponentModel\ComponentConverter.cs" />
+    <Compile Include="System\ComponentModel\DecimalConverter.cs" />
+    <Compile Include="System\ComponentModel\DefaultEventAttribute.cs" />
+    <Compile Include="System\ComponentModel\DefaultPropertyAttribute.cs" />
+    <Compile Include="System\ComponentModel\DefaultValueAttribute.cs" />
+    <Compile Include="System\ComponentModel\DescriptionAttribute.cs" />
+    <Compile Include="System\ComponentModel\DesignerCategoryAttribute.cs" />
+    <Compile Include="System\ComponentModel\DesignerSerializationVisibility.cs" />
+    <Compile Include="System\ComponentModel\DesignerSerializationVisibilityAttribute.cs" />
+    <Compile Include="System\ComponentModel\DesignTimeVisibleAttribute.cs" />
+    <Compile Include="System\ComponentModel\Design\IDesignerHost.cs" />
+    <Compile Include="System\ComponentModel\Design\Serialization\RootDesignerSerializerAttribute.cs" />
+    <Compile Include="System\ComponentModel\DisplayNameAttribute.cs" />
+    <Compile Include="System\ComponentModel\DoubleConverter.cs" />
+    <Compile Include="System\ComponentModel\EditorAttribute.cs" />
+    <Compile Include="System\ComponentModel\EditorBrowsableAttribute.cs" />
+    <Compile Include="System\ComponentModel\EditorBrowsableState.cs" />
+    <Compile Include="System\ComponentModel\EnumConverter.cs" />
+    <Compile Include="System\ComponentModel\EventHandlerList.cs" />
+    <Compile Include="System\ComponentModel\ExpandableObjectConverter.cs" />
+    <Compile Include="System\ComponentModel\IComponent.cs" />
+    <Compile Include="System\ComponentModel\IContainer.cs" />
+    <Compile Include="System\ComponentModel\Int16Converter.cs" />
+    <Compile Include="System\ComponentModel\Int32Converter.cs" />
+    <Compile Include="System\ComponentModel\Int64Converter.cs" />
+    <Compile Include="System\ComponentModel\InvalidEnumArgumentException.cs" />
+    <Compile Include="System\ComponentModel\ISite.cs" />
+    <Compile Include="System\ComponentModel\ISynchronizeInvoke.cs" />
+    <Compile Include="System\ComponentModel\NotifyParentPropertyAttribute.cs" />
+    <Compile Include="System\ComponentModel\ReferenceConverter.cs" />
+    <Compile Include="System\ComponentModel\SettingsBindableAttribute.cs" />
+    <Compile Include="System\ComponentModel\SingleConverter.cs" />
+    <Compile Include="System\ComponentModel\StringConverter.cs" />
+    <Compile Include="System\ComponentModel\TimeSpanConverter.cs" />
+    <Compile Include="System\ComponentModel\TypeConverter.cs" />
+    <Compile Include="System\ComponentModel\TypeConverterAttribute.cs" />
+    <Compile Include="System\ComponentModel\Win32Exception.cs" />
+    <Compile Include="System\Configuration\IConfigurationSectionHandler.cs" />
+    <Compile Include="System\Diagnostics\AsyncStreamReader.cs" />
+    <Compile Include="System\Diagnostics\CodeAnalysis\ExcludeFromCodeCoverageAttribute.cs" />
+    <Compile Include="System\Diagnostics\DiagnosticsConfigurationHandler.cs" />
+    <Compile Include="System\Diagnostics\MonitoringDescriptionAttribute.cs" />
+    <Compile Include="System\Diagnostics\Process.cs" />
+    <Compile Include="System\Diagnostics\ProcessInfo.cs" />
+    <Compile Include="System\Diagnostics\ProcessModuleCollection.cs" />
+    <Compile Include="System\Diagnostics\ProcessStartInfo.cs" />
+    <Compile Include="System\Diagnostics\ProcessThreadCollection.cs" />
+    <Compile Include="System\Diagnostics\ProcessWaitHandle.cs" />
+    <Compile Include="System\Diagnostics\ProcessWindowStyle.cs" />
+    <Compile Include="System\Diagnostics\Stopwatch.cs" />
+    <Compile Include="System\DomainNameHelper.cs" />
+    <Compile Include="System\IOAsyncCallback.cs" />
+    <Compile Include="System\IOAsyncResult.cs" />
+    <Compile Include="System\IOOperation.cs" />
+    <Compile Include="System\IOSelectorJob.cs" />
+    <Compile Include="System\IPv4AddressHelper.cs" />
+    <Compile Include="System\IPv6AddressHelper.cs" />
+    <Compile Include="System\IriHelper.cs" />
+    <Compile Include="System\Net\Configuration\BypassElement.cs" />
+    <Compile Include="System\Net\Configuration\BypassElementCollection.cs" />
+    <Compile Include="System\Net\Configuration\ConnectionManagementElement.cs" />
+    <Compile Include="System\Net\Configuration\ConnectionManagementElementCollection.cs" />
+    <Compile Include="System\Net\Configuration\ConnectionManagementSection.cs" />
+    <Compile Include="System\Net\Configuration\DefaultProxySection.cs" />
+    <Compile Include="System\Net\Configuration\HttpWebRequestElement.cs" />
+    <Compile Include="System\Net\Configuration\Ipv6Element.cs" />
+    <Compile Include="System\Net\Configuration\NetSectionGroup.cs" />
+    <Compile Include="System\Net\Configuration\PerformanceCountersElement.cs" />
+    <Compile Include="System\Net\Configuration\ProxyElement.cs" />
+    <Compile Include="System\Net\Configuration\ServicePointManagerElement.cs" />
+    <Compile Include="System\Net\Configuration\SettingsSection.cs" />
+    <Compile Include="System\Net\Configuration\SocketElement.cs" />
+    <Compile Include="System\Net\Configuration\WebProxyScriptElement.cs" />
+    <Compile Include="System\Net\Configuration\WebRequestModuleElement.cs" />
+    <Compile Include="System\Net\Configuration\WebRequestModuleElementCollection.cs" />
+    <Compile Include="System\Net\Configuration\WebRequestModulesSection.cs" />
+    <Compile Include="System\Net\IPAddress.cs" />
+    <Compile Include="System\Net\IPAddressParser.cs" />
+    <Compile Include="System\Net\Sockets\AddressFamily.cs" />
+    <Compile Include="System\NotImplemented.cs" />
+    <Compile Include="System\ParsingError.cs" />
+    <Compile Include="System\PasteArguments.cs" />
+    <Compile Include="System\Security\Cryptography\AsnDecodeStatus.cs" />
+    <Compile Include="System\Security\Cryptography\AsnEncodedData.cs" />
+    <Compile Include="System\Security\Cryptography\Oid.cs" />
+    <Compile Include="System\Security\Cryptography\OidCollection.cs" />
+    <Compile Include="System\Security\Cryptography\OidEnumerator.cs" />
+    <Compile Include="System\Security\Cryptography\OidGroup.cs" />
+    <Compile Include="System\Security\Cryptography\X509Certificates\PublicKey.cs" />
+    <Compile Include="System\Security\Cryptography\X509Certificates\X509BasicConstraintsExtension.cs" />
+    <Compile Include="System\Security\Cryptography\X509Certificates\X509EnhancedKeyUsageExtension.cs" />
+    <Compile Include="System\Security\Cryptography\X509Certificates\X509Extension.cs" />
+    <Compile Include="System\Security\Cryptography\X509Certificates\X509KeyUsageExtension.cs" />
+    <Compile Include="System\Security\Cryptography\X509Certificates\X509KeyUsageFlags.cs" />
+    <Compile Include="System\Security\Cryptography\X509Certificates\X509SubjectKeyIdentifierExtension.cs" />
+    <Compile Include="System\Security\Cryptography\X509Certificates\X509SubjectKeyIdentifierHashAlgorithm.cs" />
+    <Compile Include="System\Text\RegularExpressions\Capture.cs" />
+    <Compile Include="System\Text\RegularExpressions\CaptureCollection.cs" />
+    <Compile Include="System\Text\RegularExpressions\CollectionDebuggerProxy.cs" />
+    <Compile Include="System\Text\RegularExpressions\ExclusiveReference.cs" />
+    <Compile Include="System\Text\RegularExpressions\Group.cs" />
+    <Compile Include="System\Text\RegularExpressions\GroupCollection.cs" />
+    <Compile Include="System\Text\RegularExpressions\Match.cs" />
+    <Compile Include="System\Text\RegularExpressions\MatchSparse.cs" />
+    <Compile Include="System\Text\RegularExpressions\Regex.cs" />
+    <Compile Include="System\Text\RegularExpressions\RegexBoyerMoore.cs" />
+    <Compile Include="System\Text\RegularExpressions\RegexCharClass.cs" />
+    <Compile Include="System\Text\RegularExpressions\RegexCode.cs" />
+    <Compile Include="System\Text\RegularExpressions\RegexFC.cs" />
+    <Compile Include="System\Text\RegularExpressions\RegexFCD.cs" />
+    <Compile Include="System\Text\RegularExpressions\RegexInterpreter.cs" />
+    <Compile Include="System\Text\RegularExpressions\RegexMatchTimeoutException.cs" />
+    <Compile Include="System\Text\RegularExpressions\RegexNode.cs" />
+    <Compile Include="System\Text\RegularExpressions\RegexOptions.cs" />
+    <Compile Include="System\Text\RegularExpressions\RegexParser.cs" />
+    <Compile Include="System\Text\RegularExpressions\RegexPrefix.cs" />
+    <Compile Include="System\Text\RegularExpressions\RegexReplacement.cs" />
+    <Compile Include="System\Text\RegularExpressions\RegexRunner.cs" />
+    <Compile Include="System\Text\RegularExpressions\RegexRunnerFactory.cs" />
+    <Compile Include="System\Text\RegularExpressions\RegexTree.cs" />
+    <Compile Include="System\Text\RegularExpressions\RegexWriter.cs" />
+    <Compile Include="System\UncNameHelper.cs" />
+    <Compile Include="System\UnescapeMode.cs" />
+    <Compile Include="System\Uri.cs" />
+    <Compile Include="System\UriComponents.cs" />
+    <Compile Include="System\UriFormat.cs" />
+    <Compile Include="System\UriFormatException.cs" />
+    <Compile Include="System\UriHelper.cs" />
+    <Compile Include="System\UriIdnScope.cs" />
+    <Compile Include="System\UriKind.cs" />
+    <Compile Include="System\UriParser.cs" />
+    <Compile Include="System\UriSyntaxFlags.cs" />
+    <Compile Include="System\UriTypeConverter.cs" />
+    <Compile Include="Unity\ThrowStub.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

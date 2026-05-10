@@ -1,0 +1,310 @@
+using System;
+using System.Collections.Generic;
+using FishNet.Connection;
+using FishNet.Object;
+using FishNet.Serializing;
+using FishNet.Transporting;
+using ScheduleOne.Audio;
+using ScheduleOne.DevUtilities;
+using ScheduleOne.ItemFramework;
+using ScheduleOne.NPCs;
+using ScheduleOne.NPCs.CharacterClasses;
+using ScheduleOne.Persistence;
+using ScheduleOne.Persistence.Datas;
+using ScheduleOne.Persistence.Loaders;
+using ScheduleOne.PlayerScripts;
+using UnityEngine;
+
+namespace ScheduleOne.Map
+{
+	public class SewerManager : NetworkSingleton<SewerManager>, IBaseSaveable, ISaveable
+	{
+		[Serializable]
+		public class KeyPossessor
+		{
+			public NPC NPC;
+
+			[Tooltip("Description of the NPC for Oscar's key location dialogue.")]
+			public string NPCDescription;
+		}
+
+		public ItemDefinition SewerKeyItem;
+
+		public AudioSourceController SewerUnlockSound;
+
+		public NetworkedItemPickup RandomWorldSewerKeyPickup;
+
+		public Transform[] RandomSewerKeyLocations;
+
+		public SewerKing SewerKingNPC;
+
+		public SewerGoblin SewerGoblinNPC;
+
+		public KeyPossessor[] SewerKeyPossessors;
+
+		public SewerMushrooms SewerMushrooms;
+
+		private SewerLoader loader;
+
+		private bool NetworkInitialize___EarlyScheduleOne_002EMap_002ESewerManagerAssembly_002DCSharp_002Edll_Excuted;
+
+		private bool NetworkInitialize__LateScheduleOne_002EMap_002ESewerManagerAssembly_002DCSharp_002Edll_Excuted;
+
+		public bool IsSewerUnlocked { get; private set; }
+
+		public bool IsRandomWorldKeyCollected { get; private set; }
+
+		public int RandomSewerKeyLocationIndex { get; set; }
+
+		public bool HasSewerKingBeenDefeated { get; private set; }
+
+		public int RandomSewerPossessorIndex { get; set; }
+
+		public string SaveFolderName => null;
+
+		public string SaveFileName => null;
+
+		public Loader Loader => null;
+
+		public bool ShouldSaveUnderFolder => false;
+
+		public List<string> LocalExtraFiles { get; set; }
+
+		public List<string> LocalExtraFolders { get; set; }
+
+		public bool HasChanged { get; set; }
+
+		public int LoadOrder { get; }
+
+		public override void Awake()
+		{
+		}
+
+		protected override void Start()
+		{
+		}
+
+		public virtual void InitializeSaveable()
+		{
+		}
+
+		public override void OnSpawnServer(NetworkConnection connection)
+		{
+		}
+
+		[ServerRpc(RequireOwnership = false, RunLocally = true)]
+		public void SetSewerUnlocked_Server()
+		{
+		}
+
+		[TargetRpc]
+		[ObserversRpc(RunLocally = true)]
+		private void SetSewerUnlocked_Client(NetworkConnection conn)
+		{
+		}
+
+		public void SetRandomWorldKeyCollected()
+		{
+		}
+
+		[ServerRpc(RequireOwnership = false, RunLocally = true)]
+		private void SetRandomKeyCollected_Server()
+		{
+		}
+
+		[TargetRpc]
+		[ObserversRpc(RunLocally = true)]
+		private void SetRandomKeyCollected_Client(NetworkConnection conn)
+		{
+		}
+
+		[TargetRpc]
+		[ObserversRpc(RunLocally = true)]
+		private void SetSewerKeyLocation(NetworkConnection conn, int locationIndex)
+		{
+		}
+
+		private void SewerKingDefeated()
+		{
+		}
+
+		[ObserversRpc]
+		[TargetRpc]
+		private void DisableSewerKing(NetworkConnection conn)
+		{
+		}
+
+		public List<Player> GetPlayersInSewer()
+		{
+			return null;
+		}
+
+		public virtual string GetSaveString()
+		{
+			return null;
+		}
+
+		public void Load(SewerData sewerData)
+		{
+		}
+
+		[TargetRpc]
+		[ObserversRpc(RunLocally = true)]
+		private void SetRandomKeyPossessor(NetworkConnection conn, int possessorIndex)
+		{
+		}
+
+		private void AskedAboutSewerKey()
+		{
+		}
+
+		private void EnsureKeyPosessorHasKey()
+		{
+		}
+
+		public KeyPossessor GetSewerKeyPossessor()
+		{
+			return null;
+		}
+
+		public override void NetworkInitialize___Early()
+		{
+		}
+
+		public override void NetworkInitialize__Late()
+		{
+		}
+
+		public override void NetworkInitializeIfDisabled()
+		{
+		}
+
+		private void RpcWriter___Server_SetSewerUnlocked_Server_2166136261()
+		{
+		}
+
+		public void RpcLogic___SetSewerUnlocked_Server_2166136261()
+		{
+		}
+
+		private void RpcReader___Server_SetSewerUnlocked_Server_2166136261(PooledReader PooledReader0, Channel channel, NetworkConnection conn)
+		{
+		}
+
+		private void RpcWriter___Observers_SetSewerUnlocked_Client_328543758(NetworkConnection conn)
+		{
+		}
+
+		private void RpcLogic___SetSewerUnlocked_Client_328543758(NetworkConnection conn)
+		{
+		}
+
+		private void RpcReader___Observers_SetSewerUnlocked_Client_328543758(PooledReader PooledReader0, Channel channel)
+		{
+		}
+
+		private void RpcWriter___Target_SetSewerUnlocked_Client_328543758(NetworkConnection conn)
+		{
+		}
+
+		private void RpcReader___Target_SetSewerUnlocked_Client_328543758(PooledReader PooledReader0, Channel channel)
+		{
+		}
+
+		private void RpcWriter___Server_SetRandomKeyCollected_Server_2166136261()
+		{
+		}
+
+		private void RpcLogic___SetRandomKeyCollected_Server_2166136261()
+		{
+		}
+
+		private void RpcReader___Server_SetRandomKeyCollected_Server_2166136261(PooledReader PooledReader0, Channel channel, NetworkConnection conn)
+		{
+		}
+
+		private void RpcWriter___Observers_SetRandomKeyCollected_Client_328543758(NetworkConnection conn)
+		{
+		}
+
+		private void RpcLogic___SetRandomKeyCollected_Client_328543758(NetworkConnection conn)
+		{
+		}
+
+		private void RpcReader___Observers_SetRandomKeyCollected_Client_328543758(PooledReader PooledReader0, Channel channel)
+		{
+		}
+
+		private void RpcWriter___Target_SetRandomKeyCollected_Client_328543758(NetworkConnection conn)
+		{
+		}
+
+		private void RpcReader___Target_SetRandomKeyCollected_Client_328543758(PooledReader PooledReader0, Channel channel)
+		{
+		}
+
+		private void RpcWriter___Observers_SetSewerKeyLocation_2681120339(NetworkConnection conn, int locationIndex)
+		{
+		}
+
+		private void RpcLogic___SetSewerKeyLocation_2681120339(NetworkConnection conn, int locationIndex)
+		{
+		}
+
+		private void RpcReader___Observers_SetSewerKeyLocation_2681120339(PooledReader PooledReader0, Channel channel)
+		{
+		}
+
+		private void RpcWriter___Target_SetSewerKeyLocation_2681120339(NetworkConnection conn, int locationIndex)
+		{
+		}
+
+		private void RpcReader___Target_SetSewerKeyLocation_2681120339(PooledReader PooledReader0, Channel channel)
+		{
+		}
+
+		private void RpcWriter___Observers_DisableSewerKing_328543758(NetworkConnection conn)
+		{
+		}
+
+		private void RpcLogic___DisableSewerKing_328543758(NetworkConnection conn)
+		{
+		}
+
+		private void RpcReader___Observers_DisableSewerKing_328543758(PooledReader PooledReader0, Channel channel)
+		{
+		}
+
+		private void RpcWriter___Target_DisableSewerKing_328543758(NetworkConnection conn)
+		{
+		}
+
+		private void RpcReader___Target_DisableSewerKing_328543758(PooledReader PooledReader0, Channel channel)
+		{
+		}
+
+		private void RpcWriter___Observers_SetRandomKeyPossessor_2681120339(NetworkConnection conn, int possessorIndex)
+		{
+		}
+
+		private void RpcLogic___SetRandomKeyPossessor_2681120339(NetworkConnection conn, int possessorIndex)
+		{
+		}
+
+		private void RpcReader___Observers_SetRandomKeyPossessor_2681120339(PooledReader PooledReader0, Channel channel)
+		{
+		}
+
+		private void RpcWriter___Target_SetRandomKeyPossessor_2681120339(NetworkConnection conn, int possessorIndex)
+		{
+		}
+
+		private void RpcReader___Target_SetRandomKeyPossessor_2681120339(PooledReader PooledReader0, Channel channel)
+		{
+		}
+
+		protected virtual void Awake_UserLogic_ScheduleOne_002EMap_002ESewerManager_Assembly_002DCSharp_002Edll()
+		{
+		}
+	}
+}

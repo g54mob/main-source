@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Mono.Data.Sqlite</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net40</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="SQLiteCommand.bmp" />
+    <None Remove="SQLiteConnection.bmp" />
+    <None Remove="SQLiteDataAdapter.bmp" />
+    <EmbeddedResource Include="SQLiteCommand.bmp" LogicalName="SQLiteCommand.bmp" />
+    <EmbeddedResource Include="SQLiteConnection.bmp" LogicalName="SQLiteConnection.bmp" />
+    <EmbeddedResource Include="SQLiteDataAdapter.bmp" LogicalName="SQLiteDataAdapter.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Transactions" />
+  </ItemGroup>
+</Project>

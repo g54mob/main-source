@@ -1,0 +1,12 @@
+public enum PricingSortingType
+{
+	NAME = 0,
+	PREVIOUSCOST = 1,
+	DATE = 2,
+	CURRENTCOST = 3,
+	AVERAGECOST = 4,
+	MARKETPRICE = 5,
+	PRICE = 6,
+	DISCOUNTRATE = 7,
+	PROFIT = 8
+}

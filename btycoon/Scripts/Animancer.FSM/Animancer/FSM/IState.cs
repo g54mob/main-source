@@ -1,0 +1,13 @@
+namespace Animancer.FSM
+{
+	public interface IState
+	{
+		bool CanEnterState { get; }
+
+		bool CanExitState { get; }
+
+		void OnEnterState();
+
+		void OnExitState();
+	}
+}

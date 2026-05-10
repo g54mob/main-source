@@ -1,0 +1,19 @@
+{
+	"m_BakedCoefficients": [],
+	"m_BakedLightOcclusion": [],
+	"m_CorrespondingSourceObject": { "m_Collection": "sharedassets0.assets", "m_PathID": 0 },
+	"m_Data": {
+		"m_NonTetrahedralizedProbeSetIndexMap": [],
+		"m_Positions": [],
+		"m_ProbeSets": [],
+		"m_Tetrahedralization": {
+			"m_HullRays": [],
+			"m_Tetrahedra": []
+		}
+	},
+	"m_HasBeenEdited": false,
+	"m_HideFlags": 0,
+	"m_Name": "(Clone)",
+	"m_PrefabAsset": { "m_Collection": "sharedassets0.assets", "m_PathID": 0 },
+	"m_PrefabInstance": { "m_Collection": "sharedassets0.assets", "m_PathID": 0 }
+}
