@@ -1,0 +1,4 @@
+internal sealed class NkcKYvpmWiToUUnkSELpKtsYoLaS
+{
+	public static readonly FzkesOdlmEKeUoFPBrNHWqaVXvon SWtzVMnDvtaZxcceFdpkEADwHdQe = JSnuuYqTWjnVNJDwWLtBLGuASxDb.xOOUDJxPSVMpgqGRoGnCNwaoCHpgA(BWGNXeiqHfFsxVNGOvPjUuaUAOJc.DeviceNotConnected);
+}

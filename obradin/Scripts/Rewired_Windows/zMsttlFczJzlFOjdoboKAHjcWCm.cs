@@ -1,0 +1,26 @@
+using System;
+
+internal struct zMsttlFczJzlFOjdoboKAHjcWCm
+{
+	public IntPtr JAPGXbnGLEVcKvOepfYKLDmQrgU;
+
+	public rRyCKMhmmnbHTeljAkZpUqtVrehM MEFeyzzPBEYzHKdjkdiKSnQXTxD;
+
+	public int HTJvRIWhvDhjeatRHTaXJcfrOLaf;
+
+	public bqXPQARmlfdTBCiGIAznGrAmCux CQKcdjGephNiPpEbgDOdyDVIoRhF;
+
+	public dawFmMbpZMhaNErGafhOzKosTNDy SeNgeTkoFbkKMqrRfAHohbBwiVU;
+
+	public int wdgcVUgqrTFznrCdCabJGVdgwTnr;
+
+	internal zMsttlFczJzlFOjdoboKAHjcWCm(ref fIfDvwvvsOcXtZCxSBYBVEQFUcW rawInput)
+	{
+		JAPGXbnGLEVcKvOepfYKLDmQrgU = rawInput.wtYGxjhSdvLEZrXjirTZkeCIDfO.JAPGXbnGLEVcKvOepfYKLDmQrgU;
+		MEFeyzzPBEYzHKdjkdiKSnQXTxD = (rRyCKMhmmnbHTeljAkZpUqtVrehM)rawInput.qCmvlLxcVUaxPDpvXtvsPlXAJOVt.xASCPheTPZjjySaqzxbejdrWIOZ.ApFjtXPouHmFXdsIDvbCGRHWzdT;
+		HTJvRIWhvDhjeatRHTaXJcfrOLaf = rawInput.qCmvlLxcVUaxPDpvXtvsPlXAJOVt.xASCPheTPZjjySaqzxbejdrWIOZ.HTJvRIWhvDhjeatRHTaXJcfrOLaf;
+		CQKcdjGephNiPpEbgDOdyDVIoRhF = rawInput.qCmvlLxcVUaxPDpvXtvsPlXAJOVt.xASCPheTPZjjySaqzxbejdrWIOZ.pShanBKDpoPUyQsbLLJHCsXlpFm;
+		SeNgeTkoFbkKMqrRfAHohbBwiVU = rawInput.qCmvlLxcVUaxPDpvXtvsPlXAJOVt.xASCPheTPZjjySaqzxbejdrWIOZ.onUKuoKJONJbGYVJZFVLCAuKXMr;
+		wdgcVUgqrTFznrCdCabJGVdgwTnr = rawInput.qCmvlLxcVUaxPDpvXtvsPlXAJOVt.xASCPheTPZjjySaqzxbejdrWIOZ.wdgcVUgqrTFznrCdCabJGVdgwTnr;
+	}
+}

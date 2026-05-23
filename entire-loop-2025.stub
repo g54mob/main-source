@@ -1,37 +1,9 @@
 ─────────────────────────────────────────────────────────────────
 Folder : loop-2025/
-Files  : 259
-Total  : 20.23 MB
+Files  : 231
+Total  : 16.56 MB
 ─────────────────────────────────────────────────────────────────
 
-loop-2025/.git/config                                                                       304 B
-loop-2025/.git/description                                                                  73 B
-loop-2025/.git/HEAD                                                                         21 B
-loop-2025/.git/hooks/applypatch-msg.sample                                                  478 B
-loop-2025/.git/hooks/commit-msg.sample                                                      896 B
-loop-2025/.git/hooks/fsmonitor-watchman.sample                                              4.6 KB
-loop-2025/.git/hooks/post-update.sample                                                     189 B
-loop-2025/.git/hooks/pre-applypatch.sample                                                  424 B
-loop-2025/.git/hooks/pre-commit.sample                                                      1.6 KB
-loop-2025/.git/hooks/pre-merge-commit.sample                                                416 B
-loop-2025/.git/hooks/pre-push.sample                                                        1.3 KB
-loop-2025/.git/hooks/pre-rebase.sample                                                      4.8 KB
-loop-2025/.git/hooks/pre-receive.sample                                                     544 B
-loop-2025/.git/hooks/prepare-commit-msg.sample                                              1.5 KB
-loop-2025/.git/hooks/push-to-checkout.sample                                                2.7 KB
-loop-2025/.git/hooks/sendemail-validate.sample                                              2.3 KB
-loop-2025/.git/hooks/update.sample                                                          3.6 KB
-loop-2025/.git/index                                                                        58.3 KB
-loop-2025/.git/info/exclude                                                                 240 B
-loop-2025/.git/logs/HEAD                                                                    191 B
-loop-2025/.git/logs/refs/heads/main                                                         191 B
-loop-2025/.git/logs/refs/remotes/origin/HEAD                                                191 B
-loop-2025/.git/objects/pack/pack-cb0085b66b1744b7e70e737f8eb509321bd8dacf.idx               28.5 KB
-loop-2025/.git/objects/pack/pack-cb0085b66b1744b7e70e737f8eb509321bd8dacf.pack              3.56 MB
-loop-2025/.git/objects/pack/pack-cb0085b66b1744b7e70e737f8eb509321bd8dacf.rev               4.0 KB
-loop-2025/.git/packed-refs                                                                  112 B
-loop-2025/.git/refs/heads/main                                                              41 B
-loop-2025/.git/refs/remotes/origin/HEAD                                                     30 B
 loop-2025/.gitignore                                                                        70 B
 loop-2025/Anims/Button correct.controller                                                   65.9 KB
 loop-2025/Anims/README minimize Button .controller                                          38.5 KB
