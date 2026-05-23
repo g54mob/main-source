@@ -2,14 +2,19 @@
  * pathHierarchy.js
  * ─────────────────────────────────────────────────────────────
  * Scans a given subfolder recursively and writes every file
- * (relative path from root + size) into a .txt file at the
+ * (relative path from root + size) into a .stub file at the
  * root folder, named after the scanned folder.
  *
  *   node pathHierarchy.js "Scripts/"
- *   → writes  Scripts.txt  in the root folder
+ *   → writes  entire-Scripts.stub  in the root folder
  *
  *   node pathHierarchy.js "Assets/Audio"
- *   → writes  Audio.txt  in the root folder
+ *   → writes  entire-Audio.stub  in the root folder
+ *
+ *   node pathHierarchy.js -scan
+ *   → scans every top-level folder in cwd (except .git),
+ *     writes entire-<FolderName>.stub for each,
+ *     skips any whose stub already exists.
  *
  * No external dependencies — Node.js built-ins only.
  * ─────────────────────────────────────────────────────────────
@@ -18,33 +23,10 @@
 const fs   = require('fs');
 const path = require('path');
 
-// ── Args ──────────────────────────────────────────────────────
-const SCRIPT_NAME = path.basename(__filename);
-const TARGET_ARG  = process.argv[2];
-
-if (!TARGET_ARG) {
-  console.error(`\n❌  No folder specified.\n`);
-  console.error(`    Usage: node ${SCRIPT_NAME} "Scripts/"\n`);
-  process.exit(1);
-}
-
-const ROOT        = process.cwd();
-const TARGET_FULL = path.resolve(ROOT, TARGET_ARG);
-
-if (!fs.existsSync(TARGET_FULL)) {
-  console.error(`\n❌  Folder not found: "${TARGET_ARG}"\n`);
-  console.error(`    Resolved to: ${TARGET_FULL}\n`);
-  process.exit(1);
-}
-
-if (!fs.statSync(TARGET_FULL).isDirectory()) {
-  console.error(`\n❌  "${TARGET_ARG}" is a file, not a folder.\n`);
-  process.exit(1);
-}
-
-// Output txt named after the deepest folder segment, written at root
-const FOLDER_NAME = path.basename(TARGET_FULL);
-const OUT_PATH    = path.join(ROOT, `entire-${FOLDER_NAME}.stub`);
+// ── Constants ─────────────────────────────────────────────────
+const SCRIPT_NAME  = path.basename(__filename);
+const ROOT         = process.cwd();
+const SKIP_FOLDERS = new Set(['.git']);
 
 // ── Helpers ───────────────────────────────────────────────────
 const toRelPath = (p) => path.relative(ROOT, p).replace(/\\/g, '/');
@@ -77,23 +59,33 @@ function walkDir(dir, results = []) {
   return results;
 }
 
-// ── Main ──────────────────────────────────────────────────────
-function main() {
-  const divider = '─'.repeat(65);
+// ── Scan one folder ───────────────────────────────────────────
+/**
+ * @param {string} targetFull  Absolute path to the folder to scan.
+ * @param {object} [opts]
+ * @param {boolean} [opts.skipIfExists=false]  Skip silently if stub already exists.
+ * @returns {{ skipped: boolean }}
+ */
+function scanFolder(targetFull, { skipIfExists = false } = {}) {
+  const folderName = path.basename(targetFull);
+  const outPath    = path.join(ROOT, `entire-${folderName}.stub`);
+  const divider    = '─'.repeat(65);
 
-  console.log(`\n📂  pathHierarchy.js`);
-  console.log(`    Scanning: ${toRelPath(TARGET_FULL)}/\n`);
+  if (skipIfExists && fs.existsSync(outPath)) {
+    console.log(`    ⏭️  Skipped  → entire-${folderName}.stub (already exists)`);
+    return { skipped: true };
+  }
 
-  const files = walkDir(TARGET_FULL);
-  const rows  = files.map(f => ({ rel: toRelPath(f.full), human: humanSize(f.size), size: f.size }));
+  console.log(`\n📂  Scanning: ${toRelPath(targetFull)}/`);
 
-  // ── Build aligned text content ────────────────────────────────
+  const files      = walkDir(targetFull);
+  const rows       = files.map(f => ({ rel: toRelPath(f.full), human: humanSize(f.size), size: f.size }));
   const maxLen     = rows.length ? Math.max(...rows.map(r => r.rel.length)) : 0;
   const totalBytes = rows.reduce((s, r) => s + r.size, 0);
 
   const lines = [];
   lines.push(divider);
-  lines.push(`Folder : ${toRelPath(TARGET_FULL)}/`);
+  lines.push(`Folder : ${toRelPath(targetFull)}/`);
   lines.push(`Files  : ${rows.length}`);
   lines.push(`Total  : ${humanSize(totalBytes)}`);
   lines.push(divider);
@@ -109,12 +101,83 @@ function main() {
 
   lines.push('');
 
-  // ── Write file ────────────────────────────────────────────────
-  fs.writeFileSync(OUT_PATH, lines.join('\n'), 'utf8');
+  fs.writeFileSync(outPath, lines.join('\n'), 'utf8');
 
-  console.log(`    ✅ Written → ${FOLDER_NAME}.txt`);
+  console.log(`    ✅ Written  → entire-${folderName}.stub`);
   console.log(`    Files : ${rows.length}`);
-  console.log(`    Total : ${humanSize(totalBytes)}\n`);
+  console.log(`    Total : ${humanSize(totalBytes)}`);
+
+  return { skipped: false };
 }
 
-main();
+// ── Scan-all mode ─────────────────────────────────────────────
+function scanAll() {
+  console.log(`\n🔍  pathHierarchy.js  —  -scan mode`);
+  console.log(`    Root: ${ROOT}\n`);
+
+  let entries;
+  try { entries = fs.readdirSync(ROOT, { withFileTypes: true }); }
+  catch (e) {
+    console.error(`\n❌  Cannot read root directory: ${e.message}\n`);
+    process.exit(1);
+  }
+
+  const folders = entries.filter(e =>
+    e.isDirectory() && !SKIP_FOLDERS.has(e.name)
+  );
+
+  if (folders.length === 0) {
+    console.log('    (no subfolders found)\n');
+    return;
+  }
+
+  let written = 0;
+  let skipped = 0;
+
+  for (const entry of folders) {
+    const result = scanFolder(path.join(ROOT, entry.name), { skipIfExists: true });
+    result.skipped ? skipped++ : written++;
+  }
+
+  const divider = '─'.repeat(65);
+  console.log(`\n${divider}`);
+  console.log(`  ✅ Done — ${written} written, ${skipped} skipped`);
+  console.log(`${divider}\n`);
+}
+
+// ── Single-folder mode ────────────────────────────────────────
+function scanSingle(targetArg) {
+  const targetFull = path.resolve(ROOT, targetArg);
+
+  if (!fs.existsSync(targetFull)) {
+    console.error(`\n❌  Folder not found: "${targetArg}"`);
+    console.error(`    Resolved to: ${targetFull}\n`);
+    process.exit(1);
+  }
+
+  if (!fs.statSync(targetFull).isDirectory()) {
+    console.error(`\n❌  "${targetArg}" is a file, not a folder.\n`);
+    process.exit(1);
+  }
+
+  console.log(`\n📂  pathHierarchy.js`);
+  scanFolder(targetFull);
+  console.log('');
+}
+
+// ── Entry point ───────────────────────────────────────────────
+const TARGET_ARG = process.argv[2];
+
+if (!TARGET_ARG) {
+  console.error(`\n❌  No argument specified.\n`);
+  console.error(`    Usage:`);
+  console.error(`      node ${SCRIPT_NAME} "Scripts/"   — scan a specific folder`);
+  console.error(`      node ${SCRIPT_NAME} -scan         — scan all top-level folders\n`);
+  process.exit(1);
+}
+
+if (TARGET_ARG === '-scan') {
+  scanAll();
+} else {
+  scanSingle(TARGET_ARG);
+}

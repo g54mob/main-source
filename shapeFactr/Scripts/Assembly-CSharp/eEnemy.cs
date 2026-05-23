@@ -1,0 +1,28 @@
+public enum eEnemy
+{
+	None = 0,
+	Rush = 1,
+	Heavy = 2,
+	Projectile = 3,
+	Barrier = 4,
+	Fill = 5,
+	Cross = 6,
+	Straight = 7,
+	Defense = 8,
+	Line = 9,
+	Wavy = 10,
+	Ring = 100,
+	Family = 101,
+	Hands = 102,
+	Slime = 103,
+	Nest = 104,
+	Shooter = 105,
+	Shell = 106,
+	Bomb = 200,
+	Hawk = 201,
+	DarkDragon = 202,
+	Blade = 203,
+	Sea = 204,
+	Golem = 205,
+	LastBoss = 1001
+}
