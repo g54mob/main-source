@@ -1,0 +1,26 @@
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
+
+namespace MG_BlocksEngine2.UI
+{
+	public class BE2_VirtualJoystickButton : Button
+	{
+		public bool isPressed;
+
+		protected BE2_VirtualJoystickButton()
+		{
+		}
+
+		public override void OnPointerDown(PointerEventData eventData)
+		{
+			base.OnPointerDown(eventData);
+			isPressed = true;
+		}
+
+		public override void OnPointerUp(PointerEventData eventData)
+		{
+			base.OnPointerUp(eventData);
+			isPressed = false;
+		}
+	}
+}
