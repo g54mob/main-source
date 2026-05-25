@@ -8,6 +8,7 @@ export-decompiled-report.md
 !loop-2025/Assets/
 !drone/Assets/
 !npcfr/Assets/
+!fillUpHole/Assets/Texture2D
 
 # Un-ignore noimnot/Assets/ but re-ignore audioClips inside it
 # !noimnot/Assets/
