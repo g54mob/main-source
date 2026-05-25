@@ -1,0 +1,12 @@
+public enum Stat
+{
+	STAT_TRAVEL_M = 0,
+	STAT_FALL = 1,
+	STAT_JUMP = 2,
+	STAT_CLIMB_M = 3,
+	STAT_CARRY_M = 4,
+	STAT_DROWN = 5,
+	STAT_SHIP_M = 6,
+	STAT_DRIVE_M = 7,
+	STAT_DUMPSTER_M = 8
+}

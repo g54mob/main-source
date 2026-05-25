@@ -1,0 +1,42 @@
+namespace CurveGame
+{
+	public enum InputAction
+	{
+		Axis_LeftStickHorizontal = 0,
+		Axis_LeftStickVertical = 1,
+		Axis_RightStickHorizontal = 2,
+		Axis_RightStickVertical = 3,
+		HorizontalAxis0 = 4,
+		VerticalAxis0 = 5,
+		HorizontalAxis1 = 6,
+		VerticalAxis1 = 7,
+		DPadUP = 8,
+		DPadDOWN = 9,
+		DPadLEFT = 10,
+		DPadRIGHT = 11,
+		Axis_LeftTrigger = 12,
+		Axis_RightTrigger = 13,
+		Button_1 = 14,
+		Button_2 = 15,
+		Button_3 = 16,
+		Button_4 = 17,
+		Button_LeftTrigger = 18,
+		Button_RightTrigger = 19,
+		Button_LeftBumper = 20,
+		Button_RightBumper = 21,
+		Button_LeftStick = 22,
+		Button_RightStick = 23,
+		Button_Pause = 24,
+		Button_Touchpad = 25,
+		Menu_Confirm = 26,
+		Menu_Cancel = 27,
+		Menu_Left = 28,
+		Menu_Right = 29,
+		Menu_Up = 30,
+		Menu_Down = 31,
+		Menu_Start = 32,
+		MovePaddle = 33,
+		MouseX = 34,
+		MouseY = 35
+	}
+}
