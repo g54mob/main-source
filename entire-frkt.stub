@@ -1,10 +1,9 @@
 ─────────────────────────────────────────────────────────────────
 Folder : frkt/
-Files  : 9750
+Files  : 9748
 Total  : 110.92 MB
 ─────────────────────────────────────────────────────────────────
 
-frkt/.gitignore                                                                                                                              59 B
 frkt/Assemblies/AmazingAssets.AdvancedDissolve.dll                                                                                           30.0 KB
 frkt/Assemblies/AmazingAssets.AdvancedDissolve.Examples.dll                                                                                  7.0 KB
 frkt/Assemblies/Assembly-CSharp-firstpass.dll                                                                                                212.5 KB
@@ -707,7 +706,6 @@ frkt/Assets/Texture2D/White1px.png                                              
 frkt/Assets/Texture2D/window on.png                                                                                                          671 B
 frkt/Assets/Texture2D/window.png                                                                                                             575 B
 frkt/Assets/TimeManager/TimeManager.json                                                                                                     232 B
-frkt/pathHierarchy.js                                                                                                                        4.5 KB
 frkt/Scripts/AmazingAssets.AdvancedDissolve/-PrivateImplementationDetails--D9B6CAB9-A13B-4831-8066-7E5610C6B9DF-/a.cs                        23.3 KB
 frkt/Scripts/AmazingAssets.AdvancedDissolve/AmazingAssets.AdvancedDissolve.csproj                                                            2.4 KB
 frkt/Scripts/AmazingAssets.AdvancedDissolve/cvr.cs                                                                                           714 B

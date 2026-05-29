@@ -1,10 +1,9 @@
 ─────────────────────────────────────────────────────────────────
 Folder : schedule/
-Files  : 24139
+Files  : 24138
 Total  : 10.242 GB
 ─────────────────────────────────────────────────────────────────
 
-schedule/.gitignore                                                                                                                      59 B
 schedule/Assemblies/AeLa.EasyFeedback.dll                                                                                                37.0 KB
 schedule/Assemblies/AeLa.EasyFeedback.InputSystemSupport.dll                                                                             4.5 KB
 schedule/Assemblies/AmplifyImpostors.dll                                                                                                 3.5 KB

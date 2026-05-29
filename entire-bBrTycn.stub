@@ -1,10 +1,9 @@
 ─────────────────────────────────────────────────────────────────
 Folder : bBrTycn/
-Files  : 31958
-Total  : 4.988 GB
+Files  : 31955
+Total  : 4.987 GB
 ─────────────────────────────────────────────────────────────────
 
-bBrTycn/.gitignore                                                                                                                              59 B
 bBrTycn/Assemblies/AGameAnalytics.dll                                                                                                           57.0 KB
 bBrTycn/Assemblies/Animancer.dll                                                                                                                194.0 KB
 bBrTycn/Assemblies/Animancer.FSM.dll                                                                                                            20.5 KB
@@ -12133,8 +12132,6 @@ bBrTycn/Assets/_Scripts/Systems/Furnitures/slippers.json                        
 bBrTycn/Assets/_Scripts/Systems/Furnitures/slippers.png                                                                                         15.0 KB
 bBrTycn/Assets/_Scripts/Systems/Grid/SH_Grid.json                                                                                               62.7 KB
 bBrTycn/Assets/_Scripts/Systems/Grid/SH_GridAdditive.json                                                                                       65.3 KB
-bBrTycn/Assets.txt                                                                                                                              1.34 MB
-bBrTycn/pathHierarchy.js                                                                                                                        4.5 KB
 bBrTycn/Scripts/AGameAnalytics/AGameAnalytics.csproj                                                                                            907 B
 bBrTycn/Scripts/AGameAnalytics/GAAdMobIntegration.cs                                                                                            39 B
 bBrTycn/Scripts/AGameAnalytics/GAAequusIntegration.cs                                                                                           140 B

@@ -1,10 +1,9 @@
 ─────────────────────────────────────────────────────────────────
 Folder : supMarket/
-Files  : 22598
-Total  : 10.234 GB
+Files  : 22596
+Total  : 10.233 GB
 ─────────────────────────────────────────────────────────────────
 
-supMarket/.gitignore                                                                                                                               59 B
 supMarket/Assemblies/Assembly-CSharp-firstpass.dll                                                                                                 228.5 KB
 supMarket/Assemblies/Assembly-CSharp.dll                                                                                                           1.48 MB
 supMarket/Assemblies/AYellowpaper.SerializedCollections.dll                                                                                        6.5 KB
@@ -9200,7 +9199,6 @@ supMarket/Assets/Texture2DArray/DLCTextureArrayNew.png                          
 supMarket/Assets/Texture2DArray/ProductIconsAtlasTextureArray_1024.png                                                                             3.73 MB
 supMarket/Assets/TimeManager/TimeManager.json                                                                                                      239 B
 supMarket/Assets/VFXManager/VFXManager.json                                                                                                        790 B
-supMarket/Assets.txt                                                                                                                               896.4 KB
 supMarket/Scripts/Assembly-CSharp/AABB.cs                                                                                                          775 B
 supMarket/Scripts/Assembly-CSharp/Achievement.cs                                                                                                   231 B
 supMarket/Scripts/Assembly-CSharp/AchievementId.cs                                                                                                 324 B
