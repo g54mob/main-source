@@ -1,0 +1,39 @@
+using Steamworks;
+
+namespace HeathenEngineering.SteamworksIntegration
+{
+	public struct RankChange
+	{
+		public string leaderboardName;
+
+		public SteamLeaderboard_t leaderboardId;
+
+		public LeaderboardEntry oldEntry;
+
+		public LeaderboardEntry newEntry;
+
+		public int rankDelta
+		{
+			get
+			{
+				if (oldEntry != null)
+				{
+					return newEntry.entry.m_nGlobalRank - oldEntry.entry.m_nGlobalRank;
+				}
+				return newEntry.entry.m_nGlobalRank;
+			}
+		}
+
+		public int scoreDeta
+		{
+			get
+			{
+				if (oldEntry != null)
+				{
+					return newEntry.entry.m_nScore - oldEntry.entry.m_nScore;
+				}
+				return newEntry.entry.m_nScore;
+			}
+		}
+	}
+}

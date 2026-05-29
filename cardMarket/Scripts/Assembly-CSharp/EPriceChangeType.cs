@@ -1,0 +1,26 @@
+public enum EPriceChangeType
+{
+	None = -1,
+	CommonPackCard = 0,
+	RarePackCard = 1,
+	EpicPackCard = 2,
+	LegendPackCard = 3,
+	NoneCommonPackCard = 4,
+	RandomRarityPackCard = 5,
+	FireElement = 6,
+	EarthElement = 7,
+	WaterElement = 8,
+	WindElement = 9,
+	RandomElement = 10,
+	FirstEdition = 11,
+	SilverBorder = 12,
+	GoldBorder = 13,
+	ExBorder = 14,
+	FullArtBorder = 15,
+	RandomBorder = 16,
+	Foil = 17,
+	NonFoil = 18,
+	RandomEffect = 19,
+	Figurine = 20,
+	ExpansionTetramon = 21
+}
