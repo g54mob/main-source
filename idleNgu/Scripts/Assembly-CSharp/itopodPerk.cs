@@ -1,0 +1,27 @@
+public enum itopodPerk
+{
+	Energy = 0,
+	Magic = 1,
+	Adventure = 2,
+	NGU = 3,
+	Beards = 4,
+	BloodMagic = 5,
+	Yggdrasil = 6,
+	Rebirth = 7,
+	AdvancedTraining = 8,
+	Stats = 9,
+	BasicTraining = 10,
+	Wandoos = 11,
+	Inventory = 12,
+	MacGuffin = 13,
+	ITOPOD = 14,
+	TimeMachine = 15,
+	Diggers = 16,
+	Perks = 17,
+	Quirks = 18,
+	Number = 19,
+	Res3 = 20,
+	Wishes = 21,
+	Hacks = 22,
+	Cards = 23
+}
