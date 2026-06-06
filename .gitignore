@@ -1,5 +1,6 @@
 # gitignore runs line-by-line
 export-decompiled-report.md
+schedule/
 # Ignore Assets folder when it's at depth 1: */Assets/
 */Assets/
 */Assemblies/

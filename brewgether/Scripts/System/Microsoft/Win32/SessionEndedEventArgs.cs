@@ -1,0 +1,18 @@
+using System;
+
+namespace Microsoft.Win32
+{
+	/// <summary>Provides data for the <see cref="E:Microsoft.Win32.SystemEvents.SessionEnded" /> event.</summary>
+	public class SessionEndedEventArgs : EventArgs
+	{
+		/// <summary>Gets an identifier that indicates how the session ended.</summary>
+		/// <returns>One of the <see cref="T:Microsoft.Win32.SessionEndReasons" /> values that indicates how the session ended.</returns>
+		public SessionEndReasons Reason => default(SessionEndReasons);
+
+		/// <summary>Initializes a new instance of the <see cref="T:Microsoft.Win32.SessionEndedEventArgs" /> class.</summary>
+		/// <param name="reason">One of the <see cref="T:Microsoft.Win32.SessionEndReasons" /> values indicating how the session ended. </param>
+		public SessionEndedEventArgs(SessionEndReasons reason)
+		{
+		}
+	}
+}
