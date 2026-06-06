@@ -1,0 +1,6 @@
+internal struct LwLPWqtLAhTwTnToPNxMTOsfkimd
+{
+	public ZnxGJcTorNYzgBHIJuBvEYlRhtuE mdpNRBIgPyqMtyHIUYmqygMACyJf;
+
+	public ElVREMGZNZhHNhpKygFEJdYDBTHYA fcVoAeiUSDHLyNBrLCLIvUjkEsmEA;
+}

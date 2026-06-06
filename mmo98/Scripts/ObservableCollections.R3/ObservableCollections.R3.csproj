@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>ObservableCollections.R3</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="ObservableCollections.R3.LICENSE" />
+    <EmbeddedResource Include="ObservableCollections.R3.LICENSE" LogicalName="ObservableCollections.R3.LICENSE" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="ObservableCollections">
+      <HintPath>..\..\Assemblies\ObservableCollections.dll</HintPath>
+    </Reference>
+    <Reference Include="R3">
+      <HintPath>..\..\Assemblies\R3.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

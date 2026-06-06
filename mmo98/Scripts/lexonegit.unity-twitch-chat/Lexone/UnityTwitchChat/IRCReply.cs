@@ -1,0 +1,13 @@
+namespace Lexone.UnityTwitchChat
+{
+	public enum IRCReply
+	{
+		CONNECTED_TO_SERVER = 1,
+		PONG_RECEIVED = 7,
+		JOINED_CHANNEL = 353,
+		MISSING_LOGIN_INFO = 431,
+		BAD_LOGIN = 464,
+		CONNECTION_INTERRUPTED = 498,
+		NO_CONNECTION = 499
+	}
+}
