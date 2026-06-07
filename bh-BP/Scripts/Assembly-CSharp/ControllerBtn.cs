@@ -1,0 +1,28 @@
+public enum ControllerBtn
+{
+	kA = 0,
+	kLeftBumper = 1,
+	kLeftTrigger = 2,
+	kRightBumper = 3,
+	kRightTrigger = 4,
+	kY = 5,
+	kX = 6,
+	kB = 7,
+	kNavUp = 8,
+	kNavRight = 9,
+	kNavDown = 10,
+	kNavLeft = 11,
+	kStart = 12,
+	kSelect = 13,
+	kR3 = 14,
+	kL3 = 15,
+	kDPadUp = 16,
+	kDPadRight = 17,
+	kDPadDown = 18,
+	kDPadLeft = 19,
+	kLeftStickHorizontal = 20,
+	kLeftStickVertical = 21,
+	kRightStickHorizontal = 22,
+	kRightStickVertical = 23,
+	kNum = 24
+}

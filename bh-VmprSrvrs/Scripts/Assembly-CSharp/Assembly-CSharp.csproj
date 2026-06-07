@@ -1,0 +1,101 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net40</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="PlayFabParty">
+      <HintPath>..\..\Assemblies\PlayFabParty.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayFab">
+      <HintPath>..\..\Assemblies\PlayFab.dll</HintPath>
+    </Reference>
+    <Reference Include="l2localization">
+      <HintPath>..\..\Assemblies\l2localization.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Doozy">
+      <HintPath>..\..\Assemblies\Doozy.dll</HintPath>
+    </Reference>
+    <Reference Include="Coherence.SimulationFrame">
+      <HintPath>..\..\Assemblies\Coherence.SimulationFrame.dll</HintPath>
+    </Reference>
+    <Reference Include="Coherence.Entities">
+      <HintPath>..\..\Assemblies\Coherence.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="Coherence.Toolkit">
+      <HintPath>..\..\Assemblies\Coherence.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Coherence.Common">
+      <HintPath>..\..\Assemblies\Coherence.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Coherence.Interop.Generated">
+      <HintPath>..\..\Assemblies\Coherence.Interop.Generated.dll</HintPath>
+    </Reference>
+    <Reference Include="Coherence.ProtocolDef">
+      <HintPath>..\..\Assemblies\Coherence.ProtocolDef.dll</HintPath>
+    </Reference>
+    <Reference Include="Coherence.Core">
+      <HintPath>..\..\Assemblies\Coherence.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Coherence.Log">
+      <HintPath>..\..\Assemblies\Coherence.Log.dll</HintPath>
+    </Reference>
+    <Reference Include="Coherence.Brook">
+      <HintPath>..\..\Assemblies\Coherence.Brook.dll</HintPath>
+    </Reference>
+    <Reference Include="Coherence.Core.Native">
+      <HintPath>..\..\Assemblies\Coherence.Core.Native.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\Assemblies\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject">
+      <HintPath>..\..\Assemblies\Zenject.dll</HintPath>
+    </Reference>
+    <Reference Include="VampireSurvivors.Runtime">
+      <HintPath>..\..\Assemblies\VampireSurvivors.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Coherence.RSL.Extensions">
+      <HintPath>..\..\Assemblies\Coherence.RSL.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Coherence.ReplicationServer">
+      <HintPath>..\..\Assemblies\Coherence.ReplicationServer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\Assemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>..\..\Assemblies\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>..\..\Assemblies\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\..\Assemblies\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\Assemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="PauseSystem">
+      <HintPath>..\..\Assemblies\PauseSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="UnsafeAccess">
+      <HintPath>..\..\Assemblies\UnsafeAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject-usage">
+      <HintPath>..\..\Assemblies\Zenject-usage.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,14 @@
+namespace Assets.Packages.DevConsole.Commands.Arguments
+{
+	public class Int64ArgumentParser : IArgumentParser<long>
+	{
+		public string HelpMessage => null;
+
+		public int Priority => 10;
+
+		public bool TryParse(string value, out long result)
+		{
+			return long.TryParse(value, out result);
+		}
+	}
+}

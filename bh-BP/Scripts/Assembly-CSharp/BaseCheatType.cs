@@ -1,0 +1,26 @@
+public enum BaseCheatType
+{
+	kAddResources = 0,
+	kPassFiveMinutes = 1,
+	kGainAllBlueprints = 2,
+	kBuildAllScaffolds = 3,
+	kSkipAllTutorials = 4,
+	kUnlockAllCharacters = 5,
+	kResetCharacterProgress = 6,
+	kAddHarvestUpgrade = 7,
+	kResetLevelProgress = 8,
+	kUnlockAllLevels = 9,
+	kResetElevator = 10,
+	kClearExpansion = 11,
+	kClearResources = 12,
+	kUnlockAllEncyclopediaEntries = 13,
+	kResetAllBlueprints = 14,
+	kCreateEndGameBase = 15,
+	kClearAchievements = 16,
+	kResetBaseTutorials = 17,
+	kForceSwitchButtonPrompts = 18,
+	kCompletePlaythrough = 19,
+	kRunAutotest = 20,
+	kAutotestSettings = 21,
+	kNum = 22
+}

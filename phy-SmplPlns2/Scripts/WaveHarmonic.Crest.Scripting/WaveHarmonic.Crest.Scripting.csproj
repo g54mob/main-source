@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>WaveHarmonic.Crest.Scripting</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net40</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="WaveHarmonic.Crest">
+      <HintPath>..\..\Assemblies\WaveHarmonic.Crest.dll</HintPath>
+    </Reference>
+    <Reference Include="WaveHarmonic.Crest.Splines">
+      <HintPath>..\..\Assemblies\WaveHarmonic.Crest.Splines.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

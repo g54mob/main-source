@@ -1,0 +1,179 @@
+using System;
+using System.Diagnostics;
+
+namespace Sirenix.OdinInspector
+{
+	[AttributeUsage(AttributeTargets.All, AllowMultiple = true, Inherited = true)]
+	[Conditional("UNITY_EDITOR")]
+	[DontApplyToListElements]
+	public sealed class ListDrawerSettingsAttribute : Attribute
+	{
+		public bool HideAddButton;
+
+		public bool HideRemoveButton;
+
+		public string ListElementLabelName;
+
+		public string CustomAddFunction;
+
+		public string CustomRemoveIndexFunction;
+
+		public string CustomRemoveElementFunction;
+
+		public string OnBeginListElementGUI;
+
+		public string OnEndListElementGUI;
+
+		public bool AlwaysAddDefaultValue;
+
+		public bool AddCopiesLastElement;
+
+		public string ElementColor;
+
+		private string onTitleBarGUI;
+
+		private int numberOfItemsPerPage;
+
+		private bool paging;
+
+		private bool draggable;
+
+		private bool isReadOnly;
+
+		private bool showItemCount;
+
+		private bool pagingHasValue;
+
+		private bool draggableHasValue;
+
+		private bool isReadOnlyHasValue;
+
+		private bool showItemCountHasValue;
+
+		private bool numberOfItemsPerPageHasValue;
+
+		private bool showIndexLabels;
+
+		private bool showIndexLabelsHasValue;
+
+		private bool defaultExpandedStateHasValue;
+
+		private bool defaultExpandedState;
+
+		public bool ShowFoldout;
+
+		public bool ShowPaging
+		{
+			get
+			{
+				return false;
+			}
+			set
+			{
+			}
+		}
+
+		public bool DraggableItems
+		{
+			get
+			{
+				return false;
+			}
+			set
+			{
+			}
+		}
+
+		public int NumberOfItemsPerPage
+		{
+			get
+			{
+				return 0;
+			}
+			set
+			{
+			}
+		}
+
+		public bool IsReadOnly
+		{
+			get
+			{
+				return false;
+			}
+			set
+			{
+			}
+		}
+
+		public bool ShowItemCount
+		{
+			get
+			{
+				return false;
+			}
+			set
+			{
+			}
+		}
+
+		[Obsolete("Use ShowFoldout instead, which is what Expanded has always done. If you want to control the default expanded state, use DefaultExpandedState. Expanded has been implemented wrong for a long time.", false)]
+		public bool Expanded
+		{
+			get
+			{
+				return false;
+			}
+			set
+			{
+			}
+		}
+
+		public bool DefaultExpandedState
+		{
+			get
+			{
+				return false;
+			}
+			set
+			{
+			}
+		}
+
+		public bool ShowIndexLabels
+		{
+			get
+			{
+				return false;
+			}
+			set
+			{
+			}
+		}
+
+		public string OnTitleBarGUI
+		{
+			get
+			{
+				return null;
+			}
+			set
+			{
+			}
+		}
+
+		public bool PagingHasValue => false;
+
+		public bool ShowItemCountHasValue => false;
+
+		public bool NumberOfItemsPerPageHasValue => false;
+
+		public bool DraggableHasValue => false;
+
+		public bool IsReadOnlyHasValue => false;
+
+		public bool ShowIndexLabelsHasValue => false;
+
+		public bool DefaultExpandedStateHasValue => false;
+	}
+}

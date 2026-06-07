@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Bolt.State.Runtime</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net46</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>7.3</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Bolt.Flow.Runtime">
+      <HintPath>..\..\Assemblies\Bolt.Flow.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Ludiq.Graphs.Runtime">
+      <HintPath>..\..\Assemblies\Ludiq.Graphs.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\Assemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Ludiq.Core.Runtime">
+      <HintPath>..\..\Assemblies\Ludiq.Core.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="Bolt.Core.Runtime">
+      <HintPath>..\..\Assemblies\Bolt.Core.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,87 @@
+using System;
+using System.Collections.Generic;
+using System.Runtime.InteropServices;
+using Coherence.Entities;
+using Coherence.Log;
+using Coherence.ProtocolDef;
+
+namespace Coherence.Generated
+{
+	public struct _36b24034ec1a7e64c8dc9a33bafd6360_a84d0bf62c2f49699452ab7b63f91b5b : IEntityCommand, IEntityMessage, IBaseRequest
+	{
+		[StructLayout((LayoutKind)2)]
+		public struct Interop
+		{
+			[FieldOffset(0)]
+			public long startingSimFrame;
+
+			[FieldOffset(8)]
+			public int weaponType;
+		}
+
+		public long startingSimFrame;
+
+		public int weaponType;
+
+		public Entity Entity { get; set; }
+
+		public ChannelID ChannelID { get; set; }
+
+		public MessageTarget Routing { get; set; }
+
+		public uint Sender { get; set; }
+
+		public static _36b24034ec1a7e64c8dc9a33bafd6360_a84d0bf62c2f49699452ab7b63f91b5b FromInterop(IntPtr data, int dataSize)
+		{
+			return default(_36b24034ec1a7e64c8dc9a33bafd6360_a84d0bf62c2f49699452ab7b63f91b5b);
+		}
+
+		public uint GetComponentType()
+		{
+			return 0u;
+		}
+
+		public IEntityMessage Clone()
+		{
+			return null;
+		}
+
+		public IEntityMapper.Error MapToAbsolute(IEntityMapper mapper, Logger logger)
+		{
+			return default(IEntityMapper.Error);
+		}
+
+		public IEntityMapper.Error MapToRelative(IEntityMapper mapper, Logger logger)
+		{
+			return default(IEntityMapper.Error);
+		}
+
+		public HashSet<Entity> GetEntityRefs()
+		{
+			return null;
+		}
+
+		public void NullEntityRefs(Entity entity)
+		{
+		}
+
+		public _36b24034ec1a7e64c8dc9a33bafd6360_a84d0bf62c2f49699452ab7b63f91b5b(Entity entity, long startingSimFrame, int weaponType)
+		{
+			this.startingSimFrame = 0L;
+			this.weaponType = 0;
+			Entity = default(Entity);
+			ChannelID = default(ChannelID);
+			Routing = default(MessageTarget);
+			Sender = 0u;
+		}
+
+		public static void Serialize(_36b24034ec1a7e64c8dc9a33bafd6360_a84d0bf62c2f49699452ab7b63f91b5b commandData, IOutProtocolBitStream bitStream)
+		{
+		}
+
+		public static _36b24034ec1a7e64c8dc9a33bafd6360_a84d0bf62c2f49699452ab7b63f91b5b Deserialize(IInProtocolBitStream bitStream, Entity entity, MessageTarget target)
+		{
+			return default(_36b24034ec1a7e64c8dc9a33bafd6360_a84d0bf62c2f49699452ab7b63f91b5b);
+		}
+	}
+}

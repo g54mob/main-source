@@ -1,0 +1,25 @@
+public enum EntityType
+{
+	None = 0,
+	Building = 1,
+	Structure = 2,
+	Recipe = 3,
+	ItemConveyor = 4,
+	Item = 5,
+	Biome = 6,
+	MenuPanel = 7,
+	NaturalResource = 8,
+	Quest = 9,
+	FarmingTool = 10,
+	TownSpecialty = 11,
+	AccessType = 12,
+	Research = 13,
+	Upgrade = 14,
+	Farming = 15,
+	Mining = 16,
+	Perk = 17,
+	Specialty = 18,
+	HarvestRecipe = 19,
+	BuildingCategory = 20,
+	Generic = 21
+}

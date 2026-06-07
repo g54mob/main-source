@@ -1,0 +1,84 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>DV.UI</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net40</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>7.3</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="DV.UIFramework">
+      <HintPath>..\..\Assemblies\DV.UIFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Rewired_Core">
+      <HintPath>..\..\Assemblies\Rewired_Core.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\Assemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\Assemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.Common">
+      <HintPath>..\..\Assemblies\DV.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask">
+      <HintPath>..\..\Assemblies\UniTask.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.ThingTypes">
+      <HintPath>..\..\Assemblies\DV.ThingTypes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\..\Assemblies\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.Utils">
+      <HintPath>..\..\Assemblies\DV.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.Inventory">
+      <HintPath>..\..\Assemblies\DV.Inventory.dll</HintPath>
+    </Reference>
+    <Reference Include="Rewired">
+      <HintPath>..\..\Assemblies\Rewired.dll</HintPath>
+    </Reference>
+    <Reference Include="dv-raildriver">
+      <HintPath>..\..\Assemblies\dv-raildriver.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\Assemblies\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\..\Assemblies\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.Interaction">
+      <HintPath>..\..\Assemblies\DV.Interaction.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\Assemblies\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\..\Assemblies\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.Localization">
+      <HintPath>..\..\Assemblies\DV.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="I2.Localization">
+      <HintPath>..\..\Assemblies\I2.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="DV.NAudio">
+      <HintPath>..\..\Assemblies\DV.NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.SharpZipLib.Utils">
+      <HintPath>..\..\Assemblies\Unity.SharpZipLib.Utils.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,54 @@
+using UnityEngine;
+
+namespace Jundroo.Common.Textures
+{
+	public class TextureSampler
+	{
+		private Color[] _data;
+
+		private int _height;
+
+		private int _width;
+
+		public TextureSampler(Texture2D source)
+		{
+			_data = source.GetPixels();
+			_width = source.width;
+			_height = source.height;
+		}
+
+		public Color GetPixel(float x, float y)
+		{
+			int num = (int)WrapBetween(x, 0f, _width);
+			int num2 = (int)WrapBetween(y, 0f, _height);
+			return _data[num2 * _width + num];
+		}
+
+		public Color GetPixelBilinear(float u, float v)
+		{
+			u *= (float)_width;
+			v *= (float)_height;
+			int num = Mathf.FloorToInt(u);
+			int num2 = Mathf.FloorToInt(v);
+			float num3 = u - (float)num;
+			float num4 = v - (float)num2;
+			float num5 = 1f - num3;
+			float num6 = 1f - num4;
+			return (GetPixel(num, num2) * num5 + GetPixel(num + 1, num2) * num3) * num6 + (GetPixel(num, num2 + 1) * num5 + GetPixel(num + 1, num2 + 1) * num3) * num4;
+		}
+
+		private float Mod(float x, float y)
+		{
+			if (y == 0f)
+			{
+				return x;
+			}
+			return x - y * Mathf.Floor(x / y);
+		}
+
+		private float WrapBetween(float value, float min, float max)
+		{
+			return Mod(value - min, max - min) + min;
+		}
+	}
+}

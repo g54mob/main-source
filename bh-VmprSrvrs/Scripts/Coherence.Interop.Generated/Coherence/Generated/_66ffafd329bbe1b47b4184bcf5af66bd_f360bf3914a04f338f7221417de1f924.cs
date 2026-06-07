@@ -1,0 +1,68 @@
+using System;
+using System.Collections.Generic;
+using System.Runtime.InteropServices;
+using Coherence.Entities;
+using Coherence.Log;
+using Coherence.ProtocolDef;
+
+namespace Coherence.Generated
+{
+	public struct _66ffafd329bbe1b47b4184bcf5af66bd_f360bf3914a04f338f7221417de1f924 : IEntityCommand, IEntityMessage, IBaseRequest
+	{
+		[StructLayout((LayoutKind)2)]
+		public struct Interop
+		{
+		}
+
+		public Entity Entity { get; set; }
+
+		public ChannelID ChannelID { get; set; }
+
+		public MessageTarget Routing { get; set; }
+
+		public uint Sender { get; set; }
+
+		public static _66ffafd329bbe1b47b4184bcf5af66bd_f360bf3914a04f338f7221417de1f924 FromInterop(IntPtr data, int dataSize)
+		{
+			return default(_66ffafd329bbe1b47b4184bcf5af66bd_f360bf3914a04f338f7221417de1f924);
+		}
+
+		public uint GetComponentType()
+		{
+			return 0u;
+		}
+
+		public IEntityMessage Clone()
+		{
+			return null;
+		}
+
+		public IEntityMapper.Error MapToAbsolute(IEntityMapper mapper, Logger logger)
+		{
+			return default(IEntityMapper.Error);
+		}
+
+		public IEntityMapper.Error MapToRelative(IEntityMapper mapper, Logger logger)
+		{
+			return default(IEntityMapper.Error);
+		}
+
+		public HashSet<Entity> GetEntityRefs()
+		{
+			return null;
+		}
+
+		public void NullEntityRefs(Entity entity)
+		{
+		}
+
+		public static void Serialize(_66ffafd329bbe1b47b4184bcf5af66bd_f360bf3914a04f338f7221417de1f924 commandData, IOutProtocolBitStream bitStream)
+		{
+		}
+
+		public static _66ffafd329bbe1b47b4184bcf5af66bd_f360bf3914a04f338f7221417de1f924 Deserialize(IInProtocolBitStream bitStream, Entity entity, MessageTarget target)
+		{
+			return default(_66ffafd329bbe1b47b4184bcf5af66bd_f360bf3914a04f338f7221417de1f924);
+		}
+	}
+}

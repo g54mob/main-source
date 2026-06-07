@@ -1,0 +1,29 @@
+using System;
+using Unity.Cinemachine;
+using UnityEngine;
+
+namespace MoreMountains.Tools
+{
+	[Serializable]
+	[AddComponentMenu("More Mountains/Tools/Cinemachine/MM Gyro Cam")]
+	public class MMGyroCam
+	{
+		public CinemachineCamera Cam;
+
+		public Transform LookAt;
+
+		public Transform RotationCenter;
+
+		public Vector2 MinRotation = new Vector2(-2f, -2f);
+
+		public Vector2 MaxRotation = new Vector2(2f, 2f);
+
+		public Transform AnimatedPosition;
+
+		[MMReadOnly]
+		public Vector3 InitialAngles;
+
+		[MMReadOnly]
+		public Vector3 InitialPosition;
+	}
+}

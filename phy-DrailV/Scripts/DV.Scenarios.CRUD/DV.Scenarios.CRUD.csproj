@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>DV.Scenarios.CRUD</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net40</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>7.3</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="DV.Utils">
+      <HintPath>..\..\Assemblies\DV.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.Common">
+      <HintPath>..\..\Assemblies\DV.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.UserManagement">
+      <HintPath>..\..\Assemblies\DV.UserManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\Assemblies\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="Newtonsoft.Json.UnityConverters">
+      <HintPath>..\..\Assemblies\Newtonsoft.Json.UnityConverters.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

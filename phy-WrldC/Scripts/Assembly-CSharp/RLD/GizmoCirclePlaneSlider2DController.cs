@@ -1,0 +1,42 @@
+using UnityEngine;
+
+namespace RLD
+{
+	public class GizmoCirclePlaneSlider2DController : GizmoPlaneSlider2DController
+	{
+		public GizmoCirclePlaneSlider2DController(GizmoPlaneSlider2DControllerData controllerData)
+			: base(controllerData)
+		{
+		}
+
+		public override void UpdateHandles()
+		{
+			_data.QuadBorder.SetVisible(isVisible: false);
+			_data.SliderHandle.Set2DShapeVisible(_data.QuadIndex, isVisible: false);
+			_data.PolygonBorder.SetVisible(isVisible: false);
+			_data.SliderHandle.Set2DShapeVisible(_data.PolygonIndex, isVisible: false);
+			_data.CircleBorder.SetVisible(_data.Slider.IsBorderVisible);
+			_data.SliderHandle.Set2DShapeVisible(_data.CircleIndex, _data.Slider.IsVisible);
+		}
+
+		public override void UpdateEpsilons()
+		{
+			_data.Circle.RadiusEps = _data.Slider.Settings.AreaHoverEps;
+		}
+
+		public override void UpdateTransforms()
+		{
+			CircleShape2D circle = _data.Circle;
+			GizmoPlaneSlider2D slider = _data.Slider;
+			circle.Center = slider.Position;
+			circle.RotationDegrees = slider.RotationDegrees;
+			circle.Radius = slider.GetRealCircleRadius();
+			_data.CircleBorder.OnCircleShapeChanged();
+		}
+
+		public override Vector2 GetRealExtentPoint(Shape2DExtentPoint extentPt)
+		{
+			return _data.Circle.GetExtentPoint(extentPt);
+		}
+	}
+}

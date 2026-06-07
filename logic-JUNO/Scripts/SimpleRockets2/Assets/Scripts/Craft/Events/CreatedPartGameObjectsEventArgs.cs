@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using ModApi.Craft;
+using ModApi.Craft.Parts;
+
+namespace Assets.Scripts.Craft.Events
+{
+	public class CreatedPartGameObjectsEventArgs : EventArgs
+	{
+		private static readonly CreatedPartGameObjectsEventArgs _static = new CreatedPartGameObjectsEventArgs();
+
+		public ICraftScript CraftScript { get; private set; }
+
+		public IEnumerable<PartData> Parts { get; private set; }
+
+		private CreatedPartGameObjectsEventArgs()
+		{
+		}
+
+		public static void RaiseStaticEvent(EventHandler<CreatedPartGameObjectsEventArgs> eventHandler, IEnumerable<PartData> parts, ICraftScript craftScript)
+		{
+			if (eventHandler == null)
+			{
+				return;
+			}
+			_static.Parts = parts;
+			_static.CraftScript = craftScript;
+			try
+			{
+				eventHandler(null, _static);
+			}
+			finally
+			{
+				_static.Parts = null;
+				_static.CraftScript = null;
+			}
+		}
+	}
+}

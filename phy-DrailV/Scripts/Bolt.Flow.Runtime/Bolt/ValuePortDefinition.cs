@@ -1,0 +1,37 @@
+using System;
+using Ludiq;
+
+namespace Bolt
+{
+	public abstract class ValuePortDefinition : UnitPortDefinition, IUnitValuePortDefinition, IUnitPortDefinition
+	{
+		[SerializeAs("_type")]
+		private Type _type { get; set; }
+
+		[Inspectable]
+		[DoNotSerialize]
+		public virtual Type type
+		{
+			get
+			{
+				return _type;
+			}
+			set
+			{
+				_type = value;
+			}
+		}
+
+		public override bool isValid
+		{
+			get
+			{
+				if (base.isValid)
+				{
+					return type != null;
+				}
+				return false;
+			}
+		}
+	}
+}

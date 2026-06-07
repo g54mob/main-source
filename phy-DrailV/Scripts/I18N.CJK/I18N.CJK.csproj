@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>I18N.CJK</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net20</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>7.3</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="big5.table" />
+    <None Remove="gb2312.table" />
+    <None Remove="jis.table" />
+    <None Remove="ks.table" />
+    <None Remove="gb18030.table" />
+    <EmbeddedResource Include="big5.table" LogicalName="big5.table" />
+    <EmbeddedResource Include="gb2312.table" LogicalName="gb2312.table" />
+    <EmbeddedResource Include="jis.table" LogicalName="jis.table" />
+    <EmbeddedResource Include="ks.table" LogicalName="ks.table" />
+    <EmbeddedResource Include="gb18030.table" LogicalName="gb18030.table" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="I18N">
+      <HintPath>..\..\Assemblies\I18N.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

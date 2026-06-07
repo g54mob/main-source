@@ -1,9 +1,0 @@
-using UnityEngine;
-
-namespace HeathenEngineering
-{
-	[CreateAssetMenu(menuName = "System Core/Variables/Serializable/Values/Int")]
-	public class IntVariable : DataVariable<int>
-	{
-	}
-}

@@ -1,0 +1,19 @@
+using System;
+
+namespace Sirenix.OdinInspector
+{
+	[AttributeUsage(AttributeTargets.All, AllowMultiple = false, Inherited = true)]
+	public sealed class FolderPathAttribute : Attribute
+	{
+		public bool AbsolutePath;
+
+		public string ParentFolder;
+
+		[Obsolete("Use RequireExistingPath instead.")]
+		public bool RequireValidPath;
+
+		public bool RequireExistingPath;
+
+		public bool UseBackslashes;
+	}
+}

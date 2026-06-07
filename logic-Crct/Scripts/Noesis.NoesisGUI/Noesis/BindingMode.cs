@@ -1,0 +1,11 @@
+namespace Noesis
+{
+	public enum BindingMode
+	{
+		Default = 0,
+		TwoWay = 1,
+		OneWay = 2,
+		OneTime = 3,
+		OneWayToSource = 4
+	}
+}

@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>ModApi.Core</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net40</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="ModApi">
+      <HintPath>..\..\Assemblies\ModApi.dll</HintPath>
+    </Reference>
+    <Reference Include="Jundroo.ModTools">
+      <HintPath>..\..\Assemblies\Jundroo.ModTools.dll</HintPath>
+    </Reference>
+    <Reference Include="Jundroo.ModTools.Core">
+      <HintPath>..\..\Assemblies\Jundroo.ModTools.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Core" />
+    <Reference Include="Unity.IO.Compression">
+      <HintPath>..\..\Assemblies\Unity.IO.Compression.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

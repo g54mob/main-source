@@ -1,0 +1,25 @@
+using System;
+using XGamingRuntime.Interop;
+
+namespace XGamingRuntime
+{
+	public class XGameSaveProviderHandle : EquatableHandle
+	{
+		internal XGamingRuntime.Interop.XGameSaveProviderHandle InteropHandle { get; private set; }
+
+		internal XGameSaveProviderHandle(XGamingRuntime.Interop.XGameSaveProviderHandle interopHandle)
+		{
+		}
+
+		internal static int WrapInteropHandleAndReturnHResult(int hresult, XGamingRuntime.Interop.XGameSaveProviderHandle interopHandle, out XGameSaveProviderHandle userHandle)
+		{
+			userHandle = null;
+			return 0;
+		}
+
+		internal override IntPtr GetInternalPtr()
+		{
+			return (IntPtr)0;
+		}
+	}
+}

@@ -1,0 +1,68 @@
+using DG.Tweening;
+using UnityEngine;
+using VampireSurvivors.Framework.Particles;
+using VampireSurvivors.Framework.TimerSystem;
+using VampireSurvivors.Interfaces;
+using VampireSurvivors.Objects.Pools;
+using VampireSurvivors.Objects.Weapons;
+
+namespace VampireSurvivors.Objects.Projectiles
+{
+	public class TP_SinistroCustosExplosion_Projectile : Projectile
+	{
+		[SerializeField]
+		private SpriteRenderer _GroundFx;
+
+		private bool _particlesGenerated;
+
+		private ParticleEmitterManager _particlesManager;
+
+		private ParticleSystem _pfxEmitter;
+
+		private ParticleSystem _pfxEmitter2;
+
+		private Tween _timer;
+
+		private Tween _alphaTween;
+
+		private Tween _radiusTween;
+
+		private Timer _despawnTimer;
+
+		private float _radius;
+
+		private float _exploRadius;
+
+		private EmitZone _explosionCircle;
+
+		private Tween _despawnTween;
+
+		protected override void Awake()
+		{
+		}
+
+		public override void InitProjectile(BulletPool pool, Weapon weapon, int index)
+		{
+		}
+
+		private void Explode(bool flashingVFX)
+		{
+		}
+
+		private void TriggerDespawnTimer()
+		{
+		}
+
+		private void GenerateParticleSystems()
+		{
+		}
+
+		protected override void OnHasHitAnObject(IDamageable other)
+		{
+		}
+
+		public override void Despawn()
+		{
+		}
+	}
+}

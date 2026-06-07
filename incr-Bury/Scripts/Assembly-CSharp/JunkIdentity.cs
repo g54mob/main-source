@@ -1,0 +1,25 @@
+public enum JunkIdentity
+{
+	BirdBath = 0,
+	BugZapper = 1,
+	Fence = 2,
+	Flamingo = 3,
+	GardenGnome = 4,
+	Grill = 5,
+	KidsSlide = 6,
+	LawnMower = 7,
+	PaintCan = 8,
+	PatioChair = 9,
+	PatioTable = 10,
+	PicnicTable = 11,
+	PlantPot = 12,
+	RecyclingBin = 13,
+	RetroCamper = 14,
+	Rock = 15,
+	Shed = 16,
+	SunUmbrella = 17,
+	TrashCan = 18,
+	Trellis = 19,
+	WateringCan = 20,
+	Wheelbarrow = 21
+}

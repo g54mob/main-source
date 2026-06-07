@@ -1,0 +1,27 @@
+public enum RewiredEnum
+{
+	SolderModule = 0,
+	UnsolderModule = 2,
+	RotateModule = 3,
+	MoveMotherboard = 15,
+	Interaction = 8,
+	Zoom = 9,
+	Color1 = 10,
+	Color2 = 11,
+	Undo = 12,
+	SwapColors = 13,
+	SwitchPaintMode = 14,
+	RotateMotherboard = 16,
+	PickSticker = 17,
+	ApplySticker = 18,
+	Escape = 19,
+	UIDelete = 20,
+	Scroll = 21,
+	UICopy = 22,
+	UICut = 23,
+	UIPaste = 24,
+	UITicksUp = 25,
+	UITicksDown = 26,
+	DocumentNextPage = 27,
+	DocumentPreviousPage = 28
+}

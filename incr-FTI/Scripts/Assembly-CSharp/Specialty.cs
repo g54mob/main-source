@@ -1,0 +1,25 @@
+public enum Specialty
+{
+	None = 0,
+	Construction = 1,
+	AnimalProducts = 2,
+	Clothing = 3,
+	PlantProducts = 4,
+	Metal = 5,
+	Jewelry = 6,
+	Tech = 7,
+	Medicine = 8,
+	Knowledge = 9,
+	Magic = 10,
+	Enchanting = 11,
+	NaturalResources = 12,
+	Crops = 13,
+	Minerals = 14,
+	Energy = 15,
+	Gourmet = 16,
+	UniqueExport = 17,
+	UniqueImport = 18,
+	Currencies = 19,
+	ElementalCrystals = 20,
+	ElementalPower = 21
+}

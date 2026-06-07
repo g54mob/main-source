@@ -1,0 +1,333 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net40</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>7.3</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="VRTK">
+      <HintPath>..\..\Assemblies\VRTK.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\Assemblies\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.ThingTypes">
+      <HintPath>..\..\Assemblies\DV.ThingTypes.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\..\Assemblies\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>..\..\Assemblies\UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\Assemblies\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="WorldStreamer">
+      <HintPath>..\..\Assemblies\WorldStreamer.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.Preferences">
+      <HintPath>..\..\Assemblies\DV.Preferences.dll</HintPath>
+    </Reference>
+    <Reference Include="INIFileParser">
+      <HintPath>..\..\Assemblies\INIFileParser.dll</HintPath>
+    </Reference>
+    <Reference Include="Bolt.Flow.Runtime">
+      <HintPath>..\..\Assemblies\Bolt.Flow.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.UI">
+      <HintPath>..\..\Assemblies\DV.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.Interaction">
+      <HintPath>..\..\Assemblies\DV.Interaction.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.RailTrack">
+      <HintPath>..\..\Assemblies\DV.RailTrack.dll</HintPath>
+    </Reference>
+    <Reference Include="PlaylistsNET">
+      <HintPath>..\..\Assemblies\PlaylistsNET.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.Inventory">
+      <HintPath>..\..\Assemblies\DV.Inventory.dll</HintPath>
+    </Reference>
+    <Reference Include="Stateless">
+      <HintPath>..\..\Assemblies\Stateless.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.CabControls.Spec">
+      <HintPath>..\..\Assemblies\DV.CabControls.Spec.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask">
+      <HintPath>..\..\Assemblies\UniTask.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.Common">
+      <HintPath>..\..\Assemblies\DV.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="EasyRoads3Dv3">
+      <HintPath>..\..\Assemblies\EasyRoads3Dv3.dll</HintPath>
+    </Reference>
+    <Reference Include="PsychoseInteractive.NGSS">
+      <HintPath>..\..\Assemblies\PsychoseInteractive.NGSS.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.CharacterController">
+      <HintPath>..\..\Assemblies\DV.CharacterController.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.UserManagement">
+      <HintPath>..\..\Assemblies\DV.UserManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>..\..\Assemblies\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.LayeredAudio">
+      <HintPath>..\..\Assemblies\DV.LayeredAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>..\..\Assemblies\Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.Utils">
+      <HintPath>..\..\Assemblies\DV.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="net.smkd.vector3d">
+      <HintPath>..\..\Assemblies\net.smkd.vector3d.dll</HintPath>
+    </Reference>
+    <Reference Include="VerletRope">
+      <HintPath>..\..\Assemblies\VerletRope.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\Assemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\Assemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.UIFramework">
+      <HintPath>..\..\Assemblies\DV.UIFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.Telemetry">
+      <HintPath>..\..\Assemblies\DV.Telemetry.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Entities">
+      <HintPath>..\..\Assemblies\Unity.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.PointSet">
+      <HintPath>..\..\Assemblies\DV.PointSet.dll</HintPath>
+    </Reference>
+    <Reference Include="AwesomeTechnologies.VegetationStudioPro.Runtime">
+      <HintPath>..\..\Assemblies\AwesomeTechnologies.VegetationStudioPro.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.BrakeSystem">
+      <HintPath>..\..\Assemblies\DV.BrakeSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.Utils.ECS">
+      <HintPath>..\..\Assemblies\DV.Utils.ECS.dll</HintPath>
+    </Reference>
+    <Reference Include="CommandTerminal">
+      <HintPath>..\..\Assemblies\CommandTerminal.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.Simulation">
+      <HintPath>..\..\Assemblies\DV.Simulation.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.WeatherSystem">
+      <HintPath>..\..\Assemblies\DV.WeatherSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\Assemblies\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.TerrainTools">
+      <HintPath>..\..\Assemblies\DV.TerrainTools.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\..\Assemblies\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>..\..\Assemblies\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>..\..\Assemblies\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections">
+      <HintPath>..\..\Assemblies\Unity.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.MeshX">
+      <HintPath>..\..\Assemblies\DV.MeshX.dll</HintPath>
+    </Reference>
+    <Reference Include="Valve.SteamVR">
+      <HintPath>..\..\Assemblies\Valve.SteamVR.dll</HintPath>
+    </Reference>
+    <Reference Include="dv-raildriver">
+      <HintPath>..\..\Assemblies\dv-raildriver.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>..\..\Assemblies\Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.NAudio">
+      <HintPath>..\..\Assemblies\DV.NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="Rewired_Core">
+      <HintPath>..\..\Assemblies\Rewired_Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Transforms">
+      <HintPath>..\..\Assemblies\Unity.Transforms.dll</HintPath>
+    </Reference>
+    <Reference Include="BezierCurves">
+      <HintPath>..\..\Assemblies\BezierCurves.dll</HintPath>
+    </Reference>
+    <Reference Include="Ludiq.Graphs.Runtime">
+      <HintPath>..\..\Assemblies\Ludiq.Graphs.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\Assemblies\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.RadioPlayer">
+      <HintPath>..\..\Assemblies\DV.RadioPlayer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>..\..\Assemblies\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>..\..\Assemblies\UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.ControllerAnchors">
+      <HintPath>..\..\Assemblies\DV.ControllerAnchors.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.DistantTerrain">
+      <HintPath>..\..\Assemblies\DV.DistantTerrain.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.TerrainSystem">
+      <HintPath>..\..\Assemblies\DV.TerrainSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\Assemblies\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="RootMotion">
+      <HintPath>..\..\Assemblies\RootMotion.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>..\..\Assemblies\UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.LightingKludge">
+      <HintPath>..\..\Assemblies\DV.LightingKludge.dll</HintPath>
+    </Reference>
+    <Reference Include="JBooth.MicroSplat.Core">
+      <HintPath>..\..\Assemblies\JBooth.MicroSplat.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.Layers">
+      <HintPath>..\..\Assemblies\DV.Layers.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.Scenarios.CRUD">
+      <HintPath>..\..\Assemblies\DV.Scenarios.CRUD.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.Highlighting">
+      <HintPath>..\..\Assemblies\DV.Highlighting.dll</HintPath>
+    </Reference>
+    <Reference Include="Ludiq.Core.Runtime">
+      <HintPath>..\..\Assemblies\Ludiq.Core.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Oculus.AudioManager">
+      <HintPath>..\..\Assemblies\Oculus.AudioManager.dll</HintPath>
+    </Reference>
+    <Reference Include="I2.Localization">
+      <HintPath>..\..\Assemblies\I2.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.TimeBasedEvents">
+      <HintPath>..\..\Assemblies\DV.TimeBasedEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>..\..\Assemblies\Unity.Burst.dll</HintPath>
+    </Reference>
+    <Reference Include="Rewired">
+      <HintPath>..\..\Assemblies\Rewired.dll</HintPath>
+    </Reference>
+    <Reference Include="UniRx">
+      <HintPath>..\..\Assemblies\UniRx.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.Platform.Steam">
+      <HintPath>..\..\Assemblies\DV.Platform.Steam.dll</HintPath>
+    </Reference>
+    <Reference Include="Bolt.State.Runtime">
+      <HintPath>..\..\Assemblies\Bolt.State.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Bolt.Core.Runtime">
+      <HintPath>..\..\Assemblies\Bolt.Core.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.Localization">
+      <HintPath>..\..\Assemblies\DV.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\..\Assemblies\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.OriginShiftInfo">
+      <HintPath>..\..\Assemblies\DV.OriginShiftInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.SpriteLights">
+      <HintPath>..\..\Assemblies\DV.SpriteLights.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.BuildInfo">
+      <HintPath>..\..\Assemblies\DV.BuildInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>..\..\Assemblies\UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Oculus.VR">
+      <HintPath>..\..\Assemblies\Oculus.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="Oculus.Avatar">
+      <HintPath>..\..\Assemblies\Oculus.Avatar.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.Platform.GeForceNOW">
+      <HintPath>..\..\Assemblies\DV.Platform.GeForceNOW.dll</HintPath>
+    </Reference>
+    <Reference Include="sc.posteffects.runtime">
+      <HintPath>..\..\Assemblies\sc.posteffects.runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Amplify.Occlusion">
+      <HintPath>..\..\Assemblies\Amplify.Occlusion.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>..\..\Assemblies\UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="LINQtoGameObject">
+      <HintPath>..\..\Assemblies\LINQtoGameObject.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Transforms.Hybrid">
+      <HintPath>..\..\Assemblies\Unity.Transforms.Hybrid.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.SignPlacer">
+      <HintPath>..\..\Assemblies\DV.SignPlacer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>..\..\Assemblies\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>..\..\Assemblies\UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Entities.Hybrid">
+      <HintPath>..\..\Assemblies\Unity.Entities.Hybrid.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Steamworks.Win64">
+      <HintPath>..\..\Assemblies\Facepunch.Steamworks.Win64.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.Platform.Windows">
+      <HintPath>..\..\Assemblies\DV.Platform.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Tayx.Graphy">
+      <HintPath>..\..\Assemblies\Tayx.Graphy.dll</HintPath>
+    </Reference>
+    <Reference Include="DV.ReflectionProbes">
+      <HintPath>..\..\Assemblies\DV.ReflectionProbes.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+</Project>

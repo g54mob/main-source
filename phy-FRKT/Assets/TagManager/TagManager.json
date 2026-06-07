@@ -1,0 +1,63 @@
+{
+	"m_Layers": [
+		"Default",
+		"TransparentFX",
+		"Ignore Raycast",
+		"",
+		"Water",
+		"UI",
+		"Puppeteer",
+		"Puppet",
+		"Environment",
+		"Bullet",
+		"Gun",
+		"ParticleForceFieldExplosion",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		""
+	],
+	"m_RenderingLayers": [
+		"Default",
+		"Light Layer 1",
+		"Light Layer 2",
+		"Light Layer 3",
+		"Light Layer 4",
+		"Light Layer 5",
+		"Light Layer 6",
+		"Light Layer 7",
+		"YellowOutline"
+	],
+	"m_SortingLayers": [
+		{
+			"m_Locked": false,
+			"m_Name": "Default",
+			"m_UniqueID": 0
+		}
+	],
+	"m_Tags": [
+		"SceneCoreReferences",
+		"IgnoreByMBFactory",
+		"FxTemporaire",
+		"ship",
+		"asteroid",
+		"ContextMenu",
+		"Spinner"
+	]
+}
