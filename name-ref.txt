@@ -58,6 +58,8 @@ Genre-Board--board
   ├─────────────────────────┼─────────────┤
   │ MyVoiceZoo              │ czy-MyVcZ   │
   ├─────────────────────────┼─────────────┤
+  │ mini motr ways          │ czy-MMW     │
+  ├─────────────────────────┼─────────────┤
   │ Townscaper.v1.2.0       │ czy-Twnscpr │
   ├─────────────────────────┼─────────────┤
   │ UrbanJungle             │ czy-UrbnJng │
@@ -237,4 +239,3 @@ Genre-Board--board
   │ phyFly     │ util-PhyFly   │
   └────────────┴───────────────┘
 
-  

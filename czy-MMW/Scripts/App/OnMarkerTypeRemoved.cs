@@ -1,0 +1,1 @@
+public delegate void OnMarkerTypeRemoved(NotificationScheduleDebuggerMarkerType tag);
