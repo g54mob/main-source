@@ -1,0 +1,29 @@
+{
+	"m_AuthToken": "8dc7947f8402216275bb0a95c701dad9cd80e8255e4ee0cbffe05f9ca476279f760ddce42aac281c",
+	"m_BuildTags": [],
+	"m_EnabledVRDevices": [],
+	"m_EnableDynamicBatching": false,
+	"m_GraphicsAPIs": [
+		2
+	],
+	"m_HasAdvancedVersion": false,
+	"m_HasClusterRendering": false,
+	"m_HasLocalLightShadows": true,
+	"m_HasPROVersion": false,
+	"m_HasPublishingRights": true,
+	"m_HasShadows": true,
+	"m_HasSoftShadows": true,
+	"m_HideFlags": 0,
+	"m_IsEducationalBuild": false,
+	"m_IsEmbedded": false,
+	"m_IsNoWatermarkBuild": false,
+	"m_IsPrototypingBuild": false,
+	"m_IsTrial": false,
+	"m_PreloadedPlugins": [],
+	"m_Scenes": [
+		"Assets/0_CORE/Scenes/Build/Bootstrap.unity",
+		"Assets/0_CORE/Scenes/Build/Sandbox/Sandbox.unity"
+	],
+	"m_UsesOnMouseEvents": true,
+	"m_Version": "6000.0.60f1"
+}

@@ -1,0 +1,27 @@
+public enum InteractionInfoType
+{
+	Cleared = 0,
+	PlugIn = 5,
+	CouplerNotParked = 6,
+	GrabItem = 10,
+	InsertCassette = 15,
+	JobOverviewValidatorUse = 20,
+	JobBookletValidatorUse = 30,
+	JobBookletAbandonerUse = 40,
+	ShovelLoadCoal = 50,
+	ShovelUnloadCoal = 60,
+	ShovelCoalPileEmpty = 70,
+	ShovelTargetFull = 75,
+	OilerRefill = 77,
+	WalletMoneyUse = 80,
+	WalletCashRegisterUse = 90,
+	JunctionRemoteSwitchUse = 100,
+	KeyPadlockUse = 110,
+	LicenseRequired_MultipleUnit = 160,
+	GrabToMoveBeltSlot = 170,
+	Ignite = 180,
+	Bed = 190,
+	BedDisabled = 191,
+	LoadSolderRoll = 200,
+	ContainerAccess = 210
+}

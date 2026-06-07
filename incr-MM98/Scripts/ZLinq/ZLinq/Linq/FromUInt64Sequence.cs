@@ -1,0 +1,114 @@
+using System;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+using ZLinq.Internal;
+
+namespace ZLinq.Linq
+{
+	[StructLayout(LayoutKind.Auto)]
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public struct FromUInt64Sequence : IValueEnumerator<ulong>, IDisposable
+	{
+		private bool calledGetNext;
+
+		public FromUInt64Sequence(ulong currentValue, ulong endInclusive, ulong step, bool isIncrement)
+		{
+			_003CcurrentValue_003EP = currentValue;
+			_003CendInclusive_003EP = endInclusive;
+			_003Cstep_003EP = step;
+			_003CisIncrement_003EP = isIncrement;
+			calledGetNext = false;
+		}
+
+		public bool TryGetNext(out ulong current)
+		{
+			if (!calledGetNext)
+			{
+				calledGetNext = true;
+				current = _003CcurrentValue_003EP;
+				return true;
+			}
+			if (_003CisIncrement_003EP)
+			{
+				ulong num = _003CcurrentValue_003EP + _003Cstep_003EP;
+				if (num >= _003CendInclusive_003EP || num <= _003CcurrentValue_003EP)
+				{
+					if (num == _003CendInclusive_003EP && _003CcurrentValue_003EP != num)
+					{
+						current = (_003CcurrentValue_003EP = num);
+						return true;
+					}
+					current = 0uL;
+					return false;
+				}
+				current = (_003CcurrentValue_003EP = num);
+				return true;
+			}
+			ulong num2 = _003CcurrentValue_003EP + _003Cstep_003EP;
+			if (num2 <= _003CendInclusive_003EP || num2 >= _003CcurrentValue_003EP)
+			{
+				if (num2 == _003CendInclusive_003EP && _003CcurrentValue_003EP != num2)
+				{
+					current = (_003CcurrentValue_003EP = num2);
+					return true;
+				}
+				current = 0uL;
+				return false;
+			}
+			current = (_003CcurrentValue_003EP = num2);
+			return true;
+		}
+
+		public void Dispose()
+		{
+		}
+
+		public bool TryGetNonEnumeratedCount(out int count)
+		{
+			if (CanOptimize())
+			{
+				count = (int)(_003CendInclusive_003EP - _003CcurrentValue_003EP + 1);
+				return true;
+			}
+			count = 0;
+			return false;
+		}
+
+		public bool TryGetSpan(out ReadOnlySpan<ulong> span)
+		{
+			span = default(ReadOnlySpan<ulong>);
+			return false;
+		}
+
+		public bool TryCopyTo([ScopedRef] Span<ulong> destination, Index offset)
+		{
+			if (TryGetNonEnumeratedCount(out var count) && EnumeratorHelper.TryGetSliceRange(count, offset, destination.Length, out var start, out var count2))
+			{
+				FillIncremental(destination.Slice(0, count2), _003CcurrentValue_003EP + (ulong)start);
+				return true;
+			}
+			return false;
+		}
+
+		private bool CanOptimize()
+		{
+			if (_003Cstep_003EP == 1 && _003CendInclusive_003EP - _003CcurrentValue_003EP + 1 <= ulong.MaxValue)
+			{
+				return true;
+			}
+			return false;
+		}
+
+		private static void FillIncremental(Span<ulong> span, ulong start)
+		{
+			ref ulong reference = ref MemoryMarshal.GetReference(span);
+			ref ulong right = ref Unsafe.Add(ref reference, span.Length);
+			while (Unsafe.IsAddressLessThan(ref reference, ref right))
+			{
+				reference = start++;
+				reference = ref Unsafe.Add(ref reference, 1);
+			}
+		}
+	}
+}

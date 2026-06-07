@@ -1,0 +1,1 @@
+internal delegate void BldBoMOVyDaRWjQwfmHXVphQbCNz(UMegMvaxKZKQKvQPuRgKBccRpYKH report);

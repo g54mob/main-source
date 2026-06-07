@@ -1,0 +1,27 @@
+public enum eSpellSound
+{
+	None = 0,
+	Spell_FrostLaser_Shooting = 120,
+	Spell_FrostLaser_Hit = 130,
+	Spell_Gravity_Shooting = 140,
+	Spell_Gravity_Hit = 150,
+	Spell_IcicleShot_Shooting = 160,
+	Spell_IcicleShot_Hit = 170,
+	Spell_Lightning_Shooting = 180,
+	Spell_Lightning_Hit = 190,
+	Spell_Meteor_Shooting = 200,
+	Spell_Meteor_Hit = 210,
+	Spell_Normal_Shooting = 220,
+	Spell_Normal_Hit = 230,
+	Spell_Normal_Miss = 231,
+	Spell_RockFall_Shooting = 240,
+	Spell_RockFall_Hit = 250,
+	Spell_ShotOfWater_Shooting = 260,
+	Spell_ShotOfWater_Hit = 270,
+	Spell_ThorsHammer_Shooting = 280,
+	Spell_ThorsHammer_Hit = 290,
+	Spell_Thunderbolt_Shooting = 300,
+	Spell_Thunderbolt_Hit = 310,
+	Spell_Sanctuary_Shooting = 320,
+	Spell_Sanctuary_Hit = 330
+}

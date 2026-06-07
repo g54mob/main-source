@@ -1,0 +1,6 @@
+public enum AkDynamicSequenceType
+{
+	DynamicSequenceType_SampleAccurate = 0,
+	DynamicSequenceType_NormalTransition = 1,
+	DynamicSequenceType_Last = 2
+}

@@ -1,0 +1,27 @@
+public enum eMouseOverDetailCategory
+{
+	None = 0,
+	Canvas = 10,
+	Conveyer = 20,
+	Pipe = 30,
+	Extractor = 40,
+	ExtractorInk = 50,
+	MixColor = 60,
+	MotifSource = 70,
+	Converter = 80,
+	ConverterInk = 90,
+	SwordOfChoice = 100,
+	FixedSpeedMachine = 110,
+	FixedSpeedMachineInk = 120,
+	InkTank = 130,
+	RecycleBox = 140,
+	SweetsTable = 150,
+	InkEngine = 160,
+	Inserter = 170,
+	Mix3Color = 180,
+	Pipe2Color = 190,
+	Statue = 200,
+	MineShaft = 210,
+	AltarOfSpirit = 220,
+	Other = 999
+}

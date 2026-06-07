@@ -1,0 +1,57 @@
+using System;
+using Rewired.Data;
+using Rewired.Dev.Tools;
+using Rewired.Interfaces;
+using Rewired.Platforms;
+using Rewired.Utils;
+
+namespace Rewired.InputManagers
+{
+	[CustomObfuscation(rename = false)]
+	[CustomClassObfuscation(renamePrivateMembers = true, renamePubIntMembers = false)]
+	internal class Initializer : PlatformInitializer
+	{
+		internal const string initErrorMsg = "Please see the Installation section of the documentation for information on required libraries. Documentation can be found in the menu: Window -> Rewired -> Help -> Documentation.";
+
+		private static PlatformInitializer instance;
+
+		public static PlatformInitializer GetPlatformInitializer()
+		{
+			if (instance == null)
+			{
+				instance = new Initializer();
+			}
+			return instance;
+		}
+
+		public override object Initialize(ConfigVars configVars)
+		{
+			if (UnityTools.platform == Platform.Windows || UnityTools.platform == Platform.WindowsAppStore)
+			{
+				try
+				{
+					return new nWJFPaVEAnZVBaejiLScyIzPghU(configVars, ReInput.GetHardwareJoystickMap_InputManager, ReInput.GetNewJoystickId);
+				}
+				catch (Exception)
+				{
+					Logger.LogWarning("Rewired will fall back to Unity input. Certain features may not be available.\nPlease see the Installation section of the documentation for information on required libraries. Documentation can be found in the menu: Window -> Rewired -> Help -> Documentation.");
+					return null;
+				}
+			}
+			return null;
+		}
+
+		public override IElementIdentifierTool CreateTool(string inputSourceString)
+		{
+			if (inputSourceString == "DirectInput")
+			{
+				return new DirectInputJoystickElementIdentifier_Internal();
+			}
+			if (inputSourceString == "RawInput")
+			{
+				return new RawInputJoystickElementIdentifier_Internal();
+			}
+			return null;
+		}
+	}
+}

@@ -1,0 +1,6 @@
+internal struct fIfDvwvvsOcXtZCxSBYBVEQFUcW
+{
+	public pCPOALNgVefTBfExIgeiKFEzmPS wtYGxjhSdvLEZrXjirTZkeCIDfO;
+
+	public cAphQEBMwiSmvvHwfONBvvAxRfrh qCmvlLxcVUaxPDpvXtvsPlXAJOVt;
+}

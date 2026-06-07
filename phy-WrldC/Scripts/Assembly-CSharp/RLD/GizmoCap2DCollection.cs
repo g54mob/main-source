@@ -1,0 +1,92 @@
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace RLD
+{
+	public class GizmoCap2DCollection
+	{
+		private List<GizmoCap2D> _caps = new List<GizmoCap2D>();
+
+		private Dictionary<int, GizmoCap2D> _handleIdToCap = new Dictionary<int, GizmoCap2D>();
+
+		public int Count => _caps.Count;
+
+		public GizmoCap2D this[int id] => _handleIdToCap[id];
+
+		public bool Contains(GizmoCap2D cap)
+		{
+			return _handleIdToCap.ContainsKey(cap.HandleId);
+		}
+
+		public bool Contains(int capHandleId)
+		{
+			return _handleIdToCap.ContainsKey(capHandleId);
+		}
+
+		public void Add(GizmoCap2D cap)
+		{
+			if (!Contains(cap))
+			{
+				_caps.Add(cap);
+				_handleIdToCap.Add(cap.HandleId, cap);
+			}
+		}
+
+		public void Remove(GizmoCap2D cap)
+		{
+			if (Contains(cap))
+			{
+				_caps.Remove(cap);
+				_handleIdToCap.Remove(cap.HandleId);
+			}
+		}
+
+		public void Make2DHoverPriorityLowerThan(Priority priority)
+		{
+			foreach (GizmoCap2D cap in _caps)
+			{
+				cap.HoverPriority2D.MakeLowerThan(priority);
+			}
+		}
+
+		public void Make2DHoverPriorityHigherThan(Priority priority)
+		{
+			foreach (GizmoCap2D cap in _caps)
+			{
+				cap.HoverPriority2D.MakeHigherThan(priority);
+			}
+		}
+
+		public void SetVisible(bool visible)
+		{
+			foreach (GizmoCap2D cap in _caps)
+			{
+				cap.SetVisible(visible);
+			}
+		}
+
+		public void SetHoverable(bool hoverable)
+		{
+			foreach (GizmoCap2D cap in _caps)
+			{
+				cap.SetHoverable(hoverable);
+			}
+		}
+
+		public void SetDragSession(IGizmoDragSession dragSession)
+		{
+			foreach (GizmoCap2D cap in _caps)
+			{
+				cap.DragSession = dragSession;
+			}
+		}
+
+		public void Render(Camera camera)
+		{
+			foreach (GizmoCap2D cap in _caps)
+			{
+				cap.Render(camera);
+			}
+		}
+	}
+}

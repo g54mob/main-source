@@ -1,0 +1,6 @@
+namespace Gley.UrbanSystem.Internal
+{
+	internal class ConnectionPoolBase
+	{
+	}
+}

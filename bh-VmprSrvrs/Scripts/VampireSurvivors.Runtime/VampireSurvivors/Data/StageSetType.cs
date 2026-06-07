@@ -1,0 +1,15 @@
+namespace VampireSurvivors.Data
+{
+	public enum StageSetType
+	{
+		STAGE_DATA_ADV_M001 = 0,
+		STAGE_DATA_ADV_0001 = 1,
+		STAGESET_POE = 2,
+		STAGESET_IMELDA = 3,
+		STAGESET_CHALCEDONY = 4,
+		STAGESET_FIRSTBLOOD = 5,
+		STAGESET_SHEMOON = 6,
+		STAGESET_FOSCARI = 7,
+		STAGESET_OTC_001 = 8
+	}
+}

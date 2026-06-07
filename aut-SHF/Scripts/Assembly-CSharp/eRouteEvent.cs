@@ -1,0 +1,26 @@
+public enum eRouteEvent
+{
+	None = 0,
+	Recipe = 2,
+	Unique = 3,
+	Rest = 4,
+	Shop = 5,
+	Happening = 6,
+	OpenMap = 7,
+	Research = 8,
+	UpgradeHeroRecipe = 9,
+	ResearchSystem = 10,
+	ManaPoint = 11,
+	ResearchPoint = 12,
+	RestSelect = 13,
+	RareRest = 14,
+	Resource = 15,
+	PointRest = 16,
+	ManaPoint_SP = 17,
+	ResearchPoint_SP = 18,
+	InGameShop = 19,
+	StartReward = 101,
+	StartReward2 = 102,
+	KnowledgeSpell = 201,
+	OrdealKnowledge = 1001
+}

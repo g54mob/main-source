@@ -1,0 +1,93 @@
+─────────────────────────────────────────────────────────────────
+Folder : util-Loop2025/
+Files  : 87
+Total  : 14.07 MB
+─────────────────────────────────────────────────────────────────
+
+util-Loop2025/Anims/Button correct.controller                                                   65.9 KB
+util-Loop2025/Anims/README minimize Button .controller                                          38.5 KB
+util-Loop2025/LOG/GameData.txt                                                                  163 B
+util-Loop2025/LOG/LOG.txt                                                                       385.5 KB
+util-Loop2025/Scenes/main_scene.unity                                                           366.2 KB
+util-Loop2025/Scenes/PerScene_1.cs                                                              18.6 KB
+util-Loop2025/Scenes/PerScene_2.cs                                                              18.6 KB
+util-Loop2025/Scenes/PerScene_3.cs                                                              362 B
+util-Loop2025/Scenes/sampleScene.unity                                                          5.6 KB
+util-Loop2025/Scenes/scene_ (0).unity                                                           686.5 KB
+util-Loop2025/Scenes/scene_ (1).unity                                                           696.3 KB
+util-Loop2025/Scenes/scene_ (2) with SEEK window system.unity                                   697.2 KB
+util-Loop2025/Scenes/scene_ (2).unity                                                           697.2 KB
+util-Loop2025/Scenes/scene_ (3).unity                                                           697.2 KB
+util-Loop2025/Scenes/scene_ (4).unity                                                           728.7 KB
+util-Loop2025/Scenes/scene_ (5) credit.unity                                                    528.7 KB
+util-Loop2025/Scenes/scene_ (with no rebuild gui error).unity                                   686.4 KB
+util-Loop2025/Scenes/scene_ drag.unity                                                          603.6 KB
+util-Loop2025/Scripts/Check/DEBUG_Check.cs                                                      1.2 KB
+util-Loop2025/Scripts/Check/DEBUG_DragableItem.cs                                               10.2 KB
+util-Loop2025/Scripts/Check/SEEK/DraggableWindow.cs                                             8.5 KB
+util-Loop2025/Scripts/Check/SEEK/ResizeHandle.cs                                                8.6 KB
+util-Loop2025/Scripts/Check/SEEK/SetForegroundLayer.cs                                          7.9 KB
+util-Loop2025/Scripts/Check/SEEK/SimpleCharacterReplacer.cs                                     5.8 KB
+util-Loop2025/Scripts/Check/SEEK/TMP_InputFieldNoWrap.cs                                        1.5 KB
+util-Loop2025/Scripts/GameControllerBase.cs                                                     11.3 KB
+util-Loop2025/Scripts/Managers/SceneManager.cs                                                  1.3 KB
+util-Loop2025/Scripts/ProgramExec/CheckInterpreter/TestDocstrings.cs                            1.9 KB
+util-Loop2025/Scripts/ProgramExec/ConsoleManager.cs                                             6.1 KB
+util-Loop2025/Scripts/ProgramExec/CoroutineRunner.cs                                            2.5 KB
+util-Loop2025/Scripts/ProgramExec/GameBuiltinMethods.cs                                         8.3 KB
+util-Loop2025/Scripts/ProgramExec/GlobalScriptManager.cs                                        4.2 KB
+util-Loop2025/Scripts/ProgramExec/PythonAST.cs                                                  6.7 KB
+util-Loop2025/Scripts/ProgramExec/PythonInterpreter.cs                                          54.2 KB
+util-Loop2025/Scripts/ProgramExec/PythonLexer.cs                                                14.0 KB
+util-Loop2025/Scripts/ProgramExec/PythonParser.cs                                               20.4 KB
+util-Loop2025/Scripts/ProgramExec/PythonToken.cs                                                1.7 KB
+util-Loop2025/Scripts/ProgramExec/ScriptRunner.cs                                               20.4 KB
+util-Loop2025/Scripts/ProgramExec/SEEK New/BuiltinFunctionValue.cs                              1.3 KB
+util-Loop2025/Scripts/ProgramExec/SEEK New/ClassValue.cs                                        2.4 KB
+util-Loop2025/Scripts/ProgramExec/SEEK New/DictValue.cs                                         2.9 KB
+util-Loop2025/Scripts/ProgramExec/SEEK New/implementation_summary.md                            3.3 KB
+util-Loop2025/Scripts/ProgramExec/SEEK New/V2Value.cs                                           5.4 KB
+util-Loop2025/Scripts/TextEditor/InputFieldLineNumbers.cs                                       9.9 KB
+util-Loop2025/Scripts/TextEditor/old-approach/DragableItem.cs                                   10.4 KB
+util-Loop2025/Scripts/TextEditor/PythonCodeEditorSyntaxHighlight.cs                             27.9 KB
+util-Loop2025/Scripts/UTIL/TextDebugUtility.cs                                                  6.2 KB
+util-Loop2025/TM/FONTS 1/CONSOLA SDF.asset                                                      567.6 KB
+util-Loop2025/TM/FONTS 1/CONSOLA.TTF                                                            448.4 KB
+util-Loop2025/TM/FONTS 1/CONSOLAI SDF.asset                                                     567.6 KB
+util-Loop2025/TM/FONTS 1/CONSOLAI.TTF                                                           456.6 KB
+util-Loop2025/TM/FONTS 1/CONSOLAZ SDF.asset                                                     567.5 KB
+util-Loop2025/TM/FONTS 1/CONSOLAZ.TTF                                                           398.4 KB
+util-Loop2025/TM/FONTS 1/pixelplay SDF.asset                                                    563.0 KB
+util-Loop2025/TM/FONTS 1/pixelplay.ttf                                                          168.1 KB
+util-Loop2025/TM/TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf                    678.1 KB
+util-Loop2025/TM/TextMesh Pro/Fonts/LiberationSans - OFL.txt                                    4.4 KB
+util-Loop2025/TM/TextMesh Pro/Fonts/LiberationSans.ttf                                          342.0 KB
+util-Loop2025/TM/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat  3.0 KB
+util-Loop2025/TM/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset   9.4 KB
+util-Loop2025/TM/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat      2.9 KB
+util-Loop2025/TM/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset              2.16 MB
+util-Loop2025/TM/TextMesh Pro/Resources/LineBreaking Following Characters.txt                   269 B
+util-Loop2025/TM/TextMesh Pro/Resources/LineBreaking Leading Characters.txt                     95 B
+util-Loop2025/TM/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset                            13.8 KB
+util-Loop2025/TM/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset                  4.9 KB
+util-Loop2025/TM/TextMesh Pro/Resources/TMP Settings.asset                                      1.7 KB
+util-Loop2025/TM/TextMesh Pro/Shaders/TMPro.cginc                                               2.3 KB
+util-Loop2025/TM/TextMesh Pro/Shaders/TMPro_Mobile.cginc                                        5.3 KB
+util-Loop2025/TM/TextMesh Pro/Shaders/TMPro_Properties.cginc                                    2.9 KB
+util-Loop2025/TM/TextMesh Pro/Shaders/TMPro_Surface.cginc                                       3.6 KB
+util-Loop2025/TM/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader                            3.6 KB
+util-Loop2025/TM/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader                                  3.6 KB
+util-Loop2025/TM/TextMesh Pro/Shaders/TMP_Bitmap.shader                                         3.6 KB
+util-Loop2025/TM/TextMesh Pro/Shaders/TMP_SDF Overlay.shader                                    10.6 KB
+util-Loop2025/TM/TextMesh Pro/Shaders/TMP_SDF SSD.shader                                        12.0 KB
+util-Loop2025/TM/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader                             7.9 KB
+util-Loop2025/TM/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader                             7.7 KB
+util-Loop2025/TM/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader                                 3.1 KB
+util-Loop2025/TM/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader                                     7.7 KB
+util-Loop2025/TM/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader                             3.6 KB
+util-Loop2025/TM/TextMesh Pro/Shaders/TMP_SDF-Surface.shader                                    4.4 KB
+util-Loop2025/TM/TextMesh Pro/Shaders/TMP_SDF.shader                                            10.7 KB
+util-Loop2025/TM/TextMesh Pro/Shaders/TMP_Sprite.shader                                         2.7 KB
+util-Loop2025/TM/TextMesh Pro/Sprites/EmojiOne Attribution.txt                                  187 B
+util-Loop2025/TM/TextMesh Pro/Sprites/EmojiOne.json                                             4.0 KB
+util-Loop2025/TM/TextMesh Pro/Sprites/EmojiOne.png                                              109.7 KB

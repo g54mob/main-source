@@ -1,0 +1,427 @@
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.Scripting.APIUpdating;
+
+namespace MoreMountains.Feedbacks
+{
+	[AddComponentMenu("")]
+	[FeedbackHelp("This feedback will instantiate the specified ParticleSystem at the specified position on Start or on Play, optionally nesting them.")]
+	[MovedFrom(false, null, "MoreMountains.Feedbacks", null)]
+	[FeedbackPath("Particles/Particles Instantiation")]
+	public class MMF_ParticlesInstantiation : MMF_Feedback
+	{
+		public enum PositionModes
+		{
+			FeedbackPosition = 0,
+			Transform = 1,
+			WorldPosition = 2,
+			Script = 3
+		}
+
+		public enum Modes
+		{
+			Cached = 0,
+			OnDemand = 1,
+			Pool = 2
+		}
+
+		public static bool FeedbackTypeAuthorized = true;
+
+		[MMFInspectorGroup("Particles Instantiation", true, 37, true, false)]
+		[Tooltip("whether the particle system should be cached or created on demand the first time")]
+		public Modes Mode = Modes.Pool;
+
+		[Tooltip("the initial and planned size of this object pool")]
+		[MMFEnumCondition("Mode", new int[] { 2 })]
+		public int ObjectPoolSize = 5;
+
+		[Tooltip("whether or not to create a new pool even if one already exists for that same prefab")]
+		[MMFEnumCondition("Mode", new int[] { 2 })]
+		public bool MutualizePools;
+
+		[Tooltip("if specified, the instantiated object (or the pool of objects) will be parented to this transform ")]
+		[MMFEnumCondition("Mode", new int[] { 2 })]
+		public Transform ParentTransform;
+
+		[Tooltip("if this is false, a brand new particle system will be created every time")]
+		[MMFEnumCondition("Mode", new int[] { 1 })]
+		public bool CachedRecycle = true;
+
+		[Tooltip("the particle system to spawn")]
+		public ParticleSystem ParticlesPrefab;
+
+		[Tooltip("the possible random particle systems")]
+		public List<ParticleSystem> RandomParticlePrefabs;
+
+		[Tooltip("if this is true, the particle system game object will be activated on Play, useful if you've somehow disabled it in a past Play")]
+		public bool ForceSetActiveOnPlay;
+
+		[Tooltip("if this is true, the particle system will be stopped every time the feedback is reset - usually before play")]
+		public bool StopOnReset;
+
+		[Tooltip("the duration for the player to consider. This won't impact your particle system, but is a way to communicate to the MMF Player the duration of this feedback. Usually you'll want it to match your actual particle system, and setting it can be useful to have this feedback work with holding pauses.")]
+		public float DeclaredDuration;
+
+		[MMFInspectorGroup("Position", true, 29, false, false)]
+		[Tooltip("the selected position mode")]
+		public PositionModes PositionMode;
+
+		[Tooltip("the position at which to spawn this particle system")]
+		[MMFEnumCondition("PositionMode", new int[] { 1 })]
+		public Transform InstantiateParticlesPosition;
+
+		[Tooltip("the world position to move to when in WorldPosition mode")]
+		[MMFEnumCondition("PositionMode", new int[] { 2 })]
+		public Vector3 TargetWorldPosition;
+
+		[Tooltip("an offset to apply to the instantiation position")]
+		public Vector3 Offset;
+
+		[Tooltip("whether or not the particle system should be nested in hierarchy or floating on its own")]
+		[MMFEnumCondition("PositionMode", new int[] { 1, 0 })]
+		public bool NestParticles = true;
+
+		[Tooltip("whether or not to also apply rotation")]
+		public bool ApplyRotation;
+
+		[Tooltip("whether or not to also apply scale")]
+		public bool ApplyScale;
+
+		[MMFInspectorGroup("Simulation Speed", true, 43, false, false)]
+		[Tooltip("whether or not to force a specific simulation speed on the target particle system(s)")]
+		public bool ForceSimulationSpeed;
+
+		[Tooltip("The min and max values at which to randomize the simulation speed, if ForceSimulationSpeed is true. A new value will be randomized every time this feedback plays")]
+		[MMFCondition("ForceSimulationSpeed", true)]
+		public Vector2 ForcedSimulationSpeed = new Vector2(0.1f, 1f);
+
+		protected ParticleSystem _instantiatedParticleSystem;
+
+		protected List<ParticleSystem> _instantiatedRandomParticleSystems;
+
+		protected MMMiniObjectPooler _objectPooler;
+
+		protected GameObject _newGameObject;
+
+		protected bool _poolCreatedOrFound;
+
+		protected Vector3 _scriptPosition;
+
+		public override float FeedbackDuration
+		{
+			get
+			{
+				return ApplyTimeMultiplier(DeclaredDuration);
+			}
+			set
+			{
+				DeclaredDuration = value;
+			}
+		}
+
+		protected virtual bool ShouldCache
+		{
+			get
+			{
+				if (Mode != Modes.OnDemand || !CachedRecycle)
+				{
+					return Mode == Modes.Cached;
+				}
+				return true;
+			}
+		}
+
+		protected override void CustomInitialization(MMF_Player owner)
+		{
+			if (Active)
+			{
+				CacheParticleSystem();
+				CreatePools(owner);
+			}
+		}
+
+		protected virtual void CreatePools(MMF_Player owner)
+		{
+			if (Mode == Modes.Pool && (!(ParticlesPrefab == null) || RandomParticlePrefabs.Count != 0) && !_poolCreatedOrFound)
+			{
+				if (_objectPooler != null)
+				{
+					_objectPooler.DestroyObjectPool();
+					owner.ProxyDestroy(_objectPooler.gameObject);
+				}
+				GameObject gameObject = new GameObject();
+				gameObject.name = Owner.name + "_ObjectPooler";
+				_objectPooler = gameObject.AddComponent<MMMiniObjectPooler>();
+				_objectPooler.GameObjectToPool = ParticlesPrefab.gameObject;
+				_objectPooler.PoolSize = ObjectPoolSize;
+				_objectPooler.NestWaitingPool = NestParticles;
+				if (ParentTransform != null)
+				{
+					_objectPooler.transform.SetParent(ParentTransform);
+				}
+				else
+				{
+					_objectPooler.transform.SetParent(Owner.transform);
+				}
+				_objectPooler.MutualizeWaitingPools = MutualizePools;
+				_objectPooler.FillObjectPool();
+				if (Owner != null && gameObject.transform.parent == null)
+				{
+					SceneManager.MoveGameObjectToScene(gameObject, Owner.gameObject.scene);
+				}
+				_poolCreatedOrFound = true;
+			}
+		}
+
+		protected virtual void CacheParticleSystem()
+		{
+			if (ShouldCache)
+			{
+				InstantiateParticleSystem();
+			}
+		}
+
+		protected virtual void InstantiateParticleSystem()
+		{
+			Transform transform = null;
+			if (NestParticles)
+			{
+				if (PositionMode == PositionModes.FeedbackPosition)
+				{
+					transform = Owner.transform;
+				}
+				if (PositionMode == PositionModes.Transform)
+				{
+					transform = InstantiateParticlesPosition;
+				}
+			}
+			if (RandomParticlePrefabs.Count > 0)
+			{
+				if (ShouldCache)
+				{
+					_instantiatedRandomParticleSystems = new List<ParticleSystem>();
+					foreach (ParticleSystem randomParticlePrefab in RandomParticlePrefabs)
+					{
+						ParticleSystem particleSystem = Object.Instantiate(randomParticlePrefab, transform);
+						if (transform == null)
+						{
+							SceneManager.MoveGameObjectToScene(particleSystem.gameObject, Owner.gameObject.scene);
+						}
+						particleSystem.Stop();
+						_instantiatedRandomParticleSystems.Add(particleSystem);
+					}
+				}
+				else
+				{
+					int index = Random.Range(0, RandomParticlePrefabs.Count);
+					_instantiatedParticleSystem = Object.Instantiate(RandomParticlePrefabs[index], transform);
+					if (transform == null)
+					{
+						SceneManager.MoveGameObjectToScene(_instantiatedParticleSystem.gameObject, Owner.gameObject.scene);
+					}
+				}
+			}
+			else
+			{
+				if (ParticlesPrefab == null)
+				{
+					return;
+				}
+				_instantiatedParticleSystem = Object.Instantiate(ParticlesPrefab, transform);
+				_instantiatedParticleSystem.Stop();
+				if (transform == null)
+				{
+					SceneManager.MoveGameObjectToScene(_instantiatedParticleSystem.gameObject, Owner.gameObject.scene);
+				}
+			}
+			if (_instantiatedParticleSystem != null)
+			{
+				PositionParticleSystem(_instantiatedParticleSystem);
+			}
+			if (_instantiatedRandomParticleSystems == null || _instantiatedRandomParticleSystems.Count <= 0)
+			{
+				return;
+			}
+			foreach (ParticleSystem instantiatedRandomParticleSystem in _instantiatedRandomParticleSystems)
+			{
+				PositionParticleSystem(instantiatedRandomParticleSystem);
+			}
+		}
+
+		protected virtual void PositionParticleSystem(ParticleSystem system)
+		{
+			if (InstantiateParticlesPosition == null && Owner != null)
+			{
+				InstantiateParticlesPosition = Owner.transform;
+			}
+			if (system != null)
+			{
+				system.Stop();
+				system.transform.position = GetPosition(Owner.transform.position);
+				if (ApplyRotation)
+				{
+					system.transform.rotation = GetRotation(Owner.transform);
+				}
+				if (ApplyScale)
+				{
+					system.transform.localScale = GetScale(Owner.transform);
+				}
+				system.Clear();
+			}
+		}
+
+		protected virtual Quaternion GetRotation(Transform target)
+		{
+			return PositionMode switch
+			{
+				PositionModes.FeedbackPosition => Owner.transform.rotation, 
+				PositionModes.Transform => InstantiateParticlesPosition.rotation, 
+				PositionModes.WorldPosition => Quaternion.identity, 
+				PositionModes.Script => Owner.transform.rotation, 
+				_ => Owner.transform.rotation, 
+			};
+		}
+
+		protected virtual Vector3 GetScale(Transform target)
+		{
+			return PositionMode switch
+			{
+				PositionModes.FeedbackPosition => Owner.transform.localScale, 
+				PositionModes.Transform => InstantiateParticlesPosition.localScale, 
+				PositionModes.WorldPosition => Owner.transform.localScale, 
+				PositionModes.Script => Owner.transform.localScale, 
+				_ => Owner.transform.localScale, 
+			};
+		}
+
+		protected virtual Vector3 GetPosition(Vector3 position)
+		{
+			return PositionMode switch
+			{
+				PositionModes.FeedbackPosition => Owner.transform.position + Offset, 
+				PositionModes.Transform => InstantiateParticlesPosition.position + Offset, 
+				PositionModes.WorldPosition => TargetWorldPosition + Offset, 
+				PositionModes.Script => _scriptPosition + Offset, 
+				_ => _scriptPosition + Offset, 
+			};
+		}
+
+		protected override void CustomPlayFeedback(Vector3 position, float feedbacksIntensity = 1f)
+		{
+			if (!Active || !FeedbackTypeAuthorized)
+			{
+				return;
+			}
+			_scriptPosition = position;
+			if (Mode == Modes.Pool)
+			{
+				if (_objectPooler != null)
+				{
+					_newGameObject = _objectPooler.GetPooledGameObject();
+					_instantiatedParticleSystem = _newGameObject.MMFGetComponentNoAlloc<ParticleSystem>();
+					if (_instantiatedParticleSystem != null)
+					{
+						PositionParticleSystem(_instantiatedParticleSystem);
+						_newGameObject.SetActive(value: true);
+					}
+				}
+			}
+			else if (!ShouldCache)
+			{
+				InstantiateParticleSystem();
+			}
+			else
+			{
+				GrabCachedParticleSystem();
+			}
+			if (_instantiatedParticleSystem != null)
+			{
+				if (ForceSetActiveOnPlay)
+				{
+					_instantiatedParticleSystem.gameObject.SetActive(value: true);
+				}
+				_instantiatedParticleSystem.Stop();
+				_instantiatedParticleSystem.transform.position = GetPosition(position);
+				PositionParticleSystem(_instantiatedParticleSystem);
+				_instantiatedParticleSystem.gameObject.SetActive(value: true);
+				PlayTargetParticleSystem(_instantiatedParticleSystem);
+			}
+			if (_instantiatedRandomParticleSystems == null || _instantiatedRandomParticleSystems.Count <= 0)
+			{
+				return;
+			}
+			foreach (ParticleSystem instantiatedRandomParticleSystem in _instantiatedRandomParticleSystems)
+			{
+				if (ForceSetActiveOnPlay)
+				{
+					instantiatedRandomParticleSystem.gameObject.SetActive(value: true);
+				}
+				instantiatedRandomParticleSystem.Stop();
+				instantiatedRandomParticleSystem.transform.position = GetPosition(position);
+			}
+			int index = Random.Range(0, _instantiatedRandomParticleSystems.Count);
+			PlayTargetParticleSystem(_instantiatedRandomParticleSystems[index]);
+		}
+
+		protected virtual void PlayTargetParticleSystem(ParticleSystem targetParticleSystem)
+		{
+			if (ForceSimulationSpeed)
+			{
+				ParticleSystem.MainModule main = targetParticleSystem.main;
+				main.simulationSpeed = Random.Range(ForcedSimulationSpeed.x, ForcedSimulationSpeed.y);
+			}
+			targetParticleSystem.Play();
+		}
+
+		protected virtual void GrabCachedParticleSystem()
+		{
+			if (RandomParticlePrefabs.Count > 0)
+			{
+				int index = Random.Range(0, RandomParticlePrefabs.Count);
+				_instantiatedParticleSystem = _instantiatedRandomParticleSystems[index];
+			}
+		}
+
+		protected override void CustomStopFeedback(Vector3 position, float feedbacksIntensity = 1f)
+		{
+			if (!Active || !FeedbackTypeAuthorized)
+			{
+				return;
+			}
+			if (_instantiatedParticleSystem != null)
+			{
+				_instantiatedParticleSystem?.Stop();
+			}
+			if (_instantiatedRandomParticleSystems == null || _instantiatedRandomParticleSystems.Count <= 0)
+			{
+				return;
+			}
+			foreach (ParticleSystem instantiatedRandomParticleSystem in _instantiatedRandomParticleSystems)
+			{
+				instantiatedRandomParticleSystem.Stop();
+			}
+		}
+
+		protected override void CustomReset()
+		{
+			base.CustomReset();
+			if (!Active || !FeedbackTypeAuthorized || InCooldown)
+			{
+				return;
+			}
+			if (StopOnReset && _instantiatedParticleSystem != null)
+			{
+				_instantiatedParticleSystem.Stop();
+			}
+			if (_instantiatedRandomParticleSystems == null || _instantiatedRandomParticleSystems.Count <= 0)
+			{
+				return;
+			}
+			foreach (ParticleSystem instantiatedRandomParticleSystem in _instantiatedRandomParticleSystems)
+			{
+				instantiatedRandomParticleSystem.Stop();
+			}
+		}
+	}
+}

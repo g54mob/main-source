@@ -1,0 +1,21 @@
+using System;
+using UnityEngine;
+
+namespace Assets.Nimbatus.Scripts.World.Terrain.ClimateZone.DataGenerators.BasicOperations
+{
+	public class Clamp01 : NimbatusDataGenerator
+	{
+		public NimbatusDataGenerator A;
+
+		public override void Init(NimbatusTerrainClimateZone zone, System.Random random, ref VariableSet set)
+		{
+			base.Init(zone, random, ref set);
+			A.Init(zone, random, ref set);
+		}
+
+		public override float GetValue(Vector2 worldPosition, float previousValue)
+		{
+			return Mathf.Clamp01(A.GetValue(worldPosition, previousValue));
+		}
+	}
+}

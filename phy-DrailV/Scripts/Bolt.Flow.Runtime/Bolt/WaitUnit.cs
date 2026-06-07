@@ -1,0 +1,26 @@
+using System.Collections;
+using Ludiq;
+
+namespace Bolt
+{
+	[UnitCategory("Time")]
+	public abstract class WaitUnit : Unit
+	{
+		[DoNotSerialize]
+		[PortLabelHidden]
+		public ControlInput enter { get; private set; }
+
+		[DoNotSerialize]
+		[PortLabelHidden]
+		public ControlOutput exit { get; private set; }
+
+		protected override void Definition()
+		{
+			enter = ControlInputCoroutine("enter", Await);
+			exit = ControlOutput("exit");
+			Succession(enter, exit);
+		}
+
+		protected abstract IEnumerator Await(Flow flow);
+	}
+}

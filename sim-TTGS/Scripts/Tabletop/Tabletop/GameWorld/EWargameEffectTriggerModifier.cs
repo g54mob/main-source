@@ -1,0 +1,23 @@
+namespace Tabletop.GameWorld
+{
+	public enum EWargameEffectTriggerModifier
+	{
+		NONE = 0,
+		ANY_EFFECT = 1,
+		ASSAULT = 2,
+		DAMAGE = 3,
+		PV = 4,
+		ANY_POSITIVE_EFFECT = 5,
+		ASSAULT_POSITIVE = 6,
+		DAMAGE_POSITIVE = 7,
+		PV_POSITIVE = 8,
+		ANY_NEGATIVE_EFFECT = 9,
+		ASSAULT_NEGATIVE = 10,
+		DAMAGE_NEGATIVE = 11,
+		PV_NEGATIVE = 12,
+		NEXT_ROUND = 13,
+		EVERY_ROUND = 14,
+		UNUSED_DICES = 15,
+		APPLY_POST_EFFECT = 16
+	}
+}

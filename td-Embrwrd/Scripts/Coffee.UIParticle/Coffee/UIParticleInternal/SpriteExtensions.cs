@@ -1,0 +1,12 @@
+using UnityEngine;
+
+namespace Coffee.UIParticleInternal
+{
+	internal static class SpriteExtensions
+	{
+		internal static Texture2D GetActualTexture(this Sprite self)
+		{
+			return null;
+		}
+	}
+}

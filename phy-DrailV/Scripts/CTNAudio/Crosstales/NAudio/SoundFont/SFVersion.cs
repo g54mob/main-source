@@ -1,0 +1,33 @@
+namespace Crosstales.NAudio.SoundFont
+{
+	public class SFVersion
+	{
+		private short major;
+
+		private short minor;
+
+		public short Major
+		{
+			get
+			{
+				return major;
+			}
+			set
+			{
+				major = value;
+			}
+		}
+
+		public short Minor
+		{
+			get
+			{
+				return minor;
+			}
+			set
+			{
+				minor = value;
+			}
+		}
+	}
+}

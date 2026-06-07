@@ -1,0 +1,48 @@
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace RLD
+{
+	public class ObjectPreSelectCustomizeInfo
+	{
+		private List<GameObject> _toBeSelected;
+
+		private ObjectSelectReason _selectRason;
+
+		public ObjectSelectReason SelectReason => _selectRason;
+
+		public int ToBeSelectedCount => _toBeSelected.Count;
+
+		public List<GameObject> ToBeSelected => new List<GameObject>(_toBeSelected);
+
+		public ObjectPreSelectCustomizeInfo(List<GameObject> toBeSelected, ObjectSelectReason selectReason)
+		{
+			_toBeSelected = new List<GameObject>(toBeSelected);
+			_selectRason = selectReason;
+		}
+
+		public void SelectThese(IEnumerable<GameObject> toBeSelected)
+		{
+			if (toBeSelected == null)
+			{
+				_toBeSelected = new List<GameObject>();
+			}
+			else
+			{
+				_toBeSelected = new List<GameObject>(toBeSelected);
+			}
+		}
+
+		public void IgnoreThese(IEnumerable<GameObject> toBeIgnored)
+		{
+			if (toBeIgnored == null)
+			{
+				return;
+			}
+			foreach (GameObject item in toBeIgnored)
+			{
+				_toBeSelected.Remove(item);
+			}
+		}
+	}
+}

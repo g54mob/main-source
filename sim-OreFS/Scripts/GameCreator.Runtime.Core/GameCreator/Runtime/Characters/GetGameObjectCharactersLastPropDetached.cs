@@ -1,0 +1,28 @@
+using System;
+using GameCreator.Runtime.Common;
+using UnityEngine;
+
+namespace GameCreator.Runtime.Characters
+{
+	[Serializable]
+	[Title("Last Prop Instance Detached")]
+	[Category("Characters/Props/Last Prop Instance Detached")]
+	[Image(typeof(IconTennis), ColorTheme.Type.Yellow, typeof(OverlayMinus))]
+	[Description("Reference to the latest Prop instance detached from a Character")]
+	public class GetGameObjectCharactersLastPropDetached : PropertyTypeGetGameObject
+	{
+		public override string String => "Last Prop Attached";
+
+		public static PropertyGetGameObject Create => new PropertyGetGameObject(new GetGameObjectCharactersLastPropDetached());
+
+		public override GameObject Get(Args args)
+		{
+			return Props.LastPropDetachedInstance;
+		}
+
+		public override GameObject Get(GameObject gameObject)
+		{
+			return Props.LastPropDetachedInstance;
+		}
+	}
+}

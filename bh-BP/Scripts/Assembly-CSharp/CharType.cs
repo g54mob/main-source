@@ -1,0 +1,27 @@
+public enum CharType
+{
+	kDefault = 0,
+	kRecaller = 1,
+	kItchyFinger = 2,
+	kTunneller = 3,
+	kTiptoer = 4,
+	kCogitator = 5,
+	kTactician = 6,
+	kSpendthrift = 7,
+	kEmbedded = 8,
+	kRadicalAI = 9,
+	kEmptyNester = 10,
+	kShade = 11,
+	kCohabitants = 12,
+	kPhysicist = 13,
+	kBrickHead = 14,
+	kSisyphus = 15,
+	kFlagellant = 16,
+	kWimp = 17,
+	kPackRat = 18,
+	kFalconer = 19,
+	kCarouser = 20,
+	kBackpacker = 21,
+	kInfluencer = 22,
+	kNum = 23
+}

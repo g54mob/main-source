@@ -1,0 +1,20 @@
+using System;
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace EpicToonFX
+{
+	[Serializable]
+	public class TargetEffects
+	{
+		public GameObject hitParticle;
+
+		public GameObject respawnParticle;
+
+		public List<GameObject> deathParticles = new List<GameObject>();
+
+		public AudioClip destroySound;
+
+		public AudioClip respawnSound;
+	}
+}

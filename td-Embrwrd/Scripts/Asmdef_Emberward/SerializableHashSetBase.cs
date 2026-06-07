@@ -1,0 +1,24 @@
+using System.Collections.Generic;
+using System.Runtime.Serialization;
+
+public abstract class SerializableHashSetBase
+{
+	public abstract class Storage
+	{
+	}
+
+	protected class HashSet<TValue> : System.Collections.Generic.HashSet<TValue>
+	{
+		public HashSet()
+		{
+		}
+
+		public HashSet(ISet<TValue> set)
+		{
+		}
+
+		public HashSet(SerializationInfo info, StreamingContext context)
+		{
+		}
+	}
+}

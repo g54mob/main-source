@@ -1,0 +1,25 @@
+using UnityEngine;
+using UnityEngine.UI;
+
+namespace MoreMountains.Feedbacks
+{
+	[AddComponentMenu("More Mountains/Springs/MMSpringImageAlpha")]
+	public class MMSpringImageAlpha : MMSpringFloatComponent<Image>
+	{
+		protected Color _color;
+
+		public override float TargetFloat
+		{
+			get
+			{
+				return Target.color.a;
+			}
+			set
+			{
+				_color = Target.color;
+				_color.a = value;
+				Target.color = _color;
+			}
+		}
+	}
+}

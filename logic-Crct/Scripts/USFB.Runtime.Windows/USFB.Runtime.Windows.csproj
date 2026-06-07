@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>USFB.Runtime.Windows</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net40</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="USFB.Runtime.Common">
+      <HintPath>..\..\Assemblies\USFB.Runtime.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ShellFileDialogs">
+      <HintPath>..\..\Assemblies\ShellFileDialogs.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

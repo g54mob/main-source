@@ -1,0 +1,41 @@
+namespace Assets.Nimbatus.Scripts.Persistence.Achievements
+{
+	public enum EAchievement
+	{
+		None = 0,
+		SumoTournamentWon = 1,
+		BrawlTournamentWon = 2,
+		SelfDestruction = 3,
+		FirstDrone = 4,
+		BigBoy = 5,
+		AbsoluteUnit = 6,
+		LookAtTheSize = 7,
+		WorldSlayer = 8,
+		TheBiggerTheyAre = 9,
+		SpeedDemon = 10,
+		CatchPro = 11,
+		RealNimbatus = 12,
+		Survivor = 13,
+		StingLikeABee = 14,
+		Maverick = 15,
+		PlanetCracker = 16,
+		MagicHands = 17,
+		NewTechnology = 18,
+		Mastermind = 19,
+		DoctorJones = 20,
+		AbundantResources = 21,
+		CapitalistConstructor = 22,
+		ToInfinity = 23,
+		OpenSource = 24,
+		AimForTheTop = 25,
+		LetItRip = 26,
+		GodParticle = 27,
+		KnowledgeIsPower = 28,
+		QuantumComputing = 29,
+		GoingGreen = 30,
+		Garbageman = 31,
+		BugCatcher = 32,
+		Bunkerbuster = 33,
+		HitAndRun = 34
+	}
+}

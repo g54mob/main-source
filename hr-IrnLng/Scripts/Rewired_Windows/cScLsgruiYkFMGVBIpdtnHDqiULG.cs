@@ -1,0 +1,1 @@
+internal delegate void cScLsgruiYkFMGVBIpdtnHDqiULG(nQfFkZhVbYgCICGbKJhqQlKDtpOT report);

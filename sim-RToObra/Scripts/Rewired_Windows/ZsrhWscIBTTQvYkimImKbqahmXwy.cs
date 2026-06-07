@@ -1,0 +1,1 @@
+internal delegate void ZsrhWscIBTTQvYkimImKbqahmXwy(VOwBPRSIcgMbwNNxsMOAWsKZwrz data);

@@ -1,0 +1,37 @@
+namespace play
+{
+	public sealed class GameTransitionKind_FADE_TO_END : GameTransitionKind
+	{
+		public readonly string endId;
+
+		public GameTransitionKind_FADE_TO_END(string endId)
+			: base(0)
+		{
+		}
+
+		public override Array getParams()
+		{
+			return null;
+		}
+
+		public override string getTag()
+		{
+			return null;
+		}
+
+		public override int GetHashCode()
+		{
+			return 0;
+		}
+
+		public override bool Equals(object other)
+		{
+			return false;
+		}
+
+		public override string toString()
+		{
+			return null;
+		}
+	}
+}

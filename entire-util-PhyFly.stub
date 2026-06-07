@@ -1,0 +1,594 @@
+─────────────────────────────────────────────────────────────────
+Folder : util-PhyFly/
+Files  : 588
+Total  : 568.09 MB
+─────────────────────────────────────────────────────────────────
+
+util-PhyFly/Assets/AddressableAssetsData/AddressableAssetSettings.asset                                                                           3.6 KB
+util-PhyFly/Assets/AddressableAssetsData/AssetGroups/Built In Data.asset                                                                          929 B
+util-PhyFly/Assets/AddressableAssetsData/AssetGroups/Default Local Group.asset                                                                    822 B
+util-PhyFly/Assets/AddressableAssetsData/AssetGroups/Schemas/Built In Data_PlayerDataGroupSchema.asset                                            568 B
+util-PhyFly/Assets/AddressableAssetsData/AssetGroups/Schemas/Default Local Group_BundledAssetGroupSchema.asset                                    1.5 KB
+util-PhyFly/Assets/AddressableAssetsData/AssetGroups/Schemas/Default Local Group_ContentUpdateGroupSchema.asset                                   533 B
+util-PhyFly/Assets/AddressableAssetsData/AssetGroupTemplates/Packed Assets.asset                                                                  2.0 KB
+util-PhyFly/Assets/AddressableAssetsData/DataBuilders/BuildScriptFastMode.asset                                                                   810 B
+util-PhyFly/Assets/AddressableAssetsData/DataBuilders/BuildScriptPackedMode.asset                                                                 812 B
+util-PhyFly/Assets/AddressableAssetsData/DataBuilders/BuildScriptPackedPlayMode.asset                                                             816 B
+util-PhyFly/Assets/AddressableAssetsData/DataBuilders/BuildScriptVirtualMode.asset                                                                813 B
+util-PhyFly/Assets/AddressableAssetsData/DefaultObject.asset                                                                                      469 B
+util-PhyFly/Assets/AddressableAssetsData/link.xml                                                                                                 685 B
+util-PhyFly/Assets/IndiePixel_Framework/Core/Art/Audio/UI/NavSingle.wav                                                                           380.5 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Art/Audio/UI/Select.wav                                                                              383.1 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Art/Grids/Materials/orange-grid.mat                                                                  3.5 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Art/Grids/orange-grid.png                                                                            6.1 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Art/Grids/Orange_Grid_MAT.mat                                                                        3.5 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Art/Objects/Default_Syke.fbx                                                                         23.3 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Art/Objects/Materials/phong1.mat                                                                     3.4 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Art/UI/arrow-001.png                                                                                 14.8 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Art/UI/bg-border-white.png                                                                           14.7 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Art/UI/bg-white.png                                                                                  14.2 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Art/UI/btn-full-radius-white-border.png                                                              16.1 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Art/UI/btn-full-radius-white.png                                                                     15.4 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Art/UI/close-icon.png                                                                                20.8 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Art/UI/color_picker.png                                                                              203.6 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Art/UI/info-2-xxl.png                                                                                22.8 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Art/UI/Loading_Spinners/back-icon.png                                                                16.9 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Art/UI/Loading_Spinners/circle-icon.png                                                              16.5 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Art/UI/Loading_Spinners/loading_spinner_001.png                                                      19.9 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Art/UI/menu-icon.png                                                                                 16.3 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Art/UI/profile-edit.png                                                                              1.4 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Art/UI/settings-closeX.png                                                                           1.4 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Art/UI/settings-facebook.png                                                                         1.1 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Art/UI/settings-musicOff.png                                                                         1.6 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Art/UI/settings-musicOn.png                                                                          1.4 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Art/UI/settings-notificationsOff.png                                                                 1.5 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Art/UI/settings-notificationsOn.png                                                                  1.4 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Art/UI/settings-soundOff.png                                                                         1.5 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Art/UI/settings-soundOn.png                                                                          1.7 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Art/UI/submachine_gun_filled1600.png                                                                 53.2 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Art/UI/Users-User-icon.png                                                                           20.1 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Cameras/IP_CameraSwitcher_Util.cs                                                               1.5 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Cameras/IP_RotateAroundPoint_Util.cs                                                            1.5 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Data/IP_Player_Data.cs                                                                          402 B
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Camera_Helper/IP_Camera_Helpers.cs                                                       1.4 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Designer_Dashboard/IP_DesignerDash_Window.cs                                             1.7 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Editor_UI/Emortal_Editor_GUISkin.guiskin                                                 37.6 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Editor_UI/Emortal_Inspector_GUISkin.guiskin                                              47.7 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Editor_UI/Fonts/OpenSans-Bold.ttf                                                        219.3 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Editor_UI/Fonts/OpenSans-BoldItalic.ttf                                                  208.3 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Editor_UI/Fonts/OpenSans-ExtraBold.ttf                                                   217.4 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Editor_UI/Fonts/OpenSans-ExtraBoldItalic.ttf                                             208.4 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Editor_UI/Fonts/OpenSans-Italic.ttf                                                      207.9 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Editor_UI/Fonts/OpenSans-Light.ttf                                                       217.2 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Editor_UI/Fonts/OpenSans-LightItalic.ttf                                                 208.1 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Editor_UI/Fonts/OpenSans-Regular.ttf                                                     212.3 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Editor_UI/Fonts/OpenSans-Semibold.ttf                                                    216.1 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Editor_UI/Fonts/OpenSans-SemiboldItalic.ttf                                              207.8 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Editor_UI/Textures/bg-dark-001.png                                                       14.2 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Editor_UI/Textures/bg-dark-002.png                                                       15.1 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Editor_UI/Textures/bg-gray-001.png                                                       15.1 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Editor_UI/Textures/bg-gray-002.png                                                       15.1 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Editor_UI/Textures/bg-gray-003.png                                                       15.1 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Editor_UI/Textures/bg-white-4px-br.png                                                   15.2 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Editor_UI/Textures/box-dark-001.png                                                      14.6 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Editor_UI/Textures/box-dark-002.png                                                      14.2 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Editor_UI/Textures/btn-5px_br.png                                                        15.2 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Editor_UI/Textures/btn-5px_br_solid.png                                                  15.4 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Editor_UI/Textures/emortal_logo_editor.png                                               115.2 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Editor_UI/Textures/indie-pixel-icon_32px.png                                             18.4 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Editor_UI/Textures/input-field-bg-001.png                                                15.1 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/IP_Base_Window.cs                                                                        430 B
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/IP_Menus.cs                                                                              3.3 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Level_Tools/Object_Replacer/IP_ObjectReplacer_Window.cs                                  2.0 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Level_Tools/OBJ_Export/IP_OBJ_Export.cs                                                  11.3 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Level_Tools/Vertex_Painter/Art/default_grid.fbx                                          27.3 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Level_Tools/Vertex_Painter/Art/EF_MeshPainter_VTXColor.shader                            782 B
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Level_Tools/Vertex_Painter/Art/Materials/lambert1.mat                                    3.4 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Level_Tools/Vertex_Painter/Art/Vertex_Color_MAT.mat                                      3.4 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Level_Tools/Vertex_Painter/Fonts/Futura_bd_cd_BT_0.TTF                                   40.2 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Level_Tools/Vertex_Painter/Fonts/Futura_Bk_BT_Book_Italic1_0.ttf                         39.5 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Level_Tools/Vertex_Painter/Fonts/Futura_Black_Narrow_0.ttf                               54.8 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Level_Tools/Vertex_Painter/Fonts/Futura_Bold_Condensed_BT.ttf                            39.5 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Level_Tools/Vertex_Painter/Fonts/Futura_Bold_Italic_BT_0.ttf                             39.5 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Level_Tools/Vertex_Painter/Fonts/Futura_Book_BT_0.ttf                                    37.8 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Level_Tools/Vertex_Painter/Fonts/Futura_Exblk__bd_cd_it_BT_0.TTF                         40.7 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Level_Tools/Vertex_Painter/Fonts/Futura_Light-Normal_0.ttf                               37.3 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Level_Tools/Vertex_Painter/Fonts/Futura_Medium_0.ttf                                     108.6 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Level_Tools/Vertex_Painter/Fonts/Futura_Medium_BT.ttf                                    38.8 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Level_Tools/Vertex_Painter/Fonts/Futura_med_cond_bd_BT_0.TTF                             35.5 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Level_Tools/Vertex_Painter/Fonts/Futura_Thin_0.ttf                                       37.4 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Level_Tools/Vertex_Painter/IP_VertexPainter_Data.cs                                      1.5 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Level_Tools/Vertex_Painter/IP_VertexPainter_Utils.cs                                     9.2 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Level_Tools/Vertex_Painter/IP_VertexPainter_Window.cs                                    15.9 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Level_Tools/Vertex_Painter/Resources/editor_wireframe_bg_gray004.png                     16.9 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Level_Tools/Vertex_Painter/Resources/editor_wireframe_bg_gray004_2.png                   17.8 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Level_Tools/Vertex_Painter/Resources/editor_wireframe_bg_gray005.png                     16.9 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Level_Tools/Vertex_Painter/Resources/editor_wireframe_bg_gray005_borderTop.png           18.0 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Level_Tools/Vertex_Painter/Resources/editor_wireframe_bg_gray005_borderTopBottom.png     18.2 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Level_Tools/Vertex_Painter/Resources/editor_wireframe_bg_gray006.png                     17.8 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Level_Tools/Vertex_Painter/Resources/editor_wireframe_bg_gray006_BorderTopBottom.png     17.8 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Level_Tools/Vertex_Painter/Resources/editor_wireframe_bg_gray007.png                     17.8 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Level_Tools/Vertex_Painter/Resources/EF_VertexPainter_Skin.guiskin                       39.3 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Level_Tools/Vertex_Painter/Resources/Materials/GG_MeshPainter_VTXColor_MAT.mat           3.4 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Level_Tools/Vertex_Painter/Resources/UnityEditor_Wireframe_GUI_Layout.psd                138.2 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Project_Helper/IP_ProjectFolders_Window.cs                                               5.6 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Scene_Helper/IP_Grouping_Window.cs                                                       2.2 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Scene_Helper/IP_Scene_Helpers.cs                                                         2.0 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Scene_Helper/IP_UI_Helpers.cs                                                            932 B
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Editor/Utils/IP_Editor_Utils.cs                                                                 3.5 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/FX/Cloth/IP_ClothWind.cs                                                                        1018 B
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Input/Editor/IP_MouseInput_Editor.cs                                                            2.2 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Input/IP_Global_Input.cs                                                                        462 B
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Input/IP_Keyboard_Input.cs                                                                      252 B
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Input/IP_Mouse_Input.cs                                                                         3.9 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Input/IP_Touch_Input.cs                                                                         249 B
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Input/IP_Xbox_Input.cs                                                                          248 B
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Managers/IP_Game_Manager.cs                                                                     2.7 KB
+util-PhyFly/Assets/IndiePixel_Framework/Core/Code/Shaders/IP_Basic_LitVertexColor.shader                                                          2.7 KB
+util-PhyFly/Assets/IndiePixel_Framework/Sequence/Editor/IP_GameSequence_Editor.cs                                                                 4.9 KB
+util-PhyFly/Assets/IndiePixel_Framework/Sequence/Editor/IP_Sequence_Menu.cs                                                                       604 B
+util-PhyFly/Assets/IndiePixel_Framework/Sequence/IP_Action.cs                                                                                     1.4 KB
+util-PhyFly/Assets/IndiePixel_Framework/Sequence/IP_Game_Sequence.cs                                                                              3.3 KB
+util-PhyFly/Assets/IndiePixel_Framework/UI/Code/Components/IP_Header_Manager.cs                                                                   2.0 KB
+util-PhyFly/Assets/IndiePixel_Framework/UI/Code/Components/IP_HealthBar_UI.cs                                                                     347 B
+util-PhyFly/Assets/IndiePixel_Framework/UI/Code/Components/IP_Item_Button.cs                                                                      888 B
+util-PhyFly/Assets/IndiePixel_Framework/UI/Code/Components/IP_Menu_Manager.cs                                                                     1.6 KB
+util-PhyFly/Assets/IndiePixel_Framework/UI/Code/IP_Base_Screen.cs                                                                                 2.9 KB
+util-PhyFly/Assets/IndiePixel_Framework/UI/Code/IP_UI_System.cs                                                                                   4.0 KB
+util-PhyFly/Assets/IndiePixel_Framework/UI/Code/Loading/IP_Loader_Manager.cs                                                                      4.9 KB
+util-PhyFly/Assets/IndiePixel_Framework/UI/Code/Screen_Types/IP_Timed_Screen.cs                                                                   897 B
+util-PhyFly/Assets/IndiePixel_Framework/UI/Prefabs/UI_GRP.prefab                                                                                  16.3 KB
+util-PhyFly/Assets/InputActions/PlayerInputActions.inputactions                                                                                   1.8 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Audio/CannonFire.wav                                                                                    158.0 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Materials/Projectiles/Bullet_Trail_MAT.mat                                                              4.3 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Environment/Grasses/grass_clump_001/grass_clump_001.fbx                                         228.8 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Environment/Grasses/grass_clump_001/grass_clump_001_MAT.mat                                     4.4 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Environment/Grasses/Textures/grass_blades_001.png                                               33.9 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Environment/Heli_Pad/HeliPad_001.fbx                                                            1.24 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Environment/Heli_Pad/Heli_Pad_MAT.mat                                                           3.4 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Environment/Rocks/Large_Rock_001.fbx                                                            57.1 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Environment/Rocks/Large_Rock_002.fbx                                                            54.7 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Environment/Rocks/Large_Rock_003.fbx                                                            40.5 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Environment/Rocks/Rock_MAT.mat                                                                  3.4 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Environment/Terrain/Terrain_001.tga                                                             64.00 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Environment/Terrain/Terrain_001_masks.tga                                                       37.38 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Environment/Terrain/Terrain_MAT.mat                                                             3.4 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Environment/Terrain/Tile_001/Terrain_Tile001_MAT.mat                                            5.4 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Environment/Terrain/Tile_001/Terrain_Tile_001.fbx                                               1.50 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Environment/Terrain/Tile_001/Tile_001_ao.tga                                                    11.71 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Environment/Terrain/Tile_001/Tile_001_basecolor.tga                                             6.53 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Environment/Terrain/Tile_001/Tile_001_curvature.tga                                             2.59 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Environment/Terrain/Tile_001/Tile_001_normal.tga                                                10.20 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Environment/Terrain/Tile_002/Terrain_Tile002_MAT.mat                                            5.4 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Environment/Terrain/Tile_002/Terrain_Tile_002.fbx                                               1.47 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Environment/Terrain/Tile_002/Tile_002_ao.tga                                                    11.85 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Environment/Terrain/Tile_002/Tile_002_basecolor.tga                                             128.0 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Environment/Terrain/Tile_002/Tile_002_curvature.tga                                             2.48 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Environment/Terrain/Tile_002/Tile_002_normal.tga                                                10.46 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Environment/Terrain/Tile_003/Terrain_Tile003_MAT.mat                                            5.5 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Environment/Terrain/Tile_003/Terrain_Tile_003.fbx                                               1.51 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Environment/Terrain/Tile_003/Tile_003_ao.tga                                                    11.72 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Environment/Terrain/Tile_003/Tile_003_basecolor.tga                                             6.62 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Environment/Terrain/Tile_003/Tile_003_curvature.tga                                             2.55 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Environment/Terrain/Tile_003/Tile_003_normal.tga                                                10.20 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Environment/Terrain/Tile_004/Terrain_Tile004_MAT.mat                                            5.4 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Environment/Terrain/Tile_004/Terrain_Tile_004.fbx                                               1.54 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Environment/Terrain/Tile_004/Tile_004_ao.tga                                                    11.36 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Environment/Terrain/Tile_004/Tile_004_basecolor.tga                                             6.18 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Environment/Terrain/Tile_004/Tile_004_curvature.tga                                             2.33 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Environment/Terrain/Tile_004/Tile_004_normal.tga                                                9.82 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/Huey/Guns/Gatling_gun/Texturas/Gatling_Gun_AlbedoTransparency.png                   17.78 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/Huey/Guns/Gatling_gun/Texturas/Gatling_Gun_ambient_occlusion.png                    8.90 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/Huey/Guns/Gatling_gun/Texturas/Gatling_gun_Normal.png                               9.93 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/Huey/Guns/Machine_gun/Textures/MachineGun_ambient_occlusion.png                     8.44 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/Huey/Guns/Machine_gun/Textures/MachineGun_DefaultMaterial_AlbedoTransparency.png    17.72 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/Huey/Guns/Machine_gun/Textures/MachineGun_DefaultMaterial_Normal.png                24.89 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/Huey/Guns/Nose_gun/Texturas/Nose_gun_ambient_occlusion.png                          2.28 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/Huey/Guns/Nose_gun/Texturas/Nose_gun_DefaultMaterial_AlbedoTransparency.png         10.85 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/Huey/Guns/Nose_gun/Texturas/Nose_gun_DefaultMaterial_Normal.png                     14.56 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/Huey/Guns/Rocket/Texturas/rocket_AlbedoTransparency.png                             14.94 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/Huey/Guns/Rocket/Texturas/rocket_ambient_occlusion.png                              9.14 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/Huey/Guns/Rocket/Texturas/rocket_Normal.png                                         13.85 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/Huey/Guns/Side_gunner/Textures/Side_gunner_AlbedoTransparency.png                   13.91 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/Huey/Guns/Side_gunner/Textures/Side_gunner_ambient_occlusion.png                    7.61 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/Huey/Guns/Side_gunner/Textures/Side_gunner_Normal.png                               10.72 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/Huey/HueyBody_Weapons.fbx                                                           733.6 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/Huey/Materials/Gatling_Gun_MAT.mat                                                  3.7 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/Huey/Materials/Hueybody_MAT.mat                                                     3.7 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/Huey/Materials/HueyInterior_MAT.mat                                                 3.7 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/Huey/Materials/HueyPropeller_MAT.mat                                                3.7 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/Huey/Materials/Machine_gun1_MAT.mat                                                 3.7 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/Huey/Materials/Nose_Gun_MAT.mat                                                     3.7 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/Huey/Materials/Rocket_MAT.mat                                                       3.7 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/Huey/Materials/Side_gunner_MAT.mat                                                  3.7 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/Huey/Textures/HueyBody_AlbedoTransparency.jpg                                       2.12 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/Huey/Textures/HueyBody_ambient_occlusion.jpg                                        1.71 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/Huey/Textures/HueyBody_Normal.jpg                                                   5.57 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/Huey/Textures/HueyInterior_AlbedoTransparency.jpg                                   1.71 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/Huey/Textures/HueyInterior_ambient_occlusion.jpg                                    1.57 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/Huey/Textures/HueyInterior_Normal.jpg                                               3.39 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/Huey/Textures/HueyPropeller_AlbedoTransparency.jpg                                  2.26 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/Huey/Textures/HueyPropeller_ambient_occlusion.jpg                                   1.45 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/Huey/Textures/HueyPropeller_Normal.jpg                                              1.10 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/R22/Materials/R22_Body_MAT.mat                                                      3.8 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/R22/Materials/R22_Cockpit_MAT.mat                                                   3.7 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/R22/Materials/R22_Glass_MAT.mat                                                     3.8 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/R22/Materials/R22_MainRotorBlur_MAT.mat                                             3.6 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/R22/Materials/R22_Mechanical_MAT.mat                                                3.7 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/R22/Materials/R22_TailRotorBlur_MAT.mat                                             3.6 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/R22/R22_Helicopter_V1.FBX                                                           1.36 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/R22/R22_Helicopter_V2.FBX                                                           933.0 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/R22/Textures/Main_Rotor_Blur/mainRotor_blur_lod001.png                              72.0 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/R22/Textures/Main_Rotor_Blur/mainRotor_blur_lod002.png                              132.6 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/R22/Textures/Main_Rotor_Blur/mainRotor_blur_lod003.png                              213.2 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/R22/Textures/Main_Rotor_Blur/mainRotor_blur_lod004.png                              306.4 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/R22/Textures/Main_Rotor_Blur/mainRotor_blur_lod005.png                              383.7 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/R22/Textures/Main_Rotor_Blur/mainRotor_blur_lod006.png                              487.0 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/R22/Textures/Main_Rotor_Blur/mainRotor_blur_lod007.png                              584.0 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/R22/Textures/Main_Rotor_Blur/mainRotor_blur_lod008.png                              766.5 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/R22/Textures/Main_Rotor_Blur/mainRotor_blur_lod009.png                              1.10 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/R22/Textures/Main_Rotor_Blur/mainRotor_blur_lod010.png                              1.19 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/R22/Textures/Main_Textures/Body_Albedo.png                                          2.57 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/R22/Textures/Main_Textures/Body_Albedo_Alpha.tga                                    16.00 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/R22/Textures/Main_Textures/Body_AO.png                                              740.6 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/R22/Textures/Main_Textures/Body_Emission.png                                        14.4 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/R22/Textures/Main_Textures/Body_NM.png                                              2.00 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/R22/Textures/Main_Textures/Cockpit_Albedo.png                                       1.80 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/R22/Textures/Main_Textures/Cockpit_AO.png                                           858.5 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/R22/Textures/Main_Textures/Cockpit_NM.png                                           3.77 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/R22/Textures/Main_Textures/Parts_Albedo.png                                         2.03 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/R22/Textures/Main_Textures/Parts_AO.png                                             852.3 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/R22/Textures/Main_Textures/Parts_NM.png                                             3.61 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/R22/Textures/Tail_Rotor_Blur/tailRotor_blur_lod001.png                              115.4 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/R22/Textures/Tail_Rotor_Blur/tailRotor_blur_lod002.png                              176.0 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/R22/Textures/Tail_Rotor_Blur/tailRotor_blur_lod003.png                              244.3 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/R22/Textures/Tail_Rotor_Blur/tailRotor_blur_lod004.png                              310.5 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/R22/Textures/Tail_Rotor_Blur/tailRotor_blur_lod005.png                              375.8 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/R22/Textures/Tail_Rotor_Blur/tailRotor_blur_lod006.png                              434.1 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/R22/Textures/Tail_Rotor_Blur/tailRotor_blur_lod007.png                              500.1 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/R22/Textures/Tail_Rotor_Blur/tailRotor_blur_lod008.png                              635.8 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/R22/Textures/Tail_Rotor_Blur/tailRotor_blur_lod009.png                              825.1 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Helicopters/R22/Textures/Tail_Rotor_Blur/tailRotor_blur_lod010.png                              838.5 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Projectiles/Cannon_Bullet.fbx                                                                   31.8 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Projectiles/Cannon_Bullet_MAT.mat                                                               3.4 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Vehicles/AircraftCarrier/AircraftCarrier_Geo.FBX                                                763.1 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Vehicles/AircraftCarrier/Materials/AircraftCarrier_MAT.mat                                      3.8 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Vehicles/AircraftCarrier/Textures/Aircraft_Albedo.png                                           4.61 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Vehicles/AircraftCarrier/Textures/Aircraft_AO.png                                               1.06 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Vehicles/AircraftCarrier/Textures/Aircraft_Emission.png                                         15.0 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Vehicles/AircraftCarrier/Textures/Aircraft_NM.png                                               3.52 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Vehicles/Battleship/BattleShip_Geo.FBX                                                          1.41 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Vehicles/Battleship/Materials/Battleship_01_MAT.mat                                             3.7 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Vehicles/Battleship/Materials/Battleship_02_MAT.mat                                             3.7 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Vehicles/Battleship/Textures/Battleship_AO.png                                                  645.2 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Vehicles/Battleship/Textures/BattleShip_BaseColor.png                                           3.64 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Vehicles/Battleship/Textures/BattleShip_Normal.png                                              2.97 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Vehicles/Battleship/Textures/Weapons_AO.png                                                     1.88 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Vehicles/Battleship/Textures/Weapons_BaseColor.png                                              3.95 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Vehicles/Battleship/Textures/Weapons_Normal.png                                                 3.29 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Objects/Vehicles/Helicopters/Huey/Materials/Side_gunner.mat                                             2.2 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Post/Global_Volume Profile.asset                                                                        25.7 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Art/Textures/Projectiles/trail_ramp.png                                                                     18.8 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Code/Editor/icons/indie-pixel-icon_32px.png                                                                 18.4 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Code/Editor/Menus/IP_Helicopter_Menus.cs                                                                    2.6 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Code/Scripts/Camera/Editor/IP_AdvancedHeliCamera_Editor.cs                                                  1.5 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Code/Scripts/Camera/IP_Advanced_HeliCamera.cs                                                               3.4 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Code/Scripts/Camera/IP_Base_HeliCamera.cs                                                                   1.2 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Code/Scripts/Camera/IP_Basic_HeliCamera.cs                                                                  1.1 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Code/Scripts/Camera/IP_Camera_Manager.cs                                                                    1.8 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Code/Scripts/Camera/IP_Cockpit_HeliCamera.cs                                                                979 B
+util-PhyFly/Assets/Intro_Heli_Physics/Code/Scripts/Camera/IP_IHeliCamera.cs                                                                       196 B
+util-PhyFly/Assets/Intro_Heli_Physics/Code/Scripts/Camera/IP_TopDown_Camera.cs                                                                    1.5 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Code/Scripts/Characteristics/IP_Arcade_Heli_Characteristics.cs                                              1.9 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Code/Scripts/Characteristics/IP_Heli_Characteristics.cs                                                     4.0 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Code/Scripts/Controllers/IP_Heli_Controller.cs                                                              2.2 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Code/Scripts/Controllers/IP_Heli_Rotor_Controller.cs                                                        1.2 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Code/Scripts/Engines/Editor/IP_HeliEngine_Editor.cs                                                         1.1 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Code/Scripts/Engines/IP_Heli_Engine.cs                                                                      1.3 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Code/Scripts/Input/Editor/IP_KeyboardHeli_InputEditor.cs                                                    1.5 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Code/Scripts/Input/Editor/IP_XboxHeli_InputEditor.cs                                                        1.5 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Code/Scripts/Input/IP_BaseHeli_Input.cs                                                                     717 B
+util-PhyFly/Assets/Intro_Heli_Physics/Code/Scripts/Input/IP_Input_Controller.cs                                                                   4.1 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Code/Scripts/Input/IP_KeyboardHeli_Input.cs                                                                 3.7 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Code/Scripts/Input/IP_XboxHeli_Input.cs                                                                     1.1 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Code/Scripts/Rigidbodies/IP_Base_RBController.cs                                                            1.2 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Code/Scripts/Rotors/Editor/IP_HeliMainRotor_Editor.cs                                                       1.6 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Code/Scripts/Rotors/IP_HeliMain_Rotor.cs                                                                    1.6 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Code/Scripts/Rotors/IP_HeliTail_Rotor.cs                                                                    1.2 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Code/Scripts/Rotors/IP_IHeliRotor.cs                                                                        279 B
+util-PhyFly/Assets/Intro_Heli_Physics/Code/Scripts/Rotors/IP_Rotor_Blur.cs                                                                        2.1 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Code/Scripts/Weapons/IP_Base_Projectile.cs                                                                  1.5 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Code/Scripts/Weapons/IP_Base_Weapon.cs                                                                      2.2 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Code/Scripts/Weapons/IP_HeliWeapon_Controller.cs                                                            1.1 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Code/Scripts/Weapons/IP_IWeapon.cs                                                                          214 B
+util-PhyFly/Assets/Intro_Heli_Physics/Code/Scripts/Weapons/Weapon_Types/IP_RapidFire_Weapon.cs                                                    645 B
+util-PhyFly/Assets/Intro_Heli_Physics/Code/Shaders/Basic_Terrain_Lit.shader                                                                       15.5 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Code/Shaders/Basic_VertColor_Lit.shader                                                                     2.5 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Code/Shaders/Water/Basic_Water_MAT.mat                                                                      4.2 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Code/Shaders/Water/Basic_Water_Shader.shader                                                                7.0 KB
+util-PhyFly/Assets/Intro_Heli_Physics/HDA/backup/ip_mountain_creator_bak1.hdalc                                                                   45.3 KB
+util-PhyFly/Assets/Intro_Heli_Physics/HDA/backup/ip_mountain_creator_bak2.hdalc                                                                   45.3 KB
+util-PhyFly/Assets/Intro_Heli_Physics/HDA/backup/ip_terrain_scatter_v2_bak1.hdalc                                                                 23.5 KB
+util-PhyFly/Assets/Intro_Heli_Physics/HDA/backup/ip_terrain_scatter_v2_bak10.hdalc                                                                29.4 KB
+util-PhyFly/Assets/Intro_Heli_Physics/HDA/backup/ip_terrain_scatter_v2_bak11.hdalc                                                                29.4 KB
+util-PhyFly/Assets/Intro_Heli_Physics/HDA/backup/ip_terrain_scatter_v2_bak12.hdalc                                                                29.4 KB
+util-PhyFly/Assets/Intro_Heli_Physics/HDA/backup/ip_terrain_scatter_v2_bak13.hdalc                                                                30.2 KB
+util-PhyFly/Assets/Intro_Heli_Physics/HDA/backup/ip_terrain_scatter_v2_bak14.hdalc                                                                30.2 KB
+util-PhyFly/Assets/Intro_Heli_Physics/HDA/backup/ip_terrain_scatter_v2_bak15.hdalc                                                                30.2 KB
+util-PhyFly/Assets/Intro_Heli_Physics/HDA/backup/ip_terrain_scatter_v2_bak2.hdalc                                                                 23.5 KB
+util-PhyFly/Assets/Intro_Heli_Physics/HDA/backup/ip_terrain_scatter_v2_bak3.hdalc                                                                 24.9 KB
+util-PhyFly/Assets/Intro_Heli_Physics/HDA/backup/ip_terrain_scatter_v2_bak4.hdalc                                                                 25.2 KB
+util-PhyFly/Assets/Intro_Heli_Physics/HDA/backup/ip_terrain_scatter_v2_bak5.hdalc                                                                 25.2 KB
+util-PhyFly/Assets/Intro_Heli_Physics/HDA/backup/ip_terrain_scatter_v2_bak6.hdalc                                                                 25.2 KB
+util-PhyFly/Assets/Intro_Heli_Physics/HDA/backup/ip_terrain_scatter_v2_bak7.hdalc                                                                 25.2 KB
+util-PhyFly/Assets/Intro_Heli_Physics/HDA/backup/ip_terrain_scatter_v2_bak8.hdalc                                                                 26.0 KB
+util-PhyFly/Assets/Intro_Heli_Physics/HDA/backup/ip_terrain_scatter_v2_bak9.hdalc                                                                 26.0 KB
+util-PhyFly/Assets/Intro_Heli_Physics/HDA/ip_evergreen_tree_creator.hdalc                                                                         42.4 KB
+util-PhyFly/Assets/Intro_Heli_Physics/HDA/ip_mountain_creator.hdalc                                                                               45.3 KB
+util-PhyFly/Assets/Intro_Heli_Physics/HDA/ip_mountain_creator_v2.hdalc                                                                            13.8 KB
+util-PhyFly/Assets/Intro_Heli_Physics/HDA/ip_plateau_creator.hdalc                                                                                29.6 KB
+util-PhyFly/Assets/Intro_Heli_Physics/HDA/ip_single_hanger_generator.hdalc                                                                        63.9 KB
+util-PhyFly/Assets/Intro_Heli_Physics/HDA/ip_single_runway_generator.hdalc                                                                        82.9 KB
+util-PhyFly/Assets/Intro_Heli_Physics/HDA/ip_terrain_scatter_v2.hdalc                                                                             30.2 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Prefabs/Environment/Grasses/grass_clump_001.prefab                                                          8.1 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Prefabs/Environment/Trees/Evergreen_001.prefab                                                              2.4 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Prefabs/Helicopters/Huey_GRP.prefab                                                                         72.9 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Prefabs/Helicopters/R22_GRP.prefab                                                                          338.6 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Prefabs/Projectiles/Cannon_Projectile.prefab                                                                7.9 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Prefabs/Ships/Aircraft_Carrier_GRP.prefab                                                                   4.8 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Prefabs/Ships/Battleship_GRP.prefab                                                                         3.4 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Scenes/Development/Heli_Blade_Blur.unity                                                                    17.5 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Scenes/Development/Heli_Physics.unity                                                                       133.4 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Scenes/Development/Heli_Trailer_Setup/LightingData.asset                                                    18.0 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Scenes/Development/Heli_Trailer_Setup/Lightmap-0_comp_dir.png                                               196.7 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Scenes/Development/Heli_Trailer_Setup/Lightmap-0_comp_light.exr                                             493.7 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Scenes/Development/Heli_Trailer_Setup/Lightmap-1_comp_dir.png                                               189.5 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Scenes/Development/Heli_Trailer_Setup/Lightmap-1_comp_light.exr                                             477.3 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Scenes/Development/Heli_Trailer_Setup/Lightmap-2_comp_dir.png                                               194.9 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Scenes/Development/Heli_Trailer_Setup/Lightmap-2_comp_light.exr                                             505.5 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Scenes/Development/Heli_Trailer_Setup/Lightmap-3_comp_dir.png                                               192.0 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Scenes/Development/Heli_Trailer_Setup/Lightmap-3_comp_light.exr                                             490.7 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Scenes/Development/Heli_Trailer_Setup/Lightmap-4_comp_dir.png                                               65.9 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Scenes/Development/Heli_Trailer_Setup/Lightmap-4_comp_light.exr                                             240.3 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Scenes/Development/Heli_Trailer_Setup/Lightmap-5_comp_dir.png                                               59.0 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Scenes/Development/Heli_Trailer_Setup/Lightmap-5_comp_light.exr                                             206.7 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Scenes/Development/Heli_Trailer_Setup/Lightmap-6_comp_dir.png                                               44.5 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Scenes/Development/Heli_Trailer_Setup/Lightmap-6_comp_light.exr                                             157.7 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Scenes/Development/Heli_Trailer_Setup/Lightmap-7_comp_dir.png                                               63.3 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Scenes/Development/Heli_Trailer_Setup/Lightmap-7_comp_light.exr                                             218.9 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Scenes/Development/Heli_Trailer_Setup/Lightmap-8_comp_dir.png                                               54.6 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Scenes/Development/Heli_Trailer_Setup/Lightmap-8_comp_light.exr                                             201.0 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Scenes/Development/Heli_Trailer_Setup/Lightmap-9_comp_dir.png                                               61.5 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Scenes/Development/Heli_Trailer_Setup/Lightmap-9_comp_light.exr                                             218.0 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Scenes/Development/Heli_Trailer_Setup/ReflectionProbe-0.exr                                                 238.5 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Scenes/Development/Heli_Trailer_Setup/ReflectionProbe-1.exr                                                 284.4 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Scenes/Development/Heli_Trailer_Setup/ReflectionProbe-2.exr                                                 290.9 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Scenes/Development/Heli_Trailer_Setup/ReflectionProbe-3.exr                                                 287.1 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Scenes/Development/Heli_Trailer_Setup/ReflectionProbe-4.exr                                                 228.4 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Scenes/Development/Heli_Trailer_Setup.unity                                                                 23.46 MB
+util-PhyFly/Assets/Intro_Heli_Physics/Scenes/Intro_Heli_Physics_Frontend.unity                                                                    6.6 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Scenes/Intro_Heli_Physics_Main.unity                                                                        145.8 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Scenes/Intro_Heli_Physics_MainSettings.lighting                                                             1.8 KB
+util-PhyFly/Assets/Intro_Heli_Physics/Scenes/Intro_Heli_Physics_Startup.unity                                                                     6.6 KB
+util-PhyFly/Assets/Resources/prefab/cube.prefab                                                                                                   2.7 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/.sample.json                                                             156 B
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/2D/2D Fighters.unity                                              44.5 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/2D/2D Zoom.unity                                                  24.0 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/2D/2DConfinedTargetGroup.unity                                    114.1 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/2D/2DConfiner.unity                                               22.1 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/2D/2DConfinerComplex.unity                                        58.1 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/2D/2DTargetGroup.unity                                            24.8 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/2D/LoseSightWhenTargetsFallsOffThePlatform.cs                     1.8 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/2D/MouseScrollZoom2D.cs                                           1.7 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/3rdPersonWithAimMode/3rdPersonWithAimMode.unity                   104.6 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/3rdPersonWithAimMode/ActivateOnKeypress.cs                        1.2 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/AimingRig/AimingRig.asmdef                                        404 B
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/AimingRig/AimingRig.unity                                         118.6 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/AimingRig/AimReticle.cs                                           2.4 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/Anywhere Door/Anywhere Door.unity                                 93.8 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/Anywhere Door/CAM1.renderTexture                                  714 B
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/Anywhere Door/CAM2.renderTexture                                  714 B
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/Anywhere Door/Lightmap-0_comp_dir.png                             342.6 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/Anywhere Door/Lightmap-0_comp_light.exr                           806.4 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/Anywhere Door/Materials/CAM1.mat                                  1.8 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/Anywhere Door/Materials/CAM2.mat                                  1.8 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/Anywhere Door/Materials/Green.mat                                 2.9 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/Anywhere Door/Materials/Pink.mat                                  2.9 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/Anywhere Door/PlayerLookAt.cs                                     472 B
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/Anywhere Door/PlayerMovement.cs                                   1.4 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/Anywhere Door/ReflectionProbe-0.exr                               1.36 MB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/Anywhere Door/ScreenCutoutShader.shader                           1.0 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/Anywhere Door/TagChanger.cs                                       302 B
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/BlendListCamera.unity                                             33.0 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/BossCamera/BossCam.unity                                          47.4 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/BossCamera/BossLookAt.cs                                          760 B
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/BossCamera/CustomLockCameraY.cs                                   858 B
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/CameraMagnets/CameraMagnetProperty.cs                             679 B
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/CameraMagnets/CameraMagnets.unity                                 39.1 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/CameraMagnets/CameraMagnetTargetController.cs                     1.2 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/CameraMagnets/Proximity.png                                       78 B
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/ClearShot/ClearShot character.unity                               127.0 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/ClearShot/ClearShot closest.unity                                 46.7 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/ClearShot/ClearShot.unity                                         43.5 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/ClearShot/CM ClearShot1 Blends.asset                              601 B
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/ClearShot/TIMELINE world animsTimeline.playable                   5.0 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/Composer Look Ahead.unity                                         16.7 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/Composer.unity                                                    17.6 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/Custom Blends/BlenderSettings.asset                               1.4 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/Custom Blends/Custom Blends.unity                                 32.7 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/Custom Blends/Noise_CM_4.asset                                    818 B
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/DualTarget/DualTarget.unity                                       37.7 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/DualTarget/MoveAimTarget.cs                                       5.0 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/DualTarget/PointAtAimTarget.cs                                    466 B
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/FadeOutNearbyObjects/CinemachineFadeOutNearbyObjects.cs           3.3 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/FadeOutNearbyObjects/FadeOut.mat                                  2.1 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/FadeOutNearbyObjects/FadeOut.shader                               1.2 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/FadeOutNearbyObjects/FadeOutNearbyObjects.unity                   152.6 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/FollowCam Simple Follow.unity                                     27.6 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/FollowCam Simple FollowSettings.lighting                          1.8 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/FollowCam.unity                                                   23.4 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/FollowZoom.unity                                                  16.7 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/Free Look character.unity                                         28.1 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/Free Look collider.unity                                          28.7 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/Impulse/Impulse.unity                                             31.9 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/Impulse/ImpulseWave.unity                                         28.6 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/Impulse/ShakingCube.prefab                                        3.1 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/Impulse/Y Bump Signal Definition.asset                            1.4 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/MixingCamera.unity                                                21.5 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/Noise.unity                                                       35.7 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/Scripting/Scripting.unity                                         18.4 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/Scripting/ScriptingExample.cs                                     2.3 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/SphericalSurfaceFollow.unity                                      39.8 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/StateDrivenCamera.unity                                           47.3 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/Timeline/Timeline.unity                                           33.1 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/Timeline/TimelineTimeline.playable                                15.6 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/Tracked Dolly/CM vcam1Timeline.playable                           6.8 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/Tracked Dolly/Dolly Auto.unity                                    19.9 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/Tracked Dolly/Dolly Cart.unity                                    23.6 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/Tracked Dolly/Dolly Group.unity                                   40.1 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/Transposer/cube movement.anim                                     487.9 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/Transposer/Cube.controller                                        1.8 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/Transposer/Transposer.unity                                       39.5 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/Trigger volumes/GenericTrigger.cs                                 981 B
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/Trigger volumes/Timeline trigger cube.playable                    13.3 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/Trigger volumes/Trigger cube.prefab                               2.7 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/Trigger volumes/Trigger volume Timeline.unity                     63.1 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Scenes/Trigger volumes/Trigger volume.unity                              32.4 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Animation/cube A motion.anim                                      5.8 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Animation/cube B motion.anim                                      5.8 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Animation/Cube.controller                                         1.8 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Blends/CM StateDrivenCameraBlends.asset                           598 B
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Materials/Bouncy 1.physicmaterial                                 362 B
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Materials/checkerboard.mat                                        3.5 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Materials/Default_Prototype.mat                                   4.8 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Materials/Default_Prototype_Blue.mat                              4.8 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Materials/GridBox_Trigger.mat                                     794 B
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Materials/Ground big.mat                                          3.6 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Materials/Ground.mat                                              3.6 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Materials/RedThing.mat                                            3.4 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Materials/Trigger.mat                                             888 B
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Animations/Idle.fbx                         4.47 MB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Animations/Jog.fbx                          493.0 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Animations/Sprint.fbx                       958.2 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Animations/Walk.fbx                         641.9 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Controllers/CharacterController.controller  5.5 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Models/DefaultMale.fbx                      688.6 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Models/Materials/DefaultMale_Mat.mat        3.6 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Models/Textures/DefaultMale_Albedo.tif      70.3 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Models/Textures/DefaultMale_Normal.tif      117.0 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Models/Textures/DefaultMale_Occlusion.tif   83.6 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Models/Textures/DefaultMale_SpecSmooth.tif  74.4 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Prefabs/3rdPersonController.prefab          66.1 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Scripts/CharacterMovement.cs                3.6 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Scripts/CharacterMovement2D.cs              2.5 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Scripts/CharacterMovementNoCamera.cs        2.2 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Prefabs/Corridors_1_2.prefab                                      28.1 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Prefabs/Environment_2D.prefab                                     25.1 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Prefabs/Environment_Clear_BluePedestal.prefab                     26.2 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Prefabs/Environment_Corridor.prefab                               18.6 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Prefabs/Environment_CorridorMixingCam.prefab                      14.7 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Prefabs/Environment_Narrow_Walls.prefab                           13.4 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Prefabs/FBX/ProB_Floor_10x10.fbx                                  172.6 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Prefabs/FBX/ProB_Floor_10x10_BluePedestal.fbx                     103.1 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Prefabs/FBX/ProB_Floor_10x4.fbx                                   77.2 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Prefabs/FBX/ProB_Floor_1Wall_10x10.fbx                            217.2 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Prefabs/FBX/ProB_Floor_2Walls_10x10.fbx                           235.5 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Prefabs/FBX/ProB_Floor_LWall_10x10.fbx                            253.6 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Prefabs/FBX/ProB_Floor_UWall_10x10.fbx                            261.0 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Prefabs/FBX/ProB_Wall_10x4.fbx                                    86.8 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Prefabs/Stage1.prefab                                             23.3 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Prefabs/Stage2.prefab                                             26.2 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Scripts/ActivateCameraWithDistance.cs                             1.2 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Scripts/ActivateCamOnPlay.cs                                      350 B
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Scripts/ExampleHelpWindow.cs                                      1.2 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Scripts/InputSystemHelper.cs                                      968 B
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Scripts/InvokeEventFromInspector.cs                               794 B
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Scripts/MixingCameraBlend.cs                                      1.2 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Scripts/PlayerMove.cs                                             3.4 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Scripts/PlayerMoveOnSphere.cs                                     1.7 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Scripts/PlayerMovePhysics.cs                                      1.8 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Scripts/SimpleElevator.cs                                         729 B
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Scripts/SpawnInCircle.cs                                          850 B
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Scripts/ThirdPersonFollowDistanceModifier.cs                      2.2 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Textures/checkerboard.png                                         14.8 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Textures/crosshair.png                                            8.6 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Textures/GridBox_blue.png                                         23.3 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Textures/GridBox_Default.png                                      9.2 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Textures/GridBox_Trigger.png                                      19.6 KB
+util-PhyFly/Assets/Samples/Cinemachine/2.10.3/Cinemachine Example Scenes/Shared/Textures/GridBox_Trigger.tga                                      1.00 MB
+util-PhyFly/Assets/Scenes/IP R22GRP Scene.unity                                                                                                   366.7 KB
+util-PhyFly/Assets/Scenes/PhysicsHelicopter.unity                                                                                                 92.2 KB
+util-PhyFly/Assets/TexturesIP/Main_Rotor_Blur/mainRotor_blur_lod001.png                                                                           72.0 KB
+util-PhyFly/Assets/TexturesIP/Main_Rotor_Blur/mainRotor_blur_lod002.png                                                                           132.6 KB
+util-PhyFly/Assets/TexturesIP/Main_Rotor_Blur/mainRotor_blur_lod003.png                                                                           213.2 KB
+util-PhyFly/Assets/TexturesIP/Main_Rotor_Blur/mainRotor_blur_lod004.png                                                                           306.4 KB
+util-PhyFly/Assets/TexturesIP/Main_Rotor_Blur/mainRotor_blur_lod005.png                                                                           383.7 KB
+util-PhyFly/Assets/TexturesIP/Main_Rotor_Blur/mainRotor_blur_lod006.png                                                                           487.0 KB
+util-PhyFly/Assets/TexturesIP/Main_Rotor_Blur/mainRotor_blur_lod007.png                                                                           584.0 KB
+util-PhyFly/Assets/TexturesIP/Main_Rotor_Blur/mainRotor_blur_lod008.png                                                                           766.5 KB
+util-PhyFly/Assets/TexturesIP/Main_Rotor_Blur/mainRotor_blur_lod009.png                                                                           1.10 MB
+util-PhyFly/Assets/TexturesIP/Main_Rotor_Blur/mainRotor_blur_lod010.png                                                                           1.19 MB
+util-PhyFly/Assets/TexturesIP/R22_MainRotorBlur_MAT 1.mat                                                                                         3.6 KB
+util-PhyFly/Assets/TM/FONTS 1/CONSOLA SDF.asset                                                                                                   567.3 KB
+util-PhyFly/Assets/TM/FONTS 1/CONSOLA.TTF                                                                                                         448.4 KB
+util-PhyFly/Assets/TM/FONTS 1/CONSOLAI.TTF                                                                                                        456.6 KB
+util-PhyFly/Assets/TM/FONTS 1/pixelplay.ttf                                                                                                       168.1 KB
+util-PhyFly/Assets/TM/TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf                                                                 678.1 KB
+util-PhyFly/Assets/TM/TextMesh Pro/Fonts/LiberationSans - OFL.txt                                                                                 4.4 KB
+util-PhyFly/Assets/TM/TextMesh Pro/Fonts/LiberationSans.ttf                                                                                       342.0 KB
+util-PhyFly/Assets/TM/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat                                               2.9 KB
+util-PhyFly/Assets/TM/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset                                                9.0 KB
+util-PhyFly/Assets/TM/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat                                                   2.8 KB
+util-PhyFly/Assets/TM/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset                                                           2.15 MB
+util-PhyFly/Assets/TM/TextMesh Pro/Resources/LineBreaking Following Characters.txt                                                                269 B
+util-PhyFly/Assets/TM/TextMesh Pro/Resources/LineBreaking Leading Characters.txt                                                                  95 B
+util-PhyFly/Assets/TM/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset                                                                         13.1 KB
+util-PhyFly/Assets/TM/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset                                                               4.8 KB
+util-PhyFly/Assets/TM/TextMesh Pro/Resources/TMP Settings.asset                                                                                   1.7 KB
+util-PhyFly/Assets/TM/TextMesh Pro/Shaders/TMPro.cginc                                                                                            2.2 KB
+util-PhyFly/Assets/TM/TextMesh Pro/Shaders/TMPro_Mobile.cginc                                                                                     5.2 KB
+util-PhyFly/Assets/TM/TextMesh Pro/Shaders/TMPro_Properties.cginc                                                                                 2.8 KB
+util-PhyFly/Assets/TM/TextMesh Pro/Shaders/TMPro_Surface.cginc                                                                                    3.5 KB
+util-PhyFly/Assets/TM/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader                                                                         3.4 KB
+util-PhyFly/Assets/TM/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader                                                                               3.5 KB
+util-PhyFly/Assets/TM/TextMesh Pro/Shaders/TMP_Bitmap.shader                                                                                      3.4 KB
+util-PhyFly/Assets/TM/TextMesh Pro/Shaders/TMP_SDF Overlay.shader                                                                                 10.3 KB
+util-PhyFly/Assets/TM/TextMesh Pro/Shaders/TMP_SDF SSD.shader                                                                                     11.7 KB
+util-PhyFly/Assets/TM/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader                                                                          7.6 KB
+util-PhyFly/Assets/TM/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader                                                                          7.5 KB
+util-PhyFly/Assets/TM/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader                                                                              3.0 KB
+util-PhyFly/Assets/TM/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader                                                                                  7.5 KB
+util-PhyFly/Assets/TM/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader                                                                          3.4 KB
+util-PhyFly/Assets/TM/TextMesh Pro/Shaders/TMP_SDF-Surface.shader                                                                                 4.3 KB
+util-PhyFly/Assets/TM/TextMesh Pro/Shaders/TMP_SDF.shader                                                                                         10.4 KB
+util-PhyFly/Assets/TM/TextMesh Pro/Shaders/TMP_Sprite.shader                                                                                      2.6 KB
+util-PhyFly/Assets/TM/TextMesh Pro/Sprites/EmojiOne Attribution.txt                                                                               187 B
+util-PhyFly/Assets/TM/TextMesh Pro/Sprites/EmojiOne.json                                                                                          4.0 KB
+util-PhyFly/Assets/TM/TextMesh Pro/Sprites/EmojiOne.png                                                                                           109.7 KB
+util-PhyFly/Assets/URP/Readme.asset                                                                                                               1.1 KB
+util-PhyFly/Assets/URP/Scenes/SampleScene.unity                                                                                                   10.5 KB
+util-PhyFly/Assets/URP/Settings/SampleSceneProfile.asset                                                                                          2.7 KB
+util-PhyFly/Assets/URP/Settings/URP-Balanced-Renderer.asset                                                                                       2.8 KB
+util-PhyFly/Assets/URP/Settings/URP-Balanced.asset                                                                                                2.2 KB
+util-PhyFly/Assets/URP/Settings/URP-HighFidelity-Renderer.asset                                                                                   2.8 KB
+util-PhyFly/Assets/URP/Settings/URP-HighFidelity.asset                                                                                            2.0 KB
+util-PhyFly/Assets/URP/Settings/URP-Performant-Renderer.asset                                                                                     2.1 KB
+util-PhyFly/Assets/URP/Settings/URP-Performant.asset                                                                                              2.0 KB
+util-PhyFly/Assets/URP/TutorialInfo/Icons/URP.png                                                                                                 23.5 KB
+util-PhyFly/Assets/URP/TutorialInfo/Layout.wlt                                                                                                    15.1 KB
+util-PhyFly/Assets/URP/TutorialInfo/Scripts/Editor/ReadmeEditor.cs                                                                                6.5 KB
+util-PhyFly/Assets/URP/TutorialInfo/Scripts/Readme.cs                                                                                             302 B
+util-PhyFly/Assets/URP/UniversalRenderPipelineGlobalSettings.asset                                                                                842 B
+util-PhyFly/Scripts/LOG/GameData/inputKeyBindings.json                                                                                            497 B
+util-PhyFly/Scripts/LOG/GameData/playerStats.json                                                                                                 4.2 KB
+util-PhyFly/Scripts/LOG/LOG.md                                                                                                                    29.4 KB
+util-PhyFly/Scripts/ScriptsIP/Controllers/IP_Heli_Controller.cs                                                                                   641 B
+util-PhyFly/Scripts/ScriptsIP/Controllers/IP_Heli_Engine.cs                                                                                       499 B
+util-PhyFly/Scripts/ScriptsIP/Guide/unity-rotation-methods.cs                                                                                     10.8 KB
+util-PhyFly/Scripts/ScriptsIP/Inputs/IPBaseHeliInputs.cs                                                                                          923 B
+util-PhyFly/Scripts/ScriptsIP/Inputs/IPKeyboardHeliInput.cs                                                                                       1.1 KB
+util-PhyFly/Scripts/ScriptsIP/IPHeliPhysicsAll Flow.md                                                                                            4.3 KB
+util-PhyFly/Scripts/ScriptsIP/IPHeliPhysicsAll.cs                                                                                                 14.2 KB
+util-PhyFly/Scripts/ScriptsIP/IPHeliPhysicsAllArcade.cs                                                                                           10.0 KB
+util-PhyFly/Scripts/ScriptsIP/RigidBodies/IP_Base_RBController.cs                                                                                 615 B
+util-PhyFly/Scripts/_Game/GameStore.cs                                                                                                            1.9 KB

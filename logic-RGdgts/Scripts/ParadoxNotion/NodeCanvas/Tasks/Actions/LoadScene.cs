@@ -1,0 +1,20 @@
+using NodeCanvas.Framework;
+using ParadoxNotion.Design;
+using UnityEngine.SceneManagement;
+
+namespace NodeCanvas.Tasks.Actions
+{
+	public class LoadScene : ActionTask
+	{
+		[RequiredField]
+		public BBParameter<string> sceneName;
+
+		public BBParameter<LoadSceneMode> mode;
+
+		protected override string info => null;
+
+		protected override void OnExecute()
+		{
+		}
+	}
+}

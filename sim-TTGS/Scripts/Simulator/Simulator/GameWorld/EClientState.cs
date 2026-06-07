@@ -1,0 +1,20 @@
+namespace Simulator.GameWorld
+{
+	public enum EClientState
+	{
+		NONE = 0,
+		GOING_TO_SHOP = 1,
+		GOING_TO_EXIT = 2,
+		GOING_TO_AUTODESTROY = 3,
+		WAITING_TO_ACCESS_SHOP = 4,
+		ENTERING_SHOP = 20,
+		GOING_TO_PLACE_IN_STAND_LINE = 5,
+		GOING_TO_STAND_PLACE = 6,
+		CHECKING_OUT = 7,
+		BROWSING_SHELF = 8,
+		PAINTING = 9,
+		KILLING_TIME = 10,
+		BROWSING_STALL = 11,
+		WARGAMING = 12
+	}
+}

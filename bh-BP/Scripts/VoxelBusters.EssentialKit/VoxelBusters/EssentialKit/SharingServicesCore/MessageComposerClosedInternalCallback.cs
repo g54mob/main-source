@@ -1,0 +1,6 @@
+using VoxelBusters.CoreLibrary;
+
+namespace VoxelBusters.EssentialKit.SharingServicesCore
+{
+	public delegate void MessageComposerClosedInternalCallback(MessageComposerResultCode resultCode, Error error);
+}

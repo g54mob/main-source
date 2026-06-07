@@ -1,0 +1,19 @@
+{
+    "bindings":
+    [
+        {
+            "action": "character/jump",
+            "id": "d048c8a0-c1ab-458d-a211-777b1945e8fc",
+            "path": "<Keyboard>/q",
+            "interactions": "null",
+            "processors": "null"
+        },
+        {
+            "action": "character/shoot",
+            "id": "c5889213-9271-4b32-ae78-63f862de83da",
+            "path": "<Keyboard>/e",
+            "interactions": "null",
+            "processors": "null"
+        }
+    ]
+}

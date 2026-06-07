@@ -1,0 +1,64 @@
+using System.IO;
+
+namespace ATL.AudioData.IO
+{
+	internal class AC3 : IAudioDataIO
+	{
+		private static readonly int[] BITRATES;
+
+		private uint sampleRate;
+
+		private double bitrate;
+
+		private double duration;
+
+		private ChannelsArrangements.ChannelsArrangement channelsArrangement;
+
+		private readonly string filePath;
+
+		public bool IsVBR => false;
+
+		public Format AudioFormat { get; }
+
+		public int CodecFamily => 0;
+
+		public string FileName => null;
+
+		public double BitRate => 0.0;
+
+		public double Duration => 0.0;
+
+		public int SampleRate => 0;
+
+		public int BitDepth => 0;
+
+		public ChannelsArrangements.ChannelsArrangement ChannelsArrangement => null;
+
+		public long AudioDataOffset { get; set; }
+
+		public long AudioDataSize { get; set; }
+
+		public bool IsMetaSupported(MetaDataIOFactory.TagType metaDataType)
+		{
+			return false;
+		}
+
+		protected void resetData()
+		{
+		}
+
+		public AC3(string filePath, Format format)
+		{
+		}
+
+		public static bool IsValidHeader(byte[] data)
+		{
+			return false;
+		}
+
+		public bool Read(Stream source, AudioDataManager.SizeInfo sizeInfo, MetaDataIO.ReadTagParams readTagParams)
+		{
+			return false;
+		}
+	}
+}

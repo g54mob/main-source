@@ -1,0 +1,27 @@
+public enum CharProp
+{
+	kAI = 0,
+	kAutopickUpgrades = 1,
+	kMirror = 2,
+	kBrickBreaker = 3,
+	kGravity = 4,
+	kBackRecall = 5,
+	kNoEnemyBounce = 6,
+	kBackBallBounce = 7,
+	kAimless = 8,
+	kAlwaysShoot = 9,
+	kShotgun = 10,
+	kMultiHero = 11,
+	kScreenWrap = 12,
+	kNoBallDamage = 13,
+	kDoublePassives = 14,
+	kLobBalls = 15,
+	kReturnOrbit = 16,
+	kPierceFirst_DEPRECATED = 17,
+	kPierceUntilWall = 18,
+	kSneaky = 19,
+	kWibbly_DEPRECATED = 20,
+	kRepellant = 21,
+	kDoubleBalls = 22,
+	kNum = 23
+}

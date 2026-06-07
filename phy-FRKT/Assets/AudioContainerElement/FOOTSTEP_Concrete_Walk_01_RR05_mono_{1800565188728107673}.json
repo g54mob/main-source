@@ -1,0 +1,10 @@
+{
+	"m_AudioClip": { "m_Collection": "resources.assets", "m_PathID": 164 },
+	"m_CorrespondingSourceObject": { "m_Collection": "resources.assets", "m_PathID": 0 },
+	"m_Enabled": true,
+	"m_HideFlags": 0,
+	"m_Name": "FOOTSTEP_Concrete_Walk_01_RR05_mono_{1800565188728107673}",
+	"m_PrefabAsset": { "m_Collection": "resources.assets", "m_PathID": 0 },
+	"m_PrefabInstance": { "m_Collection": "resources.assets", "m_PathID": 0 },
+	"m_Volume": 0
+}

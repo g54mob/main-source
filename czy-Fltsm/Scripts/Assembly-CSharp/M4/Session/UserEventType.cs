@@ -1,0 +1,17 @@
+namespace M4.Session
+{
+	public enum UserEventType
+	{
+		SIGN_IN_REQUEST = 0,
+		SIGN_IN_CANCEL = 1,
+		SIGN_IN_ERROR = 2,
+		SIGN_IN_CHANGE = 3,
+		SIGN_IN_COMPLETE = 4,
+		SIGN_OUT = 5,
+		SIGN_OUT_STARTED = 6,
+		SIGN_OUT_COMPLETE = 7,
+		INITIALIZATION_STARTED = 8,
+		INITIALIZATION_COMPLETE = 9,
+		DISPOSED = 10
+	}
+}

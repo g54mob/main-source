@@ -1,0 +1,53 @@
+using ExitGames.Client.Photon;
+
+namespace Photon.Realtime
+{
+	internal static class CustomTypesUnity
+	{
+		private const int SizeV2 = 8;
+
+		private const int SizeV3 = 12;
+
+		private const int SizeQuat = 16;
+
+		public static readonly byte[] memVector3;
+
+		public static readonly byte[] memVector2;
+
+		public static readonly byte[] memQuarternion;
+
+		internal static void Register()
+		{
+		}
+
+		private static short SerializeVector3(StreamBuffer outStream, object customobject)
+		{
+			return 0;
+		}
+
+		private static object DeserializeVector3(StreamBuffer inStream, short length)
+		{
+			return null;
+		}
+
+		private static short SerializeVector2(StreamBuffer outStream, object customobject)
+		{
+			return 0;
+		}
+
+		private static object DeserializeVector2(StreamBuffer inStream, short length)
+		{
+			return null;
+		}
+
+		private static short SerializeQuaternion(StreamBuffer outStream, object customobject)
+		{
+			return 0;
+		}
+
+		private static object DeserializeQuaternion(StreamBuffer inStream, short length)
+		{
+			return null;
+		}
+	}
+}

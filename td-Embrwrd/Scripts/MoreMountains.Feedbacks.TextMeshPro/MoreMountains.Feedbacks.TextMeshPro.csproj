@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>MoreMountains.Feedbacks.TextMeshPro</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net40</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MoreMountains.Feedbacks">
+      <HintPath>..\..\Assemblies\MoreMountains.Feedbacks.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\Assemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="MoreMountains.Tools">
+      <HintPath>..\..\Assemblies\MoreMountains.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="MoreMountains.Feedbacks.MMTools">
+      <HintPath>..\..\Assemblies\MoreMountains.Feedbacks.MMTools.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

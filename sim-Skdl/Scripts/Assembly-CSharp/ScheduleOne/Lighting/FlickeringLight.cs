@@ -1,0 +1,45 @@
+using UnityEngine;
+
+namespace ScheduleOne.Lighting
+{
+	[RequireComponent(typeof(Light))]
+	public class FlickeringLight : MonoBehaviour
+	{
+		[Header("Intensity Settings")]
+		[Tooltip("The minimum light intensity.")]
+		public float minIntensity;
+
+		[Tooltip("The maximum light intensity.")]
+		public float maxIntensity;
+
+		[Tooltip("Enable slight color shifts to simulate a warm flame.")]
+		[Header("Color Settings")]
+		public bool enableColorShift;
+
+		public Color minColor;
+
+		public Color maxColor;
+
+		[Tooltip("How quickly the light flickers (lower is faster).")]
+		[Header("Flicker Speed")]
+		public float flickerSpeed;
+
+		private Light lightSource;
+
+		private float targetIntensity;
+
+		private Color targetColor;
+
+		private void Start()
+		{
+		}
+
+		private void Update()
+		{
+		}
+
+		private void UpdateTargetValues()
+		{
+		}
+	}
+}

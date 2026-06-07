@@ -1,0 +1,14 @@
+namespace Tabletop
+{
+	public enum EBouncePresets
+	{
+		PAINT_MINIATURE = 0,
+		GENERIC_TEXT = 1,
+		WARGAME_MINIATURE = 2,
+		WARGAME_MINIATURE_HOVER_ENTER = 3,
+		WARGAME_MINIATURE_HOVER_EXIT = 4,
+		DICE_CLICK = 5,
+		DICE_HOVER_ENTER = 6,
+		DICE_HOVER_EXIT = 7
+	}
+}

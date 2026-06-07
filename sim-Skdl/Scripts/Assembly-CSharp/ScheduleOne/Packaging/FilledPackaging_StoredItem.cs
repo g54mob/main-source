@@ -1,0 +1,15 @@
+using ScheduleOne.Product;
+using ScheduleOne.Storage;
+using UnityEngine;
+
+namespace ScheduleOne.Packaging
+{
+	public class FilledPackaging_StoredItem : StoredItem
+	{
+		public MultiTypeVisualsSetter Visuals;
+
+		public override void InitializeStoredItem(StorableItemInstance _item, StorageGrid grid, Vector2 _originCoordinate, float _rotation)
+		{
+		}
+	}
+}

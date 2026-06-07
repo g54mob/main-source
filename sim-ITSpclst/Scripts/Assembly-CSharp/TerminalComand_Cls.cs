@@ -1,0 +1,22 @@
+using UnityEngine;
+
+public class TerminalComand_Cls : MonoBehaviour
+{
+	public AppTerminal appTerminal;
+
+	public void Run(string comand, string[] variables, string[] param, TerminalComandBase terminalComandBase)
+	{
+	}
+
+	private void Comand(string comand, TerminalValidateComand terminalValidateComand)
+	{
+	}
+
+	public void HelpComandDestription()
+	{
+	}
+
+	public void Help()
+	{
+	}
+}

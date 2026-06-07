@@ -1,0 +1,238 @@
+─────────────────────────────────────────────────────────────────
+Folder : util_v1.0.1/
+Files  : 232
+Total  : 14.86 MB
+─────────────────────────────────────────────────────────────────
+
+util_v1.0.1/.gitignore                                                                                                                                                              94 B
+util_v1.0.1/=1.0.1.ver                                                                                                                                                              32 B
+util_v1.0.1/@PROMPT/C# to README/C# to README --enhanced prompt_new v0.8.5 --min.md                                                                                                 9.9 KB
+util_v1.0.1/@PROMPT/C# to README/C# to README --enhanced prompt_new v10 --min.md                                                                                                    6.9 KB
+util_v1.0.1/@PROMPT/C# to README/C# to README from scratch.md                                                                                                                       3.0 KB
+util_v1.0.1/@PROMPT/C# to README/ComplexSample/ComplexSample v0.1.cs.min.md                                                                                                         20.6 KB
+util_v1.0.1/@PROMPT/C# to README/ComplexSample/ComplexSample.cs                                                                                                                     33.6 KB
+util_v1.0.1/@PROMPT/C# to README/ComplexSample/ComplexSample.cs.min.md                                                                                                              8.6 KB
+util_v1.0.1/@PROMPT/FromScratchGeneration/LOOP GMTK 2025/@Study-Prompt/Guide To Make From Claude 4.5 Teach.md                                                                       2.1 KB
+util_v1.0.1/@PROMPT/FromScratchGeneration/LOOP GMTK 2025/other/iteration rule.md                                                                                                    1.4 KB
+util_v1.0.1/@PROMPT/FromScratchGeneration/LOOP GMTK 2025/other/LOOP [GMTK-2025] Enhanced, fromScratch v0.1.md                                                                       14.1 KB
+util_v1.0.1/@PROMPT/FromScratchGeneration/LOOP GMTK 2025/other/LOOP [GMTK-2025] Enhanced, fromScratch v0.2.md                                                                       10.5 KB
+util_v1.0.1/@PROMPT/FromScratchGeneration/LOOP GMTK 2025/other/LOOP [GMTK-2025] Enhanced, fromScratch v0.3 Claude.md                                                                59.4 KB
+util_v1.0.1/@PROMPT/FromScratchGeneration/LOOP GMTK 2025/other/LOOP[GMTK-2025].md                                                                                                   26.2 KB
+util_v1.0.1/@PROMPT/FromScratchGeneration/LOOP GMTK 2025/other/Prompt Understanding.md                                                                                              3.6 KB
+util_v1.0.1/@PROMPT/FromScratchGeneration/LOOP GMTK 2025/other/xmlPrompting.md                                                                                                      1.0 KB
+util_v1.0.1/@PROMPT/FromScratchGeneration/LOOP GMTK 2025/Prompt Anatomy/files (1).zip                                                                                               26.2 KB
+util_v1.0.1/@PROMPT/FromScratchGeneration/LOOP GMTK 2025/Prompt Anatomy/files (2).zip                                                                                               21.5 KB
+util_v1.0.1/@PROMPT/FromScratchGeneration/LOOP GMTK 2025/source.md                                                                                                                  5.1 KB
+util_v1.0.1/Critical-TODO.md                                                                                                                                                        10.4 KB
+util_v1.0.1/README/UTIL.cs Improve --prompt.md                                                                                                                                      716 B
+util_v1.0.1/README.md                                                                                                                                                               217 B
+util_v1.0.1/TODO In Unity3D 2020.3.md                                                                                                                                               404 B
+util_v1.0.1/TODO.md                                                                                                                                                                 24.3 KB
+util_v1.0.1/UnityLifeCycle.md                                                                                                                                                       16.9 KB
+util_v1.0.1/_/=1.1.3.ver                                                                                                                                                            32 B
+util_v1.0.1/_/DemoScene/_ DemoScene.unity                                                                                                                                           26.5 KB
+util_v1.0.1/_/Scripts/INITManager.cs                                                                                                                                                2.2 KB
+util_v1.0.1/_/Scripts/README/UTIL__v2_Board_MonoInterfaceFinder.cs.md                                                                                                               2.8 KB
+util_v1.0.1/_/Scripts/UTIL/UTIL.cs                                                                                                                                                  161.8 KB
+util_v1.0.1/_/Scripts/UTIL/UTIL_FLOW.md                                                                                                                                             11.4 KB
+util_v1.0.1/_/Textures/Transparent_1x1.png                                                                                                                                          81 B
+util_v1.0.1/_/Textures/White_1x1.png                                                                                                                                                2.7 KB
+util_v1.0.1/_/TM/FONTS/CONSOLA.TTF                                                                                                                                                  448.4 KB
+util_v1.0.1/_/TM/FONTS/CONSOLAI.TTF                                                                                                                                                 456.6 KB
+util_v1.0.1/_/TM/FONTS/pixelplay.ttf                                                                                                                                                168.1 KB
+util_v1.0.1/_/UnityEditorUtil/Editor/Resources/custom GUISkin.guiskin                                                                                                               41.1 KB
+util_v1.0.1/_/UnityEditorUtil/Editor/ToTextEditorUtil.cs                                                                                                                            44.8 KB
+util_v1.0.1/_/UnityEditorUtil/Editor/ViewGameDataDecrEditorUtil.cs                                                                                                                  16.5 KB
+util_v1.0.1/_/UnityNSJsonUtil/NSJsonUtil.cs                                                                                                                                         819 B
+util_v1.0.1/_AudioSystem/AudioSystem.cs                                                                                                                                             16.5 KB
+util_v1.0.1/_CamSystem/MAT/character.mat                                                                                                                                            3.8 KB
+util_v1.0.1/_CamSystem/MAT/walls.mat                                                                                                                                                3.8 KB
+util_v1.0.1/_CamSystem/Scenes/BirdViewCamManager Demo.unity                                                                                                                         70.3 KB
+util_v1.0.1/_CamSystem/Scripts/BirdViewCamManager.cs                                                                                                                                5.6 KB
+util_v1.0.1/_CamSystem/TODO CamSystem.md                                                                                                                                            149 B
+util_v1.0.1/_Compatible/Unity3D_2023_1__Compatible.cs                                                                                                                               1.6 KB
+util_v1.0.1/_CustomTextEditorSystem + LoopSystem/InputActions/playerInputActions.inputactions                                                                                       1.8 KB
+util_v1.0.1/_CustomTextEditorSystem + LoopSystem/MAT/caret.mat                                                                                                                      3.8 KB
+util_v1.0.1/_CustomTextEditorSystem + LoopSystem/MAT/cube.mat                                                                                                                       3.8 KB
+util_v1.0.1/_CustomTextEditorSystem + LoopSystem/MAT/selectionMesh.mat                                                                                                              3.9 KB
+util_v1.0.1/_CustomTextEditorSystem + LoopSystem/MAT/selectionStartCaret.mat                                                                                                        3.8 KB
+util_v1.0.1/_CustomTextEditorSystem + LoopSystem/Scenes/Demonstration of sceneProto (custom-text-editor) GridApproach with SPACE_LOOP_SYSTEM with SyntaxHighlighterSystem.unity     243.2 KB
+util_v1.0.1/_CustomTextEditorSystem + LoopSystem/Scenes/Demonstration of sceneProto (custom-text-editor) GridApproach with SPACE_LOOP_SYSTEM without SyntaxHighlighterSystem.unity  244.5 KB
+util_v1.0.1/_CustomTextEditorSystem + LoopSystem/Scripts/DEBUG_Check.cs                                                                                                             4.0 KB
+util_v1.0.1/_CustomTextEditorSystem + LoopSystem/Scripts/GameStore.cs                                                                                                               1.8 KB
+util_v1.0.1/_CustomTextEditorSystem + LoopSystem/Scripts/LOOP-2025 [NEW]/AST.cs                                                                                                     9.1 KB
+util_v1.0.1/_CustomTextEditorSystem + LoopSystem/Scripts/LOOP-2025 [NEW]/BuiltinFunction.cs                                                                                         2.6 KB
+util_v1.0.1/_CustomTextEditorSystem + LoopSystem/Scripts/LOOP-2025 [NEW]/ClassInstance.cs                                                                                           2.5 KB
+util_v1.0.1/_CustomTextEditorSystem + LoopSystem/Scripts/LOOP-2025 [NEW]/ComprehensiveTestSuite.cs                                                                                  23.5 KB
+util_v1.0.1/_CustomTextEditorSystem + LoopSystem/Scripts/LOOP-2025 [NEW]/ConsoleManager.cs                                                                                          2.9 KB
+util_v1.0.1/_CustomTextEditorSystem + LoopSystem/Scripts/LOOP-2025 [NEW]/CoroutineRunner.cs                                                                                         7.4 KB
+util_v1.0.1/_CustomTextEditorSystem + LoopSystem/Scripts/LOOP-2025 [NEW]/DemoScripts.cs                                                                                             17.5 KB
+util_v1.0.1/_CustomTextEditorSystem + LoopSystem/Scripts/LOOP-2025 [NEW]/Exceptions.cs                                                                                              2.5 KB
+util_v1.0.1/_CustomTextEditorSystem + LoopSystem/Scripts/LOOP-2025 [NEW]/GameBuiltinMethods.cs                                                                                      15.3 KB
+util_v1.0.1/_CustomTextEditorSystem + LoopSystem/Scripts/LOOP-2025 [NEW]/GameEnums.cs                                                                                               1.6 KB
+util_v1.0.1/_CustomTextEditorSystem + LoopSystem/Scripts/LOOP-2025 [NEW]/LambdaFunction.cs                                                                                          2.6 KB
+util_v1.0.1/_CustomTextEditorSystem + LoopSystem/Scripts/LOOP-2025 [NEW]/Lexer.cs                                                                                                   10.9 KB
+util_v1.0.1/_CustomTextEditorSystem + LoopSystem/Scripts/LOOP-2025 [NEW]/NumberHandling.cs                                                                                          5.9 KB
+util_v1.0.1/_CustomTextEditorSystem + LoopSystem/Scripts/LOOP-2025 [NEW]/Parser.cs                                                                                                  23.7 KB
+util_v1.0.1/_CustomTextEditorSystem + LoopSystem/Scripts/LOOP-2025 [NEW]/PythonInterpreter.cs                                                                                       83.5 KB
+util_v1.0.1/_CustomTextEditorSystem + LoopSystem/Scripts/LOOP-2025 [NEW]/Scope.cs                                                                                                   3.5 KB
+util_v1.0.1/_CustomTextEditorSystem + LoopSystem/Scripts/LOOP-2025 [NEW]/TestRunner.cs                                                                                              8.0 KB
+util_v1.0.1/_CustomTextEditorSystem + LoopSystem/Scripts/LOOP-2025 [NEW]/Token.cs                                                                                                   3.4 KB
+util_v1.0.1/_CustomTextEditorSystem + LoopSystem/Scripts/TextEditor/DOODLE/CustomTextEditorManager.cs                                                                               46.6 KB
+util_v1.0.1/_CustomTextEditorSystem + LoopSystem/Scripts/TextEditor/DOODLE/SyntaxHighlight/PythonSyntaxHighlighter.cs                                                               10.7 KB
+util_v1.0.1/_CustomTextEditorSystem + LoopSystem/Scripts/TextEditor/DOODLE/SyntaxHighlight/SyntaxHighlighterBase.cs                                                                 2.9 KB
+util_v1.0.1/_CustomTextEditorSystem + LoopSystem/Scripts/TextEditor/DOODLE/SyntaxHighlight/syntax_highlighter_prompt.md                                                             11.3 KB
+util_v1.0.1/_CustomTextEditorSystem + LoopSystem/TM/FONTS MonoSpace/CONSOLA SDF with LineHeight 100.asset                                                                           567.2 KB
+util_v1.0.1/_CustomTextEditorSystem + LoopSystem/TM/FONTS MonoSpace/CONSOLA.TTF                                                                                                     448.4 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/ad/doorOpenCloseAnimController_AnyStateExitApproach.controller                                                                                     6.1 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/Anim/doorDrawer/doorDrawerFrame/doorDrawerClosedIdleAnim.anim                                                                                      3.3 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/Anim/doorDrawer/doorDrawerFrame/doorDrawerClosingAnim.anim                                                                                         4.2 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/Anim/doorDrawer/doorDrawerFrame/doorDrawerLockedClosedJiggleAnim.anim                                                                              7.2 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/Anim/doorDrawer/doorDrawerFrame/doorDrawerOpenedIdleAnim.anim                                                                                      3.3 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/Anim/doorDrawer/doorDrawerFrame/doorDrawerOpeningAnim.anim                                                                                         4.3 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/Anim/doorDrawer/doorDrawerLock/outsideLockedIdleAnim.anim                                                                                          4.1 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/Anim/doorDrawer/doorDrawerLock/outsideLockingAnim.anim                                                                                             5.0 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/Anim/doorDrawer/doorDrawerLock/outsideUnlockedIdleAnim.anim                                                                                        4.1 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/Anim/doorDrawer/doorDrawerLock/outsideUnlockingAnim.anim                                                                                           5.0 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/Anim/doorHinged/doorFrame/doorBlockedClosedJiggle.anim                                                                                             7.9 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/Anim/doorHinged/doorFrame/doorBlockedOpenedJiggle.anim                                                                                             8.0 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/Anim/doorHinged/doorFrame/doorClosedIdleAnim.anim                                                                                                  4.1 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/Anim/doorHinged/doorFrame/doorClosingAnim.anim                                                                                                     4.9 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/Anim/doorHinged/doorFrame/doorLockedClosedJiggle.anim                                                                                              9.0 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/Anim/doorHinged/doorFrame/doorOpenedIdleAnim.anim                                                                                                  5.1 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/Anim/doorHinged/doorFrame/doorOpeningAnim.anim                                                                                                     4.9 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/Anim/doorHinged/doorFrame/doorSwayLoopAnim.anim                                                                                                    5.9 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/Anim/doorHinged/doorLock/commonLockedIdleAnim.anim                                                                                                 6.8 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/Anim/doorHinged/doorLock/commonLockingAnim.anim                                                                                                    9.0 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/Anim/doorHinged/doorLock/commonUnlockedIdle.anim                                                                                                   7.0 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/Anim/doorHinged/doorLock/commonUnlockingAnim.anim                                                                                                  9.0 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/Anim/doorHinged/doorLock/insideLockedIdle.anim                                                                                                     4.3 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/Anim/doorHinged/doorLock/insideLockingAnim.anim                                                                                                    5.1 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/Anim/doorHinged/doorLock/insideUnlockedIdle.anim                                                                                                   4.3 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/Anim/doorHinged/doorLock/insideUnlockingAnim.anim                                                                                                  5.1 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/Anim/doorHinged/doorLock/outsideLockedIdle.anim                                                                                                    4.2 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/Anim/doorHinged/doorLock/outsideLockingAnim.anim                                                                                                   5.1 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/Anim/doorHinged/doorLock/outsideUnlockedIdle.anim                                                                                                  4.2 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/Anim/doorHinged/doorLock/outsideUnlockingAnim.anim                                                                                                 5.2 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/Anim/doorSlideElevator/doorFrame/doorElevatorClosedBLockedJiggleAnim.anim                                                                          12.3 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/Anim/doorSlideElevator/doorFrame/doorElevatorClosedIdleAnim.anim                                                                                   5.2 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/Anim/doorSlideElevator/doorFrame/doorElevatorClosingAnim.anim                                                                                      7.2 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/Anim/doorSlideElevator/doorFrame/doorElevatorOpenedBLockedJiggleAnim.anim                                                                          11.3 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/Anim/doorSlideElevator/doorFrame/doorElevatorOpenedIdleAnim.anim                                                                                   5.2 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/Anim/doorSlideElevator/doorFrame/doorElevatorOpeningAnim.anim                                                                                      7.2 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/Anim/doorSlideElevator/doorFrame/doorSlideElevatorSimple (0).controller                                                                            12.8 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/Anim/doorSlideElevator/doorFrame/elevatorInsideLockedIdleAnim.anim                                                                                 4.3 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/Anim/doorSlideElevator/doorFrame/elevatorInsideLockingAnim.anim                                                                                    5.2 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/Anim/doorSlideElevator/doorFrame/elevatorInsideUnlockedIdleAnim.anim                                                                               4.3 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/Anim/doorSlideElevator/doorFrame/elevatorInsideUnlockingAnim.anim                                                                                  5.2 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/Anim/doorSlideElevator/doorFrame/elevatorOutsideLockedIdleAnim.anim                                                                                4.3 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/Anim/doorSlideElevator/doorFrame/elevatorOutsideLockingAnim.anim                                                                                   5.2 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/Anim/doorSlideElevator/doorFrame/elevatorOutsideUnlockedIdleAnim.anim                                                                              4.3 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/Anim/doorSlideElevator/doorFrame/elevatorOutsideUnlockingAnim.anim                                                                                 5.2 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/AnimController/doorOpenCloseAnimController_stateMachineApproach Simple Base Override Slide Elevator.overrideController                             3.0 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/AnimController/doorOpenCloseAnimController_stateMachineApproach Simple Base.controller                                                             36.1 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/AnimController/doorOpenCloseAnimController_stateMachineApproach Simple Override Drawer.overrideController                                          2.1 KB
+util_v1.0.1/_DoorBaseSystem/ANIM/AnimController/doorOpenCloseAnimController_stateMachineApproach.controller                                                                         36.1 KB
+util_v1.0.1/_DoorBaseSystem/AUDIO/doorClack-0.mp3                                                                                                                                   8.4 KB
+util_v1.0.1/_DoorBaseSystem/AUDIO/doorClack-1.mp3                                                                                                                                   5.9 KB
+util_v1.0.1/_DoorBaseSystem/AUDIO/doorKnocks 4 800ms.mp3                                                                                                                            15.7 KB
+util_v1.0.1/_DoorBaseSystem/AUDIO/doorLock 500ms.mp3                                                                                                                                10.0 KB
+util_v1.0.1/_DoorBaseSystem/AUDIO/doorLockedJiggle 400ms.mp3                                                                                                                        11.7 KB
+util_v1.0.1/_DoorBaseSystem/AUDIO/doorSlam 500ms.mp3                                                                                                                                14.4 KB
+util_v1.0.1/_DoorBaseSystem/AUDIO/doorSwayOpenClose 3000ms.mp3                                                                                                                      39.7 KB
+util_v1.0.1/_DoorBaseSystem/AUDIO/doorUnlock 300ms.mp3                                                                                                                              15.1 KB
+util_v1.0.1/_DoorBaseSystem/Demo/Demo DoorSystem Proto DoorBase System.unity                                                                                                        136.2 KB
+util_v1.0.1/_DoorBaseSystem/InputActions/playerInputActions.inputactions                                                                                                            1.8 KB
+util_v1.0.1/_DoorBaseSystem/MAT/blue.mat                                                                                                                                            3.8 KB
+util_v1.0.1/_DoorBaseSystem/MAT/floor.mat                                                                                                                                           3.8 KB
+util_v1.0.1/_DoorBaseSystem/MAT/green.mat                                                                                                                                           3.8 KB
+util_v1.0.1/_DoorBaseSystem/MAT/red.mat                                                                                                                                             3.8 KB
+util_v1.0.1/_DoorBaseSystem/MAT/yellow.mat                                                                                                                                          3.8 KB
+util_v1.0.1/_DoorBaseSystem/Scripts/GameStore.cs                                                                                                                                    6.8 KB
+util_v1.0.1/_DoorBaseSystem/Scripts/SimpleDoor With DoorBase/DoorAutoOpenCloseTrigger.cs                                                                                            1.2 KB
+util_v1.0.1/_DoorBaseSystem/Scripts/SimpleDoor With DoorBase/DoorBase.cs                                                                                                            21.6 KB
+util_v1.0.1/_DoorBaseSystem/Scripts/SimpleDoor With DoorBase/DoorInteraction/DoorInteraction.cs                                                                                     13.4 KB
+util_v1.0.1/_DoorBaseSystem/Scripts/SimpleDoor With DoorBase/DoorInteraction/DoorInteractionWithKeycard.cs                                                                          3.0 KB
+util_v1.0.1/_DoorBaseSystem/Scripts/SimpleDoor With DoorBase/DoorInteraction/DoorInteraction_1.cs                                                                                   2.1 KB
+util_v1.0.1/_DoorBaseSystem/Scripts/SimpleDoor With DoorBase/DoorInteraction/GhostEntity.cs                                                                                         7.9 KB
+util_v1.0.1/_DoorBaseSystem/Scripts/SimpleDoor With DoorBase/DoorInteraction/KeycardInventory.cs                                                                                    5.1 KB
+util_v1.0.1/_DoorBaseSystem/Scripts/SimpleDoor With DoorBase/DoorVarient/SimpleDoorDrawer.cs                                                                                        195 B
+util_v1.0.1/_DoorBaseSystem/Scripts/SimpleDoor With DoorBase/DoorVarient/SimpleDoorHinged.cs                                                                                        7.2 KB
+util_v1.0.1/_DoorBaseSystem/Scripts/SimpleDoor With DoorBase/DoorVarient/SimpleDoorSlideElevator.cs                                                                                 234 B
+util_v1.0.1/_DoorBaseSystem/Scripts/SimpleDoor With DoorBase/SimpleDoorAnimEventForwarder.cs                                                                                        1.0 KB
+util_v1.0.1/_DoorBaseSystem/Scripts/SimpleMovementController.cs                                                                                                                     1020 B
+util_v1.0.1/_DrawSystem/DrawManager.cs                                                                                                                                              11.7 KB
+util_v1.0.1/_DrawSystem/DrawSystemDoc.md                                                                                                                                            1.1 KB
+util_v1.0.1/_FirstPersonSystem/DEBUG_PickUp @Doodle-Scene.unity                                                                                                                     72.2 KB
+util_v1.0.1/_FirstPersonSystem/doorClack-0 1.mp3                                                                                                                                    8.4 KB
+util_v1.0.1/_FirstPersonSystem/doorClack-1 1.mp3                                                                                                                                    5.9 KB
+util_v1.0.1/_FirstPersonSystem/FirstPersonController.cs                                                                                                                             19.5 KB
+util_v1.0.1/_FirstPersonSystem/FirstPersonGrabber.cs                                                                                                                                11.9 KB
+util_v1.0.1/_FirstPersonSystem/Mats/GridBox_Default.png                                                                                                                             9.2 KB
+util_v1.0.1/_FirstPersonSystem/Mats/mat.mat                                                                                                                                         3.8 KB
+util_v1.0.1/_FirstPersonSystem/Mats/ProBuilder6_Standard Vertex Color.mat                                                                                                           2.4 KB
+util_v1.0.1/_FirstPersonSystem/Mats/Standard Vertex Color.shadergraph                                                                                                               42.9 KB
+util_v1.0.1/_FirstPersonSystem/player.prefab                                                                                                                                        10.3 KB
+util_v1.0.1/_FirstPersonSystem/playerFirstPersonInputActions.inputactions                                                                                                           5.9 KB
+util_v1.0.1/_FirstPersonSystem/StrippedProBuilderMeshes/ProBuilder Meshes/Cube (1).asset                                                                                            14.2 KB
+util_v1.0.1/_FirstPersonSystem/StrippedProBuilderMeshes/ProBuilder Meshes/Cube (2).asset                                                                                            5.6 KB
+util_v1.0.1/_FirstPersonSystem/StrippedProBuilderMeshes/ProBuilder Meshes/cube axe.asset                                                                                            5.9 KB
+util_v1.0.1/_FirstPersonSystem/StrippedProBuilderMeshes/ProBuilder Meshes/cube hx0.5.asset                                                                                          5.9 KB
+util_v1.0.1/_FirstPersonSystem/StrippedProBuilderMeshes/ProBuilder Meshes/cube lamp.asset                                                                                           5.9 KB
+util_v1.0.1/_FirstPersonSystem/StrippedProBuilderMeshes/ProBuilder Meshes/cube smal item.asset                                                                                      6.0 KB
+util_v1.0.1/_FirstPersonSystem/StrippedProBuilderMeshes/ProBuilder Meshes/cube.asset                                                                                                5.9 KB
+util_v1.0.1/_FirstPersonSystem/StrippedProBuilderMeshes/ProBuilder Meshes/CubeMetal.asset                                                                                           6.3 KB
+util_v1.0.1/_FirstPersonSystem/StrippedProBuilderMeshes/ProBuilder Meshes/Pipe.asset                                                                                                23.0 KB
+util_v1.0.1/_FirstPersonSystem/StrippedProBuilderMeshes/ProBuilder Meshes/Plane.asset                                                                                               9.5 KB
+util_v1.0.1/_FirstPersonSystem/StrippedProBuilderMeshes/ProBuilder Meshes/Prism (1).asset                                                                                           5.3 KB
+util_v1.0.1/_FirstPersonSystem/StrippedProBuilderMeshes/ProBuilder Meshes/Prism.asset                                                                                               5.3 KB
+util_v1.0.1/_NodeSystem/Scenes/NodeSystem Demo.unity                                                                                                                                18.2 KB
+util_v1.0.1/_NodeSystem/Scripts/GraphViewer/Demo GameData.txt                                                                                                                       86 B
+util_v1.0.1/_NodeSystem/Scripts/GraphViewer/GraphNodeManager.cs                                                                                                                     9.2 KB
+util_v1.0.1/_NodeSystem/Scripts/GraphViewer/GraphNode_IO.cs                                                                                                                         2.0 KB
+util_v1.0.1/_NodeSystem/Scripts/GraphViewer/Prefabs/Resources/pfGraphNode.prefab                                                                                                    9.3 KB
+util_v1.0.1/_NodeSystem/Scripts/GraphViewer/README.md                                                                                                                               778 B
+util_v1.0.1/_NodeSystem/Scripts/GraphViewer/Textures/White_1x1.png                                                                                                                  2.7 KB
+util_v1.0.1/_NodeSystem/Scripts/NodeManager.cs                                                                                                                                      11.8 KB
+util_v1.0.1/_NPCSystem/Characters/ybot/Y Bot --TPose with skin.prefab                                                                                                               73.4 KB
+util_v1.0.1/_NPCSystem/Characters/ybot/ybot-AnimController/ybot--anim-controller.controller                                                                                         4.4 KB
+util_v1.0.1/_NPCSystem/Characters/ybot/ybot-Anims/Y Bot@Breathing Idle.fbx                                                                                                          1.05 MB
+util_v1.0.1/_NPCSystem/Characters/ybot/ybot-Anims/Y Bot@Happy Walk.fbx                                                                                                              376.8 KB
+util_v1.0.1/_NPCSystem/Characters/ybot/ybot-Anims/Y Bot@Idle.fbx                                                                                                                    1.57 MB
+util_v1.0.1/_NPCSystem/Characters/ybot/ybot-Mats/Alpha_Body_MAT.mat                                                                                                                 3.8 KB
+util_v1.0.1/_NPCSystem/Characters/ybot/ybot-Mats/Alpha_Joints_MAT.mat                                                                                                               3.9 KB
+util_v1.0.1/_NPCSystem/Characters/ybot/ybot-Model/Y Bot --TPose with skin.fbx                                                                                                       1.89 MB
+util_v1.0.1/_NPCSystem/DoodleNPC.unity                                                                                                                                              4.77 MB
+util_v1.0.1/_NPCSystem/IA/playerInputActions.inputactions                                                                                                                           1.1 KB
+util_v1.0.1/_NPCSystem/Mats/walls.mat                                                                                                                                               3.8 KB
+util_v1.0.1/_NPCSystem/NPC_Course.md                                                                                                                                                75.0 KB
+util_v1.0.1/_NPCSystem/Prefabs/Text (TMP) GridTile.prefab                                                                                                                           4.9 KB
+util_v1.0.1/_Template/GameStore.cs                                                                                                                                                  1.5 KB
+util_v1.0.1/_Template/InputActions/playerInputActions.inputactions                                                                                                                  1.8 KB
+util_v1.0.1/_Template/New Scene.unity                                                                                                                                               22.4 KB
+util_v1.0.1/_Template/UI/pfButton.prefab                                                                                                                                            9.5 KB
+util_v1.0.1/_Template/UI/pftemplate -- Scroll View(Text) -_ consoleField.prefab                                                                                                     38.2 KB
+util_v1.0.1/_UIRebindingSystem/DEBUG_IAEventsAssetController.cs                                                                                                                     937 B
+util_v1.0.1/_UIRebindingSystem/DEBUG_SampleGameSave.cs                                                                                                                              1.7 KB
+util_v1.0.1/_UIRebindingSystem/DEBUG_UIRebindingMenuButton.cs                                                                                                                       701 B
+util_v1.0.1/_UIRebindingSystem/GameStore.cs                                                                                                                                         1.7 KB
+util_v1.0.1/_UIRebindingSystem/InputActions/NewInputAction.inputactions                                                                                                             1.8 KB
+util_v1.0.1/_UIRebindingSystem/Prefabs/pfButton.prefab                                                                                                                              9.5 KB
+util_v1.0.1/_UIRebindingSystem/Prefabs/pftemplate -- Scroll View(Text).prefab                                                                                                       38.2 KB
+util_v1.0.1/_UIRebindingSystem/Prefabs/pftemplate -- Scroll View.prefab                                                                                                             53.5 KB
+util_v1.0.1/_UIRebindingSystem/Prefabs/pftemplate --row.prefab                                                                                                                      20.4 KB
+util_v1.0.1/_UIRebindingSystem/UIRebindingSystem --flow.md                                                                                                                          21.1 KB
+util_v1.0.1/_UIRebindingSystem/UIRebindingSystem Demo.unity                                                                                                                         122.1 KB
+util_v1.0.1/_UIRebindingSystem/UIRebindingSystem.cs                                                                                                                                 17.6 KB
+util_v1.0.1/_UIRebindingSystem/UIRebindingSystem.md                                                                                                                                 21.1 KB
+util_v1.0.1/_UIToolTipSystem/Prefabs/ToolTip.prefab                                                                                                                                 11.2 KB
+util_v1.0.1/_UIToolTipSystem/Scenes/ToolTip Demo.unity                                                                                                                              18.6 KB
+util_v1.0.1/_UIToolTipSystem/Scripts/UIToolTip.cs                                                                                                                                   2.8 KB
+util_v1.0.1/_WebReqSystem/Scenes/WebReqSystem Demo.unity                                                                                                                            46.9 KB
+util_v1.0.1/_WebReqSystem/Scenes/WebReqSystem DemoSettings.lighting                                                                                                                 1.8 KB
+util_v1.0.1/_WebReqSystem/Scripts/Demo/DEBUG_WebRequest.cs                                                                                                                          1.1 KB
+util_v1.0.1/_WebReqSystem/Scripts/Demo/WebReqSystem Demo.unity                                                                                                                      10.0 KB
+util_v1.0.1/_WebReqSystem/Scripts/Demo/WebReqSystem DemoSettings.lighting                                                                                                           1.8 KB
+util_v1.0.1/_WebReqSystem/Scripts/NameGen/JapaneseNameGenerator.cs                                                                                                                  5.3 KB
+util_v1.0.1/_WebReqSystem/Scripts/WebReqManager.cs                                                                                                                                  18.1 KB
+util_v1.0.1/_WebReqSystem/Textures/White_1x1.png                                                                                                                                    2.7 KB

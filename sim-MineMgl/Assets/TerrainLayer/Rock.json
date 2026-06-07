@@ -1,0 +1,52 @@
+{
+	"m_CorrespondingSourceObject": { "m_Collection": "sharedassets1.assets", "m_PathID": 0 },
+	"m_DiffuseRemapMax": {
+		"m_W": 1,
+		"m_X": 1,
+		"m_Y": 1,
+		"m_Z": 1
+	},
+	"m_DiffuseRemapMin": {
+		"m_W": 0,
+		"m_X": 0,
+		"m_Y": 0,
+		"m_Z": 0
+	},
+	"m_DiffuseTexture": { "m_Collection": "sharedassets1.assets", "m_PathID": 153 },
+	"m_HideFlags": 0,
+	"m_MaskMapRemapMax": {
+		"m_W": 1,
+		"m_X": 1,
+		"m_Y": 1,
+		"m_Z": 1
+	},
+	"m_MaskMapRemapMin": {
+		"m_W": 0,
+		"m_X": 0,
+		"m_Y": 0,
+		"m_Z": 0
+	},
+	"m_MaskMapTexture": { "m_Collection": "sharedassets1.assets", "m_PathID": 164 },
+	"m_Metallic": 0,
+	"m_Name": "Rock",
+	"m_NormalMapTexture": { "m_Collection": "sharedassets1.assets", "m_PathID": 96 },
+	"m_NormalScale": 0.2,
+	"m_PrefabAsset": { "m_Collection": "sharedassets1.assets", "m_PathID": 0 },
+	"m_PrefabInstance": { "m_Collection": "sharedassets1.assets", "m_PathID": 0 },
+	"m_Smoothness": 0,
+	"m_SmoothnessSource": 1,
+	"m_Specular": {
+		"m_A": 0,
+		"m_B": 0,
+		"m_G": 0,
+		"m_R": 0
+	},
+	"m_TileOffset": {
+		"m_X": 0,
+		"m_Y": 0
+	},
+	"m_TileSize": {
+		"m_X": 3,
+		"m_Y": 3
+	}
+}

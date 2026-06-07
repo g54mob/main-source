@@ -1,0 +1,1 @@
+internal delegate void JaLFpUVPHDVVuPEQLelUrEqDjRk(HgGLQtrCokhwjfGTXVIAhJMhlgpp data);

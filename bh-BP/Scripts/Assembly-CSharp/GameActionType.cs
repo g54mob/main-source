@@ -1,0 +1,26 @@
+public enum GameActionType
+{
+	kShoot = 0,
+	kAimHorizontal = 1,
+	kPause = 2,
+	kMoveHorizontal = 3,
+	kAimVertical = 4,
+	kMoveVertical = 5,
+	kAutofire = 6,
+	kIncreaseSpeed = 7,
+	kDecreaseSpeed = 8,
+	kLevelUp = 9,
+	kGrabModifier = 10,
+	kRotateCW = 11,
+	kRotateCCW = 12,
+	kWorkerDetails = 13,
+	kZoomIn = 14,
+	kZoomOut = 15,
+	kShowUpgradeable = 16,
+	kShowFullyUpgraded = 17,
+	kDismantleBuilding = 18,
+	kSpeedUpHarvest = 19,
+	kCancelHarvest = 20,
+	kOpenSidebar = 21,
+	kNum = 22
+}
