@@ -1,4 +1,0 @@
-internal enum ZgqPsCcCmqwRhUbvOGJfKyuFSsBmA : short
-{
-
-}

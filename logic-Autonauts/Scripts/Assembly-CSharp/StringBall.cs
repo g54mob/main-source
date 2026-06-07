@@ -1,3 +1,0 @@
-public class StringBall : Holdable
-{
-}

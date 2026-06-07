@@ -1,6 +1,0 @@
-internal struct HDnhBREyWmXPeHmoTZzebZvcPyvf
-{
-	public DuFTUcMolCBEEpnwVtOJkBhYtKpq KNSgCGeNgLYaOtaGxRPmUMNlQQbp;
-
-	public ILhMvhBhEKeLwPAfchfcJZdUlqMnA AosfsoeOfaGoKpjgILUXNdkzPGql;
-}

@@ -1,4 +1,0 @@
-namespace Epic.OnlineServices.RTCAdmin
-{
-	public delegate void OnSetParticipantHardMuteCompleteCallback(SetParticipantHardMuteCompleteCallbackInfo data);
-}

@@ -1,7 +1,0 @@
-namespace VRTK
-{
-	[SDK_Description(typeof(SDK_HyperealVRSystem), 0)]
-	public class SDK_HyperealVRBoundaries : SDK_FallbackBoundaries
-	{
-	}
-}

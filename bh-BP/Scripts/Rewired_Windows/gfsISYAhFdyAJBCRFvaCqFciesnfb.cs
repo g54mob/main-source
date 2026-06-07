@@ -1,6 +1,0 @@
-internal struct gfsISYAhFdyAJBCRFvaCqFciesnfb
-{
-	public mwMSDrRJgDPNdyVNFvPrQOgCavdr THYACfgQLaUvhgJQMUdspkcBWWEgA;
-
-	public lNgaPgIDRHbERDKMgqsMEdaWsTAwA CAsDTOyiAVYUaoPvRGyMlXNpjanU;
-}

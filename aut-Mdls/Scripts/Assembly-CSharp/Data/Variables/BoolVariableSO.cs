@@ -1,9 +1,0 @@
-using UnityEngine;
-
-namespace Data.Variables
-{
-	[CreateAssetMenu(menuName = "Variables/BoolVariable", fileName = "BoolVariable", order = 0)]
-	public class BoolVariableSO : VariableSO<bool>
-	{
-	}
-}

@@ -1,5 +1,0 @@
-public enum UIScaleMode
-{
-	SCALE_WITH_SCREEN_SIZE = 0,
-	CONSTANT_PIXEL_SIZE = 1
-}

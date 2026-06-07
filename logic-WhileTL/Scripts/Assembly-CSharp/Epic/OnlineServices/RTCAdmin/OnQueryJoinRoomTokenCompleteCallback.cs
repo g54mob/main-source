@@ -1,4 +1,0 @@
-namespace Epic.OnlineServices.RTCAdmin
-{
-	public delegate void OnQueryJoinRoomTokenCompleteCallback(QueryJoinRoomTokenCompleteCallbackInfo data);
-}

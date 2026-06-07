@@ -1,6 +1,0 @@
-internal struct oJqDOpLSpzXpieFwwDGOPDuUBLb
-{
-	public iOOQIEtdZDQeMABXgchzEZokWcv byDGMqNQwQgcEKGrKIjIwBvRyWv;
-
-	public nYcoKVgMYJcRcEyKHqZSuhVkQiIx nvzezGVBdfISGGHTlahzHbKLnPuh;
-}

@@ -1,6 +1,0 @@
-internal enum yDzOYwhrGcjGweXvPzNXXJeRUPD
-{
-	YAZOkuwPOyKoulTvRdiIlygYPYL = 536870917,
-	grGKADVFdGGSLUntXjqDNCkqUpU = 536870919,
-	KYGPUtgqYxzzHXPzLmAfndkgbKA = 536870923
-}

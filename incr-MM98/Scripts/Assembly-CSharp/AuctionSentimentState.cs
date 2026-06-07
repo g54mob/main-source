@@ -1,6 +1,0 @@
-public enum AuctionSentimentState
-{
-	Negative = 0,
-	Neutral = 1,
-	Positive = 2
-}

@@ -1,6 +1,0 @@
-internal struct YtHRDLQmIDifHFuIrMUCdKjBJsTRb
-{
-	public SmzDMmmmvpQubCqMxxrlPqfjivDdA xslmTihYQYAOzpRVmqTarOdqwAcW;
-
-	public ZDTSCxrfKvfSPuvJMUbUmldjDmyg yMHIJHTaRhzvsSRgnQNEeeEAaSJF;
-}

@@ -1,6 +1,0 @@
-internal struct TiTouRGUQDLgWdlwKFrcffKhCPnU
-{
-	public VcpKvcypbdoveLmgSQwRiXKXfEjo MWayvISaaknDyJMUyglsHWggtIpz;
-
-	public CTXvkhpFYniWSvbhtJqwNfUTdaUS SSaCegYtbDtuwHgjNxDNXRzkPiIc;
-}
