@@ -1,0 +1,33 @@
+namespace Epic.OnlineServices.Achievements
+{
+	public class DefinitionV2 : ISettable
+	{
+		public string AchievementId { get; set; }
+
+		public string UnlockedDisplayName { get; set; }
+
+		public string UnlockedDescription { get; set; }
+
+		public string LockedDisplayName { get; set; }
+
+		public string LockedDescription { get; set; }
+
+		public string FlavorText { get; set; }
+
+		public string UnlockedIconURL { get; set; }
+
+		public string LockedIconURL { get; set; }
+
+		public bool IsHidden { get; set; }
+
+		public StatThresholds[] StatThresholds { get; set; }
+
+		internal void Set(DefinitionV2Internal? other)
+		{
+		}
+
+		public void Set(object other)
+		{
+		}
+	}
+}

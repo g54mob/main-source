@@ -1,0 +1,41 @@
+using System;
+using System.Runtime.InteropServices;
+
+namespace Epic.OnlineServices.Ecom
+{
+	[StructLayout((LayoutKind)0, Pack = 8, Size = 24)]
+	internal struct CopyEntitlementByIdOptionsInternal : ISettable, IDisposable
+	{
+		private int m_ApiVersion;
+
+		private IntPtr m_LocalUserId;
+
+		private IntPtr m_EntitlementId;
+
+		public EpicAccountId LocalUserId
+		{
+			set
+			{
+			}
+		}
+
+		public string EntitlementId
+		{
+			set
+			{
+			}
+		}
+
+		public void Set(CopyEntitlementByIdOptions other)
+		{
+		}
+
+		public void Set(object other)
+		{
+		}
+
+		public void Dispose()
+		{
+		}
+	}
+}

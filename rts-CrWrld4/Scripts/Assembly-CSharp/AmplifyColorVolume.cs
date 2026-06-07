@@ -1,0 +1,12 @@
+using UnityEngine;
+
+public class AmplifyColorVolume : AmplifyColorVolumeBase
+{
+	private void OnTriggerEnter(Collider other)
+	{
+	}
+
+	private void OnTriggerExit(Collider other)
+	{
+	}
+}
