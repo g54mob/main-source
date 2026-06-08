@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Timberborn.SceneLoading</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Timberborn.RootProviders">
+      <HintPath>..\..\Assemblies\Timberborn.RootProviders.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Localization">
+      <HintPath>..\..\Assemblies\Timberborn.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.AssetSystem">
+      <HintPath>..\..\Assemblies\Timberborn.AssetSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>..\..\Assemblies\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.SingletonSystem">
+      <HintPath>..\..\Assemblies\Timberborn.SingletonSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Bindito.Core">
+      <HintPath>..\..\Assemblies\Bindito.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

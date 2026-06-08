@@ -1,0 +1,16 @@
+using Newtonsoft.Json;
+
+namespace TwitchLib.Api.Helix.Models.Moderation.CheckAutoModStatus
+{
+	public class Message
+	{
+		[JsonProperty(PropertyName = "msg_id")]
+		public string MsgId { get; set; }
+
+		[JsonProperty(PropertyName = "msg_text")]
+		public string MsgText { get; set; }
+
+		[JsonProperty(PropertyName = "user_id")]
+		public string UserId { get; set; }
+	}
+}

@@ -1,0 +1,76 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Timberborn.CharacterControlSystemUI</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Timberborn.SelectionSystem">
+      <HintPath>..\..\Assemblies\Timberborn.SelectionSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.TerrainQueryingSystem">
+      <HintPath>..\..\Assemblies\Timberborn.TerrainQueryingSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.CameraSystem">
+      <HintPath>..\..\Assemblies\Timberborn.CameraSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.InputSystem">
+      <HintPath>..\..\Assemblies\Timberborn.InputSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BaseComponentSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BaseComponentSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.EntityPanelSystem">
+      <HintPath>..\..\Assemblies\Timberborn.EntityPanelSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.CoreUI">
+      <HintPath>..\..\Assemblies\Timberborn.CoreUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.DropdownSystem">
+      <HintPath>..\..\Assemblies\Timberborn.DropdownSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.KeyBindingSystemUI">
+      <HintPath>..\..\Assemblies\Timberborn.KeyBindingSystemUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.InputSystemUI">
+      <HintPath>..\..\Assemblies\Timberborn.InputSystemUI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>..\..\Assemblies\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.TemplateInstantiation">
+      <HintPath>..\..\Assemblies\Timberborn.TemplateInstantiation.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.CharacterControlSystem">
+      <HintPath>..\..\Assemblies\Timberborn.CharacterControlSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BlockSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BlockSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BehaviorSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BehaviorSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.TemplateSystem">
+      <HintPath>..\..\Assemblies\Timberborn.TemplateSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Bindito.Core">
+      <HintPath>..\..\Assemblies\Bindito.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.GridTraversing">
+      <HintPath>..\..\Assemblies\Timberborn.GridTraversing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\..\Assemblies\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

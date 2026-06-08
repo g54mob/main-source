@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Timberborn.DistanceHeatmap</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Timberborn.TemplateInstantiation">
+      <HintPath>..\..\Assemblies\Timberborn.TemplateInstantiation.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.SelectionSystem">
+      <HintPath>..\..\Assemblies\Timberborn.SelectionSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BuildingsNavigation">
+      <HintPath>..\..\Assemblies\Timberborn.BuildingsNavigation.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Buildings">
+      <HintPath>..\..\Assemblies\Timberborn.Buildings.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.GameDistricts">
+      <HintPath>..\..\Assemblies\Timberborn.GameDistricts.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Navigation">
+      <HintPath>..\..\Assemblies\Timberborn.Navigation.dll</HintPath>
+    </Reference>
+    <Reference Include="Bindito.Core">
+      <HintPath>..\..\Assemblies\Bindito.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BaseComponentSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BaseComponentSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BlockSystemNavigation">
+      <HintPath>..\..\Assemblies\Timberborn.BlockSystemNavigation.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.EntitySystem">
+      <HintPath>..\..\Assemblies\Timberborn.EntitySystem.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,112 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Timberborn.WellbeingUI</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Timberborn.UILayoutSystem">
+      <HintPath>..\..\Assemblies\Timberborn.UILayoutSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Wellbeing">
+      <HintPath>..\..\Assemblies\Timberborn.Wellbeing.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.GameDistricts">
+      <HintPath>..\..\Assemblies\Timberborn.GameDistricts.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.ScienceSystem">
+      <HintPath>..\..\Assemblies\Timberborn.ScienceSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BatchControl">
+      <HintPath>..\..\Assemblies\Timberborn.BatchControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.InputSystem">
+      <HintPath>..\..\Assemblies\Timberborn.InputSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Population">
+      <HintPath>..\..\Assemblies\Timberborn.Population.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.SingletonSystem">
+      <HintPath>..\..\Assemblies\Timberborn.SingletonSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Localization">
+      <HintPath>..\..\Assemblies\Timberborn.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.CoreUI">
+      <HintPath>..\..\Assemblies\Timberborn.CoreUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.GameFactionSystem">
+      <HintPath>..\..\Assemblies\Timberborn.GameFactionSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.TooltipSystem">
+      <HintPath>..\..\Assemblies\Timberborn.TooltipSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.InputSystemUI">
+      <HintPath>..\..\Assemblies\Timberborn.InputSystemUI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>..\..\Assemblies\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.FactionSystem">
+      <HintPath>..\..\Assemblies\Timberborn.FactionSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BlueprintSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BlueprintSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.NeedSystem">
+      <HintPath>..\..\Assemblies\Timberborn.NeedSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.NeedSpecs">
+      <HintPath>..\..\Assemblies\Timberborn.NeedSpecs.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BaseComponentSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BaseComponentSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\..\Assemblies\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Common">
+      <HintPath>..\..\Assemblies\Timberborn.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BonusSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BonusSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Debugging">
+      <HintPath>..\..\Assemblies\Timberborn.Debugging.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.AlertPanelSystem">
+      <HintPath>..\..\Assemblies\Timberborn.AlertPanelSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.GameSound">
+      <HintPath>..\..\Assemblies\Timberborn.GameSound.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.EntityPanelSystem">
+      <HintPath>..\..\Assemblies\Timberborn.EntityPanelSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Bindito.Core">
+      <HintPath>..\..\Assemblies\Bindito.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.UIFormatters">
+      <HintPath>..\..\Assemblies\Timberborn.UIFormatters.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.LocalizationSerialization">
+      <HintPath>..\..\Assemblies\Timberborn.LocalizationSerialization.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Effects">
+      <HintPath>..\..\Assemblies\Timberborn.Effects.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Bots">
+      <HintPath>..\..\Assemblies\Timberborn.Bots.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

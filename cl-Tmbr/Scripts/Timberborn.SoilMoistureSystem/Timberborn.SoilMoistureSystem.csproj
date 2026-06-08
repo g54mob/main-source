@@ -1,0 +1,76 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Timberborn.SoilMoistureSystem</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Timberborn.Common">
+      <HintPath>..\..\Assemblies\Timberborn.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.WaterSystem">
+      <HintPath>..\..\Assemblies\Timberborn.WaterSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BlueprintSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BlueprintSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.TerrainSystem">
+      <HintPath>..\..\Assemblies\Timberborn.TerrainSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.MapIndexSystem">
+      <HintPath>..\..\Assemblies\Timberborn.MapIndexSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BlockSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BlockSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.TerrainSystemRendering">
+      <HintPath>..\..\Assemblies\Timberborn.TerrainSystemRendering.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.SimulationSystem">
+      <HintPath>..\..\Assemblies\Timberborn.SimulationSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Multithreading">
+      <HintPath>..\..\Assemblies\Timberborn.Multithreading.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.TickSystem">
+      <HintPath>..\..\Assemblies\Timberborn.TickSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.WorldPersistence">
+      <HintPath>..\..\Assemblies\Timberborn.WorldPersistence.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.SoilBarrierSystem">
+      <HintPath>..\..\Assemblies\Timberborn.SoilBarrierSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.TemplateInstantiation">
+      <HintPath>..\..\Assemblies\Timberborn.TemplateInstantiation.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Persistence">
+      <HintPath>..\..\Assemblies\Timberborn.Persistence.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BaseComponentSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BaseComponentSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.EntitySystem">
+      <HintPath>..\..\Assemblies\Timberborn.EntitySystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.MapEditorTickSystem">
+      <HintPath>..\..\Assemblies\Timberborn.MapEditorTickSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.SingletonSystem">
+      <HintPath>..\..\Assemblies\Timberborn.SingletonSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Bindito.Core">
+      <HintPath>..\..\Assemblies\Bindito.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

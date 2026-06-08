@@ -1,0 +1,94 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Timberborn.BotBehavior</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Timberborn.TemplateInstantiation">
+      <HintPath>..\..\Assemblies\Timberborn.TemplateInstantiation.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BehaviorSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BehaviorSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.WorldPersistence">
+      <HintPath>..\..\Assemblies\Timberborn.WorldPersistence.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.NeedBehaviorSystem">
+      <HintPath>..\..\Assemblies\Timberborn.NeedBehaviorSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\..\Assemblies\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Persistence">
+      <HintPath>..\..\Assemblies\Timberborn.Persistence.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.NeedSystem">
+      <HintPath>..\..\Assemblies\Timberborn.NeedSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.GameDistricts">
+      <HintPath>..\..\Assemblies\Timberborn.GameDistricts.dll</HintPath>
+    </Reference>
+    <Reference Include="Bindito.Core">
+      <HintPath>..\..\Assemblies\Bindito.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BaseComponentSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BaseComponentSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Bots">
+      <HintPath>..\..\Assemblies\Timberborn.Bots.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.WalkingSystem">
+      <HintPath>..\..\Assemblies\Timberborn.WalkingSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.CharacterModelSystem">
+      <HintPath>..\..\Assemblies\Timberborn.CharacterModelSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Workshops">
+      <HintPath>..\..\Assemblies\Timberborn.Workshops.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Planting">
+      <HintPath>..\..\Assemblies\Timberborn.Planting.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.ReservableSystem">
+      <HintPath>..\..\Assemblies\Timberborn.ReservableSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Yielding">
+      <HintPath>..\..\Assemblies\Timberborn.Yielding.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.ConstructionSites">
+      <HintPath>..\..\Assemblies\Timberborn.ConstructionSites.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Demolishing">
+      <HintPath>..\..\Assemblies\Timberborn.Demolishing.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.CharacterControlSystem">
+      <HintPath>..\..\Assemblies\Timberborn.CharacterControlSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.MortalSystem">
+      <HintPath>..\..\Assemblies\Timberborn.MortalSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Carrying">
+      <HintPath>..\..\Assemblies\Timberborn.Carrying.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.DeathSystem">
+      <HintPath>..\..\Assemblies\Timberborn.DeathSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Wandering">
+      <HintPath>..\..\Assemblies\Timberborn.Wandering.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.WorkSystem">
+      <HintPath>..\..\Assemblies\Timberborn.WorkSystem.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

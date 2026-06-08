@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Timberborn.TerrainLevelValidation</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Timberborn.TerrainSystem">
+      <HintPath>..\..\Assemblies\Timberborn.TerrainSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.MapIndexSystem">
+      <HintPath>..\..\Assemblies\Timberborn.MapIndexSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BlueprintSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BlueprintSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Localization">
+      <HintPath>..\..\Assemblies\Timberborn.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BlockSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BlockSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.TemplateInstantiation">
+      <HintPath>..\..\Assemblies\Timberborn.TemplateInstantiation.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.MapStateSystem">
+      <HintPath>..\..\Assemblies\Timberborn.MapStateSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BaseComponentSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BaseComponentSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BlockObjectModelSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BlockObjectModelSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Bindito.Core">
+      <HintPath>..\..\Assemblies\Bindito.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\..\Assemblies\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Common">
+      <HintPath>..\..\Assemblies\Timberborn.Common.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

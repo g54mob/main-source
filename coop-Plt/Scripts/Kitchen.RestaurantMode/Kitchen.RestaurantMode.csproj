@@ -1,0 +1,81 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Kitchen.RestaurantMode</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net40</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>8.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Unity.Entities">
+      <HintPath>..\..\Assemblies\Unity.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="Kitchen.GameData">
+      <HintPath>..\..\Assemblies\Kitchen.GameData.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections">
+      <HintPath>..\..\Assemblies\Unity.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="KitchenMode">
+      <HintPath>..\..\Assemblies\KitchenMode.dll</HintPath>
+    </Reference>
+    <Reference Include="Kitchen.Common">
+      <HintPath>..\..\Assemblies\Kitchen.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Kitchen.Persistence">
+      <HintPath>..\..\Assemblies\Kitchen.Persistence.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\..\Assemblies\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\Assemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>..\..\Assemblies\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>..\..\Assemblies\Unity.Burst.dll</HintPath>
+    </Reference>
+    <Reference Include="MessagePack.Annotations">
+      <HintPath>..\..\Assemblies\MessagePack.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="PlatformSettings">
+      <HintPath>..\..\Assemblies\PlatformSettings.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Sirenix.Utilities">
+      <HintPath>..\..\Assemblies\Sirenix.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>..\..\Assemblies\Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Kitchen.Layouts">
+      <HintPath>..\..\Assemblies\Kitchen.Layouts.dll</HintPath>
+    </Reference>
+    <Reference Include="KitchenMods">
+      <HintPath>..\..\Assemblies\KitchenMods.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveSplit">
+      <HintPath>..\..\Assemblies\LiveSplit.dll</HintPath>
+    </Reference>
+    <Reference Include="Controllers">
+      <HintPath>..\..\Assemblies\Controllers.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\Assemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Jobs">
+      <HintPath>..\..\Assemblies\Unity.Jobs.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

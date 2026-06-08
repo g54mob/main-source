@@ -1,0 +1,61 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Timberborn.BlockObjectPickingSystem</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Timberborn.BlockSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BlockSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.LevelVisibilitySystem">
+      <HintPath>..\..\Assemblies\Timberborn.LevelVisibilitySystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.TerrainSystem">
+      <HintPath>..\..\Assemblies\Timberborn.TerrainSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.GridTraversing">
+      <HintPath>..\..\Assemblies\Timberborn.GridTraversing.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.SelectionSystem">
+      <HintPath>..\..\Assemblies\Timberborn.SelectionSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Coordinates">
+      <HintPath>..\..\Assemblies\Timberborn.Coordinates.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\Assemblies\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BlockObjectModelSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BlockObjectModelSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Bindito.Core">
+      <HintPath>..\..\Assemblies\Bindito.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BaseComponentSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BaseComponentSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Common">
+      <HintPath>..\..\Assemblies\Timberborn.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\..\Assemblies\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BlueprintSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BlueprintSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Rendering">
+      <HintPath>..\..\Assemblies\Timberborn.Rendering.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

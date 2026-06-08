@@ -1,0 +1,274 @@
+#define ENABLE_PROFILER
+using System;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+using Kitchen.Layouts;
+using KitchenData;
+using MessagePack;
+using Unity.Collections;
+using Unity.Collections.LowLevel.Unsafe;
+using Unity.Entities;
+using Unity.Entities.CodeGeneratedJobForEach;
+using Unity.Profiling;
+using UnityEngine;
+
+namespace Kitchen
+{
+	[Serializable]
+	public class LayoutDecorView : UpdatableObjectView<LayoutDecorView.DecorationUpdates>
+	{
+		public class UpdateView : IncrementalViewSystemBase<DecorationUpdates>
+		{
+			[StructLayout(LayoutKind.Auto)]
+			[CompilerGenerated]
+			private struct _003C_003Ec__DisplayClass2_0
+			{
+				public UpdateView _003C_003E4__this;
+
+				public LayoutDecorMap map;
+
+				internal void _003COnUpdate_003Eb__0(Entity entity, int entityInQueryIndex, ref CLinkedView linked_view, in CLayoutView layout)
+				{
+					LambdaForEachDescriptionConstructionMethods.ThrowCodeGenInvalidMethodCalledException();
+				}
+			}
+
+			[Unity.Entities.DOTSCompilerGenerated]
+			private struct _003C_003Ec__DisplayClass_OnUpdate_LambdaJob0 : IJobChunk
+			{
+				private struct LambdaParameterValueProviders
+				{
+					public struct Runtimes
+					{
+						public LambdaParameterValueProvider_Entity.Runtime runtime_entity;
+
+						public LambdaParameterValueProvider_EntityInQueryIndex.Runtime runtime_entityInQueryIndex;
+
+						public LambdaParameterValueProvider_IComponentData<CLinkedView>.Runtime runtime_linked_view;
+
+						public LambdaParameterValueProvider_IComponentData<CLayoutView>.Runtime runtime_layout;
+					}
+
+					[ReadOnly]
+					private LambdaParameterValueProvider_Entity forParameter_entity;
+
+					[ReadOnly]
+					private LambdaParameterValueProvider_EntityInQueryIndex forParameter_entityInQueryIndex;
+
+					private LambdaParameterValueProvider_IComponentData<CLinkedView> forParameter_linked_view;
+
+					[ReadOnly]
+					private LambdaParameterValueProvider_IComponentData<CLayoutView> forParameter_layout;
+
+					public void ScheduleTimeInitialize(UpdateView componentSystem)
+					{
+						forParameter_entity.ScheduleTimeInitialize(componentSystem, isReadOnly: true);
+						forParameter_entityInQueryIndex.ScheduleTimeInitialize(componentSystem, isReadOnly: true);
+						forParameter_linked_view.ScheduleTimeInitialize(componentSystem, isReadOnly: false);
+						forParameter_layout.ScheduleTimeInitialize(componentSystem, isReadOnly: true);
+					}
+
+					public Runtimes PrepareToExecuteOnEntitiesInMethod(ref ArchetypeChunk p0, int p1, int p2)
+					{
+						return new Runtimes
+						{
+							runtime_entity = forParameter_entity.PrepareToExecuteOnEntitiesIn(ref p0),
+							runtime_entityInQueryIndex = forParameter_entityInQueryIndex.PrepareToExecuteOnEntitiesIn(ref p0, p1, p2),
+							runtime_linked_view = forParameter_linked_view.PrepareToExecuteOnEntitiesIn(ref p0),
+							runtime_layout = forParameter_layout.PrepareToExecuteOnEntitiesIn(ref p0)
+						};
+					}
+				}
+
+				public UpdateView _003C_003E4__this;
+
+				public LayoutDecorMap map;
+
+				private LambdaParameterValueProviders _lambdaParameterValueProviders;
+
+				[NativeDisableUnsafePtrRestriction]
+				private unsafe LambdaParameterValueProviders.Runtimes* _runtimes;
+
+				private static InternalCompilerInterface.JobChunkRunWithoutJobSystemDelegate s_RunWithoutJobSystemDelegateFieldNoBurst;
+
+				internal void OriginalLambdaBody(Entity entity, int entityInQueryIndex, ref CLinkedView linked_view, in CLayoutView layout)
+				{
+					_003C_003E4__this.SendUpdate(linked_view, new DecorationUpdates
+					{
+						Map = map
+					});
+				}
+
+				public void ReadFromDisplayClass(ref _003C_003Ec__DisplayClass2_0 displayClass)
+				{
+					_003C_003E4__this = displayClass._003C_003E4__this;
+					map = displayClass.map;
+				}
+
+				public void WriteToDisplayClass(ref _003C_003Ec__DisplayClass2_0 displayClass)
+				{
+					displayClass._003C_003E4__this = _003C_003E4__this;
+					displayClass.map = map;
+				}
+
+				public unsafe void Execute(ArchetypeChunk chunk, int chunkIndex, int firstEntityIndex)
+				{
+					LambdaParameterValueProviders.Runtimes runtimes = _lambdaParameterValueProviders.PrepareToExecuteOnEntitiesInMethod(ref chunk, chunkIndex, firstEntityIndex);
+					_runtimes = &runtimes;
+					IterateEntities(ref chunk, ref *_runtimes);
+				}
+
+				public void IterateEntities(ref ArchetypeChunk chunk, ref LambdaParameterValueProviders.Runtimes runtimes)
+				{
+					int count = chunk.Count;
+					for (int i = 0; i < count; i++)
+					{
+						OriginalLambdaBody(runtimes.runtime_entity.For(i), runtimes.runtime_entityInQueryIndex.For(i), ref runtimes.runtime_linked_view.For(i), in runtimes.runtime_layout.For(i));
+					}
+				}
+
+				public void ScheduleTimeInitialize(UpdateView componentSystem, ref _003C_003Ec__DisplayClass2_0 displayClass)
+				{
+					_lambdaParameterValueProviders.ScheduleTimeInitialize(componentSystem);
+					ReadFromDisplayClass(ref displayClass);
+				}
+
+				public unsafe static void RunWithoutJobSystem(ArchetypeChunkIterator* archetypeChunkIterator, void* jobData)
+				{
+					JobChunkExtensions.RunWithoutJobs(ref UnsafeUtility.AsRef<_003C_003Ec__DisplayClass_OnUpdate_LambdaJob0>(jobData), ref *archetypeChunkIterator);
+				}
+			}
+
+			[Key(0)]
+			private EntityQuery UpdateDecorationEvents;
+
+			private EntityQuery _003C_003EOnUpdate_LambdaJob0_entityQuery;
+
+			private ProfilerMarker _003C_003EOnUpdate_LambdaJob0_profilerMarker;
+
+			protected override void Initialise()
+			{
+				base.Initialise();
+				UpdateDecorationEvents = GetEntityQuery(typeof(CChangeDecorEvent));
+			}
+
+			protected override void OnUpdate()
+			{
+				_003C_003Ec__DisplayClass2_0 displayClass = new _003C_003Ec__DisplayClass2_0
+				{
+					_003C_003E4__this = this
+				};
+				using NativeArray<CChangeDecorEvent> nativeArray = UpdateDecorationEvents.ToComponentDataArray<CChangeDecorEvent>(Allocator.TempJob);
+				displayClass.map = default(LayoutDecorMap);
+				foreach (CChangeDecorEvent item in nativeArray)
+				{
+					displayClass.map.Apply(item);
+				}
+				_ = base.Entities;
+				_003C_003Ec__DisplayClass_OnUpdate_LambdaJob0 jobData = default(_003C_003Ec__DisplayClass_OnUpdate_LambdaJob0);
+				jobData.ScheduleTimeInitialize(this, ref displayClass);
+				CompleteDependency();
+				EntityQuery query = _003C_003EOnUpdate_LambdaJob0_entityQuery;
+				InternalCompilerInterface.JobChunkRunWithoutJobSystemDelegate s_RunWithoutJobSystemDelegateFieldNoBurst = _003C_003Ec__DisplayClass_OnUpdate_LambdaJob0.s_RunWithoutJobSystemDelegateFieldNoBurst;
+				_003C_003EOnUpdate_LambdaJob0_profilerMarker.Begin();
+				try
+				{
+					InternalCompilerInterface.RunJobChunk(ref jobData, query, s_RunWithoutJobSystemDelegateFieldNoBurst);
+				}
+				finally
+				{
+					_003C_003EOnUpdate_LambdaJob0_profilerMarker.End();
+				}
+				jobData.WriteToDisplayClass(ref displayClass);
+			}
+
+			protected internal unsafe override void OnCreateForCompiler()
+			{
+				base.OnCreateForCompiler();
+				_003C_003EOnUpdate_LambdaJob0_entityQuery = _003C_003EGetEntityQuery_ForOnUpdate_LambdaJob0_From(this);
+				_003C_003Ec__DisplayClass_OnUpdate_LambdaJob0.s_RunWithoutJobSystemDelegateFieldNoBurst = _003C_003Ec__DisplayClass_OnUpdate_LambdaJob0.RunWithoutJobSystem;
+				_003C_003EOnUpdate_LambdaJob0_profilerMarker = new ProfilerMarker("OnUpdate_LambdaJob0");
+			}
+
+			public static EntityQuery _003C_003EGetEntityQuery_ForOnUpdate_LambdaJob0_From(ComponentSystemBase componentSystem)
+			{
+				EntityQueryDesc[] array = new EntityQueryDesc[1];
+				(array[0] = new EntityQueryDesc()).All = new ComponentType[2]
+				{
+					ComponentType.ReadWrite<CLinkedView>(),
+					ComponentType.ReadOnly<CLayoutView>()
+				};
+				return componentSystem.GetEntityQuery(array);
+			}
+		}
+
+		[Serializable]
+		[MessagePackObject(false)]
+		public struct DecorationUpdates : ISpecificViewData, IViewData, IViewResponseData, IViewData.ICheckForChanges<DecorationUpdates>
+		{
+			[Key(0)]
+			public LayoutDecorMap Map;
+
+			public IUpdatableObject GetRelevantSubview(IObjectView view)
+			{
+				return view.GetSubView<LayoutDecorView>();
+			}
+
+			public bool IsChangedFrom(DecorationUpdates check)
+			{
+				return Map.IsChangedFrom(check.Map);
+			}
+		}
+
+		[Header("References")]
+		[SerializeField]
+		private LayoutView LayoutView;
+
+		[Header("State")]
+		private DecorationUpdates Data;
+
+		private bool HasUpdatedData;
+
+		private void UpdateDecorations(int room, LayoutMaterialType type, int id)
+		{
+			if (id == 0)
+			{
+				return;
+			}
+			try
+			{
+				if (GameData.Main.TryGet<Decor>(id, out var output, warn_if_fail: true))
+				{
+					Material material = output.Material;
+					Material material2 = LayoutView.Builder.Materials.Get(room, type, RoomType.NoRoom);
+					material2.shader = material.shader;
+					material2.CopyPropertiesFromMaterial(material);
+				}
+			}
+			catch
+			{
+				Debug.LogWarning("Failed to apply decorations");
+			}
+		}
+
+		private void Update()
+		{
+			if (!HasUpdatedData || !LayoutView.IsInitialised)
+			{
+				return;
+			}
+			HasUpdatedData = false;
+			foreach (int room in Data.Map.Rooms)
+			{
+				UpdateDecorations(room, LayoutMaterialType.Wallpaper, Data.Map.Wallpaper(room));
+				UpdateDecorations(room, LayoutMaterialType.Floor, Data.Map.Floor(room));
+			}
+		}
+
+		protected override void UpdateData(DecorationUpdates view_updates)
+		{
+			Data = view_updates;
+			HasUpdatedData = true;
+		}
+	}
+}

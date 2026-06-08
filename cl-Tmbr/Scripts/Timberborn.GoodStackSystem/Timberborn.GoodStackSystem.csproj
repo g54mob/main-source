@@ -1,0 +1,73 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Timberborn.GoodStackSystem</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Timberborn.InventorySystem">
+      <HintPath>..\..\Assemblies\Timberborn.InventorySystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Goods">
+      <HintPath>..\..\Assemblies\Timberborn.Goods.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Navigation">
+      <HintPath>..\..\Assemblies\Timberborn.Navigation.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.PrefabOptimization">
+      <HintPath>..\..\Assemblies\Timberborn.PrefabOptimization.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BlueprintSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BlueprintSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Common">
+      <HintPath>..\..\Assemblies\Timberborn.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Carrying">
+      <HintPath>..\..\Assemblies\Timberborn.Carrying.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BehaviorSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BehaviorSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.TemplateInstantiation">
+      <HintPath>..\..\Assemblies\Timberborn.TemplateInstantiation.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BlockSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BlockSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BaseComponentSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BaseComponentSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.EntitySystem">
+      <HintPath>..\..\Assemblies\Timberborn.EntitySystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.SingletonSystem">
+      <HintPath>..\..\Assemblies\Timberborn.SingletonSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.WorkSystem">
+      <HintPath>..\..\Assemblies\Timberborn.WorkSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Bindito.Core">
+      <HintPath>..\..\Assemblies\Bindito.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BlockObjectModelSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BlockObjectModelSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Rendering">
+      <HintPath>..\..\Assemblies\Timberborn.Rendering.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.TemplateSystem">
+      <HintPath>..\..\Assemblies\Timberborn.TemplateSystem.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

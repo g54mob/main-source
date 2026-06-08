@@ -1,0 +1,67 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Timberborn.Bots</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BlueprintSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BlueprintSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Illumination">
+      <HintPath>..\..\Assemblies\Timberborn.Illumination.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Common">
+      <HintPath>..\..\Assemblies\Timberborn.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.TemplateSystem">
+      <HintPath>..\..\Assemblies\Timberborn.TemplateSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.EntitySystem">
+      <HintPath>..\..\Assemblies\Timberborn.EntitySystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.TimeSystem">
+      <HintPath>..\..\Assemblies\Timberborn.TimeSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.TemplateInstantiation">
+      <HintPath>..\..\Assemblies\Timberborn.TemplateInstantiation.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Rendering">
+      <HintPath>..\..\Assemblies\Timberborn.Rendering.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.SingletonSystem">
+      <HintPath>..\..\Assemblies\Timberborn.SingletonSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.WorldPersistence">
+      <HintPath>..\..\Assemblies\Timberborn.WorldPersistence.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Characters">
+      <HintPath>..\..\Assemblies\Timberborn.Characters.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Persistence">
+      <HintPath>..\..\Assemblies\Timberborn.Persistence.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BaseComponentSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BaseComponentSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.MortalComponents">
+      <HintPath>..\..\Assemblies\Timberborn.MortalComponents.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.LifeSystem">
+      <HintPath>..\..\Assemblies\Timberborn.LifeSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Bindito.Core">
+      <HintPath>..\..\Assemblies\Bindito.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

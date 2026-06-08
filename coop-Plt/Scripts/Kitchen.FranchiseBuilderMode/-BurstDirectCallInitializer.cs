@@ -1,0 +1,12 @@
+using Kitchen;
+using UnityEngine;
+
+internal static class _0024BurstDirectCallInitializer
+{
+	[RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterAssembliesLoaded)]
+	private static void Initialize()
+	{
+		LoopPlayersOutOfBoundsTutorial.Initialize_0024_003C_003Ec__DisplayClass_OnUpdate_LambdaJob0_RunWithoutJobSystem_00000053_0024BurstDirectCall();
+		SetInteractionModeBuilder.Initialize_0024_003C_003Ec__DisplayClass_OnUpdate_LambdaJob0_RunWithoutJobSystem_0000006F_0024BurstDirectCall();
+	}
+}

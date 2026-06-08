@@ -1,0 +1,6 @@
+internal struct arkOMRMkUkHvASjfJYFFLEtfKOm
+{
+	public wUkFoqkdADWiuRxBctmCinBzFu jeNBnEYVeHknokaDleDPusHoPpo;
+
+	public lfcORfzcSAbNSKGmeGERBfzfTdTJ zcrLsgWlluAxuaCfKiqkzQcyEEv;
+}

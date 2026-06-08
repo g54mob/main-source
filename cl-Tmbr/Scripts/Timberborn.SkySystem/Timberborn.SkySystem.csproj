@@ -1,0 +1,61 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Timberborn.SkySystem</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Common">
+      <HintPath>..\..\Assemblies\Timberborn.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\..\Assemblies\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.TimeSystem">
+      <HintPath>..\..\Assemblies\Timberborn.TimeSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.WeatherSystem">
+      <HintPath>..\..\Assemblies\Timberborn.WeatherSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.HazardousWeatherSystem">
+      <HintPath>..\..\Assemblies\Timberborn.HazardousWeatherSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BlueprintSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BlueprintSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Debugging">
+      <HintPath>..\..\Assemblies\Timberborn.Debugging.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.CameraSystem">
+      <HintPath>..\..\Assemblies\Timberborn.CameraSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.GraphicsQualitySystem">
+      <HintPath>..\..\Assemblies\Timberborn.GraphicsQualitySystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.RootProviders">
+      <HintPath>..\..\Assemblies\Timberborn.RootProviders.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.SettingsSystem">
+      <HintPath>..\..\Assemblies\Timberborn.SettingsSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.InputSystem">
+      <HintPath>..\..\Assemblies\Timberborn.InputSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.SingletonSystem">
+      <HintPath>..\..\Assemblies\Timberborn.SingletonSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Bindito.Core">
+      <HintPath>..\..\Assemblies\Bindito.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

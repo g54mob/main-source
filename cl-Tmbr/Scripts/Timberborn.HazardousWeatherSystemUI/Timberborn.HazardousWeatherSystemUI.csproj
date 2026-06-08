@@ -1,0 +1,58 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Timberborn.HazardousWeatherSystemUI</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Timberborn.SingletonSystem">
+      <HintPath>..\..\Assemblies\Timberborn.SingletonSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.WeatherSystem">
+      <HintPath>..\..\Assemblies\Timberborn.WeatherSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.GameCycleSystem">
+      <HintPath>..\..\Assemblies\Timberborn.GameCycleSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BlueprintSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BlueprintSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Localization">
+      <HintPath>..\..\Assemblies\Timberborn.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.UILayoutSystem">
+      <HintPath>..\..\Assemblies\Timberborn.UILayoutSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.CoreUI">
+      <HintPath>..\..\Assemblies\Timberborn.CoreUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.CameraSystem">
+      <HintPath>..\..\Assemblies\Timberborn.CameraSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.HazardousWeatherSystem">
+      <HintPath>..\..\Assemblies\Timberborn.HazardousWeatherSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>..\..\Assemblies\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.GameSound">
+      <HintPath>..\..\Assemblies\Timberborn.GameSound.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Common">
+      <HintPath>..\..\Assemblies\Timberborn.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Bindito.Core">
+      <HintPath>..\..\Assemblies\Bindito.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

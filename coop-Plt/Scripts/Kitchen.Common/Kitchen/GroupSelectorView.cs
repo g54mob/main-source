@@ -1,0 +1,224 @@
+#define ENABLE_PROFILER
+using System;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+using MessagePack;
+using Shapes;
+using Unity.Collections;
+using Unity.Collections.LowLevel.Unsafe;
+using Unity.Entities;
+using Unity.Entities.CodeGeneratedJobForEach;
+using Unity.Profiling;
+using UnityEngine;
+
+namespace Kitchen
+{
+	[Serializable]
+	public class GroupSelectorView : UpdatableObjectView<GroupSelectorView.ViewData>
+	{
+		public class UpdateView : IncrementalViewSystemBase<ViewData>
+		{
+			[Unity.Entities.DOTSCompilerGenerated]
+			private struct _003C_003Ec__DisplayClass_OnUpdate_LambdaJob0 : IJobChunk
+			{
+				private struct LambdaParameterValueProviders
+				{
+					public struct Runtimes
+					{
+						public LambdaParameterValueProvider_Entity.Runtime runtime_entity;
+
+						public LambdaParameterValueProvider_EntityInQueryIndex.Runtime runtime_entityInQueryIndex;
+
+						public LambdaParameterValueProvider_IComponentData<CLinkedView>.Runtime runtime_linked_view;
+
+						public LambdaParameterValueProvider_IComponentData<CGroupSelector>.Runtime runtime_selector;
+					}
+
+					[ReadOnly]
+					private LambdaParameterValueProvider_Entity forParameter_entity;
+
+					[ReadOnly]
+					private LambdaParameterValueProvider_EntityInQueryIndex forParameter_entityInQueryIndex;
+
+					[ReadOnly]
+					private LambdaParameterValueProvider_IComponentData<CLinkedView> forParameter_linked_view;
+
+					[ReadOnly]
+					private LambdaParameterValueProvider_IComponentData<CGroupSelector> forParameter_selector;
+
+					public void ScheduleTimeInitialize(UpdateView componentSystem)
+					{
+						forParameter_entity.ScheduleTimeInitialize(componentSystem, isReadOnly: true);
+						forParameter_entityInQueryIndex.ScheduleTimeInitialize(componentSystem, isReadOnly: true);
+						forParameter_linked_view.ScheduleTimeInitialize(componentSystem, isReadOnly: true);
+						forParameter_selector.ScheduleTimeInitialize(componentSystem, isReadOnly: true);
+					}
+
+					public Runtimes PrepareToExecuteOnEntitiesInMethod(ref ArchetypeChunk p0, int p1, int p2)
+					{
+						return new Runtimes
+						{
+							runtime_entity = forParameter_entity.PrepareToExecuteOnEntitiesIn(ref p0),
+							runtime_entityInQueryIndex = forParameter_entityInQueryIndex.PrepareToExecuteOnEntitiesIn(ref p0, p1, p2),
+							runtime_linked_view = forParameter_linked_view.PrepareToExecuteOnEntitiesIn(ref p0),
+							runtime_selector = forParameter_selector.PrepareToExecuteOnEntitiesIn(ref p0)
+						};
+					}
+				}
+
+				public UpdateView hostInstance;
+
+				private LambdaParameterValueProviders _lambdaParameterValueProviders;
+
+				[NativeDisableUnsafePtrRestriction]
+				private unsafe LambdaParameterValueProviders.Runtimes* _runtimes;
+
+				private static InternalCompilerInterface.JobChunkRunWithoutJobSystemDelegate s_RunWithoutJobSystemDelegateFieldNoBurst;
+
+				public void OriginalLambdaBody(Entity entity, int entityInQueryIndex, [In] ref CLinkedView linked_view, [In] ref CGroupSelector selector)
+				{
+					hostInstance._003COnUpdate_003Eb__0_0(entity, entityInQueryIndex, in linked_view, in selector);
+				}
+
+				public unsafe void Execute(ArchetypeChunk chunk, int chunkIndex, int firstEntityIndex)
+				{
+					LambdaParameterValueProviders.Runtimes runtimes = _lambdaParameterValueProviders.PrepareToExecuteOnEntitiesInMethod(ref chunk, chunkIndex, firstEntityIndex);
+					_runtimes = &runtimes;
+					IterateEntities(ref chunk, ref *_runtimes);
+				}
+
+				public void IterateEntities(ref ArchetypeChunk chunk, ref LambdaParameterValueProviders.Runtimes runtimes)
+				{
+					int count = chunk.Count;
+					for (int i = 0; i < count; i++)
+					{
+						OriginalLambdaBody(runtimes.runtime_entity.For(i), runtimes.runtime_entityInQueryIndex.For(i), ref runtimes.runtime_linked_view.For(i), ref runtimes.runtime_selector.For(i));
+					}
+				}
+
+				public void ScheduleTimeInitialize(UpdateView componentSystem)
+				{
+					_lambdaParameterValueProviders.ScheduleTimeInitialize(componentSystem);
+					hostInstance = componentSystem;
+				}
+
+				public unsafe static void RunWithoutJobSystem(ArchetypeChunkIterator* archetypeChunkIterator, void* jobData)
+				{
+					JobChunkExtensions.RunWithoutJobs(ref UnsafeUtility.AsRef<_003C_003Ec__DisplayClass_OnUpdate_LambdaJob0>(jobData), ref *archetypeChunkIterator);
+				}
+			}
+
+			private EntityQuery _003C_003EOnUpdate_LambdaJob0_entityQuery;
+
+			private ProfilerMarker _003C_003EOnUpdate_LambdaJob0_profilerMarker;
+
+			protected override void OnUpdate()
+			{
+				_ = base.Entities;
+				_003C_003Ec__DisplayClass_OnUpdate_LambdaJob0 jobData = default(_003C_003Ec__DisplayClass_OnUpdate_LambdaJob0);
+				jobData.ScheduleTimeInitialize(this);
+				CompleteDependency();
+				EntityQuery query = _003C_003EOnUpdate_LambdaJob0_entityQuery;
+				InternalCompilerInterface.JobChunkRunWithoutJobSystemDelegate s_RunWithoutJobSystemDelegateFieldNoBurst = _003C_003Ec__DisplayClass_OnUpdate_LambdaJob0.s_RunWithoutJobSystemDelegateFieldNoBurst;
+				_003C_003EOnUpdate_LambdaJob0_profilerMarker.Begin();
+				try
+				{
+					InternalCompilerInterface.RunJobChunk(ref jobData, query, s_RunWithoutJobSystemDelegateFieldNoBurst);
+				}
+				finally
+				{
+					_003C_003EOnUpdate_LambdaJob0_profilerMarker.End();
+				}
+			}
+
+			[CompilerGenerated]
+			private void _003COnUpdate_003Eb__0_0(Entity entity, int entityInQueryIndex, in CLinkedView linked_view, in CGroupSelector selector)
+			{
+				bool isActivated = HasComponent<CSelectorActivated>(entity);
+				SendUpdate(linked_view, new ViewData
+				{
+					Bounds = selector.Bounds,
+					Progress = selector.Progress,
+					IsActivated = isActivated
+				});
+			}
+
+			protected internal unsafe override void OnCreateForCompiler()
+			{
+				base.OnCreateForCompiler();
+				_003C_003EOnUpdate_LambdaJob0_entityQuery = _003C_003EGetEntityQuery_ForOnUpdate_LambdaJob0_From(this);
+				_003C_003Ec__DisplayClass_OnUpdate_LambdaJob0.s_RunWithoutJobSystemDelegateFieldNoBurst = _003C_003Ec__DisplayClass_OnUpdate_LambdaJob0.RunWithoutJobSystem;
+				_003C_003EOnUpdate_LambdaJob0_profilerMarker = new ProfilerMarker("OnUpdate_LambdaJob0");
+			}
+
+			public static EntityQuery _003C_003EGetEntityQuery_ForOnUpdate_LambdaJob0_From(ComponentSystemBase componentSystem)
+			{
+				EntityQueryDesc[] array = new EntityQueryDesc[1];
+				(array[0] = new EntityQueryDesc()).All = new ComponentType[2]
+				{
+					ComponentType.ReadOnly<CLinkedView>(),
+					ComponentType.ReadOnly<CGroupSelector>()
+				};
+				return componentSystem.GetEntityQuery(array);
+			}
+		}
+
+		[Serializable]
+		[MessagePackObject(false)]
+		public struct ViewData : IViewData, IViewResponseData, IViewData.ICheckForChanges<ViewData>
+		{
+			[Key(0)]
+			public Bounds Bounds;
+
+			[Key(1)]
+			public float Progress;
+
+			[Key(2)]
+			public bool IsActivated;
+
+			public bool IsChangedFrom(ViewData check)
+			{
+				if (Progress == check.Progress && IsActivated == check.IsActivated)
+				{
+					return Bounds != check.Bounds;
+				}
+				return true;
+			}
+		}
+
+		[Header("References")]
+		[SerializeField]
+		private Rectangle Border;
+
+		[SerializeField]
+		private Rectangle Progress;
+
+		[Header("State")]
+		private float ProgressMaxWidth;
+
+		private ViewData Data;
+
+		protected override void UpdateData(ViewData view_data)
+		{
+			view_data.Bounds = new Bounds(view_data.Bounds.center + Vector3.up * 0.1f, view_data.Bounds.size);
+			ViewData data = Data;
+			Data = view_data;
+			if (Data.Bounds != data.Bounds)
+			{
+				Vector3 min = Data.Bounds.min;
+				min.y = Data.Bounds.center.y;
+				Progress.transform.position = min;
+				Border.transform.position = Data.Bounds.center;
+				ProgressMaxWidth = Data.Bounds.size.x;
+				Progress.Height = Data.Bounds.size.z;
+				Border.Width = Data.Bounds.size.x;
+				Border.Height = Data.Bounds.size.z;
+				Progress.Width = ProgressMaxWidth * Data.Progress;
+			}
+			if (Data.Progress != data.Progress)
+			{
+				Progress.Width = ProgressMaxWidth * Data.Progress;
+			}
+		}
+	}
+}

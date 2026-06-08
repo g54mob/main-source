@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>TwitchLib.Client</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>8.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="TwitchLib.Client.Models">
+      <HintPath>..\..\Assemblies\TwitchLib.Client.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="TwitchLib.Communication">
+      <HintPath>..\..\Assemblies\TwitchLib.Communication.dll</HintPath>
+    </Reference>
+    <Reference Include="TwitchLib.Client.Enums">
+      <HintPath>..\..\Assemblies\TwitchLib.Client.Enums.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions">
+      <HintPath>..\..\Assemblies\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

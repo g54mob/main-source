@@ -1,0 +1,76 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Timberborn.DuplicationSystemUI</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Timberborn.CoreUI">
+      <HintPath>..\..\Assemblies\Timberborn.CoreUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.InputSystemUI">
+      <HintPath>..\..\Assemblies\Timberborn.InputSystemUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.TooltipSystem">
+      <HintPath>..\..\Assemblies\Timberborn.TooltipSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Localization">
+      <HintPath>..\..\Assemblies\Timberborn.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>..\..\Assemblies\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BaseComponentSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BaseComponentSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.InputSystem">
+      <HintPath>..\..\Assemblies\Timberborn.InputSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.ToolSystem">
+      <HintPath>..\..\Assemblies\Timberborn.ToolSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.SelectionSystem">
+      <HintPath>..\..\Assemblies\Timberborn.SelectionSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BlueprintSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BlueprintSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.DuplicationSystem">
+      <HintPath>..\..\Assemblies\Timberborn.DuplicationSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.UISound">
+      <HintPath>..\..\Assemblies\Timberborn.UISound.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.EntityUndoSystem">
+      <HintPath>..\..\Assemblies\Timberborn.EntityUndoSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.ToolSystemUI">
+      <HintPath>..\..\Assemblies\Timberborn.ToolSystemUI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Common">
+      <HintPath>..\..\Assemblies\Timberborn.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.EntityPanelSystem">
+      <HintPath>..\..\Assemblies\Timberborn.EntityPanelSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.ConstructionMode">
+      <HintPath>..\..\Assemblies\Timberborn.ConstructionMode.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.SingletonSystem">
+      <HintPath>..\..\Assemblies\Timberborn.SingletonSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Bindito.Core">
+      <HintPath>..\..\Assemblies\Bindito.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

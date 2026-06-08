@@ -1,0 +1,68 @@
+using System.Collections.Generic;
+using Amazon.Runtime;
+using Amazon.Runtime.Internal.Transform;
+
+namespace Amazon.S3.Model.Internal.MarshallTransformations
+{
+	public class GetBucketReplicationResponseUnmarshaller : S3ReponseUnmarshaller
+	{
+		private static GetBucketReplicationResponseUnmarshaller _instance;
+
+		public static GetBucketReplicationResponseUnmarshaller Instance
+		{
+			get
+			{
+				if (_instance == null)
+				{
+					_instance = new GetBucketReplicationResponseUnmarshaller();
+				}
+				return _instance;
+			}
+		}
+
+		public override AmazonWebServiceResponse Unmarshall(XmlUnmarshallerContext context)
+		{
+			GetBucketReplicationResponse getBucketReplicationResponse = new GetBucketReplicationResponse();
+			while (context.Read())
+			{
+				if (context.IsStartElement)
+				{
+					UnmarshallResult(context, getBucketReplicationResponse);
+				}
+			}
+			return getBucketReplicationResponse;
+		}
+
+		private static void UnmarshallResult(XmlUnmarshallerContext context, GetBucketReplicationResponse response)
+		{
+			int currentDepth = context.CurrentDepth;
+			int num = currentDepth + 1;
+			if (context.IsStartOfDocument)
+			{
+				num += 2;
+			}
+			while (context.Read())
+			{
+				if (context.IsStartElement || context.IsAttribute)
+				{
+					if (context.TestExpression("Role", num))
+					{
+						response.Configuration.Role = StringUnmarshaller.GetInstance().Unmarshall(context);
+					}
+					else if (context.TestExpression("Rule", num))
+					{
+						if (response.Configuration.Rules == null)
+						{
+							response.Configuration.Rules = new List<ReplicationRule>();
+						}
+						response.Configuration.Rules.Add(ReplicationRuleUnmarshaller.Instance.Unmarshall(context));
+					}
+				}
+				else if (context.IsEndElement && context.CurrentDepth < currentDepth)
+				{
+					break;
+				}
+			}
+		}
+	}
+}

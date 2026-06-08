@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Timberborn.ConstructionGuidelinesUI</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Timberborn.ConstructionGuidelines">
+      <HintPath>..\..\Assemblies\Timberborn.ConstructionGuidelines.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.CoreUI">
+      <HintPath>..\..\Assemblies\Timberborn.CoreUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.UILayoutSystem">
+      <HintPath>..\..\Assemblies\Timberborn.UILayoutSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.TooltipSystem">
+      <HintPath>..\..\Assemblies\Timberborn.TooltipSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.InputSystemUI">
+      <HintPath>..\..\Assemblies\Timberborn.InputSystemUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.KeyBindingSystemUI">
+      <HintPath>..\..\Assemblies\Timberborn.KeyBindingSystemUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.SingletonSystem">
+      <HintPath>..\..\Assemblies\Timberborn.SingletonSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.ConstructionMode">
+      <HintPath>..\..\Assemblies\Timberborn.ConstructionMode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>..\..\Assemblies\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Bindito.Core">
+      <HintPath>..\..\Assemblies\Bindito.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

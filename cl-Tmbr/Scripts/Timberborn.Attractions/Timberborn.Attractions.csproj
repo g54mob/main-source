@@ -1,0 +1,103 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Timberborn.Attractions</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Timberborn.NeedSpecs">
+      <HintPath>..\..\Assemblies\Timberborn.NeedSpecs.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.GameFactionSystem">
+      <HintPath>..\..\Assemblies\Timberborn.GameFactionSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Effects">
+      <HintPath>..\..\Assemblies\Timberborn.Effects.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.WorldPersistence">
+      <HintPath>..\..\Assemblies\Timberborn.WorldPersistence.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.SingletonSystem">
+      <HintPath>..\..\Assemblies\Timberborn.SingletonSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.TimeSystem">
+      <HintPath>..\..\Assemblies\Timberborn.TimeSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Common">
+      <HintPath>..\..\Assemblies\Timberborn.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BlueprintSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BlueprintSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.NeedSystem">
+      <HintPath>..\..\Assemblies\Timberborn.NeedSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BehaviorSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BehaviorSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.NeedBehaviorSystem">
+      <HintPath>..\..\Assemblies\Timberborn.NeedBehaviorSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.TemplateInstantiation">
+      <HintPath>..\..\Assemblies\Timberborn.TemplateInstantiation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\..\Assemblies\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.EnterableSystem">
+      <HintPath>..\..\Assemblies\Timberborn.EnterableSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Buildings">
+      <HintPath>..\..\Assemblies\Timberborn.Buildings.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BlockingSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BlockingSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Persistence">
+      <HintPath>..\..\Assemblies\Timberborn.Persistence.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.GameDistricts">
+      <HintPath>..\..\Assemblies\Timberborn.GameDistricts.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.GoodConsumingBuildingSystem">
+      <HintPath>..\..\Assemblies\Timberborn.GoodConsumingBuildingSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Particles">
+      <HintPath>..\..\Assemblies\Timberborn.Particles.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BaseComponentSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BaseComponentSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BlockSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BlockSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.TickSystem">
+      <HintPath>..\..\Assemblies\Timberborn.TickSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Bindito.Core">
+      <HintPath>..\..\Assemblies\Bindito.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.EntitySystem">
+      <HintPath>..\..\Assemblies\Timberborn.EntitySystem.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>..\..\Assemblies\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Navigation">
+      <HintPath>..\..\Assemblies\Timberborn.Navigation.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.WalkingSystem">
+      <HintPath>..\..\Assemblies\Timberborn.WalkingSystem.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

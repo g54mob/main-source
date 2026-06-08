@@ -1,0 +1,67 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Timberborn.BuilderHubSystem</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Timberborn.BlueprintSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BlueprintSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.TemplateInstantiation">
+      <HintPath>..\..\Assemblies\Timberborn.TemplateInstantiation.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BehaviorSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BehaviorSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.ConstructionSites">
+      <HintPath>..\..\Assemblies\Timberborn.ConstructionSites.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Navigation">
+      <HintPath>..\..\Assemblies\Timberborn.Navigation.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.PrioritySystem">
+      <HintPath>..\..\Assemblies\Timberborn.PrioritySystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\..\Assemblies\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="Bindito.Core">
+      <HintPath>..\..\Assemblies\Bindito.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.WorkSystem">
+      <HintPath>..\..\Assemblies\Timberborn.WorkSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.EntitySystem">
+      <HintPath>..\..\Assemblies\Timberborn.EntitySystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BuildingRange">
+      <HintPath>..\..\Assemblies\Timberborn.BuildingRange.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Emptying">
+      <HintPath>..\..\Assemblies\Timberborn.Emptying.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Hauling">
+      <HintPath>..\..\Assemblies\Timberborn.Hauling.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.SimpleOutputBuildings">
+      <HintPath>..\..\Assemblies\Timberborn.SimpleOutputBuildings.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.LaborSystem">
+      <HintPath>..\..\Assemblies\Timberborn.LaborSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BaseComponentSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BaseComponentSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Buildings">
+      <HintPath>..\..\Assemblies\Timberborn.Buildings.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

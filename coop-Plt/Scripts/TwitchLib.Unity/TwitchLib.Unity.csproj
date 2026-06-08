@@ -1,0 +1,119 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>TwitchLib.Unity</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>8.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="costura.costura.dll.compressed" />
+    <None Remove="costura.costura.pdb.compressed" />
+    <None Remove="costura.microsoft.csharp.dll.compressed" />
+    <None Remove="costura.microsoft.extensions.dependencyinjection.abstractions.dll.compressed" />
+    <None Remove="costura.microsoft.extensions.logging.dll.compressed" />
+    <None Remove="costura.microsoft.extensions.logging.abstractions.dll.compressed" />
+    <None Remove="costura.microsoft.extensions.options.dll.compressed" />
+    <None Remove="costura.microsoft.extensions.primitives.dll.compressed" />
+    <None Remove="costura.newtonsoft.json.dll.compressed" />
+    <None Remove="costura.serilog.dll.compressed" />
+    <None Remove="costura.serilog.pdb.compressed" />
+    <None Remove="costura.serilog.extensions.logging.dll.compressed" />
+    <None Remove="costura.system.collections.concurrent.dll.compressed" />
+    <None Remove="costura.system.collections.nongeneric.dll.compressed" />
+    <None Remove="costura.system.diagnostics.diagnosticsource.dll.compressed" />
+    <None Remove="costura.system.io.filesystem.primitives.dll.compressed" />
+    <None Remove="costura.system.linq.dll.compressed" />
+    <None Remove="costura.system.runtime.compilerservices.unsafe.dll.compressed" />
+    <None Remove="costura.system.runtime.numerics.dll.compressed" />
+    <None Remove="costura.system.security.cryptography.openssl.dll.compressed" />
+    <None Remove="costura.system.security.cryptography.primitives.dll.compressed" />
+    <None Remove="costura.system.threading.dll.compressed" />
+    <None Remove="costura.twitchlib.api.dll.compressed" />
+    <None Remove="costura.twitchlib.api.core.dll.compressed" />
+    <None Remove="costura.twitchlib.api.core.enums.dll.compressed" />
+    <None Remove="costura.twitchlib.api.core.interfaces.dll.compressed" />
+    <None Remove="costura.twitchlib.api.core.models.dll.compressed" />
+    <None Remove="costura.twitchlib.api.helix.dll.compressed" />
+    <None Remove="costura.twitchlib.api.helix.models.dll.compressed" />
+    <None Remove="costura.twitchlib.api.v5.dll.compressed" />
+    <None Remove="costura.twitchlib.api.v5.models.dll.compressed" />
+    <None Remove="costura.twitchlib.client.dll.compressed" />
+    <None Remove="costura.twitchlib.client.enums.dll.compressed" />
+    <None Remove="costura.twitchlib.client.models.dll.compressed" />
+    <None Remove="costura.twitchlib.communication.dll.compressed" />
+    <None Remove="costura.twitchlib.pubsub.dll.compressed" />
+    <None Remove="costura.unityeditor.dll.compressed" />
+    <None Remove="costura.metadata" />
+    <EmbeddedResource Include="costura.costura.dll.compressed" LogicalName="costura.costura.dll.compressed" />
+    <EmbeddedResource Include="costura.costura.pdb.compressed" LogicalName="costura.costura.pdb.compressed" />
+    <EmbeddedResource Include="costura.microsoft.csharp.dll.compressed" LogicalName="costura.microsoft.csharp.dll.compressed" />
+    <EmbeddedResource Include="costura.microsoft.extensions.dependencyinjection.abstractions.dll.compressed" LogicalName="costura.microsoft.extensions.dependencyinjection.abstractions.dll.compressed" />
+    <EmbeddedResource Include="costura.microsoft.extensions.logging.dll.compressed" LogicalName="costura.microsoft.extensions.logging.dll.compressed" />
+    <EmbeddedResource Include="costura.microsoft.extensions.logging.abstractions.dll.compressed" LogicalName="costura.microsoft.extensions.logging.abstractions.dll.compressed" />
+    <EmbeddedResource Include="costura.microsoft.extensions.options.dll.compressed" LogicalName="costura.microsoft.extensions.options.dll.compressed" />
+    <EmbeddedResource Include="costura.microsoft.extensions.primitives.dll.compressed" LogicalName="costura.microsoft.extensions.primitives.dll.compressed" />
+    <EmbeddedResource Include="costura.newtonsoft.json.dll.compressed" LogicalName="costura.newtonsoft.json.dll.compressed" />
+    <EmbeddedResource Include="costura.serilog.dll.compressed" LogicalName="costura.serilog.dll.compressed" />
+    <EmbeddedResource Include="costura.serilog.pdb.compressed" LogicalName="costura.serilog.pdb.compressed" />
+    <EmbeddedResource Include="costura.serilog.extensions.logging.dll.compressed" LogicalName="costura.serilog.extensions.logging.dll.compressed" />
+    <EmbeddedResource Include="costura.system.collections.concurrent.dll.compressed" LogicalName="costura.system.collections.concurrent.dll.compressed" />
+    <EmbeddedResource Include="costura.system.collections.nongeneric.dll.compressed" LogicalName="costura.system.collections.nongeneric.dll.compressed" />
+    <EmbeddedResource Include="costura.system.diagnostics.diagnosticsource.dll.compressed" LogicalName="costura.system.diagnostics.diagnosticsource.dll.compressed" />
+    <EmbeddedResource Include="costura.system.io.filesystem.primitives.dll.compressed" LogicalName="costura.system.io.filesystem.primitives.dll.compressed" />
+    <EmbeddedResource Include="costura.system.linq.dll.compressed" LogicalName="costura.system.linq.dll.compressed" />
+    <EmbeddedResource Include="costura.system.runtime.compilerservices.unsafe.dll.compressed" LogicalName="costura.system.runtime.compilerservices.unsafe.dll.compressed" />
+    <EmbeddedResource Include="costura.system.runtime.numerics.dll.compressed" LogicalName="costura.system.runtime.numerics.dll.compressed" />
+    <EmbeddedResource Include="costura.system.security.cryptography.openssl.dll.compressed" LogicalName="costura.system.security.cryptography.openssl.dll.compressed" />
+    <EmbeddedResource Include="costura.system.security.cryptography.primitives.dll.compressed" LogicalName="costura.system.security.cryptography.primitives.dll.compressed" />
+    <EmbeddedResource Include="costura.system.threading.dll.compressed" LogicalName="costura.system.threading.dll.compressed" />
+    <EmbeddedResource Include="costura.twitchlib.api.dll.compressed" LogicalName="costura.twitchlib.api.dll.compressed" />
+    <EmbeddedResource Include="costura.twitchlib.api.core.dll.compressed" LogicalName="costura.twitchlib.api.core.dll.compressed" />
+    <EmbeddedResource Include="costura.twitchlib.api.core.enums.dll.compressed" LogicalName="costura.twitchlib.api.core.enums.dll.compressed" />
+    <EmbeddedResource Include="costura.twitchlib.api.core.interfaces.dll.compressed" LogicalName="costura.twitchlib.api.core.interfaces.dll.compressed" />
+    <EmbeddedResource Include="costura.twitchlib.api.core.models.dll.compressed" LogicalName="costura.twitchlib.api.core.models.dll.compressed" />
+    <EmbeddedResource Include="costura.twitchlib.api.helix.dll.compressed" LogicalName="costura.twitchlib.api.helix.dll.compressed" />
+    <EmbeddedResource Include="costura.twitchlib.api.helix.models.dll.compressed" LogicalName="costura.twitchlib.api.helix.models.dll.compressed" />
+    <EmbeddedResource Include="costura.twitchlib.api.v5.dll.compressed" LogicalName="costura.twitchlib.api.v5.dll.compressed" />
+    <EmbeddedResource Include="costura.twitchlib.api.v5.models.dll.compressed" LogicalName="costura.twitchlib.api.v5.models.dll.compressed" />
+    <EmbeddedResource Include="costura.twitchlib.client.dll.compressed" LogicalName="costura.twitchlib.client.dll.compressed" />
+    <EmbeddedResource Include="costura.twitchlib.client.enums.dll.compressed" LogicalName="costura.twitchlib.client.enums.dll.compressed" />
+    <EmbeddedResource Include="costura.twitchlib.client.models.dll.compressed" LogicalName="costura.twitchlib.client.models.dll.compressed" />
+    <EmbeddedResource Include="costura.twitchlib.communication.dll.compressed" LogicalName="costura.twitchlib.communication.dll.compressed" />
+    <EmbeddedResource Include="costura.twitchlib.pubsub.dll.compressed" LogicalName="costura.twitchlib.pubsub.dll.compressed" />
+    <EmbeddedResource Include="costura.unityeditor.dll.compressed" LogicalName="costura.unityeditor.dll.compressed" />
+    <EmbeddedResource Include="costura.metadata" LogicalName="costura.metadata" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="TwitchLib.Client">
+      <HintPath>..\..\Assemblies\TwitchLib.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="TwitchLib.Communication">
+      <HintPath>..\..\Assemblies\TwitchLib.Communication.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\Assemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="TwitchLib.PubSub">
+      <HintPath>..\..\Assemblies\TwitchLib.PubSub.dll</HintPath>
+    </Reference>
+    <Reference Include="TwitchLib.Api">
+      <HintPath>..\..\Assemblies\TwitchLib.Api.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions">
+      <HintPath>..\..\Assemblies\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="TwitchLib.Api.Core.Interfaces">
+      <HintPath>..\..\Assemblies\TwitchLib.Api.Core.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="TwitchLib.Client.Enums">
+      <HintPath>..\..\Assemblies\TwitchLib.Client.Enums.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

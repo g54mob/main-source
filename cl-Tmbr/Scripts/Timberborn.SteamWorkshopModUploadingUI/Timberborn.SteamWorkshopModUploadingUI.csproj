@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Timberborn.SteamWorkshopModUploadingUI</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Timberborn.SteamWorkshop">
+      <HintPath>..\..\Assemblies\Timberborn.SteamWorkshop.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.SerializationSystem">
+      <HintPath>..\..\Assemblies\Timberborn.SerializationSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.TextureOperations">
+      <HintPath>..\..\Assemblies\Timberborn.TextureOperations.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.SteamWorkshopUI">
+      <HintPath>..\..\Assemblies\Timberborn.SteamWorkshopUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.MainMenuModdingUI">
+      <HintPath>..\..\Assemblies\Timberborn.MainMenuModdingUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Localization">
+      <HintPath>..\..\Assemblies\Timberborn.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.SteamStoreSystem">
+      <HintPath>..\..\Assemblies\Timberborn.SteamStoreSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Modding">
+      <HintPath>..\..\Assemblies\Timberborn.Modding.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.SingletonSystem">
+      <HintPath>..\..\Assemblies\Timberborn.SingletonSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Bindito.Core">
+      <HintPath>..\..\Assemblies\Bindito.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Persistence">
+      <HintPath>..\..\Assemblies\Timberborn.Persistence.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\..\Assemblies\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

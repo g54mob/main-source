@@ -1,0 +1,135 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Kitchen.Common</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net40</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>8.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Kitchen.GameData">
+      <HintPath>..\..\Assemblies\Kitchen.GameData.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Entities">
+      <HintPath>..\..\Assemblies\Unity.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="Kitchen.Persistence">
+      <HintPath>..\..\Assemblies\Kitchen.Persistence.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\Assemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="PlatformSettings">
+      <HintPath>..\..\Assemblies\PlatformSettings.dll</HintPath>
+    </Reference>
+    <Reference Include="Controllers">
+      <HintPath>..\..\Assemblies\Controllers.dll</HintPath>
+    </Reference>
+    <Reference Include="Kitchen.Networking">
+      <HintPath>..\..\Assemblies\Kitchen.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\Assemblies\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Kitchen.Layouts">
+      <HintPath>..\..\Assemblies\Kitchen.Layouts.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="Unity.Collections">
+      <HintPath>..\..\Assemblies\Unity.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\..\Assemblies\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>..\..\Assemblies\Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>..\..\Assemblies\Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="KitchenMods">
+      <HintPath>..\..\Assemblies\KitchenMods.dll</HintPath>
+    </Reference>
+    <Reference Include="MessagePack">
+      <HintPath>..\..\Assemblies\MessagePack.dll</HintPath>
+    </Reference>
+    <Reference Include="LogoMaker">
+      <HintPath>..\..\Assemblies\LogoMaker.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\..\Assemblies\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>..\..\Assemblies\UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="ShapesRuntime">
+      <HintPath>..\..\Assemblies\ShapesRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\Assemblies\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="NavMeshComponents">
+      <HintPath>..\..\Assemblies\NavMeshComponents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Animation.Rigging">
+      <HintPath>..\..\Assemblies\Unity.Animation.Rigging.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>..\..\Assemblies\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MessagePack.Annotations">
+      <HintPath>..\..\Assemblies\MessagePack.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Serialization">
+      <HintPath>..\..\Assemblies\Sirenix.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Properties">
+      <HintPath>..\..\Assemblies\Unity.Properties.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>..\..\Assemblies\Unity.Burst.dll</HintPath>
+    </Reference>
+    <Reference Include="websocket-sharp">
+      <HintPath>..\..\Assemblies\websocket-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Utility">
+      <HintPath>..\..\Assemblies\Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Utilities">
+      <HintPath>..\..\Assemblies\Sirenix.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\Assemblies\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InputSystem">
+      <HintPath>..\..\Assemblies\Unity.InputSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\Assemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>..\..\Assemblies\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\Assemblies\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Jobs">
+      <HintPath>..\..\Assemblies\Unity.Jobs.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveSplit">
+      <HintPath>..\..\Assemblies\LiveSplit.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>..\..\Assemblies\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

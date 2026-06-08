@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>SeedFunctions</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net40</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>8.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Kitchen.GameData">
+      <HintPath>..\..\Assemblies\Kitchen.GameData.dll</HintPath>
+    </Reference>
+    <Reference Include="Kitchen.Common">
+      <HintPath>..\..\Assemblies\Kitchen.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Entities">
+      <HintPath>..\..\Assemblies\Unity.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="Kitchen.FranchiseMode">
+      <HintPath>..\..\Assemblies\Kitchen.FranchiseMode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections">
+      <HintPath>..\..\Assemblies\Unity.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="Kitchen.Persistence">
+      <HintPath>..\..\Assemblies\Kitchen.Persistence.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

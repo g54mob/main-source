@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>KitchenMods</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net40</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>8.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Facepunch.Steamworks.Win64">
+      <HintPath>..\..\Assemblies\Facepunch.Steamworks.Win64.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Entities">
+      <HintPath>..\..\Assemblies\Unity.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="Kitchen.GameData">
+      <HintPath>..\..\Assemblies\Kitchen.GameData.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>..\..\Assemblies\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="Sirenix.Utilities">
+      <HintPath>..\..\Assemblies\Sirenix.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="PlatformSettings">
+      <HintPath>..\..\Assemblies\PlatformSettings.dll</HintPath>
+    </Reference>
+    <Reference Include="SteamPlatform">
+      <HintPath>..\..\Assemblies\SteamPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

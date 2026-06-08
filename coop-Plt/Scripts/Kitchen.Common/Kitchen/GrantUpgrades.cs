@@ -1,0 +1,254 @@
+#define ENABLE_PROFILER
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+using KitchenData;
+using Unity.Collections;
+using Unity.Collections.LowLevel.Unsafe;
+using Unity.Entities;
+using Unity.Entities.CodeGeneratedJobForEach;
+using Unity.Profiling;
+
+namespace Kitchen
+{
+	public class GrantUpgrades : GenericSystemBase
+	{
+		[StructLayout(LayoutKind.Auto)]
+		[CompilerGenerated]
+		private struct _003C_003Ec__DisplayClass0_0
+		{
+			public GrantUpgrades _003C_003E4__this;
+
+			public EntityCommandBuffer ecb;
+
+			public EntityContext ctx;
+
+			internal void _003COnUpdate_003Eb__0(Entity e, in CUpgrade upgrade)
+			{
+				LambdaForEachDescriptionConstructionMethods.ThrowCodeGenInvalidMethodCalledException();
+			}
+		}
+
+		[Unity.Entities.DOTSCompilerGenerated]
+		private struct _003C_003Ec__DisplayClass_OnUpdate_LambdaJob0 : IJobChunk
+		{
+			private struct LambdaParameterValueProviders
+			{
+				public struct Runtimes
+				{
+					public LambdaParameterValueProvider_Entity.Runtime runtime_e;
+
+					public LambdaParameterValueProvider_IComponentData<CUpgrade>.Runtime runtime_upgrade;
+				}
+
+				[ReadOnly]
+				private LambdaParameterValueProvider_Entity forParameter_e;
+
+				[ReadOnly]
+				private LambdaParameterValueProvider_IComponentData<CUpgrade> forParameter_upgrade;
+
+				public void ScheduleTimeInitialize(GrantUpgrades componentSystem)
+				{
+					forParameter_e.ScheduleTimeInitialize(componentSystem, isReadOnly: true);
+					forParameter_upgrade.ScheduleTimeInitialize(componentSystem, isReadOnly: true);
+				}
+
+				public Runtimes PrepareToExecuteOnEntitiesInMethod(ref ArchetypeChunk p0, int p1, int p2)
+				{
+					return new Runtimes
+					{
+						runtime_e = forParameter_e.PrepareToExecuteOnEntitiesIn(ref p0),
+						runtime_upgrade = forParameter_upgrade.PrepareToExecuteOnEntitiesIn(ref p0)
+					};
+				}
+			}
+
+			public GrantUpgrades _003C_003E4__this;
+
+			public EntityCommandBuffer ecb;
+
+			public EntityContext ctx;
+
+			private LambdaParameterValueProviders _lambdaParameterValueProviders;
+
+			[NativeDisableUnsafePtrRestriction]
+			private unsafe LambdaParameterValueProviders.Runtimes* _runtimes;
+
+			private static InternalCompilerInterface.JobChunkRunWithoutJobSystemDelegate s_RunWithoutJobSystemDelegateFieldNoBurst;
+
+			internal void OriginalLambdaBody(Entity e, in CUpgrade upgrade)
+			{
+				if (upgrade.ID == 0 || !_003C_003E4__this.Data.TryGet<GameDataObject>(upgrade.ID, out var output))
+				{
+					return;
+				}
+				if (!(output is LayoutProfile layoutProfile))
+				{
+					if (!(output is Dish dish))
+					{
+						if (!(output is Contract contract))
+						{
+							if (!(output is Appliance appliance))
+							{
+								if (!(output is FranchiseUpgrade franchiseUpgrade))
+								{
+									if (output is RestaurantSetting restaurantSetting)
+									{
+										ecb.AddComponent(e, new CSettingUpgrade
+										{
+											SettingID = restaurantSetting.ID
+										});
+									}
+								}
+								else
+								{
+									foreach (IFranchiseUpgrade upgrade2 in franchiseUpgrade.Upgrades)
+									{
+										Entity entity = ecb.CreateEntity();
+										ecb.AddComponent(entity, default(CPersistThroughSceneChanges));
+										ecb.AddComponent(entity, new CSubUpgrade
+										{
+											Parent = e,
+											ID = upgrade.ID
+										});
+										UpgradeHelper.AddUpgrades(upgrade2, entity, ctx);
+									}
+								}
+							}
+							else
+							{
+								int itemID = ((appliance.CrateItem == null) ? AssetReference.ApplianceCrate : appliance.CrateItem.ID);
+								ecb.AddComponent(e, default(CCrate));
+								ecb.AddComponent(e, new CPersistentItem
+								{
+									Type = PersistentStorageType.Crate,
+									ItemID = itemID
+								});
+								ecb.AddComponent(e, new CCrateAppliance
+								{
+									Appliance = appliance.ID
+								});
+								if (!Preferences.Get<bool>(Pref.RequirePingForBlueprintInfo))
+								{
+									ecb.AddComponent(e, new CShowApplianceInfo
+									{
+										Appliance = appliance.ID,
+										ShowPrice = false,
+										Price = 0
+									});
+								}
+							}
+						}
+						else
+						{
+							ecb.AddComponent(e, new CContractUpgrade
+							{
+								ContractID = contract.ID
+							});
+						}
+					}
+					else
+					{
+						ecb.AddComponent(e, new CDishUpgrade
+						{
+							DishID = dish.ID
+						});
+					}
+				}
+				else
+				{
+					ecb.AddComponent(e, new CLayoutUpgrade
+					{
+						LayoutID = layoutProfile.ID
+					});
+				}
+				ecb.AddComponent(e, default(CGranted));
+			}
+
+			public void ReadFromDisplayClass(ref _003C_003Ec__DisplayClass0_0 displayClass)
+			{
+				_003C_003E4__this = displayClass._003C_003E4__this;
+				ecb = displayClass.ecb;
+				ctx = displayClass.ctx;
+			}
+
+			public void WriteToDisplayClass(ref _003C_003Ec__DisplayClass0_0 displayClass)
+			{
+				displayClass._003C_003E4__this = _003C_003E4__this;
+				displayClass.ecb = ecb;
+				displayClass.ctx = ctx;
+			}
+
+			public unsafe void Execute(ArchetypeChunk chunk, int chunkIndex, int firstEntityIndex)
+			{
+				LambdaParameterValueProviders.Runtimes runtimes = _lambdaParameterValueProviders.PrepareToExecuteOnEntitiesInMethod(ref chunk, chunkIndex, firstEntityIndex);
+				_runtimes = &runtimes;
+				IterateEntities(ref chunk, ref *_runtimes);
+			}
+
+			public void IterateEntities(ref ArchetypeChunk chunk, ref LambdaParameterValueProviders.Runtimes runtimes)
+			{
+				int count = chunk.Count;
+				for (int i = 0; i < count; i++)
+				{
+					OriginalLambdaBody(runtimes.runtime_e.For(i), in runtimes.runtime_upgrade.For(i));
+				}
+			}
+
+			public void ScheduleTimeInitialize(GrantUpgrades componentSystem, ref _003C_003Ec__DisplayClass0_0 displayClass)
+			{
+				_lambdaParameterValueProviders.ScheduleTimeInitialize(componentSystem);
+				ReadFromDisplayClass(ref displayClass);
+			}
+
+			public unsafe static void RunWithoutJobSystem(ArchetypeChunkIterator* archetypeChunkIterator, void* jobData)
+			{
+				JobChunkExtensions.RunWithoutJobs(ref UnsafeUtility.AsRef<_003C_003Ec__DisplayClass_OnUpdate_LambdaJob0>(jobData), ref *archetypeChunkIterator);
+			}
+		}
+
+		private EntityQuery _003C_003EOnUpdate_LambdaJob0_entityQuery;
+
+		private ProfilerMarker _003C_003EOnUpdate_LambdaJob0_profilerMarker;
+
+		protected override void OnUpdate()
+		{
+			_003C_003Ec__DisplayClass0_0 displayClass = default(_003C_003Ec__DisplayClass0_0);
+			displayClass._003C_003E4__this = this;
+			displayClass.ecb = GetCommandBuffer(ECB.End);
+			displayClass.ctx = new EntityContext(base.EntityManager, displayClass.ecb);
+			_ = base.Entities;
+			_003C_003Ec__DisplayClass_OnUpdate_LambdaJob0 jobData = default(_003C_003Ec__DisplayClass_OnUpdate_LambdaJob0);
+			jobData.ScheduleTimeInitialize(this, ref displayClass);
+			CompleteDependency();
+			EntityQuery query = _003C_003EOnUpdate_LambdaJob0_entityQuery;
+			InternalCompilerInterface.JobChunkRunWithoutJobSystemDelegate s_RunWithoutJobSystemDelegateFieldNoBurst = _003C_003Ec__DisplayClass_OnUpdate_LambdaJob0.s_RunWithoutJobSystemDelegateFieldNoBurst;
+			_003C_003EOnUpdate_LambdaJob0_profilerMarker.Begin();
+			try
+			{
+				InternalCompilerInterface.RunJobChunk(ref jobData, query, s_RunWithoutJobSystemDelegateFieldNoBurst);
+			}
+			finally
+			{
+				_003C_003EOnUpdate_LambdaJob0_profilerMarker.End();
+			}
+			jobData.WriteToDisplayClass(ref displayClass);
+		}
+
+		protected internal unsafe override void OnCreateForCompiler()
+		{
+			base.OnCreateForCompiler();
+			_003C_003EOnUpdate_LambdaJob0_entityQuery = _003C_003EGetEntityQuery_ForOnUpdate_LambdaJob0_From(this);
+			_003C_003Ec__DisplayClass_OnUpdate_LambdaJob0.s_RunWithoutJobSystemDelegateFieldNoBurst = _003C_003Ec__DisplayClass_OnUpdate_LambdaJob0.RunWithoutJobSystem;
+			_003C_003EOnUpdate_LambdaJob0_profilerMarker = new ProfilerMarker("OnUpdate_LambdaJob0");
+		}
+
+		public static EntityQuery _003C_003EGetEntityQuery_ForOnUpdate_LambdaJob0_From(ComponentSystemBase componentSystem)
+		{
+			EntityQueryDesc[] array = new EntityQueryDesc[1];
+			EntityQueryDesc entityQueryDesc = (array[0] = new EntityQueryDesc());
+			entityQueryDesc.All = new ComponentType[1] { ComponentType.ReadOnly<CUpgrade>() };
+			entityQueryDesc.None = new ComponentType[1] { ComponentType.ReadWrite<CGranted>() };
+			return componentSystem.GetEntityQuery(array);
+		}
+	}
+}

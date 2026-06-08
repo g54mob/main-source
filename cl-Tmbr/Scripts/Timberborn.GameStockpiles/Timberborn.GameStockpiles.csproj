@@ -1,0 +1,67 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Timberborn.GameStockpiles</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Timberborn.EntitySystem">
+      <HintPath>..\..\Assemblies\Timberborn.EntitySystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.InventorySystem">
+      <HintPath>..\..\Assemblies\Timberborn.InventorySystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.InventoryNeedSystem">
+      <HintPath>..\..\Assemblies\Timberborn.InventoryNeedSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Stockpiles">
+      <HintPath>..\..\Assemblies\Timberborn.Stockpiles.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Localization">
+      <HintPath>..\..\Assemblies\Timberborn.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.TemplateInstantiation">
+      <HintPath>..\..\Assemblies\Timberborn.TemplateInstantiation.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.GameDistricts">
+      <HintPath>..\..\Assemblies\Timberborn.GameDistricts.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.StatusSystem">
+      <HintPath>..\..\Assemblies\Timberborn.StatusSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BaseComponentSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BaseComponentSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BlockSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BlockSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.RecoverableGoodSystem">
+      <HintPath>..\..\Assemblies\Timberborn.RecoverableGoodSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Bindito.Core">
+      <HintPath>..\..\Assemblies\Bindito.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.SingletonSystem">
+      <HintPath>..\..\Assemblies\Timberborn.SingletonSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.DeconstructionSystem">
+      <HintPath>..\..\Assemblies\Timberborn.DeconstructionSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Emptying">
+      <HintPath>..\..\Assemblies\Timberborn.Emptying.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Hauling">
+      <HintPath>..\..\Assemblies\Timberborn.Hauling.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.DuplicationSystem">
+      <HintPath>..\..\Assemblies\Timberborn.DuplicationSystem.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

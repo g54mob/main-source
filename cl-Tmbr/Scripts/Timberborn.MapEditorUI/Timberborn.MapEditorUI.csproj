@@ -1,0 +1,115 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Timberborn.MapEditorUI</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Timberborn.CoreUI">
+      <HintPath>..\..\Assemblies\Timberborn.CoreUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.EntitySystem">
+      <HintPath>..\..\Assemblies\Timberborn.EntitySystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.InputSystemUI">
+      <HintPath>..\..\Assemblies\Timberborn.InputSystemUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.TooltipSystem">
+      <HintPath>..\..\Assemblies\Timberborn.TooltipSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.UndoSystem">
+      <HintPath>..\..\Assemblies\Timberborn.UndoSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>..\..\Assemblies\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BaseComponentSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BaseComponentSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.MapEditorPersistenceUI">
+      <HintPath>..\..\Assemblies\Timberborn.MapEditorPersistenceUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.UILayoutSystem">
+      <HintPath>..\..\Assemblies\Timberborn.UILayoutSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Localization">
+      <HintPath>..\..\Assemblies\Timberborn.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.SingletonSystem">
+      <HintPath>..\..\Assemblies\Timberborn.SingletonSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BlockObjectTools">
+      <HintPath>..\..\Assemblies\Timberborn.BlockObjectTools.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BlockObjectToolsUI">
+      <HintPath>..\..\Assemblies\Timberborn.BlockObjectToolsUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BottomBarSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BottomBarSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.MainMenuSceneLoading">
+      <HintPath>..\..\Assemblies\Timberborn.MainMenuSceneLoading.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.SettingsSystemUI">
+      <HintPath>..\..\Assemblies\Timberborn.SettingsSystemUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.KeyBindingSystemUI">
+      <HintPath>..\..\Assemblies\Timberborn.KeyBindingSystemUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.ToolButtonSystem">
+      <HintPath>..\..\Assemblies\Timberborn.ToolButtonSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.MapEditorBrushesUI">
+      <HintPath>..\..\Assemblies\Timberborn.MapEditorBrushesUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.MapEditorNaturalResourcesUI">
+      <HintPath>..\..\Assemblies\Timberborn.MapEditorNaturalResourcesUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.MapThumbnailCapturingUI">
+      <HintPath>..\..\Assemblies\Timberborn.MapThumbnailCapturingUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.MapMetadataSystemUI">
+      <HintPath>..\..\Assemblies\Timberborn.MapMetadataSystemUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.AlertPanelSystem">
+      <HintPath>..\..\Assemblies\Timberborn.AlertPanelSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.StartingLocationSystem">
+      <HintPath>..\..\Assemblies\Timberborn.StartingLocationSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.EntityPanelSystem">
+      <HintPath>..\..\Assemblies\Timberborn.EntityPanelSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BlockSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BlockSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BlockSystemUI">
+      <HintPath>..\..\Assemblies\Timberborn.BlockSystemUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Options">
+      <HintPath>..\..\Assemblies\Timberborn.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Bindito.Core">
+      <HintPath>..\..\Assemblies\Bindito.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.ApplicationLifetime">
+      <HintPath>..\..\Assemblies\Timberborn.ApplicationLifetime.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Versioning">
+      <HintPath>..\..\Assemblies\Timberborn.Versioning.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.ToolSystem">
+      <HintPath>..\..\Assemblies\Timberborn.ToolSystem.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

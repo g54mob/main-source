@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Timberborn.OptionsGame</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Timberborn.CoreUI">
+      <HintPath>..\..\Assemblies\Timberborn.CoreUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.WebNavigation">
+      <HintPath>..\..\Assemblies\Timberborn.WebNavigation.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.GameSaveRepositorySystemUI">
+      <HintPath>..\..\Assemblies\Timberborn.GameSaveRepositorySystemUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.SettingsSystemUI">
+      <HintPath>..\..\Assemblies\Timberborn.SettingsSystemUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.KeyBindingSystemUI">
+      <HintPath>..\..\Assemblies\Timberborn.KeyBindingSystemUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.GameSaveRuntimeSystemUI">
+      <HintPath>..\..\Assemblies\Timberborn.GameSaveRuntimeSystemUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.GameExitSystem">
+      <HintPath>..\..\Assemblies\Timberborn.GameExitSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.ExperimentalModeSystem">
+      <HintPath>..\..\Assemblies\Timberborn.ExperimentalModeSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>..\..\Assemblies\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Options">
+      <HintPath>..\..\Assemblies\Timberborn.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.SingletonSystem">
+      <HintPath>..\..\Assemblies\Timberborn.SingletonSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Bindito.Core">
+      <HintPath>..\..\Assemblies\Bindito.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Versioning">
+      <HintPath>..\..\Assemblies\Timberborn.Versioning.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

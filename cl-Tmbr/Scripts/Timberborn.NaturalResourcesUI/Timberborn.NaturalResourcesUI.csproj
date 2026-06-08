@@ -1,0 +1,61 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Timberborn.NaturalResourcesUI</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Timberborn.Localization">
+      <HintPath>..\..\Assemblies\Timberborn.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.EntityPanelSystem">
+      <HintPath>..\..\Assemblies\Timberborn.EntityPanelSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.EntitySystem">
+      <HintPath>..\..\Assemblies\Timberborn.EntitySystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Debugging">
+      <HintPath>..\..\Assemblies\Timberborn.Debugging.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.NaturalResourcesModelSystem">
+      <HintPath>..\..\Assemblies\Timberborn.NaturalResourcesModelSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.TemplateInstantiation">
+      <HintPath>..\..\Assemblies\Timberborn.TemplateInstantiation.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Growing">
+      <HintPath>..\..\Assemblies\Timberborn.Growing.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Cutting">
+      <HintPath>..\..\Assemblies\Timberborn.Cutting.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.NaturalResources">
+      <HintPath>..\..\Assemblies\Timberborn.NaturalResources.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Rendering">
+      <HintPath>..\..\Assemblies\Timberborn.Rendering.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BaseComponentSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BaseComponentSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Bindito.Core">
+      <HintPath>..\..\Assemblies\Bindito.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Yielding">
+      <HintPath>..\..\Assemblies\Timberborn.Yielding.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Common">
+      <HintPath>..\..\Assemblies\Timberborn.Common.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

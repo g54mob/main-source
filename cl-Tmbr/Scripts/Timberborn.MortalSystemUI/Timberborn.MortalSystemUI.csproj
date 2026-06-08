@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Timberborn.MortalSystemUI</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Timberborn.BonusSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BonusSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.NeedSystem">
+      <HintPath>..\..\Assemblies\Timberborn.NeedSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.NeedSpecs">
+      <HintPath>..\..\Assemblies\Timberborn.NeedSpecs.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.WellbeingUI">
+      <HintPath>..\..\Assemblies\Timberborn.WellbeingUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Bindito.Core">
+      <HintPath>..\..\Assemblies\Bindito.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BlueprintSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BlueprintSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.MortalSystem">
+      <HintPath>..\..\Assemblies\Timberborn.MortalSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.LocalizationSerialization">
+      <HintPath>..\..\Assemblies\Timberborn.LocalizationSerialization.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.CoreUI">
+      <HintPath>..\..\Assemblies\Timberborn.CoreUI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

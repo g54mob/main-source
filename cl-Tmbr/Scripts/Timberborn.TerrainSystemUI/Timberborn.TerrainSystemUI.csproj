@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Timberborn.TerrainSystemUI</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Timberborn.DebuggingUI">
+      <HintPath>..\..\Assemblies\Timberborn.DebuggingUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.CursorToolSystem">
+      <HintPath>..\..\Assemblies\Timberborn.CursorToolSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.TerrainSystem">
+      <HintPath>..\..\Assemblies\Timberborn.TerrainSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.MapIndexSystem">
+      <HintPath>..\..\Assemblies\Timberborn.MapIndexSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.SoilMoistureSystem">
+      <HintPath>..\..\Assemblies\Timberborn.SoilMoistureSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.SoilContaminationSystem">
+      <HintPath>..\..\Assemblies\Timberborn.SoilContaminationSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.TerrainSystemRendering">
+      <HintPath>..\..\Assemblies\Timberborn.TerrainSystemRendering.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.SingletonSystem">
+      <HintPath>..\..\Assemblies\Timberborn.SingletonSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Bindito.Core">
+      <HintPath>..\..\Assemblies\Bindito.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Common">
+      <HintPath>..\..\Assemblies\Timberborn.Common.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

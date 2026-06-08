@@ -1,0 +1,80 @@
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using Rewired.Utils;
+using UnityEngine;
+
+namespace Rewired
+{
+	[Serializable]
+	public sealed class InputMapCategory : InputCategory
+	{
+		[SerializeField]
+		[CustomObfuscation(rename = false)]
+		private bool _checkConflictsWithAllCategories;
+
+		[CustomObfuscation(rename = false)]
+		[SerializeField]
+		private List<int> _checkConflictsCategoryIds;
+
+		private ReadOnlyCollection<int> _checkConflictsCategoryIds_readOnly;
+
+		public bool checkConflictsWithAllCategories
+		{
+			get
+			{
+				return _checkConflictsWithAllCategories;
+			}
+			internal set
+			{
+				_checkConflictsWithAllCategories = value;
+			}
+		}
+
+		public IList<int> checkConflictsCategoryIds => _checkConflictsCategoryIds_readOnly;
+
+		internal List<int> checkConflictsCategoryIds_orig => _checkConflictsCategoryIds;
+
+		public InputMapCategory()
+		{
+			_checkConflictsCategoryIds = new List<int>();
+		}
+
+		public InputMapCategory(InputMapCategory source)
+			: base(source)
+		{
+			_checkConflictsWithAllCategories = source._checkConflictsWithAllCategories;
+			_checkConflictsCategoryIds = ListTools.ShallowCopy(source._checkConflictsCategoryIds);
+		}
+
+		internal void SdmfoteCDVoXNaSlWEvRMBbwmDy()
+		{
+			if (_checkConflictsCategoryIds == null)
+			{
+				return;
+			}
+			while (true)
+			{
+				int num = 1352131176;
+				while (true)
+				{
+					switch (num ^ 0x5097E269)
+					{
+					case 0:
+						break;
+					default:
+						return;
+					case 1:
+						goto IL_0026;
+					case 2:
+						return;
+					}
+					break;
+					IL_0026:
+					_checkConflictsCategoryIds_readOnly = new ReadOnlyCollection<int>(_checkConflictsCategoryIds);
+					num = 1352131179;
+				}
+			}
+		}
+	}
+}

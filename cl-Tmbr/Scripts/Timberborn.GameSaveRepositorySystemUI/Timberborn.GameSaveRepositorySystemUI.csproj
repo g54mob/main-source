@@ -1,0 +1,82 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Timberborn.GameSaveRepositorySystemUI</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Timberborn.GameSaveRepositorySystem">
+      <HintPath>..\..\Assemblies\Timberborn.GameSaveRepositorySystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.CoreUI">
+      <HintPath>..\..\Assemblies\Timberborn.CoreUI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>..\..\Assemblies\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.SaveMetadataSystem">
+      <HintPath>..\..\Assemblies\Timberborn.SaveMetadataSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Localization">
+      <HintPath>..\..\Assemblies\Timberborn.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.UIFormatters">
+      <HintPath>..\..\Assemblies\Timberborn.UIFormatters.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.PlatformUtilities">
+      <HintPath>..\..\Assemblies\Timberborn.PlatformUtilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Modding">
+      <HintPath>..\..\Assemblies\Timberborn.Modding.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.SaveThumbnail">
+      <HintPath>..\..\Assemblies\Timberborn.SaveThumbnail.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Versioning">
+      <HintPath>..\..\Assemblies\Timberborn.Versioning.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.VersioningSerialization">
+      <HintPath>..\..\Assemblies\Timberborn.VersioningSerialization.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.StoreSystem">
+      <HintPath>..\..\Assemblies\Timberborn.StoreSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Debugging">
+      <HintPath>..\..\Assemblies\Timberborn.Debugging.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.TooltipSystem">
+      <HintPath>..\..\Assemblies\Timberborn.TooltipSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.GameSceneLoading">
+      <HintPath>..\..\Assemblies\Timberborn.GameSceneLoading.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.ThumbnailSystem">
+      <HintPath>..\..\Assemblies\Timberborn.ThumbnailSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\..\Assemblies\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="Bindito.Core">
+      <HintPath>..\..\Assemblies\Bindito.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.SingletonSystem">
+      <HintPath>..\..\Assemblies\Timberborn.SingletonSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.SaveSystem">
+      <HintPath>..\..\Assemblies\Timberborn.SaveSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Common">
+      <HintPath>..\..\Assemblies\Timberborn.Common.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Timberborn.SettlementStatistics</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Timberborn.SingletonSystem">
+      <HintPath>..\..\Assemblies\Timberborn.SingletonSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Beavers">
+      <HintPath>..\..\Assemblies\Timberborn.Beavers.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Explosions">
+      <HintPath>..\..\Assemblies\Timberborn.Explosions.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BotsUpkeep">
+      <HintPath>..\..\Assemblies\Timberborn.BotsUpkeep.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Healthcare">
+      <HintPath>..\..\Assemblies\Timberborn.Healthcare.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.TimeSystem">
+      <HintPath>..\..\Assemblies\Timberborn.TimeSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.WorldPersistence">
+      <HintPath>..\..\Assemblies\Timberborn.WorldPersistence.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Persistence">
+      <HintPath>..\..\Assemblies\Timberborn.Persistence.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.TailDecalSystem">
+      <HintPath>..\..\Assemblies\Timberborn.TailDecalSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Forestry">
+      <HintPath>..\..\Assemblies\Timberborn.Forestry.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.InventoryNeedSystem">
+      <HintPath>..\..\Assemblies\Timberborn.InventoryNeedSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Bindito.Core">
+      <HintPath>..\..\Assemblies\Bindito.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

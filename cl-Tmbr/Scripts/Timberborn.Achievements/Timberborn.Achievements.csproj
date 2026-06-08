@@ -1,0 +1,169 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Timberborn.Achievements</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Timberborn.TemplateInstantiation">
+      <HintPath>..\..\Assemblies\Timberborn.TemplateInstantiation.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.SingletonSystem">
+      <HintPath>..\..\Assemblies\Timberborn.SingletonSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.EntitySystem">
+      <HintPath>..\..\Assemblies\Timberborn.EntitySystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Wonders">
+      <HintPath>..\..\Assemblies\Timberborn.Wonders.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.GameFactionSystem">
+      <HintPath>..\..\Assemblies\Timberborn.GameFactionSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.WorldPersistence">
+      <HintPath>..\..\Assemblies\Timberborn.WorldPersistence.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.HazardousWeatherSystem">
+      <HintPath>..\..\Assemblies\Timberborn.HazardousWeatherSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.MechanicalSystem">
+      <HintPath>..\..\Assemblies\Timberborn.MechanicalSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Characters">
+      <HintPath>..\..\Assemblies\Timberborn.Characters.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BlockSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BlockSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.NeedApplication">
+      <HintPath>..\..\Assemblies\Timberborn.NeedApplication.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Beavers">
+      <HintPath>..\..\Assemblies\Timberborn.Beavers.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Buildings">
+      <HintPath>..\..\Assemblies\Timberborn.Buildings.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Bots">
+      <HintPath>..\..\Assemblies\Timberborn.Bots.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BotsUpkeep">
+      <HintPath>..\..\Assemblies\Timberborn.BotsUpkeep.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.TemplateSystem">
+      <HintPath>..\..\Assemblies\Timberborn.TemplateSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BuildingAvailability">
+      <HintPath>..\..\Assemblies\Timberborn.BuildingAvailability.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.GameCycleSystem">
+      <HintPath>..\..\Assemblies\Timberborn.GameCycleSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BeaverContaminationSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BeaverContaminationSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.TimeSystem">
+      <HintPath>..\..\Assemblies\Timberborn.TimeSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Explosions">
+      <HintPath>..\..\Assemblies\Timberborn.Explosions.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.NeedSystem">
+      <HintPath>..\..\Assemblies\Timberborn.NeedSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Goods">
+      <HintPath>..\..\Assemblies\Timberborn.Goods.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.ResourceCountingSystem">
+      <HintPath>..\..\Assemblies\Timberborn.ResourceCountingSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.WaterSourceSystem">
+      <HintPath>..\..\Assemblies\Timberborn.WaterSourceSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Workshops">
+      <HintPath>..\..\Assemblies\Timberborn.Workshops.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Wellbeing">
+      <HintPath>..\..\Assemblies\Timberborn.Wellbeing.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.MapStateSystem">
+      <HintPath>..\..\Assemblies\Timberborn.MapStateSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.GameOver">
+      <HintPath>..\..\Assemblies\Timberborn.GameOver.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.NaturalResources">
+      <HintPath>..\..\Assemblies\Timberborn.NaturalResources.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.FactionSystem">
+      <HintPath>..\..\Assemblies\Timberborn.FactionSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.WorkSystem">
+      <HintPath>..\..\Assemblies\Timberborn.WorkSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.ZiplineSystem">
+      <HintPath>..\..\Assemblies\Timberborn.ZiplineSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Persistence">
+      <HintPath>..\..\Assemblies\Timberborn.Persistence.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Coordinates">
+      <HintPath>..\..\Assemblies\Timberborn.Coordinates.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.WaterObjects">
+      <HintPath>..\..\Assemblies\Timberborn.WaterObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="Bindito.Core">
+      <HintPath>..\..\Assemblies\Bindito.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.AchievementSystem">
+      <HintPath>..\..\Assemblies\Timberborn.AchievementSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.TickSystem">
+      <HintPath>..\..\Assemblies\Timberborn.TickSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.PowerGeneration">
+      <HintPath>..\..\Assemblies\Timberborn.PowerGeneration.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BaseComponentSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BaseComponentSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Common">
+      <HintPath>..\..\Assemblies\Timberborn.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Effects">
+      <HintPath>..\..\Assemblies\Timberborn.Effects.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.BlueprintSystem">
+      <HintPath>..\..\Assemblies\Timberborn.BlueprintSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\..\Assemblies\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.WaterBuildings">
+      <HintPath>..\..\Assemblies\Timberborn.WaterBuildings.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.NeedSpecs">
+      <HintPath>..\..\Assemblies\Timberborn.NeedSpecs.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.TubeSystem">
+      <HintPath>..\..\Assemblies\Timberborn.TubeSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.DwellingSystem">
+      <HintPath>..\..\Assemblies\Timberborn.DwellingSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Timberborn.Forestry">
+      <HintPath>..\..\Assemblies\Timberborn.Forestry.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

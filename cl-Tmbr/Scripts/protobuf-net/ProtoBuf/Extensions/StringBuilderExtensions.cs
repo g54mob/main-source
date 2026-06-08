@@ -1,0 +1,31 @@
+using System;
+using System.Text;
+
+namespace ProtoBuf.Extensions
+{
+	internal static class StringBuilderExtensions
+	{
+		public static StringBuilder NewLine(this StringBuilder builder, ref int pos, int indent)
+		{
+			return builder.Insert(Environment.NewLine, ref pos).Insert(" ", ref pos, indent * 3);
+		}
+
+		public static StringBuilder Insert(this StringBuilder builder, string value, ref int pos, Func<bool> condition, int count = 1)
+		{
+			if (!condition())
+			{
+				return builder;
+			}
+			return builder.Insert(value, ref pos, count);
+		}
+
+		public static StringBuilder Insert(this StringBuilder builder, string value, ref int pos, int count = 1)
+		{
+			int length = builder.Length;
+			builder.Insert(pos, value, count);
+			int num = builder.Length - length;
+			pos += num;
+			return builder;
+		}
+	}
+}

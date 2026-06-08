@@ -1,0 +1,12 @@
+using Kitchen;
+using UnityEngine;
+
+internal static class _0024BurstDirectCallInitializer
+{
+	[RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterAssembliesLoaded)]
+	private static void Initialize()
+	{
+		DespawnCustomerGroupsTutorial.Initialize_0024_003C_003Ec__DisplayClass_OnUpdate_LambdaJob0_RunWithoutJobSystem_0000002B_0024BurstDirectCall();
+		LoopPlayersOutOfBounds.Initialize_0024_003C_003Ec__DisplayClass_OnUpdate_LambdaJob0_RunWithoutJobSystem_0000003A_0024BurstDirectCall();
+	}
+}
