@@ -1,0 +1,9 @@
+namespace Trivial.Mono.CompilerServices.SymbolWriter
+{
+	public interface IMethodDef
+	{
+		string Name { get; }
+
+		int Token { get; }
+	}
+}

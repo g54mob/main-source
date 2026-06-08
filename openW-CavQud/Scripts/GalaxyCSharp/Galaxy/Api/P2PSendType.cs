@@ -1,0 +1,10 @@
+namespace Galaxy.Api
+{
+	public enum P2PSendType
+	{
+		P2P_SEND_UNRELIABLE = 0,
+		P2P_SEND_RELIABLE = 1,
+		P2P_SEND_UNRELIABLE_IMMEDIATE = 2,
+		P2P_SEND_RELIABLE_IMMEDIATE = 3
+	}
+}
