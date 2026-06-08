@@ -1,0 +1,26 @@
+public enum DroneUpgradeType
+{
+	Undefined = 0,
+	SpeedBoost = 1,
+	Generator = 2,
+	SwarmTurret = 3,
+	Scanner = 4,
+	Interface = 5,
+	Gatherer = 6,
+	BruteTurret = 7,
+	Sensor = 8,
+	Lure = 9,
+	Trap = 10,
+	Repair = 11,
+	Stun = 12,
+	ProximityMine = 13,
+	StealthField = 14,
+	Shield = 15,
+	Teleporter = 16,
+	Probe = 17,
+	AreaSensor = 18,
+	Sonic = 19,
+	Tow = 20,
+	Pry = 21,
+	NumberOfUpgrades = 22
+}
