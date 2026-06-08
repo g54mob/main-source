@@ -1,7 +1,7 @@
 ─────────────────────────────────────────────────────────────────
 Folder : hr-Grny/
-Files  : 9200
-Total  : 2.608 GB
+Files  : 9195
+Total  : 1.814 GB
 ─────────────────────────────────────────────────────────────────
 
 hr-Grny/Assemblies/Assembly-CSharp-firstpass.dll                                                                                       290.5 KB
@@ -977,11 +977,6 @@ hr-Grny/Assets/Resources/shaders/screenspacereflection.json                     
 hr-Grny/Assets/Resources/shaders/taa.json                                                                                              99.9 KB
 hr-Grny/Assets/Resources/shaders/uber.json                                                                                             895.9 KB
 hr-Grny/Assets/RuntimeInitializeOnLoadManager/RuntimeInitializeOnLoadManager.json                                                      21 B
-hr-Grny/Assets/SceneHierarchyObject/EndScene.glb                                                                                       59.69 MB
-hr-Grny/Assets/SceneHierarchyObject/ForestScene.glb                                                                                    90.18 MB
-hr-Grny/Assets/SceneHierarchyObject/Menu.glb                                                                                           56.76 MB
-hr-Grny/Assets/SceneHierarchyObject/Scene.glb                                                                                          606.55 MB
-hr-Grny/Assets/SceneHierarchyObject/SplashScreen.glb                                                                                   788 B
 hr-Grny/Assets/Shader/Custom_InvisibleMask.json                                                                                        18.1 KB
 hr-Grny/Assets/Shader/GUI_Text Shader.json                                                                                             38.1 KB
 hr-Grny/Assets/Shader/Hidden_BlitCopy.json                                                                                             18.1 KB

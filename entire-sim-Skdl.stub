@@ -1,7 +1,7 @@
 ─────────────────────────────────────────────────────────────────
 Folder : sim-Skdl/
-Files  : 24152
-Total  : 10.591 GB
+Files  : 24151
+Total  : 9.694 GB
 ─────────────────────────────────────────────────────────────────
 
 sim-Skdl/Assemblies/AeLa.EasyFeedback.dll                                                                                                37.0 KB
@@ -7790,7 +7790,6 @@ sim-Skdl/Assets/Resources/weapons/shotty/PumpShotgun__Icon.png                  
 sim-Skdl/Assets/Resources/weapons/shotty/shell/Shotgun Shell_Icon.json                                                                   5.9 KB
 sim-Skdl/Assets/Resources/weapons/shotty/shell/Shotgun Shell_Icon.png                                                                    38.8 KB
 sim-Skdl/Assets/SceneHierarchyObject/Main.glb                                                                                            0 B
-sim-Skdl/Assets/SceneHierarchyObject/Tutorial.glb                                                                                        918.77 MB
 sim-Skdl/Assets/Scenes/Main/LightingSettings.json                                                                                        2.1 KB
 sim-Skdl/Assets/Scenes/Main/LightProbes.json                                                                                             546 B
 sim-Skdl/Assets/Scenes/Menu/Lightmap-0_comp_dir.png                                                                                      694.6 KB

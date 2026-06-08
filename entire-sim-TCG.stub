@@ -1,7 +1,7 @@
 ─────────────────────────────────────────────────────────────────
 Folder : sim-TCG/
 Files  : 20626
-Total  : 4.437 GB
+Total  : 3.536 GB
 ─────────────────────────────────────────────────────────────────
 
 sim-TCG/Assemblies/Assembly-CSharp-firstpass.dll                                                                                                56.0 KB
@@ -1809,7 +1809,6 @@ sim-TCG/Assets/Resources/T_Skin_02.png                                          
 sim-TCG/Assets/Resources/T_Skin_03.png                                                                                                          3.16 MB
 sim-TCG/Assets/Resources/T_Transparent.png                                                                                                      249 B
 sim-TCG/Assets/RuntimeInitializeOnLoadManager/RuntimeInitializeOnLoadManager.json                                                               21 B
-sim-TCG/Assets/SceneHierarchyObject/Start.glb                                                                                                   922.94 MB
 sim-TCG/Assets/SceneHierarchyObject/Title.glb                                                                                                   178.6 KB
 sim-TCG/Assets/ScriptableObjectGroup/GameObject Profile.json                                                                                    465 B
 sim-TCG/Assets/Shader/AE_Leaves.json                                                                                                            140.9 KB
@@ -4767,6 +4766,7 @@ sim-TCG/Assets/Texture2D/XBox_Y_Fontstyle.png                                   
 sim-TCG/Assets/TimeManager/TimeManager.json                                                                                                     148 B
 sim-TCG/Assets/UnityConnectSettings/UnityConnectSettings.json                                                                                   981 B
 sim-TCG/Assets/VFXManager/VFXManager.json                                                                                                       629 B
+sim-TCG/create-stub.js                                                                                                                          743 B
 sim-TCG/Scripts/Assembly-CSharp/AchievementManager.cs                                                                                           10.1 KB
 sim-TCG/Scripts/Assembly-CSharp/AlignRigidbodyToTarget.cs                                                                                       646 B
 sim-TCG/Scripts/Assembly-CSharp/ArrowIndicatorUI.cs                                                                                             437 B

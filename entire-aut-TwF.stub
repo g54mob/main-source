@@ -1,7 +1,7 @@
 ─────────────────────────────────────────────────────────────────
 Folder : aut-TwF/
-Files  : 20144
-Total  : 1.617 GB
+Files  : 20142
+Total  : 458.41 MB
 ─────────────────────────────────────────────────────────────────
 
 aut-TwF/Assemblies/AllIn1VfxAssmebly.dll                                                                                                          21.0 KB
@@ -1861,8 +1861,6 @@ aut-TwF/Assets/Resources/ui-default-softmaskable.json                           
 aut-TwF/Assets/RuntimeInitializeOnLoadManager/RuntimeInitializeOnLoadManager.json                                                                 23 B
 aut-TwF/Assets/SceneHierarchyObject/GameScene.glb                                                                                                 200 B
 aut-TwF/Assets/SceneHierarchyObject/LoadingScreen.glb                                                                                             448 B
-aut-TwF/Assets/SceneHierarchyObject/MainMenu.glb                                                                                                  727.76 MB
-aut-TwF/Assets/SceneHierarchyObject/Tutorial.glb                                                                                                  469.80 MB
 aut-TwF/Assets/Scenes/MainMenu/LightProbes.json                                                                                                   574 B
 aut-TwF/Assets/Scenes/Tutorial/LightProbes.json                                                                                                   574 B
 aut-TwF/Assets/Shader/Gius_AlphaGradient.json                                                                                                     565.7 KB
