@@ -1,0 +1,41 @@
+namespace NSMedieval.CombatAi
+{
+	public enum CombatAiState
+	{
+		None = 0,
+		IsDamaged = 1,
+		NearestHostile = 2,
+		PerceptionHostiles = 3,
+		IsFleeing = 4,
+		IsFleeingDisabled = 5,
+		IsSingleAttackSwingMode = 6,
+		TargetersCount = 7,
+		LastDamageTakenTime = 8,
+		LastDamageTakenFrom = 9,
+		LastMissFrom = 10,
+		LastMissTime = 11,
+		LastBlockFrom = 12,
+		LastBlockTime = 13,
+		LastAttackTime = 14,
+		LastAttackedTarget = 15,
+		PreferedTarget = 16,
+		NextTarget = 17,
+		NextTargetValidated = 18,
+		OriginalNextTarget = 19,
+		NeverIdle = 20,
+		Fainted = 21,
+		EnemyIsRetreating = 22,
+		FollowTarget = 23,
+		IsAggressive = 24,
+		IsDraftAutoTargetSet = 25,
+		WalkingToPosition = 26,
+		OperatingTrebuchet = 27,
+		IsInCombat = 28,
+		StuckWhileRetreating = 29,
+		AnimalRetreatingNoPathToTrader = 30,
+		LastAttackOrderTarget = 31,
+		HoldGroundGridPosition = 32,
+		MinFleeDistance = 33,
+		MaxFleeDistance = 34
+	}
+}

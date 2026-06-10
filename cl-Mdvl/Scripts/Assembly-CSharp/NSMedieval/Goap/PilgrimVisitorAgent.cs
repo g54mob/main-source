@@ -1,0 +1,37 @@
+using NSMedieval.Goap.Goals;
+using NSMedieval.State;
+using NSMedieval.View;
+
+namespace NSMedieval.Goap
+{
+	public class PilgrimVisitorAgent : Agent
+	{
+		private HumanoidInstance humanoid;
+
+		public PilgrimVisitorAgent(HumanoidInstance humanoid)
+			: base(humanoid, new NPCGoalExecutionManager(humanoid))
+		{
+			this.humanoid = humanoid;
+			base.GoalScheduler.AddToPool(new FaintGoal(this), enableGoal: true);
+			base.GoalScheduler.AddToPool(new EnemyWithdrawalGoal(this), enableGoal: true);
+			base.GoalScheduler.AddToPool(new EnemyCombatIdleGoal(this), enableGoal: true);
+			base.GoalScheduler.AddToPool(new FeastEventGoalBard(this), enableGoal: true);
+			base.GoalScheduler.AddToPool(new FeastEventGoal(this));
+			base.GoalScheduler.AddToPool(new SermonEventGoal(this));
+			base.GoalScheduler.AddToPool(new RitualEventGoal(this));
+			base.GoalScheduler.AddToPool(new HangingEventGoal(this));
+			base.GoalScheduler.AddToPool(new VisitorPilgrimIdleGoal(this), enableGoal: true);
+		}
+
+		public override AnimatedAgentView GetView()
+		{
+			return humanoid.GetAgentView<AnimatedAgentView>();
+		}
+
+		public override void Dispose()
+		{
+			base.Dispose();
+			humanoid = null;
+		}
+	}
+}

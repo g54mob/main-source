@@ -1,0 +1,110 @@
+using System.Collections.Generic;
+using System.Linq;
+using NSEipix;
+using NSMedieval.Model;
+using NSMedieval.StatsSystem;
+using NSMedieval.UI.Utils;
+using UnityEngine;
+
+namespace NSMedieval.UI
+{
+	public class WorkerStatsExtraPanel : SelectionExtraPanelBase
+	{
+		[SerializeField]
+		private List<StatType> stats;
+
+		[SerializeField]
+		private LayoutGroupView statsParent;
+
+		[SerializeField]
+		private LayoutGroupView effectorsParent;
+
+		private readonly List<FillBarLayoutItemView> workerStats = new List<FillBarLayoutItemView>();
+
+		private readonly List<EffectorLayoutItemView> statEffectors = new List<EffectorLayoutItemView>();
+
+		protected override void SetupTabPanel()
+		{
+			int num = 0;
+			foreach (StatType stat2 in stats)
+			{
+				StatInstance stat = base.Humanoid.Stats.GetStat(stat2);
+				if (stat != null)
+				{
+					float? target = null;
+					if (stat.Type.Equals(StatType.Beauty) || stat.Type.Equals(StatType.Comfort))
+					{
+						target = stat.Target;
+					}
+					FillBarLayoutItemView at = workerStats.GetAt(statsParent, num);
+					num++;
+					string localizedName = StatUtils.GetLocalizedName(stat.Blueprint, base.Humanoid.Info.BodyType);
+					if (stat.IsDisabled)
+					{
+						at.SetDisabled(localizedName, stat2.ToString(), StatUtils.GetTooltipLines(stat, base.Humanoid.Info.BodyType));
+					}
+					else if (stat.IsLocked)
+					{
+						at.SetLocked(localizedName, stat2.ToString(), StatUtils.GetSliderValues(stat), StatUtils.GetTooltipLines(stat, base.Humanoid.Info.BodyType));
+					}
+					else
+					{
+						at.SetBasicData(localizedName, stat2.ToString(), string.Empty, string.Empty, StatUtils.GetTooltipLines(stat, base.Humanoid.Info.BodyType), stat.StatTrend, StatUtils.GetSliderValues(stat), StatUtils.GetThresholds(stat), target, invertArrows: false, string.Empty);
+					}
+				}
+			}
+			workerStats.SetActiveFromIndex(num, active: false);
+			List<EffectorViewData> list = new List<EffectorViewData>();
+			foreach (ActiveEffectorInfo activeEffector in base.Humanoid.Stats.Stats.First().Value.Owner.GetActiveEffectors())
+			{
+				if (!activeEffector.Blueprint.UIGroup.HasFlag(EffectorUiGroup.Stats))
+				{
+					continue;
+				}
+				string text = activeEffector.Name;
+				Dictionary<string, string> dictionary = new Dictionary<string, string>();
+				int num2 = 1;
+				float minutesLeft = -1f;
+				num2 += activeEffector.StackCount;
+				if (activeEffector.TimeLeft() > 0f)
+				{
+					minutesLeft = activeEffector.TimeLeft();
+				}
+				LocKeys[] locKeys = null;
+				if (activeEffector.Blueprint != null)
+				{
+					locKeys = activeEffector.Blueprint.LocKeys;
+					EffectDetailsHolder[] effects = activeEffector.Blueprint.Effects;
+					foreach (EffectDetailsHolder effectDetailsHolder in effects)
+					{
+						if ((effectDetailsHolder.Type == EffectorType.AttributeModify || effectDetailsHolder.Type == EffectorType.AttributeAdderModify) && effectDetailsHolder.Parameters.TryGetValue("Attribute", out var value))
+						{
+							dictionary[value] = string.Empty;
+							if (effectDetailsHolder.Parameters.TryGetValue("Multiplier", out var value2))
+							{
+								dictionary[effectDetailsHolder.Parameters["Attribute"]] = value2;
+							}
+							if (effectDetailsHolder.Parameters.TryGetValue("Value", out var value3))
+							{
+								dictionary[effectDetailsHolder.Parameters["Attribute"]] = value3;
+							}
+						}
+					}
+				}
+				list.Add(new EffectorViewData(text, float.NaN, num2, minutesLeft, dictionary, locKeys));
+			}
+			num = 0;
+			foreach (EffectorViewData item in list)
+			{
+				statEffectors.GetAt(effectorsParent, num).SetStatData(item, base.Humanoid, num);
+				num++;
+			}
+			statEffectors.SetActiveFromIndex(list.Count, active: false);
+		}
+
+		protected override void UpdateTabPanel()
+		{
+			SetupTabPanel();
+		}
+	}
+}

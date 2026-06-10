@@ -1,0 +1,41 @@
+namespace NSMedieval.StatsSystem
+{
+	public enum StatType
+	{
+		None = 0,
+		Health = 1,
+		Sleep = 2,
+		Hunger = 3,
+		Freshness = 5,
+		Mood = 6,
+		Blood = 7,
+		Consciousness = 8,
+		Pain = 9,
+		Faith = 11,
+		Alcohol = 12,
+		Entertaiment = 13,
+		ReligiousAlignment = 14,
+		Inebriated = 15,
+		Stomach = 16,
+		TemperatureCold = 17,
+		TemperatureHot = 18,
+		AnimalWild = 19,
+		AnimalUntrained = 20,
+		Fermentation = 21,
+		Beauty = 22,
+		Comfort = 23,
+		Social = 24,
+		SunLight = 25,
+		Dryness = 26,
+		Breath = 27,
+		PrisonerNotRecruited = 28,
+		EntertainmentInt = 29,
+		EntertainmentRanged = 30,
+		EntertainmentDex = 31,
+		EntertainmentPrecision = 32,
+		Malnutrition = 33,
+		FoodTypeA = 34,
+		FoodTypeB = 35,
+		FoodTypeC = 36
+	}
+}

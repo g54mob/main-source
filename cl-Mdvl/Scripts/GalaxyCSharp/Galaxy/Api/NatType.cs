@@ -1,0 +1,12 @@
+namespace Galaxy.Api
+{
+	public enum NatType
+	{
+		NAT_TYPE_NONE = 0,
+		NAT_TYPE_FULL_CONE = 1,
+		NAT_TYPE_ADDRESS_RESTRICTED = 2,
+		NAT_TYPE_PORT_RESTRICTED = 3,
+		NAT_TYPE_SYMMETRIC = 4,
+		NAT_TYPE_UNKNOWN = 5
+	}
+}

@@ -1,0 +1,117 @@
+using System;
+using System.Collections.Generic;
+using NodeCanvas.Framework.Internal;
+using ParadoxNotion.Serialization;
+using UnityEngine;
+
+namespace NodeCanvas.Framework
+{
+	[CreateAssetMenu(menuName = "ParadoxNotion/CanvasCore/Blackboard Asset")]
+	public class AssetBlackboard : ScriptableObject, ISerializationCallbackReceiver, IGlobalBlackboard, IBlackboard
+	{
+		[SerializeField]
+		private string _serializedBlackboard;
+
+		[SerializeField]
+		private List<UnityEngine.Object> _objectReferences;
+
+		[SerializeField]
+		private string _UID = Guid.NewGuid().ToString();
+
+		[NonSerialized]
+		private string _identifier;
+
+		[NonSerialized]
+		private BlackboardSource _blackboard = new BlackboardSource();
+
+		Dictionary<string, Variable> IBlackboard.variables
+		{
+			get
+			{
+				return _blackboard.variables;
+			}
+			set
+			{
+				_blackboard.variables = value;
+			}
+		}
+
+		UnityEngine.Object IBlackboard.unityContextObject => this;
+
+		IBlackboard IBlackboard.parent => null;
+
+		Component IBlackboard.propertiesBindTarget => null;
+
+		string IBlackboard.independantVariablesFieldName => null;
+
+		public string identifier => _identifier;
+
+		public string UID => _UID;
+
+		public event Action<Variable> onVariableAdded;
+
+		public event Action<Variable> onVariableRemoved;
+
+		void ISerializationCallbackReceiver.OnBeforeSerialize()
+		{
+			SelfSerialize();
+		}
+
+		void ISerializationCallbackReceiver.OnAfterDeserialize()
+		{
+			SelfDeserialize();
+		}
+
+		private void SelfSerialize()
+		{
+			_objectReferences = new List<UnityEngine.Object>();
+			_serializedBlackboard = JSONSerializer.Serialize(typeof(BlackboardSource), _blackboard, _objectReferences);
+		}
+
+		private void SelfDeserialize()
+		{
+			_blackboard = JSONSerializer.Deserialize<BlackboardSource>(_serializedBlackboard, _objectReferences);
+			if (_blackboard == null)
+			{
+				_blackboard = new BlackboardSource();
+			}
+		}
+
+		void IBlackboard.TryInvokeOnVariableAdded(Variable variable)
+		{
+			if (this.onVariableAdded != null)
+			{
+				this.onVariableAdded(variable);
+			}
+		}
+
+		void IBlackboard.TryInvokeOnVariableRemoved(Variable variable)
+		{
+			if (this.onVariableRemoved != null)
+			{
+				this.onVariableRemoved(variable);
+			}
+		}
+
+		[ContextMenu("Show Json")]
+		private void ShowJson()
+		{
+			JSONSerializer.ShowData(_serializedBlackboard, base.name);
+		}
+
+		public override string ToString()
+		{
+			return identifier;
+		}
+
+		private void OnValidate()
+		{
+			_identifier = base.name;
+		}
+
+		private void OnEnable()
+		{
+			this.InitializePropertiesBinding(null, callSetter: false);
+		}
+	}
+}
