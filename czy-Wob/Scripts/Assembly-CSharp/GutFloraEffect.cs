@@ -1,0 +1,9 @@
+public enum GutFloraEffect
+{
+	NOTHING = 0,
+	TURN_INTO_TARGET = 1,
+	DUPLICATE_SELF = 2,
+	BOOST_TARGET = 3,
+	KILL_TARGET = 4,
+	KILL_SELF = 5
+}

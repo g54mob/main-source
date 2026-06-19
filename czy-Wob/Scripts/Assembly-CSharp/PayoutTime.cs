@@ -1,0 +1,7 @@
+public enum PayoutTime
+{
+	END = 0,
+	CONTINUOUS = 1,
+	BEHAVIOR_DEFINED = 2,
+	BEHAVIOR_DEFINED_AND_VALUED = 3
+}

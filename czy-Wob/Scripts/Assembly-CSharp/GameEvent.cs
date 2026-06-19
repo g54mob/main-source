@@ -1,0 +1,7 @@
+public enum GameEvent
+{
+	DOG_GIFT = 0,
+	TOO_MANY_EGGS = 1,
+	GHOST_VISITATION = 2,
+	GIVEN_AN_ENTIRE_DOG = 3
+}

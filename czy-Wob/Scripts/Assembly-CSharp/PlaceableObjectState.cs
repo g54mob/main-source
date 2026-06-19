@@ -1,0 +1,8 @@
+public enum PlaceableObjectState
+{
+	DEFAULT = 0,
+	VALID_PLACEMENT = 1,
+	INVALID_PLACEMENT = 2,
+	SELECTED_FOR_MOVE = 3,
+	SELECTED_FOR_DELETE = 4
+}

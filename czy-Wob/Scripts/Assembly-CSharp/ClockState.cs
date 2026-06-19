@@ -1,0 +1,9 @@
+public enum ClockState
+{
+	WORK_HOURS = 0,
+	WORK_END = 1,
+	HOME_EVENING = 2,
+	HOME_NIGHT = 3,
+	HOME_MORNING = 4,
+	TRANSITIONING = 5
+}

@@ -1,0 +1,14 @@
+public enum Language
+{
+	DEFAULT = 0,
+	ENGLISH = 1,
+	FRENCH = 2,
+	ITALIAN = 3,
+	GERMAN = 4,
+	SPANISH = 5,
+	CHINESE_TRAD = 6,
+	CHINESE_SIMP = 7,
+	KOREAN = 8,
+	RUSSIAN = 9,
+	JAPANESE = 10
+}

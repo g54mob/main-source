@@ -1,0 +1,18 @@
+public enum TailType
+{
+	NO_TAIL = 0,
+	STIFF = 1,
+	STIFF_CURLY = 2,
+	FLOWY = 3,
+	NUB = 4,
+	STIFF_SLIGHTLY_CURLY = 5,
+	BULBOUS = 6,
+	FERAL = 7,
+	LIFTED = 8,
+	PADDLE = 9,
+	PLUME = 10,
+	WHIP = 11,
+	CURL = 12,
+	DOUBLE_CURL = 13,
+	TRI = 14
+}

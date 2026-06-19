@@ -1,0 +1,28 @@
+public enum DogBehaviorTargetedEnum
+{
+	NONE = 0,
+	BiteObject = 1,
+	Complain = 2,
+	Growl = 3,
+	GrabObject = 4,
+	PlayBow = 5,
+	ShakeObject = 6,
+	ThrowObject = 7,
+	WatchTV = 8,
+	BuryObjectInHole = 9,
+	Den_CollectDirt = 10,
+	Den_FinalizeConstruction = 11,
+	Den_RemoveDirt = 12,
+	DigUpObjectInHole = 13,
+	DispenseFood = 14,
+	DispenseFoodMischief = 15,
+	EatDirt = 16,
+	EatFood_Standard = 17,
+	EatPoop = 18,
+	NurseFromAdult = 19,
+	HoardObjects = 20,
+	EatFood_Ghost = 21,
+	LevitateObject = 22,
+	GrowlAutonomous = 23,
+	Den_CollectSnow = 24
+}
