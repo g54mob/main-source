@@ -1,0 +1,97 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>aggro.core</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Microsoft.GDK">
+      <HintPath>..\..\Assemblies\Unity.Microsoft.GDK.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ResourceManager">
+      <HintPath>..\..\Assemblies\Unity.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="FMODUnity">
+      <HintPath>..\..\Assemblies\FMODUnity.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Addressables">
+      <HintPath>..\..\Assemblies\Unity.Addressables.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections">
+      <HintPath>..\..\Assemblies\Unity.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\..\Assemblies\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\Assemblies\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Mirror">
+      <HintPath>..\..\Assemblies\Mirror.dll</HintPath>
+    </Reference>
+    <Reference Include="Mirror.Components">
+      <HintPath>..\..\Assemblies\Mirror.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>..\..\Assemblies\Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.OdinInspector.Attributes">
+      <HintPath>..\..\Assemblies\Sirenix.OdinInspector.Attributes.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\Assemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\Assemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\Assemblies\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayFab">
+      <HintPath>..\..\Assemblies\PlayFab.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayFabMultiplayerSDK">
+      <HintPath>..\..\Assemblies\PlayFabMultiplayerSDK.dll</HintPath>
+    </Reference>
+    <Reference Include="com.rlabrecque.steamworks.net">
+      <HintPath>..\..\Assemblies\com.rlabrecque.steamworks.net.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InputSystem">
+      <HintPath>..\..\Assemblies\Unity.InputSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayFabPartySDK">
+      <HintPath>..\..\Assemblies\PlayFabPartySDK.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>..\..\Assemblies\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>..\..\Assemblies\UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\Assemblies\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>..\..\Assemblies\Unity.Burst.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>..\..\Assemblies\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\Assemblies\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Mirror.Transports">
+      <HintPath>..\..\Assemblies\Mirror.Transports.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

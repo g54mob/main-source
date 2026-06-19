@@ -1,0 +1,34 @@
+using System;
+using TMPro;
+using UnityEngine;
+
+namespace ModIOBrowser.Implementation
+{
+	internal class NotificationPopupButton : MonoBehaviour
+	{
+		public TextMeshProUGUI buttonName;
+
+		private Action action;
+
+		private NotificationPopup master;
+
+		public void Set(NotificationPopup.ButtonConfig config, NotificationPopup master)
+		{
+			buttonName.text = config.name;
+			action = config.action;
+			this.master = master;
+			base.gameObject.SetActive(value: true);
+		}
+
+		public void OnClick()
+		{
+			action?.Invoke();
+			master.Close();
+		}
+
+		public void Hide()
+		{
+			base.gameObject.SetActive(value: false);
+		}
+	}
+}

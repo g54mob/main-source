@@ -1,0 +1,6 @@
+internal struct dyBuhgITgugHFQsBNbztydiZyDp
+{
+	public dExhiHBqPEOOlDcRhDAEononjAjn uKgrmzWDMXdahjyvrfNpOFIMDQxc;
+
+	public oGHgAQrGoQjPNKbGkxxhCQgfAmA gkSLMNIyLcKlncULGDGOWrfGLDs;
+}

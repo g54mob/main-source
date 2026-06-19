@@ -1,0 +1,249 @@
+using System;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+using FixedTickInterpolation;
+using PlacementIndicator;
+using Unity.Burst;
+using Unity.Entities;
+using UnityEngine;
+
+[BurstCompile]
+internal class __UnmanagedPostProcessorOutput__13036389116312022735
+{
+	[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+	internal delegate void __codegen__FixedTickInterpolation_FixedTickInterpolationSwapSystem_3_PlacementIndicator_PlacementIndicatorInterpolatedStateCD_PlacementIndicator_PlacementIndicatorInterpolatedValueCD_PlacementIndicator_PlacementIndicatorCurrentStateCD__OnCreate_00000063_0024PostfixBurstDelegate(IntPtr self, IntPtr state);
+
+	internal static class __codegen__FixedTickInterpolation_FixedTickInterpolationSwapSystem_3_PlacementIndicator_PlacementIndicatorInterpolatedStateCD_PlacementIndicator_PlacementIndicatorInterpolatedValueCD_PlacementIndicator_PlacementIndicatorCurrentStateCD__OnCreate_00000063_0024BurstDirectCall
+	{
+		private static IntPtr Pointer;
+
+		[BurstDiscard]
+		private static void GetFunctionPointerDiscard(ref IntPtr P_0)
+		{
+			if (Pointer == (IntPtr)0)
+			{
+				Pointer = BurstCompiler.CompileFunctionPointer<__codegen__FixedTickInterpolation_FixedTickInterpolationSwapSystem_3_PlacementIndicator_PlacementIndicatorInterpolatedStateCD_PlacementIndicator_PlacementIndicatorInterpolatedValueCD_PlacementIndicator_PlacementIndicatorCurrentStateCD__OnCreate_00000063_0024PostfixBurstDelegate>(__codegen__FixedTickInterpolation_FixedTickInterpolationSwapSystem_3_PlacementIndicator_PlacementIndicatorInterpolatedStateCD_PlacementIndicator_PlacementIndicatorInterpolatedValueCD_PlacementIndicator_PlacementIndicatorCurrentStateCD__OnCreate).Value;
+			}
+			P_0 = Pointer;
+		}
+
+		private static IntPtr GetFunctionPointer()
+		{
+			nint result = 0;
+			GetFunctionPointerDiscard(ref result);
+			return result;
+		}
+
+		public unsafe static void Invoke(IntPtr self, IntPtr state)
+		{
+			if (BurstCompiler.IsEnabled)
+			{
+				IntPtr functionPointer = GetFunctionPointer();
+				if (functionPointer != (IntPtr)0)
+				{
+					((delegate* unmanaged[Cdecl]<IntPtr, IntPtr, void>)functionPointer)(self, state);
+					return;
+				}
+			}
+			__codegen__FixedTickInterpolation_FixedTickInterpolationSwapSystem_3_PlacementIndicator_PlacementIndicatorInterpolatedStateCD_PlacementIndicator_PlacementIndicatorInterpolatedValueCD_PlacementIndicator_PlacementIndicatorCurrentStateCD__OnCreate_0024BurstManaged(self, state);
+		}
+	}
+
+	[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+	internal delegate void __codegen__FixedTickInterpolation_FixedTickInterpolationSwapSystem_3_PlacementIndicator_PlacementIndicatorInterpolatedStateCD_PlacementIndicator_PlacementIndicatorInterpolatedValueCD_PlacementIndicator_PlacementIndicatorCurrentStateCD__OnUpdate_00000064_0024PostfixBurstDelegate(IntPtr self, IntPtr state);
+
+	internal static class __codegen__FixedTickInterpolation_FixedTickInterpolationSwapSystem_3_PlacementIndicator_PlacementIndicatorInterpolatedStateCD_PlacementIndicator_PlacementIndicatorInterpolatedValueCD_PlacementIndicator_PlacementIndicatorCurrentStateCD__OnUpdate_00000064_0024BurstDirectCall
+	{
+		private static IntPtr Pointer;
+
+		[BurstDiscard]
+		private static void GetFunctionPointerDiscard(ref IntPtr P_0)
+		{
+			if (Pointer == (IntPtr)0)
+			{
+				Pointer = BurstCompiler.CompileFunctionPointer<__codegen__FixedTickInterpolation_FixedTickInterpolationSwapSystem_3_PlacementIndicator_PlacementIndicatorInterpolatedStateCD_PlacementIndicator_PlacementIndicatorInterpolatedValueCD_PlacementIndicator_PlacementIndicatorCurrentStateCD__OnUpdate_00000064_0024PostfixBurstDelegate>(__codegen__FixedTickInterpolation_FixedTickInterpolationSwapSystem_3_PlacementIndicator_PlacementIndicatorInterpolatedStateCD_PlacementIndicator_PlacementIndicatorInterpolatedValueCD_PlacementIndicator_PlacementIndicatorCurrentStateCD__OnUpdate).Value;
+			}
+			P_0 = Pointer;
+		}
+
+		private static IntPtr GetFunctionPointer()
+		{
+			nint result = 0;
+			GetFunctionPointerDiscard(ref result);
+			return result;
+		}
+
+		public unsafe static void Invoke(IntPtr self, IntPtr state)
+		{
+			if (BurstCompiler.IsEnabled)
+			{
+				IntPtr functionPointer = GetFunctionPointer();
+				if (functionPointer != (IntPtr)0)
+				{
+					((delegate* unmanaged[Cdecl]<IntPtr, IntPtr, void>)functionPointer)(self, state);
+					return;
+				}
+			}
+			__codegen__FixedTickInterpolation_FixedTickInterpolationSwapSystem_3_PlacementIndicator_PlacementIndicatorInterpolatedStateCD_PlacementIndicator_PlacementIndicatorInterpolatedValueCD_PlacementIndicator_PlacementIndicatorCurrentStateCD__OnUpdate_0024BurstManaged(self, state);
+		}
+	}
+
+	[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+	internal delegate void __codegen__FixedTickInterpolation_FixedTickInterpolationSmoothingSystem_3_PlacementIndicator_PlacementIndicatorInterpolatedStateCD_PlacementIndicator_PlacementIndicatorInterpolatedValueCD_PlacementIndicator_PlacementIndicatorCurrentStateCD__OnCreate_00000066_0024PostfixBurstDelegate(IntPtr self, IntPtr state);
+
+	internal static class __codegen__FixedTickInterpolation_FixedTickInterpolationSmoothingSystem_3_PlacementIndicator_PlacementIndicatorInterpolatedStateCD_PlacementIndicator_PlacementIndicatorInterpolatedValueCD_PlacementIndicator_PlacementIndicatorCurrentStateCD__OnCreate_00000066_0024BurstDirectCall
+	{
+		private static IntPtr Pointer;
+
+		[BurstDiscard]
+		private static void GetFunctionPointerDiscard(ref IntPtr P_0)
+		{
+			if (Pointer == (IntPtr)0)
+			{
+				Pointer = BurstCompiler.CompileFunctionPointer<__codegen__FixedTickInterpolation_FixedTickInterpolationSmoothingSystem_3_PlacementIndicator_PlacementIndicatorInterpolatedStateCD_PlacementIndicator_PlacementIndicatorInterpolatedValueCD_PlacementIndicator_PlacementIndicatorCurrentStateCD__OnCreate_00000066_0024PostfixBurstDelegate>(__codegen__FixedTickInterpolation_FixedTickInterpolationSmoothingSystem_3_PlacementIndicator_PlacementIndicatorInterpolatedStateCD_PlacementIndicator_PlacementIndicatorInterpolatedValueCD_PlacementIndicator_PlacementIndicatorCurrentStateCD__OnCreate).Value;
+			}
+			P_0 = Pointer;
+		}
+
+		private static IntPtr GetFunctionPointer()
+		{
+			nint result = 0;
+			GetFunctionPointerDiscard(ref result);
+			return result;
+		}
+
+		public unsafe static void Invoke(IntPtr self, IntPtr state)
+		{
+			if (BurstCompiler.IsEnabled)
+			{
+				IntPtr functionPointer = GetFunctionPointer();
+				if (functionPointer != (IntPtr)0)
+				{
+					((delegate* unmanaged[Cdecl]<IntPtr, IntPtr, void>)functionPointer)(self, state);
+					return;
+				}
+			}
+			__codegen__FixedTickInterpolation_FixedTickInterpolationSmoothingSystem_3_PlacementIndicator_PlacementIndicatorInterpolatedStateCD_PlacementIndicator_PlacementIndicatorInterpolatedValueCD_PlacementIndicator_PlacementIndicatorCurrentStateCD__OnCreate_0024BurstManaged(self, state);
+		}
+	}
+
+	[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+	internal delegate void __codegen__FixedTickInterpolation_FixedTickInterpolationSmoothingSystem_3_PlacementIndicator_PlacementIndicatorInterpolatedStateCD_PlacementIndicator_PlacementIndicatorInterpolatedValueCD_PlacementIndicator_PlacementIndicatorCurrentStateCD__OnUpdate_00000067_0024PostfixBurstDelegate(IntPtr self, IntPtr state);
+
+	internal static class __codegen__FixedTickInterpolation_FixedTickInterpolationSmoothingSystem_3_PlacementIndicator_PlacementIndicatorInterpolatedStateCD_PlacementIndicator_PlacementIndicatorInterpolatedValueCD_PlacementIndicator_PlacementIndicatorCurrentStateCD__OnUpdate_00000067_0024BurstDirectCall
+	{
+		private static IntPtr Pointer;
+
+		[BurstDiscard]
+		private static void GetFunctionPointerDiscard(ref IntPtr P_0)
+		{
+			if (Pointer == (IntPtr)0)
+			{
+				Pointer = BurstCompiler.CompileFunctionPointer<__codegen__FixedTickInterpolation_FixedTickInterpolationSmoothingSystem_3_PlacementIndicator_PlacementIndicatorInterpolatedStateCD_PlacementIndicator_PlacementIndicatorInterpolatedValueCD_PlacementIndicator_PlacementIndicatorCurrentStateCD__OnUpdate_00000067_0024PostfixBurstDelegate>(__codegen__FixedTickInterpolation_FixedTickInterpolationSmoothingSystem_3_PlacementIndicator_PlacementIndicatorInterpolatedStateCD_PlacementIndicator_PlacementIndicatorInterpolatedValueCD_PlacementIndicator_PlacementIndicatorCurrentStateCD__OnUpdate).Value;
+			}
+			P_0 = Pointer;
+		}
+
+		private static IntPtr GetFunctionPointer()
+		{
+			nint result = 0;
+			GetFunctionPointerDiscard(ref result);
+			return result;
+		}
+
+		public unsafe static void Invoke(IntPtr self, IntPtr state)
+		{
+			if (BurstCompiler.IsEnabled)
+			{
+				IntPtr functionPointer = GetFunctionPointer();
+				if (functionPointer != (IntPtr)0)
+				{
+					((delegate* unmanaged[Cdecl]<IntPtr, IntPtr, void>)functionPointer)(self, state);
+					return;
+				}
+			}
+			__codegen__FixedTickInterpolation_FixedTickInterpolationSmoothingSystem_3_PlacementIndicator_PlacementIndicatorInterpolatedStateCD_PlacementIndicator_PlacementIndicatorInterpolatedValueCD_PlacementIndicator_PlacementIndicatorCurrentStateCD__OnUpdate_0024BurstManaged(self, state);
+		}
+	}
+
+	[BurstCompile]
+	[Unity.Entities.MonoPInvokeCallback(typeof(SystemBaseDelegates.Function))]
+	internal static void __codegen__FixedTickInterpolation_FixedTickInterpolationSwapSystem_3_PlacementIndicator_PlacementIndicatorInterpolatedStateCD_PlacementIndicator_PlacementIndicatorInterpolatedValueCD_PlacementIndicator_PlacementIndicatorCurrentStateCD__OnCreate(IntPtr self, IntPtr state)
+	{
+		__codegen__FixedTickInterpolation_FixedTickInterpolationSwapSystem_3_PlacementIndicator_PlacementIndicatorInterpolatedStateCD_PlacementIndicator_PlacementIndicatorInterpolatedValueCD_PlacementIndicator_PlacementIndicatorCurrentStateCD__OnCreate_00000063_0024BurstDirectCall.Invoke(self, state);
+	}
+
+	[BurstCompile]
+	[Unity.Entities.MonoPInvokeCallback(typeof(SystemBaseDelegates.Function))]
+	internal static void __codegen__FixedTickInterpolation_FixedTickInterpolationSwapSystem_3_PlacementIndicator_PlacementIndicatorInterpolatedStateCD_PlacementIndicator_PlacementIndicatorInterpolatedValueCD_PlacementIndicator_PlacementIndicatorCurrentStateCD__OnUpdate(IntPtr self, IntPtr state)
+	{
+		__codegen__FixedTickInterpolation_FixedTickInterpolationSwapSystem_3_PlacementIndicator_PlacementIndicatorInterpolatedStateCD_PlacementIndicator_PlacementIndicatorInterpolatedValueCD_PlacementIndicator_PlacementIndicatorCurrentStateCD__OnUpdate_00000064_0024BurstDirectCall.Invoke(self, state);
+	}
+
+	[Unity.Entities.MonoPInvokeCallback(typeof(SystemBaseDelegates.Function))]
+	internal unsafe static void __codegen__FixedTickInterpolation_FixedTickInterpolationSwapSystem_3_PlacementIndicator_PlacementIndicatorInterpolatedStateCD_PlacementIndicator_PlacementIndicatorInterpolatedValueCD_PlacementIndicator_PlacementIndicatorCurrentStateCD__OnCreateForCompiler(IntPtr self, IntPtr state)
+	{
+		((FixedTickInterpolationSwapSystem<PlacementIndicatorInterpolatedStateCD, PlacementIndicatorInterpolatedValueCD, PlacementIndicatorCurrentStateCD>*)self.ToPointer())->OnCreateForCompiler(ref *(SystemState*)state.ToPointer());
+	}
+
+	[BurstCompile]
+	[Unity.Entities.MonoPInvokeCallback(typeof(SystemBaseDelegates.Function))]
+	internal static void __codegen__FixedTickInterpolation_FixedTickInterpolationSmoothingSystem_3_PlacementIndicator_PlacementIndicatorInterpolatedStateCD_PlacementIndicator_PlacementIndicatorInterpolatedValueCD_PlacementIndicator_PlacementIndicatorCurrentStateCD__OnCreate(IntPtr self, IntPtr state)
+	{
+		__codegen__FixedTickInterpolation_FixedTickInterpolationSmoothingSystem_3_PlacementIndicator_PlacementIndicatorInterpolatedStateCD_PlacementIndicator_PlacementIndicatorInterpolatedValueCD_PlacementIndicator_PlacementIndicatorCurrentStateCD__OnCreate_00000066_0024BurstDirectCall.Invoke(self, state);
+	}
+
+	[BurstCompile]
+	[Unity.Entities.MonoPInvokeCallback(typeof(SystemBaseDelegates.Function))]
+	internal static void __codegen__FixedTickInterpolation_FixedTickInterpolationSmoothingSystem_3_PlacementIndicator_PlacementIndicatorInterpolatedStateCD_PlacementIndicator_PlacementIndicatorInterpolatedValueCD_PlacementIndicator_PlacementIndicatorCurrentStateCD__OnUpdate(IntPtr self, IntPtr state)
+	{
+		__codegen__FixedTickInterpolation_FixedTickInterpolationSmoothingSystem_3_PlacementIndicator_PlacementIndicatorInterpolatedStateCD_PlacementIndicator_PlacementIndicatorInterpolatedValueCD_PlacementIndicator_PlacementIndicatorCurrentStateCD__OnUpdate_00000067_0024BurstDirectCall.Invoke(self, state);
+	}
+
+	[Unity.Entities.MonoPInvokeCallback(typeof(SystemBaseDelegates.Function))]
+	internal unsafe static void __codegen__FixedTickInterpolation_FixedTickInterpolationSmoothingSystem_3_PlacementIndicator_PlacementIndicatorInterpolatedStateCD_PlacementIndicator_PlacementIndicatorInterpolatedValueCD_PlacementIndicator_PlacementIndicatorCurrentStateCD__OnCreateForCompiler(IntPtr self, IntPtr state)
+	{
+		((FixedTickInterpolationSmoothingSystem<PlacementIndicatorInterpolatedStateCD, PlacementIndicatorInterpolatedValueCD, PlacementIndicatorCurrentStateCD>*)self.ToPointer())->OnCreateForCompiler(ref *(SystemState*)state.ToPointer());
+	}
+
+	[RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterAssembliesLoaded)]
+	public static void EarlyInit()
+	{
+		SystemBaseRegistry.AddUnmanagedSystemType(typeof(PlacementIndicatorMoveByControllerSystem), BurstRuntime.GetHashCode64<PlacementIndicatorMoveByControllerSystem>(), PlacementIndicatorMoveByControllerSystem.__codegen__OnCreate, PlacementIndicatorMoveByControllerSystem.__codegen__OnUpdate, null, null, null, PlacementIndicatorMoveByControllerSystem.__codegen__OnCreateForCompiler, "PlacementIndicator.PlacementIndicatorMoveByControllerSystem", 3);
+		SystemBaseRegistry.AddUnmanagedSystemType(typeof(PlacementIndicatorVisualStateUpdateSystem), BurstRuntime.GetHashCode64<PlacementIndicatorVisualStateUpdateSystem>(), PlacementIndicatorVisualStateUpdateSystem.__codegen__OnCreate, PlacementIndicatorVisualStateUpdateSystem.__codegen__OnUpdate, null, PlacementIndicatorVisualStateUpdateSystem.__codegen__OnStartRunning, PlacementIndicatorVisualStateUpdateSystem.__codegen__OnStopRunning, PlacementIndicatorVisualStateUpdateSystem.__codegen__OnCreateForCompiler, "PlacementIndicator.PlacementIndicatorVisualStateUpdateSystem", 27);
+		SystemBaseRegistry.AddUnmanagedSystemType(typeof(FixedTickInterpolationSwapSystem<PlacementIndicatorInterpolatedStateCD, PlacementIndicatorInterpolatedValueCD, PlacementIndicatorCurrentStateCD>), BurstRuntime.GetHashCode64<FixedTickInterpolationSwapSystem<PlacementIndicatorInterpolatedStateCD, PlacementIndicatorInterpolatedValueCD, PlacementIndicatorCurrentStateCD>>(), __codegen__FixedTickInterpolation_FixedTickInterpolationSwapSystem_3_PlacementIndicator_PlacementIndicatorInterpolatedStateCD_PlacementIndicator_PlacementIndicatorInterpolatedValueCD_PlacementIndicator_PlacementIndicatorCurrentStateCD__OnCreate, __codegen__FixedTickInterpolation_FixedTickInterpolationSwapSystem_3_PlacementIndicator_PlacementIndicatorInterpolatedStateCD_PlacementIndicator_PlacementIndicatorInterpolatedValueCD_PlacementIndicator_PlacementIndicatorCurrentStateCD__OnUpdate, null, null, null, __codegen__FixedTickInterpolation_FixedTickInterpolationSwapSystem_3_PlacementIndicator_PlacementIndicatorInterpolatedStateCD_PlacementIndicator_PlacementIndicatorInterpolatedValueCD_PlacementIndicator_PlacementIndicatorCurrentStateCD__OnCreateForCompiler, "FixedTickInterpolation.FixedTickInterpolationSwapSystem`3<PlacementIndicator.PlacementIndicatorInterpolatedStateCD,PlacementIndicator.PlacementIndicatorInterpolatedValueCD,PlacementIndicator.PlacementIndicatorCurrentStateCD>", 3);
+		SystemBaseRegistry.AddUnmanagedSystemType(typeof(FixedTickInterpolationSmoothingSystem<PlacementIndicatorInterpolatedStateCD, PlacementIndicatorInterpolatedValueCD, PlacementIndicatorCurrentStateCD>), BurstRuntime.GetHashCode64<FixedTickInterpolationSmoothingSystem<PlacementIndicatorInterpolatedStateCD, PlacementIndicatorInterpolatedValueCD, PlacementIndicatorCurrentStateCD>>(), __codegen__FixedTickInterpolation_FixedTickInterpolationSmoothingSystem_3_PlacementIndicator_PlacementIndicatorInterpolatedStateCD_PlacementIndicator_PlacementIndicatorInterpolatedValueCD_PlacementIndicator_PlacementIndicatorCurrentStateCD__OnCreate, __codegen__FixedTickInterpolation_FixedTickInterpolationSmoothingSystem_3_PlacementIndicator_PlacementIndicatorInterpolatedStateCD_PlacementIndicator_PlacementIndicatorInterpolatedValueCD_PlacementIndicator_PlacementIndicatorCurrentStateCD__OnUpdate, null, null, null, __codegen__FixedTickInterpolation_FixedTickInterpolationSmoothingSystem_3_PlacementIndicator_PlacementIndicatorInterpolatedStateCD_PlacementIndicator_PlacementIndicatorInterpolatedValueCD_PlacementIndicator_PlacementIndicatorCurrentStateCD__OnCreateForCompiler, "FixedTickInterpolation.FixedTickInterpolationSmoothingSystem`3<PlacementIndicator.PlacementIndicatorInterpolatedStateCD,PlacementIndicator.PlacementIndicatorInterpolatedValueCD,PlacementIndicator.PlacementIndicatorCurrentStateCD>", 3);
+	}
+
+	[MethodImpl(MethodImplOptions.AggressiveInlining)]
+	[BurstCompile]
+	[Unity.Entities.MonoPInvokeCallback(typeof(SystemBaseDelegates.Function))]
+	internal unsafe static void __codegen__FixedTickInterpolation_FixedTickInterpolationSwapSystem_3_PlacementIndicator_PlacementIndicatorInterpolatedStateCD_PlacementIndicator_PlacementIndicatorInterpolatedValueCD_PlacementIndicator_PlacementIndicatorCurrentStateCD__OnCreate_0024BurstManaged(IntPtr self, IntPtr state)
+	{
+		((FixedTickInterpolationSwapSystem<PlacementIndicatorInterpolatedStateCD, PlacementIndicatorInterpolatedValueCD, PlacementIndicatorCurrentStateCD>*)self.ToPointer())->OnCreate(ref *(SystemState*)state.ToPointer());
+	}
+
+	[MethodImpl(MethodImplOptions.AggressiveInlining)]
+	[BurstCompile]
+	[Unity.Entities.MonoPInvokeCallback(typeof(SystemBaseDelegates.Function))]
+	internal unsafe static void __codegen__FixedTickInterpolation_FixedTickInterpolationSwapSystem_3_PlacementIndicator_PlacementIndicatorInterpolatedStateCD_PlacementIndicator_PlacementIndicatorInterpolatedValueCD_PlacementIndicator_PlacementIndicatorCurrentStateCD__OnUpdate_0024BurstManaged(IntPtr self, IntPtr state)
+	{
+		((FixedTickInterpolationSwapSystem<PlacementIndicatorInterpolatedStateCD, PlacementIndicatorInterpolatedValueCD, PlacementIndicatorCurrentStateCD>*)self.ToPointer())->OnUpdate(ref *(SystemState*)state.ToPointer());
+	}
+
+	[MethodImpl(MethodImplOptions.AggressiveInlining)]
+	[BurstCompile]
+	[Unity.Entities.MonoPInvokeCallback(typeof(SystemBaseDelegates.Function))]
+	internal unsafe static void __codegen__FixedTickInterpolation_FixedTickInterpolationSmoothingSystem_3_PlacementIndicator_PlacementIndicatorInterpolatedStateCD_PlacementIndicator_PlacementIndicatorInterpolatedValueCD_PlacementIndicator_PlacementIndicatorCurrentStateCD__OnCreate_0024BurstManaged(IntPtr self, IntPtr state)
+	{
+		((FixedTickInterpolationSmoothingSystem<PlacementIndicatorInterpolatedStateCD, PlacementIndicatorInterpolatedValueCD, PlacementIndicatorCurrentStateCD>*)self.ToPointer())->OnCreate(ref *(SystemState*)state.ToPointer());
+	}
+
+	[MethodImpl(MethodImplOptions.AggressiveInlining)]
+	[BurstCompile]
+	[Unity.Entities.MonoPInvokeCallback(typeof(SystemBaseDelegates.Function))]
+	internal unsafe static void __codegen__FixedTickInterpolation_FixedTickInterpolationSmoothingSystem_3_PlacementIndicator_PlacementIndicatorInterpolatedStateCD_PlacementIndicator_PlacementIndicatorInterpolatedValueCD_PlacementIndicator_PlacementIndicatorCurrentStateCD__OnUpdate_0024BurstManaged(IntPtr self, IntPtr state)
+	{
+		((FixedTickInterpolationSmoothingSystem<PlacementIndicatorInterpolatedStateCD, PlacementIndicatorInterpolatedValueCD, PlacementIndicatorCurrentStateCD>*)self.ToPointer())->OnUpdate(ref *(SystemState*)state.ToPointer());
+	}
+}

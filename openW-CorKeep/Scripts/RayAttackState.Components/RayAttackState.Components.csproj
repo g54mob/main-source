@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>RayAttackState.Components</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.NetCode">
+      <HintPath>..\..\Assemblies\Unity.NetCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections">
+      <HintPath>..\..\Assemblies\Unity.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Entities">
+      <HintPath>..\..\Assemblies\Unity.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="Pug.ECS.Extensions">
+      <HintPath>..\..\Assemblies\Pug.ECS.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>..\..\Assemblies\Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>..\..\Assemblies\Unity.Burst.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

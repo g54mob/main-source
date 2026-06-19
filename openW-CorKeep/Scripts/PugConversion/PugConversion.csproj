@@ -1,0 +1,58 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>PugConversion</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Unity.Entities">
+      <HintPath>..\..\Assemblies\Unity.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.NetCode">
+      <HintPath>..\..\Assemblies\Unity.NetCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Entities.Hybrid">
+      <HintPath>..\..\Assemblies\Unity.Entities.Hybrid.dll</HintPath>
+    </Reference>
+    <Reference Include="Pug.UnityExtensions">
+      <HintPath>..\..\Assemblies\Pug.UnityExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="PugProperties">
+      <HintPath>..\..\Assemblies\PugProperties.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.NetCode.Authoring.Hybrid">
+      <HintPath>..\..\Assemblies\Unity.NetCode.Authoring.Hybrid.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections">
+      <HintPath>..\..\Assemblies\Unity.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Physics.Hybrid">
+      <HintPath>..\..\Assemblies\Unity.Physics.Hybrid.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Physics">
+      <HintPath>..\..\Assemblies\Unity.Physics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Physics.Custom">
+      <HintPath>..\..\Assemblies\Unity.Physics.Custom.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>..\..\Assemblies\Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\Assemblies\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Transforms">
+      <HintPath>..\..\Assemblies\Unity.Transforms.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

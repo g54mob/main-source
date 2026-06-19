@@ -1,0 +1,492 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+using Unity.Burst;
+using Unity.Collections;
+using Unity.Entities;
+using Unity.Entities.Internal;
+using Unity.Mathematics;
+
+namespace WorldGen
+{
+	[BurstCompile]
+	[WorldSystemFilter(WorldSystemFilterFlags.ServerSimulation, WorldSystemFilterFlags.Default)]
+	[UpdateInGroup(typeof(RunSimulationSystemGroup))]
+	public struct SpawnRootsInNewAreasRunSystem : ISystem, ISystemCompilerGenerated
+	{
+		private struct AfterSpawnCleanup : ICleanupComponentData, IComponentData, IQueryTypeParameter
+		{
+			public Entity SpawnCellEntity;
+		}
+
+		[StructLayout(LayoutKind.Sequential, Size = 1)]
+		private readonly struct IFE_288116803_0
+		{
+			public struct ResolvedChunk
+			{
+				public IntPtr item1_IntPtr;
+
+				public IntPtr item2_IntPtr;
+
+				public IntPtr Entity_IntPtr;
+
+				[MethodImpl(MethodImplOptions.AggressiveInlining)]
+				public QueryEnumerableWithEntity<InternalCompilerInterface.UncheckedRefRW<SpawnRootsInAreaCD>, ProceduralSpawnArea> Get(int index)
+				{
+					return new QueryEnumerableWithEntity<InternalCompilerInterface.UncheckedRefRW<SpawnRootsInAreaCD>, ProceduralSpawnArea>(InternalCompilerInterface.UnsafeGetUncheckedRefRW<SpawnRootsInAreaCD>(item1_IntPtr, index), InternalCompilerInterface.UnsafeGetCopyOfNativeArrayPtrElement<ProceduralSpawnArea>(item2_IntPtr, index), InternalCompilerInterface.UnsafeGetCopyOfNativeArrayPtrElement<Entity>(Entity_IntPtr, index));
+				}
+			}
+
+			public struct TypeHandle
+			{
+				private ComponentTypeHandle<SpawnRootsInAreaCD> item1_ComponentTypeHandle_RW;
+
+				[ReadOnly]
+				private ComponentTypeHandle<ProceduralSpawnArea> item2_ComponentTypeHandle_RO;
+
+				private EntityTypeHandle Entity_TypeHandle;
+
+				public TypeHandle(ref SystemState systemState)
+				{
+					item1_ComponentTypeHandle_RW = systemState.GetComponentTypeHandle<SpawnRootsInAreaCD>();
+					item2_ComponentTypeHandle_RO = systemState.GetComponentTypeHandle<ProceduralSpawnArea>(isReadOnly: true);
+					Entity_TypeHandle = systemState.GetEntityTypeHandle();
+				}
+
+				public void Update(ref SystemState systemState)
+				{
+					item1_ComponentTypeHandle_RW.Update(ref systemState);
+					item2_ComponentTypeHandle_RO.Update(ref systemState);
+					Entity_TypeHandle.Update(ref systemState);
+				}
+
+				[MethodImpl(MethodImplOptions.AggressiveInlining)]
+				public ResolvedChunk Resolve(ArchetypeChunk archetypeChunk)
+				{
+					return new ResolvedChunk
+					{
+						item1_IntPtr = InternalCompilerInterface.UnsafeGetChunkNativeArrayIntPtrWithoutChecks(in archetypeChunk, ref item1_ComponentTypeHandle_RW),
+						item2_IntPtr = InternalCompilerInterface.UnsafeGetChunkNativeArrayReadOnlyIntPtrWithoutChecks(in archetypeChunk, ref item2_ComponentTypeHandle_RO),
+						Entity_IntPtr = InternalCompilerInterface.UnsafeGetChunkEntityArrayIntPtr(archetypeChunk, Entity_TypeHandle)
+					};
+				}
+			}
+
+			public struct Enumerator : IEnumerator<QueryEnumerableWithEntity<InternalCompilerInterface.UncheckedRefRW<SpawnRootsInAreaCD>, ProceduralSpawnArea>>, IEnumerator, IDisposable
+			{
+				private InternalEntityQueryEnumerator _entityQueryEnumerator;
+
+				private TypeHandle _typeHandle;
+
+				private ResolvedChunk _resolvedChunk;
+
+				private int _currentEntityIndex;
+
+				private int _endEntityIndex;
+
+				public QueryEnumerableWithEntity<InternalCompilerInterface.UncheckedRefRW<SpawnRootsInAreaCD>, ProceduralSpawnArea> Current => _resolvedChunk.Get(_currentEntityIndex);
+
+				object IEnumerator.Current
+				{
+					get
+					{
+						throw new NotImplementedException();
+					}
+				}
+
+				public Enumerator(EntityQuery entityQuery, TypeHandle typeHandle, ref SystemState state)
+				{
+					if (!entityQuery.IsEmptyIgnoreFilter)
+					{
+						CompleteDependencies(ref state);
+						typeHandle.Update(ref state);
+					}
+					_entityQueryEnumerator = new InternalEntityQueryEnumerator(entityQuery);
+					_currentEntityIndex = -1;
+					_endEntityIndex = -1;
+					_typeHandle = typeHandle;
+					_resolvedChunk = default(ResolvedChunk);
+				}
+
+				public void Dispose()
+				{
+					_entityQueryEnumerator.Dispose();
+				}
+
+				[MethodImpl(MethodImplOptions.AggressiveInlining)]
+				public bool MoveNext()
+				{
+					_currentEntityIndex++;
+					if (_currentEntityIndex >= _endEntityIndex)
+					{
+						if (_entityQueryEnumerator.MoveNextEntityRange(out var movedToNewChunk, out var chunk, out var entityStartIndex, out var entityEndIndex))
+						{
+							if (movedToNewChunk)
+							{
+								_resolvedChunk = _typeHandle.Resolve(chunk);
+							}
+							_currentEntityIndex = entityStartIndex;
+							_endEntityIndex = entityEndIndex;
+							return true;
+						}
+						return false;
+					}
+					return true;
+				}
+
+				public Enumerator GetEnumerator()
+				{
+					return this;
+				}
+
+				public void Reset()
+				{
+					throw new NotImplementedException();
+				}
+			}
+
+			[MethodImpl(MethodImplOptions.AggressiveInlining)]
+			public static Enumerator Query(EntityQuery entityQuery, TypeHandle typeHandle, ref SystemState state)
+			{
+				return new Enumerator(entityQuery, typeHandle, ref state);
+			}
+
+			public static void CompleteDependencies(ref SystemState state)
+			{
+				state.EntityManager.CompleteDependencyBeforeRW<SpawnRootsInAreaCD>();
+				state.EntityManager.CompleteDependencyBeforeRO<ProceduralSpawnArea>();
+			}
+		}
+
+		[StructLayout(LayoutKind.Sequential, Size = 1)]
+		private readonly struct IFE_288116803_1
+		{
+			public struct ResolvedChunk
+			{
+				public IntPtr item1_IntPtr;
+
+				public IntPtr Entity_IntPtr;
+
+				[MethodImpl(MethodImplOptions.AggressiveInlining)]
+				public QueryEnumerableWithEntity<AfterSpawnCleanup> Get(int index)
+				{
+					return new QueryEnumerableWithEntity<AfterSpawnCleanup>(InternalCompilerInterface.UnsafeGetCopyOfNativeArrayPtrElement<AfterSpawnCleanup>(item1_IntPtr, index), InternalCompilerInterface.UnsafeGetCopyOfNativeArrayPtrElement<Entity>(Entity_IntPtr, index));
+				}
+			}
+
+			public struct TypeHandle
+			{
+				[ReadOnly]
+				private ComponentTypeHandle<AfterSpawnCleanup> item1_ComponentTypeHandle_RO;
+
+				private EntityTypeHandle Entity_TypeHandle;
+
+				public TypeHandle(ref SystemState systemState)
+				{
+					item1_ComponentTypeHandle_RO = systemState.GetComponentTypeHandle<AfterSpawnCleanup>(isReadOnly: true);
+					Entity_TypeHandle = systemState.GetEntityTypeHandle();
+				}
+
+				public void Update(ref SystemState systemState)
+				{
+					item1_ComponentTypeHandle_RO.Update(ref systemState);
+					Entity_TypeHandle.Update(ref systemState);
+				}
+
+				[MethodImpl(MethodImplOptions.AggressiveInlining)]
+				public ResolvedChunk Resolve(ArchetypeChunk archetypeChunk)
+				{
+					return new ResolvedChunk
+					{
+						item1_IntPtr = InternalCompilerInterface.UnsafeGetChunkNativeArrayReadOnlyIntPtrWithoutChecks(in archetypeChunk, ref item1_ComponentTypeHandle_RO),
+						Entity_IntPtr = InternalCompilerInterface.UnsafeGetChunkEntityArrayIntPtr(archetypeChunk, Entity_TypeHandle)
+					};
+				}
+			}
+
+			public struct Enumerator : IEnumerator<QueryEnumerableWithEntity<AfterSpawnCleanup>>, IEnumerator, IDisposable
+			{
+				private InternalEntityQueryEnumerator _entityQueryEnumerator;
+
+				private TypeHandle _typeHandle;
+
+				private ResolvedChunk _resolvedChunk;
+
+				private int _currentEntityIndex;
+
+				private int _endEntityIndex;
+
+				public QueryEnumerableWithEntity<AfterSpawnCleanup> Current => _resolvedChunk.Get(_currentEntityIndex);
+
+				object IEnumerator.Current
+				{
+					get
+					{
+						throw new NotImplementedException();
+					}
+				}
+
+				public Enumerator(EntityQuery entityQuery, TypeHandle typeHandle, ref SystemState state)
+				{
+					if (!entityQuery.IsEmptyIgnoreFilter)
+					{
+						CompleteDependencies(ref state);
+						typeHandle.Update(ref state);
+					}
+					_entityQueryEnumerator = new InternalEntityQueryEnumerator(entityQuery);
+					_currentEntityIndex = -1;
+					_endEntityIndex = -1;
+					_typeHandle = typeHandle;
+					_resolvedChunk = default(ResolvedChunk);
+				}
+
+				public void Dispose()
+				{
+					_entityQueryEnumerator.Dispose();
+				}
+
+				[MethodImpl(MethodImplOptions.AggressiveInlining)]
+				public bool MoveNext()
+				{
+					_currentEntityIndex++;
+					if (_currentEntityIndex >= _endEntityIndex)
+					{
+						if (_entityQueryEnumerator.MoveNextEntityRange(out var movedToNewChunk, out var chunk, out var entityStartIndex, out var entityEndIndex))
+						{
+							if (movedToNewChunk)
+							{
+								_resolvedChunk = _typeHandle.Resolve(chunk);
+							}
+							_currentEntityIndex = entityStartIndex;
+							_endEntityIndex = entityEndIndex;
+							return true;
+						}
+						return false;
+					}
+					return true;
+				}
+
+				public Enumerator GetEnumerator()
+				{
+					return this;
+				}
+
+				public void Reset()
+				{
+					throw new NotImplementedException();
+				}
+			}
+
+			[MethodImpl(MethodImplOptions.AggressiveInlining)]
+			public static Enumerator Query(EntityQuery entityQuery, TypeHandle typeHandle, ref SystemState state)
+			{
+				return new Enumerator(entityQuery, typeHandle, ref state);
+			}
+
+			public static void CompleteDependencies(ref SystemState state)
+			{
+				state.EntityManager.CompleteDependencyBeforeRO<AfterSpawnCleanup>();
+			}
+		}
+
+		private struct TypeHandle
+		{
+			public IFE_288116803_0.TypeHandle __IFE_288116803_0_TypeHandle;
+
+			public IFE_288116803_1.TypeHandle __IFE_288116803_1_TypeHandle;
+
+			public ComponentLookup<SpawnRootsInAreaCD> __SpawnRootsInAreaCD_RW_ComponentLookup;
+
+			[MethodImpl(MethodImplOptions.AggressiveInlining)]
+			public void __AssignHandles(ref SystemState state)
+			{
+				__IFE_288116803_0_TypeHandle = new IFE_288116803_0.TypeHandle(ref state);
+				__IFE_288116803_1_TypeHandle = new IFE_288116803_1.TypeHandle(ref state);
+				__SpawnRootsInAreaCD_RW_ComponentLookup = state.GetComponentLookup<SpawnRootsInAreaCD>();
+			}
+		}
+
+		[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+		internal delegate void __codegen__OnUpdate_00000155_0024PostfixBurstDelegate(IntPtr self, IntPtr state);
+
+		internal static class __codegen__OnUpdate_00000155_0024BurstDirectCall
+		{
+			private static IntPtr Pointer;
+
+			[BurstDiscard]
+			private static void GetFunctionPointerDiscard(ref IntPtr P_0)
+			{
+				if (Pointer == (IntPtr)0)
+				{
+					Pointer = BurstCompiler.CompileFunctionPointer<__codegen__OnUpdate_00000155_0024PostfixBurstDelegate>(__codegen__OnUpdate).Value;
+				}
+				P_0 = Pointer;
+			}
+
+			private static IntPtr GetFunctionPointer()
+			{
+				nint result = 0;
+				GetFunctionPointerDiscard(ref result);
+				return result;
+			}
+
+			public unsafe static void Invoke(IntPtr self, IntPtr state)
+			{
+				if (BurstCompiler.IsEnabled)
+				{
+					IntPtr functionPointer = GetFunctionPointer();
+					if (functionPointer != (IntPtr)0)
+					{
+						((delegate* unmanaged[Cdecl]<IntPtr, IntPtr, void>)functionPointer)(self, state);
+						return;
+					}
+				}
+				__codegen__OnUpdate_0024BurstManaged(self, state);
+			}
+		}
+
+		private EntityArchetype _subAreaArchetype;
+
+		private TypeHandle __TypeHandle;
+
+		private EntityQuery __query_288116803_0;
+
+		private EntityQuery __query_288116803_1;
+
+		private EntityQuery __query_288116803_2;
+
+		public void OnCreate(ref SystemState state)
+		{
+			_subAreaArchetype = state.EntityManager.CreateArchetype(typeof(SpawnRootsInNewAreasSystem.Trigger), typeof(AfterSpawnCleanup));
+		}
+
+		public void OnDestroy(ref SystemState state)
+		{
+		}
+
+		[BurstCompile]
+		public void OnUpdate(ref SystemState state)
+		{
+			EntityCommandBuffer entityCommandBuffer = new EntityCommandBuffer(Allocator.Temp);
+			Entity entity;
+			AfterSpawnCleanup item3;
+			if (__query_288116803_2.IsEmpty)
+			{
+				foreach (QueryEnumerableWithEntity<InternalCompilerInterface.UncheckedRefRW<SpawnRootsInAreaCD>, ProceduralSpawnArea> item4 in IFE_288116803_0.Query(__query_288116803_0, __TypeHandle.__IFE_288116803_0_TypeHandle, ref state))
+				{
+					item4.Deconstruct(out var item, out var item2, out entity);
+					InternalCompilerInterface.UncheckedRefRW<SpawnRootsInAreaCD> uncheckedRefRW = item;
+					ProceduralSpawnArea proceduralSpawnArea = item2;
+					Entity entity2 = entity;
+					ref SpawnRootsInAreaCD valueRW = ref uncheckedRefRW.ValueRW;
+					if (valueRW.HasCreatedSubAreas)
+					{
+						continue;
+					}
+					valueRW.HasCreatedSubAreas = true;
+					for (int i = proceduralSpawnArea.Position.y; i < proceduralSpawnArea.Position.y + proceduralSpawnArea.Size.y; i += 64)
+					{
+						for (int j = proceduralSpawnArea.Position.x; j < proceduralSpawnArea.Position.x + proceduralSpawnArea.Size.x; j += 64)
+						{
+							Entity e = entityCommandBuffer.CreateEntity(_subAreaArchetype);
+							entityCommandBuffer.SetComponent(e, new SpawnRootsInNewAreasSystem.Trigger
+							{
+								Position = new int2(j, i),
+								Size = new int2(64, 64),
+								SpawnCellEntity = entity2
+							});
+							item3 = new AfterSpawnCleanup
+							{
+								SpawnCellEntity = entity2
+							};
+							entityCommandBuffer.SetComponent(e, item3);
+							valueRW.PendingSpawns++;
+						}
+					}
+					if (valueRW.PendingSpawns == 0)
+					{
+						entityCommandBuffer.RemoveComponent<SpawnRootsInAreaCD>(entity2);
+						entityCommandBuffer.AddComponent<SpawnEnvironmentObjectsInAreaCD>(entity2);
+						continue;
+					}
+					break;
+				}
+			}
+			foreach (QueryEnumerableWithEntity<AfterSpawnCleanup> item5 in IFE_288116803_1.Query(__query_288116803_1, __TypeHandle.__IFE_288116803_1_TypeHandle, ref state))
+			{
+				item5.Deconstruct(out item3, out entity);
+				AfterSpawnCleanup afterSpawnCleanup = item3;
+				Entity e2 = entity;
+				entityCommandBuffer.RemoveComponent<AfterSpawnCleanup>(e2);
+				ref SpawnRootsInAreaCD valueRW2 = ref InternalCompilerInterface.GetComponentRWAfterCompletingDependency(ref __TypeHandle.__SpawnRootsInAreaCD_RW_ComponentLookup, ref state, afterSpawnCleanup.SpawnCellEntity).ValueRW;
+				valueRW2.PendingSpawns--;
+				if (valueRW2.PendingSpawns == 0)
+				{
+					entityCommandBuffer.RemoveComponent<SpawnRootsInAreaCD>(afterSpawnCleanup.SpawnCellEntity);
+					entityCommandBuffer.AddComponent<SpawnEnvironmentObjectsInAreaCD>(afterSpawnCleanup.SpawnCellEntity);
+				}
+			}
+			entityCommandBuffer.Playback(state.EntityManager);
+			entityCommandBuffer.Dispose();
+		}
+
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		private void __AssignQueries(ref SystemState state)
+		{
+			EntityQueryBuilder entityQueryBuilder = new EntityQueryBuilder(Allocator.Temp);
+			EntityQueryBuilder entityQueryBuilder2 = entityQueryBuilder.WithAll<ProceduralSpawnArea>();
+			entityQueryBuilder2 = entityQueryBuilder2.WithAllRW<SpawnRootsInAreaCD>();
+			__query_288116803_0 = entityQueryBuilder2.Build(ref state);
+			entityQueryBuilder.Reset();
+			entityQueryBuilder2 = entityQueryBuilder.WithNone<SpawnRootsInNewAreasSystem.Trigger>();
+			entityQueryBuilder2 = entityQueryBuilder2.WithAll<AfterSpawnCleanup>();
+			__query_288116803_1 = entityQueryBuilder2.Build(ref state);
+			entityQueryBuilder.Reset();
+			entityQueryBuilder2 = entityQueryBuilder.WithAll<SpawnRootsInNewAreasSystem.Trigger>();
+			__query_288116803_2 = entityQueryBuilder2.Build(ref state);
+			entityQueryBuilder.Reset();
+			entityQueryBuilder.Dispose();
+		}
+
+		public void OnCreateForCompiler(ref SystemState state)
+		{
+			__AssignQueries(ref state);
+			__TypeHandle.__AssignHandles(ref state);
+		}
+
+		[Unity.Entities.MonoPInvokeCallback(typeof(SystemBaseDelegates.Function))]
+		internal unsafe static void __codegen__OnCreate(IntPtr self, IntPtr state)
+		{
+			((SpawnRootsInNewAreasRunSystem*)self.ToPointer())->OnCreate(ref *(SystemState*)state.ToPointer());
+		}
+
+		[BurstCompile]
+		[Unity.Entities.MonoPInvokeCallback(typeof(SystemBaseDelegates.Function))]
+		internal static void __codegen__OnUpdate(IntPtr self, IntPtr state)
+		{
+			__codegen__OnUpdate_00000155_0024BurstDirectCall.Invoke(self, state);
+		}
+
+		[Unity.Entities.MonoPInvokeCallback(typeof(SystemBaseDelegates.Function))]
+		internal unsafe static void __codegen__OnDestroy(IntPtr self, IntPtr state)
+		{
+			((SpawnRootsInNewAreasRunSystem*)self.ToPointer())->OnDestroy(ref *(SystemState*)state.ToPointer());
+		}
+
+		[Unity.Entities.MonoPInvokeCallback(typeof(SystemBaseDelegates.Function))]
+		internal unsafe static void __codegen__OnCreateForCompiler(IntPtr self, IntPtr state)
+		{
+			((SpawnRootsInNewAreasRunSystem*)self.ToPointer())->OnCreateForCompiler(ref *(SystemState*)state.ToPointer());
+		}
+
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		[BurstCompile]
+		[Unity.Entities.MonoPInvokeCallback(typeof(SystemBaseDelegates.Function))]
+		internal unsafe static void __codegen__OnUpdate_0024BurstManaged(IntPtr self, IntPtr state)
+		{
+			((SpawnRootsInNewAreasRunSystem*)self.ToPointer())->OnUpdate(ref *(SystemState*)state.ToPointer());
+		}
+	}
+}

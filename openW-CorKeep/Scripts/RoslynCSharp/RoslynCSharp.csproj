@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>RoslynCSharp</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeAnalysis">
+      <HintPath>..\..\Assemblies\Microsoft.CodeAnalysis.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.CSharp">
+      <HintPath>..\..\Assemblies\Microsoft.CodeAnalysis.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="RoslynCSharp.Compiler">
+      <HintPath>..\..\Assemblies\RoslynCSharp.Compiler.dll</HintPath>
+    </Reference>
+    <Reference Include="Trivial.CodeSecurity">
+      <HintPath>..\..\Assemblies\Trivial.CodeSecurity.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,14 @@
+using CommandMinion;
+using Unity.Burst;
+using Unity.Entities;
+using UnityEngine;
+
+[BurstCompile]
+internal class __UnmanagedPostProcessorOutput__7222416512936008986
+{
+	[RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterAssembliesLoaded)]
+	public static void EarlyInit()
+	{
+		SystemBaseRegistry.AddUnmanagedSystemType(typeof(SelectEnemyToAttackForMinionCommandSystem), BurstRuntime.GetHashCode64<SelectEnemyToAttackForMinionCommandSystem>(), SelectEnemyToAttackForMinionCommandSystem.__codegen__OnCreate, SelectEnemyToAttackForMinionCommandSystem.__codegen__OnUpdate, null, SelectEnemyToAttackForMinionCommandSystem.__codegen__OnStartRunning, SelectEnemyToAttackForMinionCommandSystem.__codegen__OnStopRunning, SelectEnemyToAttackForMinionCommandSystem.__codegen__OnCreateForCompiler, "CommandMinion.SelectEnemyToAttackForMinionCommandSystem", 11);
+	}
+}

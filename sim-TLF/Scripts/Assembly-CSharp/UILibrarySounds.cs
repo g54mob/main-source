@@ -1,0 +1,26 @@
+public enum UILibrarySounds
+{
+	UIClick = 0,
+	UIMascotAppear = 1,
+	UIMascotDisappear = 2,
+	UIRecieptAppear = 3,
+	UIRecieptBuilt = 4,
+	UIRecieptCanBuild = 5,
+	UIRecieptCantBuild = 6,
+	UIInfoCursorChanged = 7,
+	UIInventoryClose = 8,
+	UIInventoryOpen = 9,
+	UIInventoryItemPick = 10,
+	UIInventoryItemDrop = 11,
+	UIInfoCursorChanged2 = 12,
+	UIRecieptDisappear = 13,
+	UIPauseOpenAdd = 14,
+	UIPauseOpen = 15,
+	UIPauseStatic = 16,
+	UIMascotTalk = 17,
+	UINotificationPSStyle = 18,
+	UIType = 19,
+	UIMapDeliverySet = 20,
+	UIMapWave = 21,
+	UIMoney = 22
+}

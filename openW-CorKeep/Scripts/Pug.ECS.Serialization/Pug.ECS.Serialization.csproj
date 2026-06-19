@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Pug.ECS.Serialization</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Unity.Entities">
+      <HintPath>..\..\Assemblies\Unity.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections">
+      <HintPath>..\..\Assemblies\Unity.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Pug.UnityExtensions">
+      <HintPath>..\..\Assemblies\Pug.UnityExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Pug.ECS.Serialization.DOTS100">
+      <HintPath>..\..\Assemblies\Pug.ECS.Serialization.DOTS100.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

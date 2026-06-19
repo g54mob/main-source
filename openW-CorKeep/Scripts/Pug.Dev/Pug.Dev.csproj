@@ -1,0 +1,97 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Pug.Dev</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="QFSW.QC">
+      <HintPath>..\..\Assemblies\QFSW.QC.dll</HintPath>
+    </Reference>
+    <Reference Include="Pug.Base">
+      <HintPath>..\..\Assemblies\Pug.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\Assemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Entities">
+      <HintPath>..\..\Assemblies\Unity.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="Pug.Other">
+      <HintPath>..\..\Assemblies\Pug.Other.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Pug.ECS.Components">
+      <HintPath>..\..\Assemblies\Pug.ECS.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections">
+      <HintPath>..\..\Assemblies\Unity.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Pug.UnityExtensions">
+      <HintPath>..\..\Assemblies\Pug.UnityExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>..\..\Assemblies\Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.NetCode">
+      <HintPath>..\..\Assemblies\Unity.NetCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>..\..\Assemblies\Unity.Burst.dll</HintPath>
+    </Reference>
+    <Reference Include="Pug.ECS.Authoring">
+      <HintPath>..\..\Assemblies\Pug.ECS.Authoring.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Entities.Hybrid">
+      <HintPath>..\..\Assemblies\Unity.Entities.Hybrid.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\Assemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="NaughtyAttributes.Core">
+      <HintPath>..\..\Assemblies\NaughtyAttributes.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="PugMod.SDK.Runtime">
+      <HintPath>..\..\Assemblies\PugMod.SDK.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Pug.ObjectIDCategory">
+      <HintPath>..\..\Assemblies\Pug.ObjectIDCategory.dll</HintPath>
+    </Reference>
+    <Reference Include="QFSW.QC.Suggestors">
+      <HintPath>..\..\Assemblies\QFSW.QC.Suggestors.dll</HintPath>
+    </Reference>
+    <Reference Include="PugRP">
+      <HintPath>..\..\Assemblies\PugRP.dll</HintPath>
+    </Reference>
+    <Reference Include="PugWorldGen.Authoring">
+      <HintPath>..\..\Assemblies\PugWorldGen.Authoring.dll</HintPath>
+    </Reference>
+    <Reference Include="PugConversion">
+      <HintPath>..\..\Assemblies\PugConversion.dll</HintPath>
+    </Reference>
+    <Reference Include="PugProperties">
+      <HintPath>..\..\Assemblies\PugProperties.dll</HintPath>
+    </Reference>
+    <Reference Include="PugWorldGen.Components">
+      <HintPath>..\..\Assemblies\PugWorldGen.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>..\..\Assemblies\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Transforms">
+      <HintPath>..\..\Assemblies\Unity.Transforms.dll</HintPath>
+    </Reference>
+    <Reference Include="I2">
+      <HintPath>..\..\Assemblies\I2.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

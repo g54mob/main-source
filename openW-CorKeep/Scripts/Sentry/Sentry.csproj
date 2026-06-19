@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Sentry</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Sentry.System.Memory">
+      <HintPath>..\..\Assemblies\Sentry.System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="Sentry.System.Threading.Tasks.Extensions">
+      <HintPath>..\..\Assemblies\Sentry.System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Sentry.System.Text.Json">
+      <HintPath>..\..\Assemblies\Sentry.System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Sentry.System.Reflection.Metadata">
+      <HintPath>..\..\Assemblies\Sentry.System.Reflection.Metadata.dll</HintPath>
+    </Reference>
+    <Reference Include="Sentry.Microsoft.Bcl.AsyncInterfaces">
+      <HintPath>..\..\Assemblies\Sentry.Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Sentry.System.Buffers">
+      <HintPath>..\..\Assemblies\Sentry.System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="Sentry.System.Runtime.CompilerServices.Unsafe">
+      <HintPath>..\..\Assemblies\Sentry.System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="Sentry.System.Collections.Immutable">
+      <HintPath>..\..\Assemblies\Sentry.System.Collections.Immutable.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,15 @@
+using PredictionSmoothing;
+using Unity.Burst;
+using Unity.Entities;
+using UnityEngine;
+
+[BurstCompile]
+internal class __UnmanagedPostProcessorOutput__17252246333381094328
+{
+	[RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterAssembliesLoaded)]
+	public static void EarlyInit()
+	{
+		SystemBaseRegistry.AddUnmanagedSystemType(typeof(ResetPhysicsStepsForPredictionSmoothingSystem), BurstRuntime.GetHashCode64<ResetPhysicsStepsForPredictionSmoothingSystem>(), ResetPhysicsStepsForPredictionSmoothingSystem.__codegen__OnCreate, ResetPhysicsStepsForPredictionSmoothingSystem.__codegen__OnUpdate, null, null, null, ResetPhysicsStepsForPredictionSmoothingSystem.__codegen__OnCreateForCompiler, "PredictionSmoothing.ResetPhysicsStepsForPredictionSmoothingSystem", 3);
+		SystemBaseRegistry.AddUnmanagedSystemType(typeof(RecordPhysicsStepsForPredictionSmoothingSystem), BurstRuntime.GetHashCode64<RecordPhysicsStepsForPredictionSmoothingSystem>(), RecordPhysicsStepsForPredictionSmoothingSystem.__codegen__OnCreate, RecordPhysicsStepsForPredictionSmoothingSystem.__codegen__OnUpdate, null, null, null, RecordPhysicsStepsForPredictionSmoothingSystem.__codegen__OnCreateForCompiler, "PredictionSmoothing.RecordPhysicsStepsForPredictionSmoothingSystem", 3);
+	}
+}

@@ -1,0 +1,22 @@
+using System.Diagnostics;
+using System.Reflection;
+using System.Runtime.CompilerServices;
+using System.Runtime.Versioning;
+
+[assembly: InternalsVisibleTo("Sentry.Unity.Native")]
+[assembly: InternalsVisibleTo("Sentry.Unity.Tests")]
+[assembly: InternalsVisibleTo("Sentry.Unity.Editor")]
+[assembly: InternalsVisibleTo("Sentry.Unity.Editor.Tests")]
+[assembly: InternalsVisibleTo("Sentry.Unity.Editor.iOS")]
+[assembly: InternalsVisibleTo("Sentry.Unity.Editor.iOS.Tests")]
+[assembly: InternalsVisibleTo("Sentry.Unity.iOS")]
+[assembly: InternalsVisibleTo("Sentry.Unity.iOS.Tests")]
+[assembly: InternalsVisibleTo("Sentry.Unity.Android")]
+[assembly: InternalsVisibleTo("Sentry.Unity.Android.Tests")]
+[assembly: AssemblyCompany("Sentry.Unity")]
+[assembly: AssemblyConfiguration("Release")]
+[assembly: AssemblyFileVersion("2.3.0.0")]
+[assembly: AssemblyInformationalVersion("2.3.0+3ad4cdb79d0b7fa94af392b463eb9fc9d47a89ed")]
+[assembly: AssemblyProduct("Sentry.Unity")]
+[assembly: AssemblyTitle("Sentry.Unity")]
+[assembly: AssemblyVersion("2.3.0.0")]

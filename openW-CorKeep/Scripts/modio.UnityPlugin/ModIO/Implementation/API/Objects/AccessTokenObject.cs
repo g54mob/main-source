@@ -1,0 +1,14 @@
+using System;
+
+namespace ModIO.Implementation.API.Objects
+{
+	[Serializable]
+	internal struct AccessTokenObject
+	{
+		public long code;
+
+		public string access_token;
+
+		public long date_expires;
+	}
+}

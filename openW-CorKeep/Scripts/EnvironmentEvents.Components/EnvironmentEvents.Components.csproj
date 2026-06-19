@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>EnvironmentEvents.Components</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Pug.Base">
+      <HintPath>..\..\Assemblies\Pug.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>..\..\Assemblies\Unity.Burst.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>..\..\Assemblies\Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Entities">
+      <HintPath>..\..\Assemblies\Unity.Entities.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

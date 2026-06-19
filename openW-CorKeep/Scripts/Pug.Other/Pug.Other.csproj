@@ -1,0 +1,313 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Pug.Other</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections">
+      <HintPath>..\..\Assemblies\Unity.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Pug.Base">
+      <HintPath>..\..\Assemblies\Pug.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\..\Assemblies\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Entities.Hybrid">
+      <HintPath>..\..\Assemblies\Unity.Entities.Hybrid.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Entities">
+      <HintPath>..\..\Assemblies\Unity.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.NetCode">
+      <HintPath>..\..\Assemblies\Unity.NetCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Pug.UnityExtensions">
+      <HintPath>..\..\Assemblies\Pug.UnityExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="PugConversion">
+      <HintPath>..\..\Assemblies\PugConversion.dll</HintPath>
+    </Reference>
+    <Reference Include="Pug.ECS.Authoring">
+      <HintPath>..\..\Assemblies\Pug.ECS.Authoring.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Physics">
+      <HintPath>..\..\Assemblies\Unity.Physics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>..\..\Assemblies\Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Pug.ECS.Components">
+      <HintPath>..\..\Assemblies\Pug.ECS.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="Pug.Automation.Components">
+      <HintPath>..\..\Assemblies\Pug.Automation.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Transforms">
+      <HintPath>..\..\Assemblies\Unity.Transforms.dll</HintPath>
+    </Reference>
+    <Reference Include="PugProperties">
+      <HintPath>..\..\Assemblies\PugProperties.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Networking.Transport">
+      <HintPath>..\..\Assemblies\Unity.Networking.Transport.dll</HintPath>
+    </Reference>
+    <Reference Include="Affixes.Components">
+      <HintPath>..\..\Assemblies\Affixes.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="ObjectLookup.Components">
+      <HintPath>..\..\Assemblies\ObjectLookup.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="Pug.ECS.Serialization">
+      <HintPath>..\..\Assemblies\Pug.ECS.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="ScriptableData">
+      <HintPath>..\..\Assemblies\ScriptableData.dll</HintPath>
+    </Reference>
+    <Reference Include="Animation.Components">
+      <HintPath>..\..\Assemblies\Animation.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="Pushback.Components">
+      <HintPath>..\..\Assemblies\Pushback.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>..\..\Assemblies\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Rewired_Core">
+      <HintPath>..\..\Assemblies\Rewired_Core.dll</HintPath>
+    </Reference>
+    <Reference Include="PugMod.SDK.Runtime">
+      <HintPath>..\..\Assemblies\PugMod.SDK.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="QFSW.QC">
+      <HintPath>..\..\Assemblies\QFSW.QC.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ResourceManager">
+      <HintPath>..\..\Assemblies\Unity.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\Assemblies\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="I2">
+      <HintPath>..\..\Assemblies\I2.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\Assemblies\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="PugSprite">
+      <HintPath>..\..\Assemblies\PugSprite.dll</HintPath>
+    </Reference>
+    <Reference Include="Outlines.Components">
+      <HintPath>..\..\Assemblies\Outlines.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayFab">
+      <HintPath>..\..\Assemblies\PlayFab.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Steamworks.Win64">
+      <HintPath>..\..\Assemblies\Facepunch.Steamworks.Win64.dll</HintPath>
+    </Reference>
+    <Reference Include="bilibili.OpenBLive">
+      <HintPath>..\..\Assemblies\bilibili.OpenBLive.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayFabMultiplayerSDK">
+      <HintPath>..\..\Assemblies\PlayFabMultiplayerSDK.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayFabParty">
+      <HintPath>..\..\Assemblies\PlayFabParty.dll</HintPath>
+    </Reference>
+    <Reference Include="Sentry.Unity">
+      <HintPath>..\..\Assemblies\Sentry.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Sentry">
+      <HintPath>..\..\Assemblies\Sentry.dll</HintPath>
+    </Reference>
+    <Reference Include="PlacementIndicator.Components">
+      <HintPath>..\..\Assemblies\PlacementIndicator.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\..\Assemblies\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="PugMap.Common">
+      <HintPath>..\..\Assemblies\PugMap.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Pug.ObjectIDCategory">
+      <HintPath>..\..\Assemblies\Pug.ObjectIDCategory.dll</HintPath>
+    </Reference>
+    <Reference Include="modio.UnityPlugin">
+      <HintPath>..\..\Assemblies\modio.UnityPlugin.dll</HintPath>
+    </Reference>
+    <Reference Include="PugMod.Loader">
+      <HintPath>..\..\Assemblies\PugMod.Loader.dll</HintPath>
+    </Reference>
+    <Reference Include="WorldGen.Runtime">
+      <HintPath>..\..\Assemblies\WorldGen.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\Assemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Addressables">
+      <HintPath>..\..\Assemblies\Unity.Addressables.dll</HintPath>
+    </Reference>
+    <Reference Include="MessagePack">
+      <HintPath>..\..\Assemblies\MessagePack.dll</HintPath>
+    </Reference>
+    <Reference Include="RayAttackState.Components">
+      <HintPath>..\..\Assemblies\RayAttackState.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="PugRP">
+      <HintPath>..\..\Assemblies\PugRP.dll</HintPath>
+    </Reference>
+    <Reference Include="Interaction.Components">
+      <HintPath>..\..\Assemblies\Interaction.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.NetCode.Physics">
+      <HintPath>..\..\Assemblies\Unity.NetCode.Physics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>..\..\Assemblies\Unity.Burst.dll</HintPath>
+    </Reference>
+    <Reference Include="Discord.SDK">
+      <HintPath>..\..\Assemblies\Discord.SDK.dll</HintPath>
+    </Reference>
+    <Reference Include="Pug.PP">
+      <HintPath>..\..\Assemblies\Pug.PP.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\Assemblies\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="PugMod.Integration">
+      <HintPath>..\..\Assemblies\PugMod.Integration.dll</HintPath>
+    </Reference>
+    <Reference Include="Pugstorm.WorldGen">
+      <HintPath>..\..\Assemblies\Pugstorm.WorldGen.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\..\Assemblies\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Physics.Custom">
+      <HintPath>..\..\Assemblies\Unity.Physics.Custom.dll</HintPath>
+    </Reference>
+    <Reference Include="Pug.ColorCycling">
+      <HintPath>..\..\Assemblies\Pug.ColorCycling.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>..\..\Assemblies\UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\Assemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="CommandMinion.Components">
+      <HintPath>..\..\Assemblies\CommandMinion.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="Pug.ECS.Hybrid">
+      <HintPath>..\..\Assemblies\Pug.ECS.Hybrid.dll</HintPath>
+    </Reference>
+    <Reference Include="WorldPatcher">
+      <HintPath>..\..\Assemblies\WorldPatcher.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>..\..\Assemblies\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>..\..\Assemblies\Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="DomainReloadHelper.Runtime">
+      <HintPath>..\..\Assemblies\DomainReloadHelper.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="NaughtyAttributes.Core">
+      <HintPath>..\..\Assemblies\NaughtyAttributes.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MessagePack.Annotations">
+      <HintPath>..\..\Assemblies\MessagePack.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\Assemblies\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Rewired">
+      <HintPath>..\..\Assemblies\Rewired.dll</HintPath>
+    </Reference>
+    <Reference Include="Outlines.Converters">
+      <HintPath>..\..\Assemblies\Outlines.Converters.dll</HintPath>
+    </Reference>
+    <Reference Include="Pushback.Converters">
+      <HintPath>..\..\Assemblies\Pushback.Converters.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Transforms.Hybrid">
+      <HintPath>..\..\Assemblies\Unity.Transforms.Hybrid.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.NetCode.Authoring.Hybrid">
+      <HintPath>..\..\Assemblies\Unity.NetCode.Authoring.Hybrid.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>..\..\Assemblies\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Pug.ECS.Extensions">
+      <HintPath>..\..\Assemblies\Pug.ECS.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Pug.ECS.ConditionExtensions">
+      <HintPath>..\..\Assemblies\Pug.ECS.ConditionExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>..\..\Assemblies\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="PugMod.SDK">
+      <HintPath>..\..\Assemblies\PugMod.SDK.dll</HintPath>
+    </Reference>
+    <Reference Include="PimDeWitte.UnityMainThreadDispatcher">
+      <HintPath>..\..\Assemblies\PimDeWitte.UnityMainThreadDispatcher.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\..\Assemblies\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Interaction.CoreKeeper.Components">
+      <HintPath>..\..\Assemblies\Interaction.CoreKeeper.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="Pug.Automation.Authoring">
+      <HintPath>..\..\Assemblies\Pug.Automation.Authoring.dll</HintPath>
+    </Reference>
+    <Reference Include="PugMod.Platform">
+      <HintPath>..\..\Assemblies\PugMod.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="modio.UI">
+      <HintPath>..\..\Assemblies\modio.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Pug.Mods">
+      <HintPath>..\..\Assemblies\Pug.Mods.dll</HintPath>
+    </Reference>
+    <Reference Include="CgSDK">
+      <HintPath>..\..\Assemblies\CgSDK.dll</HintPath>
+    </Reference>
+    <Reference Include="FewesLight">
+      <HintPath>..\..\Assemblies\FewesLight.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreFontEngineModule">
+      <HintPath>..\..\Assemblies\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="RoslynCSharp">
+      <HintPath>..\..\Assemblies\RoslynCSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="EnvironmentEvents.Components">
+      <HintPath>..\..\Assemblies\EnvironmentEvents.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Scenes">
+      <HintPath>..\..\Assemblies\Unity.Scenes.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\Assemblies\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

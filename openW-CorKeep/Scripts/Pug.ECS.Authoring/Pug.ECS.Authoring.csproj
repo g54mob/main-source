@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Pug.ECS.Authoring</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Pug.Base">
+      <HintPath>..\..\Assemblies\Pug.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Physics.Custom">
+      <HintPath>..\..\Assemblies\Unity.Physics.Custom.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>..\..\Assemblies\Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Pug.UnityExtensions">
+      <HintPath>..\..\Assemblies\Pug.UnityExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="ScriptableData">
+      <HintPath>..\..\Assemblies\ScriptableData.dll</HintPath>
+    </Reference>
+    <Reference Include="NaughtyAttributes.Core">
+      <HintPath>..\..\Assemblies\NaughtyAttributes.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="PugConversion">
+      <HintPath>..\..\Assemblies\PugConversion.dll</HintPath>
+    </Reference>
+    <Reference Include="Pug.ECS.ConditionExtensions">
+      <HintPath>..\..\Assemblies\Pug.ECS.ConditionExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="PugMod.SDK.Runtime">
+      <HintPath>..\..\Assemblies\PugMod.SDK.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

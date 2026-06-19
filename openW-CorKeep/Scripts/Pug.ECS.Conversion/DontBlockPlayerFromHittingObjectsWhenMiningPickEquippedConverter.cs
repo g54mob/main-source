@@ -1,0 +1,9 @@
+using Pug.Conversion;
+
+public class DontBlockPlayerFromHittingObjectsWhenMiningPickEquippedConverter : SingleAuthoringComponentConverter<DontBlockPlayerFromHittingObjectsWhenMiningPickEquippedAuthoring>
+{
+	protected override void Convert(DontBlockPlayerFromHittingObjectsWhenMiningPickEquippedAuthoring authoring)
+	{
+		EnsureHasComponent<DontBlockPlayerFromHittingObjectsWhenMiningPickEquippedCD>();
+	}
+}

@@ -1,0 +1,20 @@
+using UnityEngine;
+
+public class ChineseWallLantern : EntityMonoBehaviour
+{
+	public override Vector3 center => GetCenter();
+
+	private Vector3 GetCenter()
+	{
+		return spriteObjects[0].transform.position;
+	}
+
+	protected override void OnDeath()
+	{
+		base.OnDeath();
+		Vector3 position = spriteObjects[0].transform.position;
+		Manager.effects.PlayPuff(PuffID.DirtBlockDust, position, 2);
+		Manager.effects.PlayPuff(PuffID.FireFloaters, position, 5);
+		Manager.effects.PlayPuff(PuffID.SparksMachine, position, 2);
+	}
+}

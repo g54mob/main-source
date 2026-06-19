@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Sentry.Unity.iOS</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Sentry">
+      <HintPath>..\..\Assemblies\Sentry.dll</HintPath>
+    </Reference>
+    <Reference Include="Sentry.Unity">
+      <HintPath>..\..\Assemblies\Sentry.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\Assemblies\UnityEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

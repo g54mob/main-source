@@ -1,0 +1,76 @@
+using System;
+using System.ComponentModel;
+using System.IO;
+using IdSharp.Tagging.ID3v2.Frames.Items;
+using IdSharp.Tagging.ID3v2.Frames.Lists;
+
+namespace IdSharp.Tagging.ID3v2.Frames
+{
+	internal sealed class SynchronizedTempoCodes : ISynchronizedTempoCodes, IFrame, INotifyPropertyChanged
+	{
+		private FrameHeader m_FrameHeader;
+
+		private TimestampFormat m_TimestampFormat;
+
+		private TempoDataBindingList m_TempoDataBindingList;
+
+		public TimestampFormat TimestampFormat
+		{
+			get
+			{
+				return m_TimestampFormat;
+			}
+			set
+			{
+				m_TimestampFormat = value;
+				FirePropertyChanged("TimestampFormat");
+			}
+		}
+
+		public BindingList<ITempoData> Items => m_TempoDataBindingList;
+
+		public IFrameHeader FrameHeader => m_FrameHeader;
+
+		public event PropertyChangedEventHandler PropertyChanged;
+
+		public SynchronizedTempoCodes()
+		{
+			m_FrameHeader = new FrameHeader();
+			m_TempoDataBindingList = new TempoDataBindingList();
+		}
+
+		public string GetFrameID(ID3v2TagVersion tagVersion)
+		{
+			switch (tagVersion)
+			{
+			case ID3v2TagVersion.ID3v23:
+			case ID3v2TagVersion.ID3v24:
+				return "SYTC";
+			case ID3v2TagVersion.ID3v22:
+				return "STC";
+			default:
+				throw new ArgumentException("Unknown tag version");
+			}
+		}
+
+		public void Read(TagReadingInfo tagReadingInfo, Stream stream)
+		{
+			m_TempoDataBindingList.Clear();
+			throw new NotImplementedException();
+		}
+
+		public byte[] GetBytes(ID3v2TagVersion tagVersion)
+		{
+			if (Items.Count == 0)
+			{
+				return new byte[0];
+			}
+			throw new NotImplementedException();
+		}
+
+		private void FirePropertyChanged(string propertyName)
+		{
+			this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+		}
+	}
+}

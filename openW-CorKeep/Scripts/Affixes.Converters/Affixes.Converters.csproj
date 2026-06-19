@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Affixes.Converters</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Affixes.Authoring">
+      <HintPath>..\..\Assemblies\Affixes.Authoring.dll</HintPath>
+    </Reference>
+    <Reference Include="PugConversion">
+      <HintPath>..\..\Assemblies\PugConversion.dll</HintPath>
+    </Reference>
+    <Reference Include="Affixes.Components">
+      <HintPath>..\..\Assemblies\Affixes.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="Pug.Base">
+      <HintPath>..\..\Assemblies\Pug.Base.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,15 @@
+using System.ComponentModel;
+using UnityEngine;
+using UnityEngine.Timeline;
+
+namespace TMPEffects.Timeline.Markers
+{
+	[CustomStyle("TMPStopWriterMarkerStyle")]
+	[DisplayName("TMPEffects Marker/TMPWriter/Stop writer")]
+	public class TMPStopWriterMarker : TMPEffectsMarker
+	{
+		public override PropertyName id => default(PropertyName);
+
+		public override NotificationFlags flags => default(NotificationFlags);
+	}
+}

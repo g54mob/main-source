@@ -1,0 +1,34 @@
+using System.Xml.Serialization;
+
+namespace Origin.Data
+{
+	public enum VoipStatusT
+	{
+		[XmlEnum("UNKNOWN")]
+		UNKNOWN = -1,
+		[XmlEnum("CHANNEL_DISCONNECTED")]
+		CHANNEL_DISCONNECTED = 0,
+		[XmlEnum("CHANNEL_CONNECTING")]
+		CHANNEL_CONNECTING = 1,
+		[XmlEnum("CHANNEL_CONNECTED")]
+		CHANNEL_CONNECTED = 2,
+		[XmlEnum("USER_TALKING_START")]
+		USER_TALKING_START = 3,
+		[XmlEnum("USER_TALKING_END")]
+		USER_TALKING_END = 4,
+		[XmlEnum("USER_MUTED_LOCALLY")]
+		USER_MUTED_LOCALLY = 5,
+		[XmlEnum("USER_MUTED_REMOTELY")]
+		USER_MUTED_REMOTELY = 6,
+		[XmlEnum("USER_UNMUTED_LOCALLY")]
+		USER_UNMUTED_LOCALLY = 7,
+		[XmlEnum("USER_UNMUTED_REMOTELY")]
+		USER_UNMUTED_REMOTELY = 8,
+		[XmlEnum("USER_JOINED")]
+		USER_JOINED = 9,
+		[XmlEnum("USER_LEFT")]
+		USER_LEFT = 10,
+		[XmlEnum("UNAVAILABLE")]
+		UNAVAILABLE = 11
+	}
+}

@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Interaction.CoreKeeper.Converters</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Interaction.CoreKeeper.Authoring">
+      <HintPath>..\..\Assemblies\Interaction.CoreKeeper.Authoring.dll</HintPath>
+    </Reference>
+    <Reference Include="PugConversion">
+      <HintPath>..\..\Assemblies\PugConversion.dll</HintPath>
+    </Reference>
+    <Reference Include="Interaction.CoreKeeper.Components">
+      <HintPath>..\..\Assemblies\Interaction.CoreKeeper.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="Interaction.Components">
+      <HintPath>..\..\Assemblies\Interaction.Components.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

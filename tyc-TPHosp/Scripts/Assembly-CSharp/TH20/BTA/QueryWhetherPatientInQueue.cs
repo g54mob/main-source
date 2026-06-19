@@ -1,0 +1,29 @@
+using BehaviorDesigner.Runtime.Tasks;
+using JetBrains.Annotations;
+using TH20.BT_Types;
+
+namespace TH20.BTA
+{
+	[TaskCategory(" TH20/Room")]
+	[TaskIcon("{SkinColor}WaitIcon.png")]
+	[UsedImplicitly(ImplicitUseKindFlags.Assign | ImplicitUseKindFlags.InstantiatedNoFixedConstructorSignature, ImplicitUseTargetFlags.Members)]
+	public class QueryWhetherPatientInQueue : CharacterAction
+	{
+		[Tooltip("Room")]
+		public SharedRoomRef _room;
+
+		public override void OnStart()
+		{
+			base.OnStart();
+		}
+
+		public override TaskStatus OnUpdate()
+		{
+			if (_room.IsValid() && _room.Get.QueueLength != 0)
+			{
+				return TaskStatus.Success;
+			}
+			return TaskStatus.Failure;
+		}
+	}
+}

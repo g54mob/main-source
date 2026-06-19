@@ -1,0 +1,3 @@
+public class EerieTreeLight : EntityMonoBehaviour
+{
+}

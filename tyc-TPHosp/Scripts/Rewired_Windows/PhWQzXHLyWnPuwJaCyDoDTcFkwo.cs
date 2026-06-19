@@ -1,0 +1,10 @@
+internal enum PhWQzXHLyWnPuwJaCyDoDTcFkwo
+{
+	gXcIPqNIXZBTgBgLfwNphzFBUbM = 37120,
+	vkoKonFRDIMLeoIRtAGVKUMGPeWf = 37376,
+	TPliZnrymKAYgPuJbRqrIlFnENMI = 37632,
+	nFdePiTmsoJGEAwUyBUXEDmzFvm = 40960,
+	lzebSDkfnXGUWhtOhYjGEAAAcph = 41216,
+	dOJOunBfsDcRAIwDIzOOswWHACjK = 45056,
+	apBbmgDlPLcQQBAVcMPCzCjPFXyO = 45312
+}

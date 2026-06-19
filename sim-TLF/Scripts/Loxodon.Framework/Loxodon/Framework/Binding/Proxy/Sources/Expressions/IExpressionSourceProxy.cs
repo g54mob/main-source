@@ -1,0 +1,8 @@
+using System;
+
+namespace Loxodon.Framework.Binding.Proxy.Sources.Expressions
+{
+	public interface IExpressionSourceProxy : ISourceProxy, IBindingProxy, IDisposable, IObtainable, INotifiable
+	{
+	}
+}

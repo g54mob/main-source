@@ -1,0 +1,3 @@
+public class RuinsCavelingPillar : EntityMonoBehaviour
+{
+}

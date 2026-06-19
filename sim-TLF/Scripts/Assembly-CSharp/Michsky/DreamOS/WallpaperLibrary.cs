@@ -1,0 +1,20 @@
+using System;
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace Michsky.DreamOS
+{
+	[CreateAssetMenu(fileName = "New Wallpaper Library", menuName = "DreamOS/New Wallpaper Library")]
+	public class WallpaperLibrary : ScriptableObject
+	{
+		[Serializable]
+		public class WallpaperItem
+		{
+			public string wallpaperID = "Wallpaper";
+
+			public Sprite wallpaperSprite;
+		}
+
+		public List<WallpaperItem> wallpapers = new List<WallpaperItem>();
+	}
+}

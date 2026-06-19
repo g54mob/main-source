@@ -1,0 +1,24 @@
+using System;
+using System.Runtime.CompilerServices;
+
+namespace TH20
+{
+	public static class ManagedObjectUtils
+	{
+		private class RefId
+		{
+			public Guid Id { get; } = Guid.NewGuid();
+		}
+
+		private static readonly ConditionalWeakTable<object, RefId> _ids = new ConditionalWeakTable<object, RefId>();
+
+		public static Guid GetRefId<T>(this T obj) where T : class
+		{
+			if (obj == null)
+			{
+				return default(Guid);
+			}
+			return _ids.GetOrCreateValue(obj).Id;
+		}
+	}
+}

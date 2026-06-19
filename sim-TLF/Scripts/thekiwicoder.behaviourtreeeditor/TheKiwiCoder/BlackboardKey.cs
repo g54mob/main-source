@@ -1,0 +1,76 @@
+using System;
+using UnityEngine;
+
+namespace TheKiwiCoder
+{
+	[Serializable]
+	public abstract class BlackboardKey : ISerializationCallbackReceiver
+	{
+		public string name;
+
+		public Type underlyingType;
+
+		public string typeName;
+
+		public BlackboardKey(Type underlyingType)
+		{
+			this.underlyingType = underlyingType;
+			typeName = this.underlyingType.FullName;
+		}
+
+		public void OnBeforeSerialize()
+		{
+			typeName = underlyingType.AssemblyQualifiedName;
+		}
+
+		public void OnAfterDeserialize()
+		{
+			underlyingType = Type.GetType(typeName);
+		}
+
+		public abstract void CopyFrom(BlackboardKey key);
+
+		public abstract bool Equals(BlackboardKey key);
+
+		public static BlackboardKey CreateKey(Type type)
+		{
+			return Activator.CreateInstance(type) as BlackboardKey;
+		}
+	}
+	[Serializable]
+	public abstract class BlackboardKey<T> : BlackboardKey
+	{
+		public T value;
+
+		public BlackboardKey()
+			: base(typeof(T))
+		{
+		}
+
+		public override string ToString()
+		{
+			return $"{name} : {value}";
+		}
+
+		public override void CopyFrom(BlackboardKey key)
+		{
+			if (key.underlyingType == underlyingType)
+			{
+				BlackboardKey<T> blackboardKey = key as BlackboardKey<T>;
+				value = blackboardKey.value;
+			}
+		}
+
+		public override bool Equals(BlackboardKey key)
+		{
+			if (key.underlyingType == underlyingType)
+			{
+				BlackboardKey<T> blackboardKey = key as BlackboardKey<T>;
+				ref T reference = ref value;
+				object obj = blackboardKey.value;
+				return reference.Equals(obj);
+			}
+			return false;
+		}
+	}
+}

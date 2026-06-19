@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>RayAttackState.Converters</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="RayAttackState.Authoring">
+      <HintPath>..\..\Assemblies\RayAttackState.Authoring.dll</HintPath>
+    </Reference>
+    <Reference Include="PugConversion">
+      <HintPath>..\..\Assemblies\PugConversion.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Pug.ECS.Authoring">
+      <HintPath>..\..\Assemblies\Pug.ECS.Authoring.dll</HintPath>
+    </Reference>
+    <Reference Include="RayAttackState.Components">
+      <HintPath>..\..\Assemblies\RayAttackState.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>..\..\Assemblies\Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Pug.ECS.Components">
+      <HintPath>..\..\Assemblies\Pug.ECS.Components.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

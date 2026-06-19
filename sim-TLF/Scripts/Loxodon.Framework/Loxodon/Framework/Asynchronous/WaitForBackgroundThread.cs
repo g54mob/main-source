@@ -1,0 +1,7 @@
+namespace Loxodon.Framework.Asynchronous
+{
+	public class WaitForBackgroundThread
+	{
+		public static readonly WaitForBackgroundThread Default = new WaitForBackgroundThread();
+	}
+}

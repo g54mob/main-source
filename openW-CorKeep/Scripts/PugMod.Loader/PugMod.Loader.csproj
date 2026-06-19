@@ -1,0 +1,76 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>PugMod.Loader</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="PugMod.SDK.Runtime">
+      <HintPath>..\..\Assemblies\PugMod.SDK.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="PugMod.SDK">
+      <HintPath>..\..\Assemblies\PugMod.SDK.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="RoslynCSharp">
+      <HintPath>..\..\Assemblies\RoslynCSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ResourceManager">
+      <HintPath>..\..\Assemblies\Unity.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>..\..\Assemblies\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="ScriptableData">
+      <HintPath>..\..\Assemblies\ScriptableData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis">
+      <HintPath>..\..\Assemblies\Microsoft.CodeAnalysis.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Entities">
+      <HintPath>..\..\Assemblies\Unity.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="RoslynCSharp.Compiler">
+      <HintPath>..\..\Assemblies\RoslynCSharp.Compiler.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.CSharp">
+      <HintPath>..\..\Assemblies\Microsoft.CodeAnalysis.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\Assemblies\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Steamworks.Win64">
+      <HintPath>..\..\Assemblies\Facepunch.Steamworks.Win64.dll</HintPath>
+    </Reference>
+    <Reference Include="PugMod.Integration">
+      <HintPath>..\..\Assemblies\PugMod.Integration.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Addressables">
+      <HintPath>..\..\Assemblies\Unity.Addressables.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections">
+      <HintPath>..\..\Assemblies\Unity.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>..\..\Assemblies\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>..\..\Assemblies\Unity.Burst.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>..\..\Assemblies\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\..\Assemblies\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
