@@ -1,0 +1,16 @@
+using Rewired.Dev;
+
+namespace RewiredConsts
+{
+	public static class Player
+	{
+		[PlayerIdFieldInfo(friendlyName = "System")]
+		public const int System = 9999999;
+
+		[PlayerIdFieldInfo(friendlyName = "Player0")]
+		public const int Player0 = 0;
+
+		[PlayerIdFieldInfo(friendlyName = "Operator to control the FreeLookCamera")]
+		public const int Operator = 1;
+	}
+}

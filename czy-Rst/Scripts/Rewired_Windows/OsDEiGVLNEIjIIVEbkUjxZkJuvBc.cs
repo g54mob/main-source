@@ -1,0 +1,1 @@
+internal unsafe delegate void OsDEiGVLNEIjIIVEbkUjxZkJuvBc(RimEuuxNErdnjPQCnGxQMDsacwIeA* rawInput);

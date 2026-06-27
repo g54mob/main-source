@@ -85,6 +85,8 @@
   │ Dorfromantik            │ czy-Dorf    │
   ├─────────────────────────┼─────────────┤
   │ Wobbledogs              │ czy-Wob     │
+  ├─────────────────────────┼─────────────┤
+  │ Restory                 │ czy-Rst     │
   └─────────────────────────┴─────────────┘
 
   Genre-Horror--hr
@@ -257,6 +259,8 @@
   │ we become what we do-master        │ sim-Wbw         │
   ├────────────────────────────────────┼─────────────────┤
   │ The Last Flight                    │ sim-TLF         │
+  ├────────────────────────────────────┼─────────────────┤
+  │ IRON NEST Heavy Turret Simulator   │ sim-INHT        │
   └────────────────────────────────────┴─────────────────┘
 
   Genre-TowerDefence--td

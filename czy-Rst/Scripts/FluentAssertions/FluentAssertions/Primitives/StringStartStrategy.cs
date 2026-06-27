@@ -1,0 +1,34 @@
+using System.Collections.Generic;
+using FluentAssertions.Common;
+using FluentAssertions.Execution;
+
+namespace FluentAssertions.Primitives
+{
+	internal class StringStartStrategy : IStringComparisonStrategy
+	{
+		private readonly IEqualityComparer<string> comparer;
+
+		private readonly string predicateDescription;
+
+		public string ExpectationDescription => "Expected {context:string} to " + predicateDescription + " ";
+
+		public StringStartStrategy(IEqualityComparer<string> comparer, string predicateDescription)
+		{
+			this.comparer = comparer;
+			this.predicateDescription = predicateDescription;
+		}
+
+		public void ValidateAgainstMismatch(AssertionChain assertionChain, string subject, string expected)
+		{
+			assertionChain.ForCondition(subject.Length >= expected.Length).FailWith(ExpectationDescription + "{0}{reason}, but {1} is too short.", expected, subject);
+			if (assertionChain.Succeeded)
+			{
+				int num = subject.IndexOfFirstMismatch(expected, comparer);
+				if (num >= 0 && num < expected.Length)
+				{
+					assertionChain.FailWith(ExpectationDescription + "{0}{reason}, but {1} differs near " + subject.IndexedSegmentAt(num) + ".", expected, subject);
+				}
+			}
+		}
+	}
+}

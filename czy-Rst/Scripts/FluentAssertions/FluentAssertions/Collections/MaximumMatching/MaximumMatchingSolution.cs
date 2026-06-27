@@ -1,0 +1,32 @@
+using System.Collections.Generic;
+using System.Linq;
+
+namespace FluentAssertions.Collections.MaximumMatching
+{
+	internal class MaximumMatchingSolution<TValue>
+	{
+		private readonly Dictionary<Predicate<TValue>, Element<TValue>> elementsByMatchedPredicate;
+
+		private readonly MaximumMatchingProblem<TValue> problem;
+
+		public bool UnmatchedPredicatesExist => problem.Predicates.Count != elementsByMatchedPredicate.Count;
+
+		public bool UnmatchedElementsExist => problem.Elements.Count != elementsByMatchedPredicate.Count;
+
+		public MaximumMatchingSolution(MaximumMatchingProblem<TValue> problem, Dictionary<Predicate<TValue>, Element<TValue>> elementsByMatchedPredicate)
+		{
+			this.problem = problem;
+			this.elementsByMatchedPredicate = elementsByMatchedPredicate;
+		}
+
+		public List<Predicate<TValue>> GetUnmatchedPredicates()
+		{
+			return problem.Predicates.Except(elementsByMatchedPredicate.Keys).ToList();
+		}
+
+		public List<Element<TValue>> GetUnmatchedElements()
+		{
+			return problem.Elements.Except(elementsByMatchedPredicate.Values).ToList();
+		}
+	}
+}

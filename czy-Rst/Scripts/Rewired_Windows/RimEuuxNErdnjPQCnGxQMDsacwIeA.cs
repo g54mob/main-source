@@ -1,0 +1,6 @@
+internal struct RimEuuxNErdnjPQCnGxQMDsacwIeA
+{
+	public TrEsdBTPpLnwJbpItlWdRlkMTvEO mVEjeDAbSqdKPkIPsLoghnsaHOtAB;
+
+	public ETqfYDSWKXfpmHFOAhKwgktOXlVB hePtcmOZNbdEAfahHtAheTGpcMGB;
+}
