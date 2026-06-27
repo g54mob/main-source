@@ -261,6 +261,8 @@
   │ The Last Flight                    │ sim-TLF         │
   ├────────────────────────────────────┼─────────────────┤
   │ IRON NEST Heavy Turret Simulator   │ sim-INHT        │
+  ├────────────────────────────────────┼─────────────────┤
+  │ Skedule-I-Demo                     │ sim-Skdl-Demo   │
   └────────────────────────────────────┴─────────────────┘
 
   Genre-TowerDefence--td
