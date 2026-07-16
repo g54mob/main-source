@@ -1,0 +1,25 @@
+public enum StatTypes
+{
+	health = 0,
+	damage = 1,
+	cooldownPrimary = 2,
+	cooldownSecondary = 3,
+	count = 4,
+	capacity = 5,
+	transformSpeed = 6,
+	scale = 7,
+	duration = 8,
+	ricochetChance = 9,
+	consumption = 10,
+	projectileSpeed = 11,
+	timeToReload = 12,
+	pierce = 13,
+	burn = 14,
+	spread = 15,
+	leech = 16,
+	sunder = 17,
+	tracking = 18,
+	critChance = 19,
+	modifier = 20,
+	sunderChance = 21
+}
