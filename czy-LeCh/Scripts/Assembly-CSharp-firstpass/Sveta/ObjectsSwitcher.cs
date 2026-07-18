@@ -1,0 +1,42 @@
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace Sveta
+{
+	public class ObjectsSwitcher : MonoBehaviour
+	{
+		public UnityEventString outputName;
+
+		public List<GameObject> list;
+
+		private int index;
+
+		public void Switch(int delta)
+		{
+			index += delta;
+			if (index > list.Count - 1)
+			{
+				index = 0;
+			}
+			if (index < 0)
+			{
+				index = list.Count - 1;
+			}
+			SwitchTo(index);
+		}
+
+		private void SwitchTo(int _index)
+		{
+			for (int i = 0; i < list.Count; i++)
+			{
+				list[i].SetActive(i == _index);
+			}
+			outputName?.Invoke(list[_index].name);
+		}
+
+		public void Awake()
+		{
+			SwitchTo(0);
+		}
+	}
+}
