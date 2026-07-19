@@ -1,0 +1,59 @@
+using System.Collections;
+using System.Collections.Generic;
+
+namespace DepthFirstScheduler
+{
+	public class LockQueue<T> where T : class
+	{
+		private List<T> m_queue = new List<T>();
+
+		public int Count
+		{
+			get
+			{
+				lock (((ICollection)m_queue).SyncRoot)
+				{
+					return m_queue.Count;
+				}
+			}
+		}
+
+		public void Enqueue(T t)
+		{
+			lock (((ICollection)m_queue).SyncRoot)
+			{
+				m_queue.Add(t);
+			}
+		}
+
+		public T Dequeue(out int remain)
+		{
+			lock (((ICollection)m_queue).SyncRoot)
+			{
+				if (m_queue.Count == 0)
+				{
+					remain = 0;
+					return null;
+				}
+				T result = m_queue[0];
+				m_queue.RemoveAt(0);
+				remain = m_queue.Count;
+				return result;
+			}
+		}
+
+		public T Dequeue()
+		{
+			lock (((ICollection)m_queue).SyncRoot)
+			{
+				if (m_queue.Count == 0)
+				{
+					return null;
+				}
+				T result = m_queue[0];
+				m_queue.RemoveAt(0);
+				return result;
+			}
+		}
+	}
+}

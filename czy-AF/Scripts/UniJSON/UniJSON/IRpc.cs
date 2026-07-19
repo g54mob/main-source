@@ -1,0 +1,41 @@
+using System;
+
+namespace UniJSON
+{
+	public interface IRpc
+	{
+		void Request(Utf8String method);
+
+		void Request<A0>(Utf8String method, A0 a0);
+
+		void Request<A0, A1>(Utf8String method, A0 a0, A1 a1);
+
+		void Request<A0, A1, A2>(Utf8String method, A0 a0, A1 a1, A2 a2);
+
+		void Request<A0, A1, A2, A3>(Utf8String method, A0 a0, A1 a1, A2 a2, A3 a3);
+
+		void Request<A0, A1, A2, A3, A4>(Utf8String method, A0 a0, A1 a1, A2 a2, A3 a3, A4 a4);
+
+		void Request<A0, A1, A2, A3, A4, A5>(Utf8String method, A0 a0, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5);
+
+		void ResponseSuccess(int id);
+
+		void ResponseSuccess<T>(int id, T result);
+
+		void ResponseError(int id, Exception error);
+
+		void Notify(Utf8String method);
+
+		void Notify<A0>(Utf8String method, A0 a0);
+
+		void Notify<A0, A1>(Utf8String method, A0 a0, A1 a1);
+
+		void Notify<A0, A1, A2>(Utf8String method, A0 a0, A1 a1, A2 a2);
+
+		void Notify<A0, A1, A2, A3>(Utf8String method, A0 a0, A1 a1, A2 a2, A3 a3);
+
+		void Notify<A0, A1, A2, A3, A4>(Utf8String method, A0 a0, A1 a1, A2 a2, A3 a3, A4 a4);
+
+		void Notify<A0, A1, A2, A3, A4, A5>(Utf8String method, A0 a0, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5);
+	}
+}

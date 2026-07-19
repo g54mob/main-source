@@ -1,0 +1,143 @@
+using System;
+
+namespace UniJSON
+{
+	public struct TomlValue : IListTreeItem, IValue<TomlValue>
+	{
+		private Utf8String m_segment;
+
+		public int ParentIndex { get; private set; }
+
+		public TomlValueType TomlValueType { get; private set; }
+
+		public ValueNodeType ValueType => TomlValueType switch
+		{
+			TomlValueType.Integer => ValueNodeType.Integer, 
+			TomlValueType.Float => ValueNodeType.Number, 
+			TomlValueType.Boolean => ValueNodeType.Boolean, 
+			TomlValueType.BareKey => ValueNodeType.String, 
+			TomlValueType.QuotedKey => ValueNodeType.String, 
+			TomlValueType.DottedKey => ValueNodeType.String, 
+			TomlValueType.BasicString => ValueNodeType.String, 
+			TomlValueType.MultilineBasicString => ValueNodeType.String, 
+			TomlValueType.LiteralString => ValueNodeType.String, 
+			TomlValueType.MultilineLiteralString => ValueNodeType.String, 
+			TomlValueType.Table => ValueNodeType.Object, 
+			TomlValueType.Array => ValueNodeType.Array, 
+			_ => throw new NotImplementedException(), 
+		};
+
+		public ArraySegment<byte> Bytes => m_segment.Bytes;
+
+		public int ChildCount
+		{
+			get
+			{
+				throw new NotImplementedException();
+			}
+		}
+
+		public override string ToString()
+		{
+			return m_segment.ToString();
+		}
+
+		public void SetBytesCount(int count)
+		{
+			throw new NotImplementedException();
+		}
+
+		public void SetChildCount(int count)
+		{
+			throw new NotImplementedException();
+		}
+
+		public TomlValue(Utf8String segment, TomlValueType valueType, int parentIndex)
+		{
+			this = default(TomlValue);
+			ParentIndex = parentIndex;
+			TomlValueType = valueType;
+			m_segment = segment;
+		}
+
+		public bool GetBoolean()
+		{
+			throw new NotImplementedException();
+		}
+
+		public byte GetByte()
+		{
+			throw new NotImplementedException();
+		}
+
+		public double GetDouble()
+		{
+			throw new NotImplementedException();
+		}
+
+		public short GetInt16()
+		{
+			throw new NotImplementedException();
+		}
+
+		public int GetInt32()
+		{
+			return m_segment.ToInt32();
+		}
+
+		public long GetInt64()
+		{
+			throw new NotImplementedException();
+		}
+
+		public sbyte GetSByte()
+		{
+			throw new NotImplementedException();
+		}
+
+		public float GetSingle()
+		{
+			throw new NotImplementedException();
+		}
+
+		public string GetString()
+		{
+			throw new NotImplementedException();
+		}
+
+		public ushort GetUInt16()
+		{
+			throw new NotImplementedException();
+		}
+
+		public uint GetUInt32()
+		{
+			throw new NotImplementedException();
+		}
+
+		public ulong GetUInt64()
+		{
+			throw new NotImplementedException();
+		}
+
+		public Utf8String GetUtf8String()
+		{
+			return m_segment;
+		}
+
+		public U GetValue<U>()
+		{
+			throw new NotImplementedException();
+		}
+
+		public TomlValue Key(Utf8String key, int parentIndex)
+		{
+			throw new NotImplementedException();
+		}
+
+		public TomlValue New(ArraySegment<byte> bytes, ValueNodeType valueType, int parentIndex)
+		{
+			throw new NotImplementedException();
+		}
+	}
+}
