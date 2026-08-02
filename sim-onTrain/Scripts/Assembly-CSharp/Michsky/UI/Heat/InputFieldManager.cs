@@ -1,0 +1,124 @@
+using System.Collections;
+using TMPro;
+using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.Events;
+using UnityEngine.InputSystem;
+
+namespace Michsky.UI.Heat
+{
+	[RequireComponent(typeof(TMP_InputField))]
+	public class InputFieldManager : MonoBehaviour
+	{
+		[Header("Resources")]
+		public TMP_InputField inputText;
+
+		public Animator inputFieldAnimator;
+
+		[Header("Settings")]
+		public bool processSubmit;
+
+		public bool clearOnSubmit;
+
+		[Header("Events")]
+		public UnityEvent onSubmit;
+
+		private float cachedStateLength = 0.25f;
+
+		private void Awake()
+		{
+			if (inputText == null)
+			{
+				inputText = base.gameObject.GetComponent<TMP_InputField>();
+			}
+			if (clearOnSubmit)
+			{
+				onSubmit.AddListener(delegate
+				{
+					inputText.text = "";
+				});
+			}
+			inputText.onValueChanged.AddListener(delegate
+			{
+				UpdateState();
+			});
+			inputText.onSelect.AddListener(delegate
+			{
+				AnimateIn();
+			});
+			inputText.onEndEdit.AddListener(delegate
+			{
+				AnimateOut();
+			});
+		}
+
+		private void OnEnable()
+		{
+			if (!(inputText == null))
+			{
+				if (inputFieldAnimator != null && base.gameObject.activeInHierarchy)
+				{
+					StartCoroutine("DisableAnimator");
+				}
+				inputText.ForceLabelUpdate();
+				UpdateState();
+			}
+		}
+
+		private void Update()
+		{
+			if (processSubmit && !string.IsNullOrEmpty(inputText.text) && !(EventSystem.current.currentSelectedGameObject != inputText.gameObject) && Keyboard.current.enterKey.wasPressedThisFrame)
+			{
+				onSubmit.Invoke();
+			}
+		}
+
+		public void AnimateIn()
+		{
+			if (inputFieldAnimator != null && inputFieldAnimator.gameObject.activeInHierarchy)
+			{
+				inputFieldAnimator.enabled = true;
+				inputFieldAnimator.Play("In");
+				StopCoroutine("DisableAnimator");
+				StartCoroutine("DisableAnimator");
+			}
+		}
+
+		public void AnimateOut()
+		{
+			if (inputFieldAnimator != null && inputFieldAnimator.gameObject.activeInHierarchy)
+			{
+				inputFieldAnimator.enabled = true;
+				if (inputText.text.Length == 0)
+				{
+					inputFieldAnimator.Play("Out");
+				}
+				StopCoroutine("DisableAnimator");
+				StartCoroutine("DisableAnimator");
+			}
+		}
+
+		public void UpdateState()
+		{
+			if (inputText.text.Length == 0)
+			{
+				AnimateOut();
+			}
+			else
+			{
+				AnimateIn();
+			}
+		}
+
+		public void InvokeSubmit()
+		{
+			onSubmit.Invoke();
+		}
+
+		private IEnumerator DisableAnimator()
+		{
+			yield return new WaitForSeconds(cachedStateLength);
+			inputFieldAnimator.enabled = false;
+		}
+	}
+}

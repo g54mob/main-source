@@ -1,0 +1,13 @@
+namespace ES3Types
+{
+	public class ES3UserType_TaskGroupSaveDataArray : ES3ArrayType
+	{
+		public static ES3Type Instance;
+
+		public ES3UserType_TaskGroupSaveDataArray()
+			: base(typeof(TaskGroupSaveData[]), ES3UserType_TaskGroupSaveData.Instance)
+		{
+			Instance = this;
+		}
+	}
+}

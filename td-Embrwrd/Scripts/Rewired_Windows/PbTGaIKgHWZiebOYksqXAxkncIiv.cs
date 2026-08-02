@@ -1,6 +1,0 @@
-internal struct PbTGaIKgHWZiebOYksqXAxkncIiv
-{
-	public LUtppjyPykltETnAiYFoPtkRDZsk qixjmlphLJrRCoQZzrzppcmQRiLV;
-
-	public GKHlectDwwgBgfDVHkMVuciXdVwc zNbtAWXMoMyDdNegWcRogNgoOmHA;
-}

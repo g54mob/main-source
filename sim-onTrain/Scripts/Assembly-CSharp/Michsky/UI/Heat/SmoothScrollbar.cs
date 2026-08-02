@@ -1,0 +1,65 @@
+using System.Collections;
+using UnityEngine;
+using UnityEngine.UI;
+
+namespace Michsky.UI.Heat
+{
+	[RequireComponent(typeof(Scrollbar))]
+	public class SmoothScrollbar : MonoBehaviour
+	{
+		[Header("Settings")]
+		[SerializeField]
+		[Range(0.3f, 5f)]
+		private float curveSpeed = 1.5f;
+
+		[SerializeField]
+		private AnimationCurve animationCurve = new AnimationCurve(new Keyframe(0f, 0f), new Keyframe(1f, 1f));
+
+		private Scrollbar scrollbar;
+
+		private void Awake()
+		{
+			scrollbar = GetComponent<Scrollbar>();
+		}
+
+		public void GoToTop()
+		{
+			StopCoroutine("GoBottom");
+			StopCoroutine("GoTop");
+			StartCoroutine("GoTop");
+		}
+
+		public void GoToBottom()
+		{
+			StopCoroutine("GoBottom");
+			StopCoroutine("GoTop");
+			StartCoroutine("GoBottom");
+		}
+
+		private IEnumerator GoTop()
+		{
+			float startingPoint = scrollbar.value;
+			float elapsedTime = 0f;
+			while (scrollbar.value < 0.999f)
+			{
+				elapsedTime += Time.unscaledDeltaTime;
+				scrollbar.value = Mathf.Lerp(startingPoint, 1f, animationCurve.Evaluate(elapsedTime * curveSpeed));
+				yield return null;
+			}
+			scrollbar.value = 1f;
+		}
+
+		private IEnumerator GoBottom()
+		{
+			float startingPoint = scrollbar.value;
+			float elapsedTime = 0f;
+			while (scrollbar.value > 0.001f)
+			{
+				elapsedTime += Time.unscaledDeltaTime;
+				scrollbar.value = Mathf.Lerp(startingPoint, 0f, animationCurve.Evaluate(elapsedTime * curveSpeed));
+				yield return null;
+			}
+			scrollbar.value = 0f;
+		}
+	}
+}

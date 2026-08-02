@@ -1,7 +1,0 @@
-public enum eRuneGridType
-{
-	NONE = 0,
-	FIRE_INCREASE_ATK = 1,
-	ICE_INCREASE_ATK = 2,
-	LIGHTNING_INCREASE_ATK = 3
-}

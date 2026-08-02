@@ -1,9 +1,0 @@
-public enum eMapNodeState
-{
-	UNINITIALIZED = 0,
-	TOO_FAR = 1,
-	NOT_SELECTED = 2,
-	AVALIABLE = 3,
-	JUST_FINISHED = 4,
-	COMPLETED = 5
-}
