@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>PhaserPort</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net40</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>14.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>..\..\VampSurv\UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnsafeAccess">
+      <HintPath>..\..\VampSurv\UnsafeAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperTiled2Unity">
+      <HintPath>..\..\VampSurv\SuperTiled2Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>..\..\VampSurv\UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <ProjectReference Include="..\UnityEngine.CoreModule\UnityEngine.CoreModule.csproj" />
+    <ProjectReference Include="..\Unity.Mathematics\Unity.Mathematics.csproj" />
+    <ProjectReference Include="..\System.Core\System.Core.csproj" />
+    <ProjectReference Include="..\ProCamera2D\ProCamera2D.csproj" />
+    <ProjectReference Include="..\PauseSystem\PauseSystem.csproj" />
+  </ItemGroup>
+</Project>

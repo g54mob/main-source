@@ -1,0 +1,11 @@
+namespace VampireSurvivors.Objects.Weapons;
+
+public class EME_RapierWeapon2 : EME_RapierWeapon
+{
+	protected override int GlimmerTier => 2;
+
+	public override int DisplayedSlashes()
+	{
+		return 2;
+	}
+}

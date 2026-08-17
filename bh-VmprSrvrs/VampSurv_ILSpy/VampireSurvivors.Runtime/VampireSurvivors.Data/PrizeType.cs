@@ -1,0 +1,15 @@
+namespace VampireSurvivors.Data;
+
+public enum PrizeType
+{
+	POWERUP,
+	EXISTING_WEAPON,
+	EXISTING_ANY,
+	FILLER,
+	RANDOM,
+	FIXED,
+	EVOLUTION,
+	EVO_ARCANA,
+	NEW_WEAPON,
+	SURVAROT
+}

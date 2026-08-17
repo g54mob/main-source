@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net40</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>14.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\PlayFabParty\PlayFabParty.csproj" />
+    <ProjectReference Include="..\PlayFab\PlayFab.csproj" />
+    <ProjectReference Include="..\l2localization\l2localization.csproj" />
+    <ProjectReference Include="..\UnityEngine.CoreModule\UnityEngine.CoreModule.csproj" />
+    <ProjectReference Include="..\Doozy\Doozy.csproj" />
+    <ProjectReference Include="..\Coherence.SimulationFrame\Coherence.SimulationFrame.csproj" />
+    <ProjectReference Include="..\Coherence.Entities\Coherence.Entities.csproj" />
+    <ProjectReference Include="..\Coherence.Toolkit\Coherence.Toolkit.csproj" />
+    <ProjectReference Include="..\Coherence.Common\Coherence.Common.csproj" />
+    <ProjectReference Include="..\Coherence.Interop.Generated\Coherence.Interop.Generated.csproj" />
+    <ProjectReference Include="..\Coherence.ProtocolDef\Coherence.ProtocolDef.csproj" />
+    <ProjectReference Include="..\Coherence.Core\Coherence.Core.csproj" />
+    <ProjectReference Include="..\Coherence.Log\Coherence.Log.csproj" />
+    <ProjectReference Include="..\Coherence.Brook\Coherence.Brook.csproj" />
+    <ProjectReference Include="..\Coherence.Core.Native\Coherence.Core.Native.csproj" />
+    <ProjectReference Include="..\UnityEngine.UIModule\UnityEngine.UIModule.csproj" />
+    <ProjectReference Include="..\Zenject\Zenject.csproj" />
+    <ProjectReference Include="..\VampireSurvivors.Runtime\VampireSurvivors.Runtime.csproj" />
+    <ProjectReference Include="..\Coherence.RSL.Extensions\Coherence.RSL.Extensions.csproj" />
+    <ProjectReference Include="..\Coherence.ReplicationServer\Coherence.ReplicationServer.csproj" />
+    <ProjectReference Include="..\UnityEngine.UI\UnityEngine.UI.csproj" />
+    <ProjectReference Include="..\UnityEngine.ParticleSystemModule\UnityEngine.ParticleSystemModule.csproj" />
+    <ProjectReference Include="..\System.Core\System.Core.csproj" />
+    <ProjectReference Include="..\UnityEngine.AudioModule\UnityEngine.AudioModule.csproj" />
+    <ProjectReference Include="..\Unity.TextMeshPro\Unity.TextMeshPro.csproj" />
+    <ProjectReference Include="..\PauseSystem\PauseSystem.csproj" />
+    <ProjectReference Include="..\UnityEngine.InputLegacyModule\UnityEngine.InputLegacyModule.csproj" />
+    <ProjectReference Include="..\Facepunch.Steamworks.Win64\Facepunch.Steamworks.Win64.csproj" />
+    <ProjectReference Include="..\UnityEngine.IMGUIModule\UnityEngine.IMGUIModule.csproj" />
+    <ProjectReference Include="..\DDebug\DDebug.csproj" />
+    <ProjectReference Include="..\Coherence.Interpolation\Coherence.Interpolation.csproj" />
+    <ProjectReference Include="..\PhaserPort\PhaserPort.csproj" />
+    <ProjectReference Include="..\Unity.Mathematics\Unity.Mathematics.csproj" />
+    <ProjectReference Include="..\Coherence.Serializer\Coherence.Serializer.csproj" />
+    <ProjectReference Include="..\Coherence\Coherence.csproj" />
+    <ProjectReference Include="..\Coherence.RSL\Coherence.RSL.csproj" />
+  </ItemGroup>
+</Project>

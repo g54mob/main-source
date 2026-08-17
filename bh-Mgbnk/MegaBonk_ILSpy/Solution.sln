@@ -1,0 +1,27 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp\Assembly-CSharp.csproj", "{FF400EC6-638F-4340-8546-F2C85FF4B170}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MK.Toon", "MK.Toon\MK.Toon.csproj", "{1BDD534B-29CE-4BDB-AABB-62DE6CFCB09C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AnyCPU = Debug|AnyCPU
+		Release|AnyCPU = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF400EC6-638F-4340-8546-F2C85FF4B170}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
+		{FF400EC6-638F-4340-8546-F2C85FF4B170}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
+		{FF400EC6-638F-4340-8546-F2C85FF4B170}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+		{FF400EC6-638F-4340-8546-F2C85FF4B170}.Release|AnyCPU.Build.0 = Release|AnyCPU
+		{1BDD534B-29CE-4BDB-AABB-62DE6CFCB09C}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
+		{1BDD534B-29CE-4BDB-AABB-62DE6CFCB09C}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
+		{1BDD534B-29CE-4BDB-AABB-62DE6CFCB09C}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+		{1BDD534B-29CE-4BDB-AABB-62DE6CFCB09C}.Release|AnyCPU.Build.0 = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

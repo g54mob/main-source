@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>VampireSurvivors.Runtime</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net40</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>14.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Unity.RenderPipelines.Universal.2D.Runtime">
+      <HintPath>..\..\VampSurv\Unity.RenderPipelines.Universal.2D.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\VampSurv\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\VampSurv\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Rewired_Core">
+      <HintPath>..\..\VampSurv\Rewired_Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>..\..\VampSurv\DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>..\..\VampSurv\UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Dreamteck.Splines">
+      <HintPath>..\..\VampSurv\Dreamteck.Splines.dll</HintPath>
+    </Reference>
+    <Reference Include="Rewired_UnityUI_CSharp">
+      <HintPath>..\..\VampSurv\Rewired_UnityUI_CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\VampSurv\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>..\..\VampSurv\UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\..\VampSurv\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="SuperTiled2Unity">
+      <HintPath>..\..\VampSurv\SuperTiled2Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Addressables">
+      <HintPath>..\..\VampSurv\Unity.Addressables.dll</HintPath>
+    </Reference>
+    <Reference Include="MAScripts">
+      <HintPath>..\..\VampSurv\MAScripts.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>..\..\VampSurv\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ResourceManager">
+      <HintPath>..\..\VampSurv\Unity.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.OdinInspector.Attributes">
+      <HintPath>..\..\VampSurv\Sirenix.OdinInspector.Attributes.dll</HintPath>
+    </Reference>
+    <Reference Include="lexonegit.unity-twitch-chat">
+      <HintPath>..\..\VampSurv\lexonegit.unity-twitch-chat.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.LevelPlay">
+      <HintPath>..\..\VampSurv\Unity.LevelPlay.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+      <HintPath>..\..\VampSurv\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Rewired_CSharp">
+      <HintPath>..\..\VampSurv\Rewired_CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>..\..\VampSurv\UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Serialization">
+      <HintPath>..\..\VampSurv\Sirenix.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>..\..\VampSurv\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Utilities">
+      <HintPath>..\..\VampSurv\Sirenix.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween.Modules">
+      <HintPath>..\..\VampSurv\DOTween.Modules.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>..\..\VampSurv\UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>..\..\VampSurv\UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="IngameDebugConsole.Runtime">
+      <HintPath>..\..\VampSurv\IngameDebugConsole.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>..\..\VampSurv\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>..\..\VampSurv\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsCommonModule">
+      <HintPath>..\..\VampSurv\UnityEngine.UnityAnalyticsCommonModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>..\..\VampSurv\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core">
+      <HintPath>..\..\VampSurv\Unity.Services.Core.dll</HintPath>
+    </Reference>
+    <ProjectReference Include="..\UnityEngine.CoreModule\UnityEngine.CoreModule.csproj" />
+    <ProjectReference Include="..\UnityEngine.UI\UnityEngine.UI.csproj" />
+    <ProjectReference Include="..\Coherence.Common\Coherence.Common.csproj" />
+    <ProjectReference Include="..\Coherence.Toolkit\Coherence.Toolkit.csproj" />
+    <ProjectReference Include="..\PlayFabParty\PlayFabParty.csproj" />
+    <ProjectReference Include="..\Coherence.Transport\Coherence.Transport.csproj" />
+    <ProjectReference Include="..\Coherence.Log\Coherence.Log.csproj" />
+    <ProjectReference Include="..\Coherence.Stats\Coherence.Stats.csproj" />
+    <ProjectReference Include="..\Coherence.Brook\Coherence.Brook.csproj" />
+    <ProjectReference Include="..\Unity.TextMeshPro\Unity.TextMeshPro.csproj" />
+    <ProjectReference Include="..\UnityEngine.ParticleSystemModule\UnityEngine.ParticleSystemModule.csproj" />
+    <ProjectReference Include="..\Unity.Mathematics\Unity.Mathematics.csproj" />
+    <ProjectReference Include="..\PhaserPort\PhaserPort.csproj" />
+    <ProjectReference Include="..\Coherence.Runtime\Coherence.Runtime.csproj" />
+    <ProjectReference Include="..\Zenject\Zenject.csproj" />
+    <ProjectReference Include="..\Coherence.ReplicationServer\Coherence.ReplicationServer.csproj" />
+    <ProjectReference Include="..\PlayFab\PlayFab.csproj" />
+    <ProjectReference Include="..\Facepunch.Steamworks.Win64\Facepunch.Steamworks.Win64.csproj" />
+    <ProjectReference Include="..\System.Core\System.Core.csproj" />
+    <ProjectReference Include="..\UniTask\UniTask.csproj" />
+    <ProjectReference Include="..\UnityEngine.UIModule\UnityEngine.UIModule.csproj" />
+    <ProjectReference Include="..\QFSW.MOP2\QFSW.MOP2.csproj" />
+    <ProjectReference Include="..\UnityEngine.AudioModule\UnityEngine.AudioModule.csproj" />
+    <ProjectReference Include="..\ProCamera2D\ProCamera2D.csproj" />
+    <ProjectReference Include="..\UnityEngine.InputLegacyModule\UnityEngine.InputLegacyModule.csproj" />
+    <ProjectReference Include="..\UnityEngine.IMGUIModule\UnityEngine.IMGUIModule.csproj" />
+    <ProjectReference Include="..\l2localization\l2localization.csproj" />
+    <ProjectReference Include="..\Coffee.UIParticle\Coffee.UIParticle.csproj" />
+    <ProjectReference Include="..\Doozy\Doozy.csproj" />
+    <ProjectReference Include="..\UIEffect\UIEffect.csproj" />
+    <ProjectReference Include="..\System.Numerics\System.Numerics.csproj" />
+    <ProjectReference Include="..\Zenject-usage\Zenject-usage.csproj" />
+    <ProjectReference Include="..\PauseSystem\PauseSystem.csproj" />
+    <ProjectReference Include="..\Coherence.Entities\Coherence.Entities.csproj" />
+    <ProjectReference Include="..\Coherence.Core\Coherence.Core.csproj" />
+    <ProjectReference Include="..\Coherence\Coherence.csproj" />
+  </ItemGroup>
+</Project>
