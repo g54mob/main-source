@@ -1,4 +1,0 @@
-internal enum rQrKTRbLYKYJXOhzqRCzZtYfgGon : short
-{
-
-}
